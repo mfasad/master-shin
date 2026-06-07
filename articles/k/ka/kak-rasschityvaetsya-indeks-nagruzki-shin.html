@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Индекс нагрузки шин: таблица, формула расчета и ошибки — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как рассчитывается индекс нагрузки шин, почему нельзя занижать значение и как перевести цифры в килограммы. Полная таблица и примеры подбора.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kak-rasschityvaetsya-indeks-nagruzki-shin.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Индекс нагрузки шин: таблица, формула расчета и ошибки">
+    <meta property="og:description" content="Узнайте, как рассчитывается индекс нагрузки шин, почему нельзя занижать значение и как перевести цифры в килограммы. Полная таблица и примеры подбора.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Индекс нагрузки шин: таблица, формула расчета и ошибки</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-маркировку-грузоподъемности">Введение в маркировку грузоподъемности</a></li><li><a href="#физическая-суть-индекса-и-его-обозначение">Физическая суть индекса и его обозначение</a></li><li><a href="#таблица-соответствия-и-расшифровка-значений">Таблица соответствия и расшифровка значений</a></li><li><a href="#как-рассчитывается-предельная-нагрузка-в-реальности">Как рассчитывается предельная нагрузка в реальности</a></li><li><a href="#ошибки-при-выборе-и-мифы-о-запасе-прочности">Ошибки при выборе и мифы о запасе прочности</a></li><li><a href="#влияние-давления-в-шинах-на-индекс-нагрузки">Влияние давления в шинах на индекс нагрузки</a></li><li><a href="#спецтехника-и-грузовые-автомобили-особенности-расчета">Спецтехника и грузовые автомобили: особенности расчета</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/2/20/205-mm-eto-skolko-sm.html">205 мм это сколько см: конвертация размера шин и дисков</a></li><li><a href="/articles/4/4-/4-vershka-na-rusi.html">Вершок 4 на Руси: значение меры длины в шинах и колесах</a></li><li><a href="/articles/c/ch/chto-znachit-86t-na-shinakh.html">Что значит индекс нагрузки 86 на шинах: расшифровка и допустимый вес</a></li><li><a href="/articles/1/17/175-65-chto-oznachaet.html">Размер шин 175/65: расшифровка, особенности и совместимость</a></li><li><a href="/articles/s/sk/skolko-vesit-odna-shina-legkovogo-avtomobilya.html">Вес автомобильной шины: от 5 до 30 кг и что на это влияет</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитывается индекс нагрузки шин: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-маркировку-грузоподъемности">Введение в маркировку грузоподъемности</a></li><li><a href="#физическая-суть-индекса-и-его-обозначение">Физическая суть индекса и его обозначение</a></li><li><a href="#таблица-соответствия-и-расшифровка-значений">Таблица соответствия и расшифровка значений</a></li><li><a href="#как-рассчитывается-предельная-нагрузка-в-реальности">Как рассчитывается предельная нагрузка в реальности</a></li><li><a href="#ошибки-при-выборе-и-мифы-о-запасе-прочности">Ошибки при выборе и мифы о запасе прочности</a></li><li><a href="#влияние-давления-в-шинах-на-индекс-нагрузки">Влияние давления в шинах на индекс нагрузки</a></li><li><a href="#спецтехника-и-грузовые-автомобили-особенности-расчета">Спецтехника и грузовые автомобили: особенности расчета</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-маркировку-грузоподъемности">Введение в маркировку грузоподъемности</h2>
+<p>При выборе автомобильной резины многие водители фокусируются исключительно на сезонности и бренде, полностью игнорируя цифровое значение, стоящее рядом с артикулом ширины профиля. Этот параметр, называемый <strong>индексом нагрузки</strong> или Load Index (LI), является критически важным показателем, определяющим максимальный вес, который колесо может выдержать при движении на предельно допустимой скорости.</p>
+<p>Если вы проигнорируете этот параметр и установите шины с заниженным индексом, вы рискуете получить разрушение корда, перегрев покрышки и даже взрыв колеса на высокой скорости. Производители автомобилей закладывают определенные требования к <strong>грузоподъемности</strong> исходя из полной массы транспорта, включая пассажиров и багаж, поэтому отклонение от заводских значений недопустимо с точки зрения техники безопасности.</p>
+<p>Расчет этого показателя происходит в лабораторных условиях на специальных стендах, где резину накачивают до номинального давления и нагружают до момента разрушения. Полученные данные затем заносятся в международные таблицы стандартов, где каждой цифре соответствует конкретная <strong>максимальная нагрузка</strong> в килограммах.</p>
+
+<h2 id="физическая-суть-индекса-и-его-обозначение">Физическая суть индекса и его обозначение</h2>
+<p>На боковине шины вы найдете комбинацию цифр и букв, например, <code>205/55 R16 91V</code>. В данном примере число <code>91</code> и есть искомый индекс нагрузки. Это не произвольный набор символов, а кодировка, соответствующая строгому стандарту ECE или DOT. Каждое значение от 0 до 150 (на серийных авто) имеет свою расшифровку, которую невозможно вычислить математически без использования справочных данных.</p>
+<p>Важно понимать, что индекс нагрузки рассчитывается для одной шины. Если автомобиль имеет две оси, то суммарная грузоподъемность всех четырех колес должна превышать полезную нагрузку машины с запасом. Например, если индекс <code>91</code> означает <strong>615 кг</strong> на одно колесо, то на четырех колесах это дает теоретическую нагрузку 2460 кг.</p>
+<p>Существует распространенное заблуждение, что индекс нагрузки влияет только на грузовые автомобили. На самом деле, для легковых авто с мощными двигателями или полным приводом, которые часто используются в сложных дорожных условиях, этот параметр играет ключевую роль при выборе зимней или летней резины.</p>
+<p>Производители могут указывать двойной индекс, например, <code>91/88T</code>. Это означает, что при использовании в одноосном варианте (как на прицепах) нагрузка выше, а при использовании в паре (двойные колеса) — ниже. Такой подход позволяет гибко использовать одну и ту же модель резины в разных конфигурациях.</p>
+
+<h2 id="таблица-соответствия-и-расшифровка-значений">Таблица соответствия и расшифровка значений</h2>
+<p>Для перевода цифровой маркировки в реальные килограммы необходимо использовать официальную таблицу соответствия. Ниже приведены наиболее распространенные значения для легковых автомобилей и кроссоверов. Запоминать все цифры наизусть не нужно, достаточно иметь под рукой <strong>справочник индексов</strong> при покупке.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Индекс</th>
+      <th>Нагрузка на 1 колесо (кг)</th>
+      <th>Типичное применение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>85</td>
+      <td>515</td>
+      <td>Компактные городские хэтчбеки</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>615</td>
+      <td>Седаны среднего класса, кроссоверы</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>750</td>
+      <td>Внедорожники, микроавтобусы</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>900</td>
+      <td>Полноразмерные внедорожники, минивэны</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>1120</td>
+      <td>Грузовые версии легковых авто</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Обратите внимание, что разница между соседними индексами может составлять от 5 до 20 кг. Казалось бы, небольшая цифра, но при полной загрузке автомобиля разница в 20 кг на каждое колесо складывается в 80 кг общей массы, которую машина переносит с комфортом или на грани разрушения.</p>
+<p>Также стоит учитывать, что при увеличении скорости допустимая нагрузка на шину снижается. Это физическое явление объясняется тем, что при вращении колесо нагревается, и резина становится менее жесткой. Поэтому <strong>скоростной индекс</strong> и индекс нагрузки находятся в тесной зависимости друг от друга.</p>
+
+<div class="pb-poll" id="poll-482d7b41"><div class="pb-poll-question">📊 Какой индекс нагрузки на ваших текущих шинах?</div><div class="pb-poll-option" data-poll="482d7b41" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">85-90</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="482d7b41" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">91-98</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="482d7b41" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">99-105</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="482d7b41" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">106+</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Индекс нагрузки не является фиксированной величиной для конкретной модели автомобиля. Он зависит от комплектации, типа двигателя, полного или переднего привода, а также от размера колесных дисков. Всегда сверяйтесь с рекомендациями в сервисной книжке именно вашей машины, а не аналогов.</p>
+</blockquote>
+
+<h2 id="как-рассчитывается-предельная-нагрузка-в-реальности">Как рассчитывается предельная нагрузка в реальности</h2>
+<p>Расчет нагрузки на шину в реальных условиях эксплуатации сложнее, чем простое деление веса автомобиля на четыре. Вес распределяется неравномерно: передняя ось обычно загружена больше из-за двигателя, а багажник при полной загрузке переносит массу на заднюю ось. Инженеры рассчитывают <strong>статическую нагрузку</strong> с учетом динамических факторов.</p>
+<p>При движении по неровностям, при резком торможении или прохождении поворота нагрузка на одно колесо может кратковременно превышать среднее значение в 1.5–2 раза. Именно поэтому производители закладывают запас прочности. Шина с индексом <code>95</code> (690 кг) на легковом авто весом 1400 кг работает в щадящем режиме, тогда как установка индекса <code>85</code> (515 кг) приведет к перегрузке при любой яме.</p>
+<p>Существует понятие <em>допустимой нагрузки</em>, которая указывается в паспорте транспортного средства (ПТС). Если вы планируете использовать автомобиль для буксировки прицепа или перевозки тяжелых грузов, вам необходимо выбрать шины с индексом, перекрывающим эту норму с запасом.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка соответствия нагрузки</h4><label class="check-item"><input type="checkbox"><span>Свериться с табличкой на стойке двери</span></label><label class="check-item"><input type="checkbox"><span>Проверить рекомендации в сервисной книжке</span></label><label class="check-item"><input type="checkbox"><span>Учесть вес прицепа при буксировке</span></label><label class="check-item"><input type="checkbox"><span>Убедиться, что индекс не ниже заводского</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Особое внимание следует уделить зимним шинам. В холодное время года резина становится жестче, и ее способность гасить удары снижается. Поэтому многие эксперты рекомендуют устанавливать <strong>зимнюю резину</strong> с индексом нагрузки на 1–2 пункта выше летней, чтобы компенсировать изменение физических свойств материала.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не устанавливайте на одну ось шины с разным индексом нагрузки. Это нарушит балансировку, приведет к преждевременному износу тормозной системы и может вызвать потерю управляемости в экстренной ситуации.</p>
+</blockquote>
+
+<h2 id="ошибки-при-выборе-и-мифы-о-запасе-прочности">Ошибки при выборе и мифы о запасе прочности</h2>
+<p>Многие водители считают, что чем выше индекс нагрузки, тем лучше. Однако это не всегда так. Шины с завышенным индексом (например, <em>грузовые</em> версии для легкового авто) имеют более жесткий каркас. Это увеличивает шум при езде, снижает комфорт и может ухудшить сцепление с дорогой на сухом асфальте, так как пятно контакта становится меньше.</p>
+<p>С другой стороны, попытка сэкономить и поставить резину с меньшим индексом — это прямой путь к аварии. <strong>Минимально допустимый индекс</strong> указан производителем автомобиля в технической документации и на табличке, расположенной на стойке водительской двери или внутри лючка бензобака.</p>
+<p>Существует также заблуждение, что для внедорожников обязательно нужны шины с максимальным индексом. Это верно только для полногрузных режимов. В городском использовании чрезмерно жесткие покрышки могут привести к быстрому выходу из строя подвески, так как она не сможет поглощать удары от колес.</p>
+
+<details class="pb-accordion"><summary>Что такое индекс нагрузки XL?</summary><div class="pb-accordion-body"><p>Специальная маркировка Extra Load (XL) означает, что шина усилена и имеет более высокий индекс нагрузки по сравнению со стандартной шиной того же размера. Например, 91XL вместо 91. Это позволяет использовать шины с более высоким давлением и нагружать их сильнее.</p></div></details>
+
+<p>Важно также учитывать, что при замене резины на диски меньшего диаметра (например, зимний комплект на 15 дюймов вместо летних 17), индекс нагрузки часто оказывается ниже. В таких случаях необходимо внимательно проверить, не превышает ли фактическая нагрузка на колесо допустимую норму, указанную в инструкции к автомобилю.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы часто перевозите грузы или пассажиров, выбирайте шины с индексом нагрузки на 1-2 пункта выше минимального, указанного автопроизводителем. Это продлит срок службы резины и подвески.</p></aside>
+
+<h2 id="влияние-давления-в-шинах-на-индекс-нагрузки">Влияние давления в шинах на индекс нагрузки</h2>
+<p>Индекс нагрузки напрямую зависит от внутреннего давления в покрышке. Заводская таблица рассчитана на <strong>номинальное давление</strong>, указанное производителем. Если давление будет ниже нормы, реальная грузоподъемность шины резко падает, даже если индекс визуально высокий.</p>
+<p>При заниженном давлении боковина шины начинает «гулять», что приводит к перегреву корда и разрушению каркаса. Это особенно актуально для грузовых автомобилей и микроавтобусов, где <strong>давление в шинах</strong> может достигать 8-10 атмосфер. В таких условиях малейшее отклонение от нормы критично.</p>
+<p>Напротив, избыточное давление не увеличивает грузоподъемность, но делает шину более жесткой и чувствительной к ударам. Оптимальное значение всегда находится в узком диапазоне, который можно найти в сервисной книжке вашего автомобиля.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Давление в шинах должно соответствовать заводским рекомендациям, иначе заявленный индекс нагрузки не будет обеспечен, даже если сама шина качественная.</p></aside>
+
+<h2 id="спецтехника-и-грузовые-автомобили-особенности-расчета">Спецтехника и грузовые автомобили: особенности расчета</h2>
+<p>Для грузового транспорта и спецтехники система расчета индекса нагрузки имеет свои особенности. Здесь часто используются таблицы, где учитывается количество осей и схема размещения колес. Например, двойная ошиновка позволяет увеличить допустимую нагрузку на одну ось.</p>
+<p>В маркировке грузовых шин часто встречаются дополнительные обозначения, такие как <em>Load Range</em> (LR) или буквенные индексы (B, C, D и т.д.), которые указывают на количество слоев корда в каркасе. Это позволяет точно определить, сколько кг выдержит колесо при длительной эксплуатации под нагрузкой.</p>
+<p>При выборе шин для коммерческого транспорта важно учитывать режим работы: городские развозки или дальние рейсы. Для дальних рейсов рекомендуются шины с повышенным индексом, чтобы компенсировать износ и нагрев при длительной езде.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для коммерческого транспорта выбор индекса нагрузки определяется не только массой груза, но и режимом эксплуатации и типом дорог, по которым будет двигаться транспорт.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+  <summary>Можно ли ставить шины с меньшим индексом нагрузки на зиму?</summary>
+  <p>Нет, это запрещено и опасно. Индекс нагрузки должен соответствовать или превышать значения, рекомендованные производителем автомобиля, независимо от сезона. Установление шин с меньшим индексом может привести к разрушению покрышки и аварии.</p>
+</details>
+
+<details>
+  <summary>Что такое индекс нагрузки XL и чем он отличается от стандартного?</summary>
+  <p>XL (Extra Load) означает усиленную конструкцию шины. Такие покрышки выдерживают большую нагрузку при том же внешнем размере. Например, шина с индексом 91XL выдерживает больше веса, чем стандартная шина с индексом 91, благодаря усилению боковин и каркаса.</p>
+</details>
+
+<details>
+  <summary>Как узнать индекс нагрузки на своей машине?</summary>
+  <p>Индекс нагрузки указан на боковине шины (двухзначное или трехзначное число). Также заводские рекомендации по индексу и давлению можно найти на табличке, расположенной на стойке водительской двери, или в сервисной книжке автомобиля.</p>
+</details>
+
+<details>
+  <summary>Влияет ли индекс нагрузки на комфорт езды?</summary>
+  <p>Да, шины с высоким индексом нагрузки обычно имеют более жесткий каркас, что может снизить комфорт и увеличить шум при езде. Однако для тяжелых автомобилей или внедорожников это необходимое условие для безопасной эксплуатации.</p>
+</details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Официальные рекомендации автопроизводителей могут меняться в зависимости от года выпуска модели и комплектации. Всегда проверяйте актуальные данные на табличке на стойке двери вашего конкретного автомобиля перед покупкой резины.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Почему индекс нагрузки на задних колесах может быть выше?</summary><div class="pb-accordion-body"><p>На некоторых автомобилях с задним приводом или при использовании прицепа нагрузка на заднюю ось выше. В таких случаях производители могут рекомендовать устанавливать на задние колеса шины с более высоким индексом нагрузки, чем на передние, но это встречается редко и требует особого внимания.</p></div></details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/2/20/205-mm-eto-skolko-sm.html" class="pb-related-card">
+                <span class="pb-related-title">205 мм это сколько см: конвертация размера шин и дисков</span>
+                <span class="pb-related-desc">Узнайте точно, сколько сантиметров в 205 миллиметрах. Подробный разбор ширины профиля шины 205 мм, в</span>
+            </a><a href="/articles/4/4-/4-vershka-na-rusi.html" class="pb-related-card">
+                <span class="pb-related-title">Вершок 4 на Руси: значение меры длины в шинах и колесах</span>
+                <span class="pb-related-desc">Разбираем историческую меру длины 4 вершка. Как она соотносилась с русскими шинами, проставочными ко</span>
+            </a><a href="/articles/c/ch/chto-znachit-86t-na-shinakh.html" class="pb-related-card">
+                <span class="pb-related-title">Что значит индекс нагрузки 86 на шинах: расшифровка и допустимый вес</span>
+                <span class="pb-related-desc">Полная расшифровка маркировки 86T на шинах. Узнайте, какой вес выдерживает машина, требования к скор</span>
+            </a><a href="/articles/1/17/175-65-chto-oznachaet.html" class="pb-related-card">
+                <span class="pb-related-title">Размер шин 175/65: расшифровка, особенности и совместимость</span>
+                <span class="pb-related-desc">Полная расшифровка маркировки шин 175/65. Узнайте, что означают цифры, как выбрать диаметр диска, на</span>
+            </a><a href="/articles/s/sk/skolko-vesit-odna-shina-legkovogo-avtomobilya.html" class="pb-related-card">
+                <span class="pb-related-title">Вес автомобильной шины: от 5 до 30 кг и что на это влияет</span>
+                <span class="pb-related-desc">Узнайте точный вес одной легковой шины в зависимости от размера, типа и бренда. Как масса резины вли</span>
+            </a><a href="/articles/5/55/55-sm-skolko-millimetrov.html" class="pb-related-card">
+                <span class="pb-related-title">55 см сколько миллиметров: Таблица перевода и применение в авто</span>
+                <span class="pb-related-desc">Узнайте, сколько миллиметров в 55 см. Перевод единиц длины, таблица соответствий и важность точных з</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

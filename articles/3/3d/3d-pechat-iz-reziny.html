@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>3D печать из резины: материалы, технологии и применение — Мастер Шин</title>
+    <meta name="description" content="Все о 3D печати резиной: выбор филамента, настройки FDM принтеров, свойства TPE/TPU и сферы применения гибких изделий.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/3/3d/3d-pechat-iz-reziny.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="3D печать из резины: материалы, технологии и применение">
+    <meta property="og:description" content="Все о 3D печати резиной: выбор филамента, настройки FDM принтеров, свойства TPE/TPU и сферы применения гибких изделий.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-i-vulkanizatsiya/">Ремонт и вулканизация</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">3D печать из резины: материалы, технологии и применение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-гибкое-производство">Введение в гибкое производство</a></li><li><a href="#основные-типы-материалов-для-гибкой-печати">Основные типы материалов для гибкой печати</a></li><li><a href="#технические-требования-к-принтеру">Технические требования к принтеру</a></li><li><a href="#настройка-слайсера-и-параметры-печати">Настройка слайсера и параметры печати</a></li><li><a href="#дефекты-поверхности-и-методы-их-устранения">Дефекты поверхности и методы их устранения</a></li><li><a href="#сферы-применения-и-экономическая-эффективность">Сферы применения и экономическая эффективность</a></li><li><a href="#постобработка-и-долговечность-изделий">Постобработка и долговечность изделий</a></li><li><a href="#будущее-технологий-печати-эластомеров">Будущее технологий печати эластомеров</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/v/va/vag-kkl-4091-dlya-kakikh-mashin.html">VAG KKL 409.1: для каких автомобилей подходит адаптер</a></li><li><a href="/articles/p/po/pochemu-rezina-idet-vintom.html">Почему резина идет винтом: причины, опасность и решение проблемы</a></li><li><a href="/articles/v/vq/vq35de-na-kakie-mashiny-stavilsya.html">На какие машины ставился двигатель VQ35DE: полный список моделей</a></li><li><a href="/articles/z/za/zamena-uplotnitelya-kholodilnika-svoimi-rukami.html">Замена уплотнителя холодильника: пошаговая инструкция своими руками</a></li><li><a href="/articles/k/ko/kompressor-kholodilnika-rabotaet-no-ne-kholodit.html">Холодильник работает, но не морозит: 6 главных причин поломки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>3D печать из резины: технологии, материалы и особенности процесса</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-гибкое-производство">Введение в гибкое производство</a></li><li><a href="#основные-типы-материалов-для-гибкой-печати">Основные типы материалов для гибкой печати</a></li><li><a href="#технические-требования-к-принтеру">Технические требования к принтеру</a></li><li><a href="#настройка-слайсера-и-параметры-печати">Настройка слайсера и параметры печати</a></li><li><a href="#дефекты-поверхности-и-методы-их-устранения">Дефекты поверхности и методы их устранения</a></li><li><a href="#сферы-применения-и-экономическая-эффективность">Сферы применения и экономическая эффективность</a></li><li><a href="#постобработка-и-долговечность-изделий">Постобработка и долговечность изделий</a></li><li><a href="#будущее-технологий-печати-эластомеров">Будущее технологий печати эластомеров</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-гибкое-производство">Введение в гибкое производство</h2>
+<p>Современная аддитивная технология шагнула далеко вперед, позволяя создавать не только жесткие пластиковые детали, но и изделия с высокими эластичными свойствами. <strong>3D печать из резины</strong> стала реальностью благодаря появлению специализированных материалов, имитирующих поведение натурального каучука и силикона. Этот процесс открывает новые горизонты для производства амортизирующих элементов, протекторов и уплотнителей прямо под заказ.</p>
+<p>Вам может показаться, что работа с гибким филаментом — это сложная задача, требующая дорогостоящего оборудования. На самом деле, для большинства задач достаточно стандартного FDM-принтера с правильными настройками и терпением. Главное отличие заключается в физике подачи материала, который склонен растягиваться и сжиматься, создавая проблемы при экструзии через тонкое сопло.</p>
+
+<h2 id="основные-типы-материалов-для-гибкой-печати">Основные типы материалов для гибкой печати</h2>
+<p>Рынок предлагает несколько видов полимеров, которые используются для имитации резины, и правильный выбор зависит от конечной цели вашего изделия. Наиболее популярным материалом является <em>TPU (термополиуретан)</em>, обладающий отличным балансом между эластичностью и прочностью. Он широко используется для создания чехлов, подошв обуви и защитных элементов, так как хорошо гасит вибрации и удары.</p>
+<p>Второй по популярности вариант — <em>TPE (термопластичный эластомер)</em>, который по своим свойствам ближе к натуральной резине. Этот материал более мягкий и легче деформируется, но при этом требует более аккуратного обращения при печати из-за повышенной вязкости. Существуют также специализированные композиты с добавлением каучуковой крошки или силикона, которые усиливают тактильные ощущения от готового изделия.</p>
+<p>При выборе филамента важно обращать внимание на показатель Shore Hardness (<strong>твердость по Шору</strong>), который определяет жесткость материала. Для изделий, требующих высокой эластичности, выбирают значения в диапазоне 60A-70A, тогда как для более жестких прокладок подходят значения 80A-90A. Неправильный подбор твердости может привести к тому, что деталь не будет выполнять свои амортизирующие функции.</p>
+<blockquote>⚠️ Внимание: Убедитесь, что выбранная марка филамента имеет низкую гигроскопичность, так как влага в материале приводит к дефектам экструзии и снижению прочности резиновых изделий.</blockquote>
+
+<h2 id="технические-требования-к-принтеру">Технические требования к принтеру</h2>
+<p>Гибкая нить не любит длинных путей подачи и резких изгибов, поэтому конструкция экструдера играет критическую роль в успехе печати. Идеальным решением является использование <strong>прямого экструдера</strong> (Direct Drive), где мотор подачи расположен непосредственно над соплом. Это минимизирует расстояние, которое нить должна преодолеть, снижая риск её застревания или лишнего сжатия.</p>
+<p>Если вы используете стандартный принтер с Боуденовской системой (где мотор вынесен далеко от стола), вам придется значительно понизить скорость печати и, возможно, заменить тефлоновую трубку на PTFE с внутренним диаметром, идеально подходящим для гибкой нити. Ротор экструдера должен иметь агрессивную накатку, чтобы надежно захватывать мягкий материал без проскальзывания. <em>Температура печати</em> обычно варьируется от 210°C до 240°C, в зависимости от конкретного состава полимерной смеси.</p>
+<p>Важно также учесть состояние направляющих и подшипников, так как повышенное трение может вызвать рывки при подаче. Для успешной работы с резиной рекомендуется использовать сопла диаметром не менее 0.4 мм, чтобы избежать засоров. В некоторых случаях использование латунных сопел предпочтительнее стальных, так как они лучше теплопроводят и снижают риск перегрева материала внутри канала.</p>
+
+<h2 id="настройка-слайсера-и-параметры-печати">Настройка слайсера и параметры печати</h2>
+<p>Успех печати резиной на 50% зависит от корректных настроек в программе-слайсере. Ключевым параметром здесь является <strong>скорость экструзии</strong>, которую необходимо снизить до 15-30 мм/с. Высокая скорость приведет к тому, что нить просто не будет успевать плавиться и выходить из сопла, вызывая "закипание" материала.</p>
+<p>Также критически важно настроитьRetraction (оттягивание нити). Для гибких материалов оттягивание должно быть минимальным или полностью отключенным, чтобы избежать образования "клубков" внутри экструдера. Если оттягивание необходимо, используйте очень короткое расстояние (менее 1 мм) и низкую скорость возврата. <em>Температура холодного конца</em> (хотенда) также должна быть выставлена так, чтобы нить не плавилась до момента выхода из сопла.</p>
+<p>При печати тонких стенок или мелких деталей лучше использовать режим "Ironing" (утюжка), чтобы поверхность стала более гладкой и герметичной. Это особенно актуально для резиновых прокладок, которым нужна абсолютная герметичность. Не забывайте включать вентиляцию обдува на 10-30%, так как полное охлаждение может привести к плохому сцеплению слоев, а перегрев — к деформации изделия.</p>
+<blockquote>⚠️ Внимание: Если печать сопровождается постоянными засорами, попробуйте увеличить диаметр сопла до 0.6 мм или сменить материал на менее эластичный сорт TPU с более высокой твердостью.</blockquote>
+
+<div class="pb-poll" id="poll-26f43ada"><div class="pb-poll-question">📊 Какой тип экструдера вы используете для гибкой печати?</div><div class="pb-poll-option" data-poll="26f43ada" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Прямой (Direct Drive)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26f43ada" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Боуден (Bowden)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26f43ada" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Планшетный экструдер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26f43ada" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не пробовал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка принтера к печати резиной</h4><label class="check-item"><input type="checkbox"><span>Проверить состояние тефлоновой трубки</span></label><label class="check-item"><input type="checkbox"><span>Откалибровать стол</span></label><label class="check-item"><input type="checkbox"><span>Установить прямую экструзию</span></label><label class="check-item"><input type="checkbox"><span>Настроить скорость подачи</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="дефекты-поверхности-и-методы-их-устранения">Дефекты поверхности и методы их устранения</h2>
+<p>Несмотря на тщательную подготовку, при печати из резины часто возникают специфические дефекты, такие как "волны" на боковых стенках или неравномерная толщина. Это явление часто называют "эффектом рыбьей кости" и оно возникает из-за того, что экструдер не успевает выдавить материал с нужной скоростью. <strong>Скорость печати</strong> в таких случаях нужно еще больше снизить.</p>
+<p>Другая распространенная проблема — прилипание детали к столу. Резина, особенно TPE, обладает отличной адгезией к текстурным поверхностям, что может привести к разрыву модели при снятии. Рекомендуется использовать синее малярное клейкое полотно или специализированные спреи-лаки для адгезии, которые позволяют легко отделить готовое изделие. Также помогает установка температуры стола в диапазоне 50-60°C.</p>
+<p>Если вы заметили, что слои смещаются друг относительно друга, проверьте натяжение ремней и силу зажима вала экструдера. Слишком слабое зажатие приведет к проскальзыванию, а слишком сильное может повредить нить. В некоторых случаях помогает использование смазки для направляющих стола, чтобы уменьшить вибрации, передаваемые на печатающую головку.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Минимальная скорость печати и прямая экструзия — два главных фактора качественной печати резиной.</p></aside>
+
+<h2 id="сферы-применения-и-экономическая-эффективность">Сферы применения и экономическая эффективность</h2>
+<p>Возможность создавать детали с уникальными резиновыми свойствами позволяет заменить традиционные методы литья в малых сериях. Это особенно актуально для производства <strong>амортизирующих элементов</strong>, виброизоляторов и уплотнительных колец для редких или старых механизмов. В автосервисах и на производстве это позволяет быстро изготовить отсутствующую прокладку, не ожидая доставки из другого региона.</p>
+<p>Экономическая выгода очевидна при изготовлении прототипов и инструмента. Вместо того чтобы заказывать дорогое литье, можно напечатать форму или саму деталь за несколько часов. <em>Материалы TPU</em> также используются для создания тактической экипировки, элементов эргономики ручек инструментов и даже подошв для специальной обуви. Гибкость позволяет создавать изделия, которые невозможно получить методом фрезеровки.</p>
+<p>Однако стоит учитывать, что печать резиной — это процесс, требующий времени. Один крупный объект может печататься сутки и более. Поэтому технология оправдана там, где важна специфика геометрии или срочность, а не массовый тираж. В крупных производствах 3D печать используется как инструмент для создания матриц и пресс-форм для дальнейшего литья.</p>
+<blockquote>⚠️ Внимание: Не используйте напечатанные из TPU детали для постоянного контакта с агрессивными химикатами или маслами без предварительного тестирования, так как некоторые сорта могут деградировать.</blockquote>
+
+<h2 id="постобработка-и-долговечность-изделий">Постобработка и долговечность изделий</h2>
+<p>Готовые изделия из 3D-принтера, напечатанные из гибких материалов, часто требуют минимальной постобработки для достижения идеального вида. Острые края можно аккуратно сгладить наждачной бумагой с мелким зерном, но делать это нужно очень осторожно, чтобы не порвать материал. При необходимости детали можно склеивать специальным клеем для полиуретана или нагревать до появления эффекта "сварки".</p>
+<p>Долговечность таких изделий напрямую зависит от качества исходного материала и правильности настроек печати. Если внутри детали остались пузыри воздуха или слои плохо сцепились, она может разорваться под нагрузкой. <strong>Герметичность</strong> достигается за счет уменьшения зазоров между контурами и увеличением количества периметров в настройках слайсера. Это особенно важно для изделий, работающих в условиях гидравлического давления.</p>
+<p>Хранение готовых резиновых деталей должно происходить вдали от прямых солнечных лучей и источников тепла, так как ультрафиолет и высокие температуры ускоряют старение полимеров. При длительном хранении рекомендуется избегать сильных деформаций, чтобы материал сохранил свою эластичность. Для защиты от окисления можно использовать специальные антиоксидантные спреи.</p>
+
+<details class="pb-accordion"><summary>Секреты печати сверхтонких резиновых стенок</summary><div class="pb-accordion-body"><p>Для печати стенок толщиной менее 0.4 мм используйте метод "супер-слоев" или меняйте направление печати, чтобы слои перекрывали друг друга под углом 45 градусов. Это значительно повышает прочность на разрыв.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед печатью массивных резиновых деталей сделайте тестовый кубик 20х20 мм, чтобы убедиться в отсутствии засоров и корректности оттягивания нити.</p></aside>
+
+<h2 id="будущее-технологий-печати-эластомеров">Будущее технологий печати эластомеров</h2>
+<p>Технологии не стоят на месте, и уже сейчас появляются материалы, сочетающие свойства резины и проводящих композитов. Это открывает путь к созданию гибкой электроники и сенсоров, которые можно интегрировать непосредственно в структуру детали. <strong>Разработка новых смесей</strong> позволяет создавать материалы с памятью формы, способные возвращаться к исходному состоянию после сильной деформации.</p>
+<p>Ожидается, что в ближайшие годы стоимость специализированных эластомеров снизится, что сделает технологию массовой. Уже сейчас ведутся работы над печатью многослойных конструкций, где жесткий каркас сочетается с мягким резиновым покрытием в одном процессе. Это позволит создавать сложные механизмы без необходимости последующей сборки.</p>
+
+<details>
+<summary>Можно ли печатать резиной на обычном FDM принтере?</summary>
+<p>Да, можно, но для этого желательно иметь прямой экструдер (Direct Drive). Если у вас Боуден, придется сильно снизить скорость и настроить оттягивание, иначе нить застрянет.</p>
+</details>
+
+<details>
+<summary>Какая температура стола нужна для печати TPU?</summary>
+<p>Оптимальная температура для печати термополиуретана составляет от 50°C до 60°C. Слишком высокая температура может привести к прилипанию, которое невозможно отделить без повреждения детали.</p>
+</details>
+
+<details>
+<summary>Почему при печати резиной появляются волны на стенках?</summary>
+<p>Это происходит из-за того, что экструдер не успевает выдавливать материал при высокой скорости. Решение — снизить скорость печати до 20-30 мм/с и проверить исправность подающего механизма.</p>
+</details>
+
+<details>
+<summary>Как снять напечатанную деталь с стола, если она прилипла?</summary>
+<p>Не используйте острые предметы. Лучше всего подождать полного остывания стола или использовать пластиковый шпатель, поддевая деталь с краев. Малярный скотч помогает избежать проблемы прилипание в будущем.</p>
+</details>
+
+<details>
+<summary>Какой материал лучше для печати подошвы обуви?</summary>
+<p>Для подошв лучше всего подходит TPU высокой твердости (Shore 85A-95A), так как он обладает лучшей износостойкостью и амортизацией по сравнению с мягким TPE.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/v/va/vag-kkl-4091-dlya-kakikh-mashin.html" class="pb-related-card">
+                <span class="pb-related-title">VAG KKL 409.1: для каких автомобилей подходит адаптер</span>
+                <span class="pb-related-desc">Полный список совместимых авто VAG KKL 409.1. Узнайте, какие модели Volkswagen, Audi, Skoda и Seat д</span>
+            </a><a href="/articles/p/po/pochemu-rezina-idet-vintom.html" class="pb-related-card">
+                <span class="pb-related-title">Почему резина идет винтом: причины, опасность и решение проблемы</span>
+                <span class="pb-related-desc">Разбираем, почему шины идут винтом после ремонта. Основные причины: нарушение геометрии диска, плоха</span>
+            </a><a href="/articles/v/vq/vq35de-na-kakie-mashiny-stavilsya.html" class="pb-related-card">
+                <span class="pb-related-title">На какие машины ставился двигатель VQ35DE: полный список моделей</span>
+                <span class="pb-related-desc">Полный обзор автомобилей с двигателем VQ35DE. Список моделей Nissan, Infiniti, Toyota, Saturn, Mitsu</span>
+            </a><a href="/articles/z/za/zamena-uplotnitelya-kholodilnika-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Замена уплотнителя холодильника: пошаговая инструкция своими руками</span>
+                <span class="pb-related-desc">Самостоятельная замена уплотнителя холодильника: выбор резины, подготовка, пошаговый монтаж и устран</span>
+            </a><a href="/articles/k/ko/kompressor-kholodilnika-rabotaet-no-ne-kholodit.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник работает, но не морозит: 6 главных причин поломки</span>
+                <span class="pb-related-desc">Компрессор гудит, а в камере тепло? Узнайте основные причины отказа: утечка фреона, забитый капилляр</span>
+            </a><a href="/articles/z/za/zamena-uplotnitelnoj-rezinki-na-kholodilnike-ariston.html" class="pb-related-card">
+                <span class="pb-related-title">Замена уплотнителя холодильника Ariston: инструкция, цены и советы</span>
+                <span class="pb-related-desc">Пошаговая замена уплотнительной резинки на холодильнике Ariston своими руками. Причины износа, выбор</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Ремонт модуля управления холодильника Bosch: диагностика и замена — Мастер Шин</title>
+    <meta name="description" content="Полная инструкция по диагностике и ремонту электронного модуля холодильников Bosch. Симптомы поломки, цена замены, особенности перепайки плат и ошибки.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/r/re/remont-modulya-kholodilnika-bosh.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт модуля управления холодильника Bosch: диагностика и замена">
+    <meta property="og:description" content="Полная инструкция по диагностике и ремонту электронного модуля холодильников Bosch. Симптомы поломки, цена замены, особенности перепайки плат и ошибки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-i-vulkanizatsiya/">Ремонт и вулканизация</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт модуля управления холодильника Bosch: диагностика и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-симптомы-неисправности-платы-управления">Основные симптомы неисправности платы управления</a></li><li><a href="#типичные-причины-выхода-электроники-из-строя">Типичные причины выхода электроники из строя</a></li><li><a href="#диагностика-и-проверка-цепей">Диагностика и проверка цепей</a></li><li><a href="#варианты-восстановления-работоспособности">Варианты восстановления работоспособности</a></li><li><a href="#стоимость-ремонта-и-замена-комплектующих">Стоимость ремонта и замена комплектующих</a></li><li><a href="#особенности-ремонта-инверторных-систем">Особенности ремонта инверторных систем</a></li><li><a href="#профилактика-поломок-электроники">Профилактика поломок электроники</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/posudomojka-ne-zakryvaetsya-do-kontsa.html">Посудомойка не закрывается до конца: причины и ремонт своими руками</a></li><li><a href="/articles/k/ka/kak-vstavit-shnurok-v-koleso.html">Как вставить шнурок в колесо: инструкция по замене шнуровки</a></li><li><a href="/articles/k/ka/kak-vybrat-remontnye-shipy.html">Как выбрать ремонтные шипы: виды, размеры и технология установки</a></li><li><a href="/articles/a/ap/apparat-dlya-narezki-shin-protektora.html">Аппарат для нарезки шин протектора: выбор, настройка и применение</a></li><li><a href="/articles/m/mo/mozhno-li-pomenyat-uplotnitelnuyu-rezinku-na-kholodilnike-samostoyatelno.html">Как поменять уплотнительную резинку на холодильнике: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ремонт модуля управления холодильника Bosch: диагностика и замена</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-симптомы-неисправности-платы-управления">Основные симптомы неисправности платы управления</a></li><li><a href="#типичные-причины-выхода-электроники-из-строя">Типичные причины выхода электроники из строя</a></li><li><a href="#диагностика-и-проверка-цепей">Диагностика и проверка цепей</a></li><li><a href="#варианты-восстановления-работоспособности">Варианты восстановления работоспособности</a></li><li><a href="#стоимость-ремонта-и-замена-комплектующих">Стоимость ремонта и замена комплектующих</a></li><li><a href="#особенности-ремонта-инверторных-систем">Особенности ремонта инверторных систем</a></li><li><a href="#профилактика-поломок-электроники">Профилактика поломок электроники</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Современные холодильники <em>Bosch</em> (Бош) оснащаются сложной электроникой, где центральным элементом выступает управляющий модуль. Именно этот компактный блок координирует работу компрессоров, вентиляторов и датчиков температуры, обеспечивая нужный микроклимат в камерах. Когда электроника выходит из строя, устройство часто перестает реагировать на команды или уходит в аварийный режим.</p>
+<p>Поиск неисправности требует системного подхода, так как симптомы поломки <strong>модуля управления</strong> могут имитировать проблемы с другими узлами. Например, отсутствие холода может быть вызвано как сгоревшим компрессором, так и некорректным сигналом с платы. Важно понимать, что <strong>электронный блок</strong> — это сердце системы, и его ремонт требует высокой точности и специализированных знаний.</p>
+<p>В большинстве случаев владельцы сталкиваются с полной потерей питания, зависанием дисплея или некорректной работой режимов заморозки. <mark>Игнорирование признаков неисправности электроники может привести к выходу из строя дорогостоящего компрессора из-за неправильного цикла работы.</mark> Если вы заметили подобные сбои, необходимо немедленно провести диагностику <em>модуля управления</em> серии KGN, KGV или VarioSpace.</p>
+
+<h2 id="основные-симптомы-неисправности-платы-управления">Основные симптомы неисправности платы управления</h2>
+<p>Первый признак поломки часто проявляется визуально. Дисплей может мигать, показывать ошибку или вовсе не включаться, даже если розетка подает напряжение. Это указывает на сбой в силовой части <strong>инверторного модуля</strong> или обрыв цепи питания. В некоторых моделях <em>Bosch</em> индикаторы начинают хаотично светиться, что говорит о коротком замыкании на плате.</p>
+<p>Другой распространенный сценарий — холодильник работает, но не соблюдает температурный режим. Компрессор может включаться на неопределенно долгое время или, наоборот, запускаться на секунду и отключаться. Такое поведение часто свидетельствует о том, что <strong>контроллер</strong> получает некорректные данные с термодатчиков или сам не способен управлять реле компрессора.</p>
+<p>Иногда проблема скрыта в работе вентиляторов. Если крыльчатка не вращается, а на табло горит ошибка, это может быть как поломка мотора, так и сгоревший транзистор на плате, отвечающий за его питание. Важно проверить все узлы, прежде чем обвинять <strong>электронный блок</strong> в неисправности.</p>
+
+<h2 id="типичные-причины-выхода-электроники-из-строя">Типичные причины выхода электроники из строя</h2>
+<p>Самой частой причиной поломки является скачок напряжения в бытовой сети. Даже кратковременный импульс, превышающий номинал в 220В, может пробить <strong>силовые ключи</strong> или повредить микросхему управления. В таких случаях на плате часто остаются следы термического воздействия или вздутые конденсаторы.</p>
+<p>Второй по популярности фактор — влага и конденсат. В холодильниках <em>Bosch</em> с системой No Frost влага неизбежна, и если уплотнения нарушены или дренаж забит, вода может попасть в блок управления. Это вызывает коррозию дорожек и короткие замыкания между контактами <strong>разъема питания</strong> или датчиков.</p>
+<p>Естественный износ компонентов также играет роль. Электролитические конденсаторы со временем теряют емкость, а паяные соединения могут треснуть от перепадов температур при работе компрессора. В результате возникает <strong>потеря контакта</strong>, приводящая к нестабильной работе всего устройства.</p>
+<blockquote>⚠️ Внимание: Попытка самостоятельного ремонта платы без квалификации может привести к полному уничтожению микросхемы, что сделает восстановление невозможным без замены всего блока.</blockquote>
+
+<h2 id="диагностика-и-проверка-цепей">Диагностика и проверка цепей</h2>
+<p>Прежде чем вскрывать корпус блока, необходимо исключить внешние факторы. Проверьте напряжение в розетке мультиметром и убедитесь в целостности шнура питания. Если с питанием все в порядке, переходите к осмотру самого <strong>модуля</strong>. Для этого нужно аккуратно снять переднюю панель и открутить крепления корпуса электроники.</p>
+<p>Визуальный осмотр часто выявляет проблему мгновенно. Ищите пятна гари, трещины на корпусе элементов или вздувшиеся конденсаторы. Особое внимание уделите зоне, где расположены силовые транзисторы и реле — это самые уязвимые места на <strong>печатной плате</strong>.</p>
+<p>Если визуальных дефектов нет, требуется электрическая проверка. Необходимо прозвонить цепи питания и проверить сопротивление обмоток компрессора и вентиляторов. Неисправный датчик температуры может "подкидывать" неверные сигналы, заставляя <strong>контроллер</strong> работать в аварийном режиме.</p>
+<div class="pb-poll" id="poll-ec335347"><div class="pb-poll-question">📊 Какой симптом неисправности вы наблюдаете?</div><div class="pb-poll-option" data-poll="ec335347" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Дисплей не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ec335347" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Холодильник не морозит</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ec335347" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Мигают индикаторы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ec335347" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Громкий шум и вибрация</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="варианты-восстановления-работоспособности">Варианты восстановления работоспособности</h2>
+<p>В зависимости от степени повреждения, существует два пути решения проблемы: ремонт самой платы или ее полная замена. Ремонт возможен, если повреждены отдельные компоненты: конденсаторы, резисторы или силовые транзисторы. В этом случае опытный мастер перепаяет испорченные элементы на <strong>печатной плате</strong>.</p>
+<p>Однако, если сгорела основная микропроцессорная микросхема или повреждены дорожки на плате, ремонт часто экономически нецелесообразен. В таких случаях рекомендуется полная замена <strong>модуля управления</strong>. Для моделей <em>Bosch</em> это стандартная процедура, позволяющая быстро вернуть технику к жизни.</p>
+<p>Важно отметить, что при замене модуля часто требуется программа адаптировать новый блок к конкретному холодильнику. Процесс прошивки может отличаться в зависимости от ревизии устройства. Иногда <strong>замена платы</strong> требует переноса параметров из старого блока в новый, что возможно только на специализированном оборудовании.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к замене модуля</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять заднюю крышку</span></label><label class="check-item"><input type="checkbox"><span>Сделать фото подключения проводов</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить разъемы с осторожностью</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="стоимость-ремонта-и-замена-комплектующих">Стоимость ремонта и замена комплектующих</h2>
+<p>Цена на восстановление сильно варьируется в зависимости от сложности поломки. Простая перепайка конденсаторов или замена реле может стоить недорого, тогда как восстановление силовой части требует дорогого оборудования и времени. Средняя стоимость диагностики <strong>электронного блока</strong> обычно фиксирована.</p>
+<p>Замена модуля управления на новый — это более затратная процедура. Оригинал от производителя <em>Bosch</em> стоит ощутимо дороже аналогов, но обеспечивает гарантию надежности и совместимости. Дешевые копии могут работать нестабильно или не поддерживать все функции вашей модели.</p>
+<p>Ниже приведена примерная таблица стоимости работ и запчастей для популярных серий холодильников:</p>
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Услуга / Запчасть</th>
+   <th>Серия модели</th>
+   <th>Примерная стоимость (руб.)</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Диагностика модуля</td>
+   <td>Все серии</td>
+   <td>1500 - 2500</td>
+  </tr>
+  <tr>
+   <td>Ремонт платы (перепайка)</td>
+   <td>KGN, KGV</td>
+   <td>4000 - 7000</td>
+  </tr>
+  <tr>
+   <td>Замена оригинального модуля</td>
+   <td>VarioSpace</td>
+   <td>12000 - 18000</td>
+  </tr>
+  <tr>
+   <td>Прошивка и настройка</td>
+   <td>Инверторные</td>
+   <td>3000 - 5000</td>
+  </tr>
+ </tbody>
+</table></div>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При заказе ремонта всегда уточняйте, входит ли в стоимость диагностика и обратный монтаж модуля после ремонта.</p></aside>
+
+<h2 id="особенности-ремонта-инверторных-систем">Особенности ремонта инверторных систем</h2>
+<p>Современные холодильники <em>Bosch</em> часто оснащаются инверторными компрессорами, управление которыми осуществляется через сложные высокочастотные модули. Такие <strong>электронные блоки</strong> более чувствительны к перегрузкам и требуют специальных программных алгоритмов для работы.</p>
+<p>Ремонт инверторной платы сложнее традиционной, так как здесь используются IGBT-транзисторы и драйверы управления, работающие с высокими напряжениями. Ошибка при замене одного элемента может привести к повторному выходу из строя всей системы. Поэтому к выбору мастера нужно подходить особенно тщательно.</p>
+<p> Это существенно влияет на итоговую стоимость ремонта <strong>инверторного холодильника</strong>.</p>
+<details class="pb-accordion"><summary>Скрытые нюансы перепайки плат</summary><div class="pb-accordion-body"><p>При перепайке элементов необходимо учитывать температурный режим пайки, чтобы не перегреть чувствительные микропроцессоры и не повредить соседние компоненты.</p></div></details>
+
+<h2 id="профилактика-поломок-электроники">Профилактика поломок электроники</h2>
+<p>Чтобы продлить жизнь <strong>модулю управления</strong>, необходимо установить стабилизатор напряжения. Это защитит чувствительную электронику от скачков в сети, которые являются основной причиной сбоев. Стабилизатор должен иметь достаточную мощность для работы всего холодильника.</p>
+<p>Регулярная проверка герметичности уплотнений и чистка системы No Frost предотвратят попадание влаги в блок управления. Убедитесь, что холодильник стоит на ровной поверхности, чтобы не нарушать работу внутренних механизмов и не допустить протечек внутрь корпуса.</p>
+<p>Не рекомендуется самостоятельно переставлять холодильник или бить по корпусу, так как вибрация может ослабить контакты на печатной плате. Бережная эксплуатация и своевременное обслуживание — залог долговечности техники <em>Bosch</em>.</p>
+<blockquote>⚠️ Внимание: Если вы планируете длительную поездку, отключайте холодильник от сети, но оставляйте его открытым, чтобы избежать появления плесени и неприятных запахов в камерах.</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Стабилизатор напряжения — это лучшая инвестиция для защиты дорогого модуля управления холодильника от сетевых скачков.</p></aside>
+
+<blockquote>⚠️ Внимание: Условия гарантии и характеристики запчастей могут меняться производителем без предварительного уведомления. Перед покупкой комплектующих обязательно сверяйте артикулы с паспортом вашего устройства или уточняйте в официальном сервисе.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+<details>
+ <summary>Можно ли починить модуль своими руками?</summary>
+ <p>Это возможно только при наличии навыков работы с паяльником и знания электроники. Без опыта вы рискуете окончательно испортить <strong>печатную плату</strong>, что приведет к необходимости дорогостоящей замены.</p>
+</details>
+<details>
+ <summary>Сколько времени занимает ремонт?</summary>
+ <p>Простой ремонт занимает от 1 до 3 часов. Если требуется глубокая диагностика или поиск редких запчастей, срок может увеличиться до 2-3 дней. Замена модуля обычно выполняется за один визит мастера.</p>
+</details>
+<details>
+ <summary>Почему холодильник мигает индикаторами?</summary>
+ <p>Мигание — это код ошибки. Расшифровать его можно по инструкции к вашей модели <em>Bosch</em>. Чаще всего это указывает на проблему с датчиками или <strong>модулем управления</strong>.</p>
+</details>
+<details>
+ <summary>Нужно ли менять весь блок или можно починить?</summary>
+ <p>В большинстве случаев ремонт возможен, если поврежден силовой каскад. Однако при сгорании процессора замена блока — единственное решение. Точный вердикт выносит мастер после диагностики.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/posudomojka-ne-zakryvaetsya-do-kontsa.html" class="pb-related-card">
+                <span class="pb-related-title">Посудомойка не закрывается до конца: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Дверь посудомоечной машины не закрывается? Узнайте основные причины поломки, способы диагностики зам</span>
+            </a><a href="/articles/k/ka/kak-vstavit-shnurok-v-koleso.html" class="pb-related-card">
+                <span class="pb-related-title">Как вставить шнурок в колесо: инструкция по замене шнуровки</span>
+                <span class="pb-related-desc">Пошаговое руководство: как заменить шнурок в колесе, инструменты, типы креплений и советы по выбору </span>
+            </a><a href="/articles/k/ka/kak-vybrat-remontnye-shipy.html" class="pb-related-card">
+                <span class="pb-related-title">Как выбрать ремонтные шипы: виды, размеры и технология установки</span>
+                <span class="pb-related-desc">Полный гид по выбору шипов для ремонта протектора. Разбор типов посадочных мест, материалов и размер</span>
+            </a><a href="/articles/a/ap/apparat-dlya-narezki-shin-protektora.html" class="pb-related-card">
+                <span class="pb-related-title">Аппарат для нарезки шин протектора: выбор, настройка и применение</span>
+                <span class="pb-related-desc">Обзор профессиональных аппаратов для нарезки протектора грузовых автошин. Технические характеристики</span>
+            </a><a href="/articles/m/mo/mozhno-li-pomenyat-uplotnitelnuyu-rezinku-na-kholodilnike-samostoyatelno.html" class="pb-related-card">
+                <span class="pb-related-title">Как поменять уплотнительную резинку на холодильнике: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно заменить уплотнитель холодильника. Пошаговая инструкция, выбор новой рез</span>
+            </a><a href="/articles/p/po/porvalas-rezinka-na-dveri-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Порвалась резинка на двери холодильника: Диагностика, замена и ремонт уплотнителя</span>
+                <span class="pb-related-desc">Узнайте, что делать, если порвалась резинка на двери холодильника. Пошаговая инструкция по замене уп</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

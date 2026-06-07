@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Работа в сервисной версии CR KAI R18: настройка и эксплуатация — Мастер Шин</title>
+    <meta name="description" content="Полное руководство по работе с прошивкой CR KAI R18. Описание архитектуры, настройка режима разработчика, устранение ошибок и особенности обновления системы.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/w/wo/work-cr-kai-r18.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Работа в сервисной версии CR KAI R18: настройка и эксплуатация">
+    <meta property="og:description" content="Полное руководство по работе с прошивкой CR KAI R18. Описание архитектуры, настройка режима разработчика, устранение ошибок и особенности обновления системы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Работа в сервисной версии CR KAI R18: настройка и эксплуатация</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-экосистему-cr-kai-r18">Введение в экосистему CR KAI R18</a></li><li><a href="#архитектура-и-назначение-версии-r18">Архитектура и назначение версии R18</a></li><li><a href="#активация-инженерного-меню-и-настройки">Активация инженерного меню и настройки</a></li><li><a href="#устранение-типичных-ошибок-и-сбоев">Устранение типичных ошибок и сбоев</a></li><li><a href="#кастомизация-интерфейса-и-функционала">Кастомизация интерфейса и функционала</a></li><li><a href="#совместимость-с-внешним-оборудованием">Совместимость с внешним оборудованием</a></li><li><a href="#обновление-системы-риски-и-возможности">Обновление системы: риски и возможности</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gr/grusha-iz-rezinok-na-rogatke.html">Груша из резинок на рогатке: подробный гид и инструкции</a></li><li><a href="/articles/k/ka/kakaya-podoshva-luchshe-eva-ili-tep.html">Подошва EVA или ТЭП: подробное сравнение для обуви</a></li><li><a href="/articles/k/ka/kak-najti-klyuch-ot-mashiny-doma.html">Как найти ключ от машины дома: 7 проверенных способов поиска</a></li><li><a href="/articles/o/ot/otkuda-gonyat-yaponskie-mashiny.html">Откуда везут японские машины: порты, логистика и нюансы ввоза</a></li><li><a href="/articles/v/vs/vse-elektrokary-v-gta-5.html">Все электрокары в GTA 5: Полный список моделей и характеристик</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Работа в сервисной версии CR KAI R18: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-экосистему-cr-kai-r18">Введение в экосистему CR KAI R18</a></li><li><a href="#архитектура-и-назначение-версии-r18">Архитектура и назначение версии R18</a></li><li><a href="#активация-инженерного-меню-и-настройки">Активация инженерного меню и настройки</a></li><li><a href="#устранение-типичных-ошибок-и-сбоев">Устранение типичных ошибок и сбоев</a></li><li><a href="#кастомизация-интерфейса-и-функционала">Кастомизация интерфейса и функционала</a></li><li><a href="#совместимость-с-внешним-оборудованием">Совместимость с внешним оборудованием</a></li><li><a href="#обновление-системы-риски-и-возможности">Обновление системы: риски и возможности</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-экосистему-cr-kai-r18">Введение в экосистему CR KAI R18</h2>
+
+<p>Современные автомобильные мультимедийные системы все чаще представляют собой сложные программные комплексы, требующие глубокого понимания их архитектуры для полноценной эксплуатации. <em>CR KAI R18</em> — это специфическая сборка операционной системы, часто встречающаяся в головных устройствах китайского производства, которая требует особого подхода к конфигурации. Пользователи, столкнувшиеся с этой версией, часто ищут информацию о том, как вывести систему на максимальную производительность или исправить критические сбои.</p>
+
+<p>Основная сложность работы с данной версией заключается в том, что она часто поставляется как <strong>сервисная сборка</strong>, ориентированная не на массового потребителя, а на инженеров-настройщиков или продвинутых пользователей. В таком режиме интерфейс может выглядеть урезанным или, наоборот, перегруженным техническими параметрами, которые не предназначены для повседневного использования. Понимание сути <em>CR KAI R18</em> поможет вам избежать типичных ошибок при обновлении и кастомизации устройства.</p>
+
+<p>Важно сразу отметить, что данная система базируется на ядре Android, но подвергается существенной модификации производителем. Это означает, что стандартные методы сброса настроек или установки приложений могут не сработать или привести к непредсказуемому поведению системы. Вам необходимо четко осознавать разницу между потребительской версией прошивки и инженерной, чтобы корректно выполнять <strong>перепрошивку</strong> или изменение системных параметров.</p>
+
+<h2 id="архитектура-и-назначение-версии-r18">Архитектура и назначение версии R18</h2>
+
+<p>Версия <em>CR KAI R18</em> часто ассоциируется с определенным поколением чипсетов, используемых в автомобильной электронике. Разработчики внедряют в эту сборку специфические драйверы, которые обеспечивают работу с навигацией, камерами заднего вида и цифровыми тюнерами. Однако именно эти драйверы могут вызывать конфликты при попытке установки стороннего софта, не входящего в официальный репозиторий.</p>
+
+<p>Ключевым аспектом данной архитектуры является модульность. Система разделена на несколько независимых слоев: базовое ядро, сервисный интерфейс и пользовательская оболочка. Если вы планируете выполнять работы по <strong>кастомизации</strong>, вам потребуется доступ именно к сервисному слою. Без правильного доступа модификация внешних элементов (обои, иконки) не повлияет на стабильность работы навигационных модулей и мультимедийного ядра.</p>
+
+<p>Многие пользователи ошибочно полагают, что <em>CR KAI R18</em> — это просто "китайский Android". На деле же это проприетарная оболочка с закрытым исходным кодом, где открыт лишь ограниченный набор API для сторонних разработчиков. Это накладывает отпечаток на процесс <strong>взлома прав</strong> (root) и глубокую настройку системы. Попытки принудительного изменения системных файлов без понимания структуры могут привести к полному отказу устройства от загрузки.</p>
+
+<blockquote>⚠️ Внимание: Попытка установки неофициальных драйверов в систему <em>CR KAI R18</em> без проверки их совместимости с конкретным чипсетом может привести к "окирпичиванию" головного устройства, что потребует перепрошивки через программатор.</blockquote>
+
+<h2 id="активация-инженерного-меню-и-настройки">Активация инженерного меню и настройки</h2>
+
+<p>Для полноценной работы с <em>CR KAI R18</em> необходимо получить доступ к скрытому инженерному меню. Именно здесь скрываются основные инструменты для калибровки экрана, настройки параметров радиомодуля и управления питанием. Процедура входа в это меню обычно варьируется в зависимости от версии прошивки, но чаще всего она осуществляется через комбинацию клавиш на главном экране или через специальное приложение-загрузчик.</p>
+
+<p>После успешного входа вы увидите интерфейс, состоящий из множества вкладок. Особое внимание следует уделить разделу <code>Factory Settings</code> и <code>General Settings</code>. Здесь можно изменить <strong>разрешение экрана</strong>, частоту обновления и уровень яркости подсветки. Не рекомендуется менять значения по умолчанию, если вы не уверены в их назначении, так как это может привести к искажению изображения или некорректной работе тачскрина.</p>
+
+<p>Важным этапом является настройка <strong>сетевых параметров</strong>. В инженерном меню часто можно принудительно переключить модуль Wi-Fi или Bluetooth в режим высокой мощности, что значительно улучшает стабильность соединения при использовании CarPlay или Android Auto. Однако стоит помнить, что постоянное нахождение в режиме максимальной мощности может увеличить нагрев устройства и сократить срок службы аккумулятора.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед входом в инженерное меню запишите текущие значения всех параметров в блокнот или сделайте скриншоты. Это позволит вам быстро вернуть настройки в исходное состояние в случае сбоя.</p></aside>
+
+<p>Некоторые модификации <em>CR KAI R18</em> требуют ввода специального пароля для доступа к полным функциям. Обычно это стандартные комбинации, такие как <code>8878</code>, <code>1234</code> или <code>0000</code>, но в редких случаях производитель может устанавливать уникальные коды защиты. Если стандартные коды не подходят, придется искать специализированные скрипты для обхода защиты, что требует навыков работы с командной строкой.</p>
+
+<h2 id="устранение-типичных-ошибок-и-сбоев">Устранение типичных ошибок и сбоев</h2>
+
+<p>Работа с <strong>сервисной версией</strong> неизбежно сопряжена с появлением ошибок, которые могут проявляться в виде зависаний интерфейса, отсутствия звука или потери сигнала навигации. Одной из самых распространенных проблем в системе <em>CR KAI R18</em> является конфликт процессов, который возникает при запуске нескольких тяжелых приложений одновременно. В этом случае система начинает "тормозить", а сенсорный ввод перестает реагировать на команды.</p>
+
+<p>Для диагностики таких проблем необходимо использовать встроенные инструменты мониторинга ресурсов. В инженерном меню доступен раздел <code>Memory Usage</code>, где можно увидеть, какие процессы занимают больше всего оперативной памяти. Если вы обнаружите, что какой-то фоновый процесс потребляет аномально большой объем ресурсов, его можно принудительно завершить. Это позволит временно восстановить работоспособность устройства без перезагрузки.</p>
+
+<p>Если проблема носит системный характер и не решается перезагрузкой, может потребоваться сброс до заводских настроек. Однако в случае с <em>CR KAI R18</em> обычный сброс не всегда помогает, так как он не затрагивает системный раздел. В такой ситуации необходимо выполнять <strong>полную перепрошивку</strong> с использованием специализированного ПО на ПК. Процесс требует подключения устройства к компьютеру через USB-кабель и запуска утилиты прошивки в режиме загрузчика.</p>
+
+<blockquote>⚠️ Внимание: Процесс перепрошивки <em>CR KAI R18</em> критически чувствителен к перепадам напряжения. Отключение питания в середине процесса гарантированно приведет к необратимому повреждению загрузочного сектора устройства.</blockquote>
+
+<div class="pb-poll" id="poll-732251fe"><div class="pb-poll-question">📊 Какая проблема чаще всего встречается на вашей мультимедиа?</div><div class="pb-poll-option" data-poll="732251fe" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Зависания интерфейса</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="732251fe" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Потеря сигнала GPS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="732251fe" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Отсутствие звука</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="732251fe" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблемы с подключением</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="кастомизация-интерфейса-и-функционала">Кастомизация интерфейса и функционала</h2>
+
+<p>Одной из главных целей работы с <em>CR KAI R18</em> является кастомизация интерфейса под конкретные нужды водителя. Стандартная оболочка часто содержит лишние элементы, которые отвлекают внимание, или, наоборот, не имеет необходимых функций. С помощью инструментов, доступных в инженерном режиме, можно изменить <strong>расположение виджетов</strong>, цвет оформления и поведение кнопок управления.</p>
+
+<p>Многие пользователи предпочитают устанавливать альтернативные лаунчеры, которые предоставляют более современный и удобный интерфейс. Однако установка сторонних лаунчеров на <em>CR KAI R18</em> требует предварительной настройки разрешений и активации режима разработчика. Без этого система будет блокировать запуск новых приложений или принудительно возвращать стандартный интерфейс при каждом перезапуске.</p>
+
+<p>Для расширения функционала можно использовать специальные APK-файлы, адаптированные для автомобильных систем. Такие приложения часто имеют упрощенное управление, крупные кнопки и оптимизированную работу с голосовыми командами. Важно выбирать ПО, которое поддерживает режим <strong>Car Mode</strong>, чтобы избежать необходимости настраивать каждый элемент интерфейса вручную. Это значительно упростит эксплуатацию устройства во время движения.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к кастомизации</h4><label class="check-item"><input type="checkbox"><span>Активировать режим разработчика</span></label><label class="check-item"><input type="checkbox"><span>Включить установку из неизвестных источников</span></label><label class="check-item"><input type="checkbox"><span>Скачать нужные APK-файлы</span></label><label class="check-item"><input type="checkbox"><span>Проверить совместимость с версией R18</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="совместимость-с-внешним-оборудованием">Совместимость с внешним оборудованием</h2>
+
+<p>Мультимедийная система <em>CR KAI R18</em> должна корректно взаимодействовать с широким спектром внешнего оборудования: от камер заднего вида до цифровых приемников DVB-T2. Проблема часто заключается в несовпадении протоколов передачи данных или неверных настройках портов. В инженерном меню необходимо вручную указать тип подключаемого устройства, чтобы система могла корректно обрабатывать входящий видеосигнал.</p>
+
+<p>При подключении камер заднего вида важно настроить параметры <strong>частоты кадров</strong> и разрешения. Если система не может адаптироваться к сигналу камеры, изображение может быть размытым или иметь задержку. Это критично для безопасности при маневрировании. В меню настроек камеры можно выбрать режим "Dynamic" или "Static" в зависимости от типа парковочных линий, зашитых в прошивку камеры.</p>
+
+<p>Также стоит обратить внимание на работу с внешними GPS-модулями. Встроенный модуль часто имеет слабую чувствительность, особенно в условиях города. Подключение внешнего активного GPS-антенны через USB или AUX-разъем может существенно улучшить точность позиционирования. Однако для этого необходимо правильно прописать <strong>команды инициализации</strong> в файле конфигурации навигационного приложения.</p>
+
+<details class="pb-accordion"><summary>Особенности подключения цифровых тюнеров</summary><div class="pb-accordion-body"><p>При подключении DVB-T2 тюнера необходимо убедиться, что система поддерживает соответствующий стандарт. В некоторых версиях CR KAI R18 требуется установка дополнительного драйвера, который может быть найден на специализированных форумах. Без драйвера экран будет черным, даже если антенна подключена правильно.</p></div></details>
+
+<p>Совместимость с системами Apple CarPlay и Android Auto также требует внимательной настройки. В зависимости от версии прошивки, поддержка может быть как "по проводу", так и "по воздуху". Для активации беспроводного режима часто требуется установка дополнительных модулей и изменение настроек Bluetooth в инженерном меню. Без правильных настроек устройство может подключаться, но не передавать данные о контактах или навигации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип оборудования</th>
+<th>Необходимые настройки</th>
+<th>Риски при неправильной настройке</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Камера заднего вида</td>
+<td>Выбор протокола AHD/CVBS, настройка синхронизации</td>
+<td>Черный экран, рассинхрон изображения</td>
+</tr>
+<tr>
+<td>GPS-модуль</td>
+<td>Указание COM-порта, частоты обновления</td>
+<td>Отсутствие геопозиции, "плавающие" координаты</td>
+</tr>
+<tr>
+<td>Микрофон</td>
+<td>Настройка уровня чувствительности, выбор порта</td>
+<td>Неработающее голосовое управление, шум на фоне</td>
+</tr>
+<tr>
+<td>DVB-T2 Тюнер</td>
+<td>Установка драйвера, выбор стандарта DVB</td>
+<td>Невозможность поиска каналов, зависание плеера</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="обновление-системы-риски-и-возможности">Обновление системы: риски и возможности</h2>
+
+<p>Вопрос обновления системы <em>CR KAI R18</em> является одним из самых дискуссионных. С одной стороны, новые версии прошивки могут исправить критические ошибки и добавить новый функционал. С другой стороны, неофициальные сборки часто содержат баги, которые делают устройство непригодным для использования. Перед началом процедуры обновления необходимо тщательно изучить <strong>список изменений</strong> и отзывы других пользователей.</p>
+
+<p>Процесс обновления обычно осуществляется через OTA (Over-The-Air), но в случае с сервисными версиями этот канал может быть заблокирован. Тогда используется метод прошивки через USB-накопитель. Для этого необходимо скачать архив с прошивкой, распаковать его на флешку отформатированную в FAT32 и запустить процесс обновления через инженерное меню или специальное приложение.</p>
+
+<p>Критически важно соблюдать последовательность действий. Нельзя прерывать процесс обновления, даже если система зависла на долгое время. Внутренние процессы записи данных могут занимать много времени. Если вы прервете процесс, вы рискуете потерять не только прошивку, но и данные о калибровке датчиков, что потребует сложного ремонта в сервисном центре.</p>
+
+<blockquote>⚠️ Внимание: Прошивка версии R18 может быть несовместима с предыдущими версиями. Установка более новой прошивки на старое аппаратное обеспечение может привести к аппаратным конфликтам, которые невозможно исправить программным путем.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Обновление прошивки — это всегда риск. Если текущая версия работает стабильно и устраивает вас по функционалу, не обновляйте её без веской причины, например, критической уязвимости безопасности.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Как сбросить пароль в инженерном меню CR KAI R18?</summary>
+<p>Если вы забыли пароль от инженерного меню, стандартные коды (8878, 1234) могут не сработать. В этом случае необходимо выполнить полный сброс системы до заводских настроек через меню Recovery Mode. Это удалит все пользовательские данные, но вернет заводской пароль.</p>
+</details>
+
+<details>
+<summary>Можно ли установить Google Play Store на CR KAI R18?</summary>
+<p>Да, установка Google Play Store возможна, но требует ручного разрешения на установку из неизвестных источников и часто требует установки дополнительных сервисов Google (GApps). Без них многие приложения из магазина будут работать некорректно.</p>
+</details>
+
+<details>
+<summary>Почему пропадает звук после обновления?</summary>
+<p>Это распространенная проблема после обновления прошивки. Сбрасываются настройки аудио-процессора. Необходимо зайти в настройки звука и заново выбрать источник сигнала, а также проверить настройки эквалайзера и баланса каналов.</p>
+</details>
+
+<details>
+<summary>Как включить режим разработчика?</summary>
+<p>Для активации режима разработчика необходимо зайти в настройки системы, найти пункт "О устройстве" и нажать 7 раз на номер сборки. После этого в основном меню появится новый пункт "Для разработчиков", где можно включить отладку по USB.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gr/grusha-iz-rezinok-na-rogatke.html" class="pb-related-card">
+                <span class="pb-related-title">Груша из резинок на рогатке: подробный гид и инструкции</span>
+                <span class="pb-related-desc">Узнайте, как сделать надежную грушу из резинок на рогатку. Обзор материалов, схема плетения и советы</span>
+            </a><a href="/articles/k/ka/kakaya-podoshva-luchshe-eva-ili-tep.html" class="pb-related-card">
+                <span class="pb-related-title">Подошва EVA или ТЭП: подробное сравнение для обуви</span>
+                <span class="pb-related-desc">Сравнение подошв из EVA и ТЭП: износостойкость, гибкость, морозостойкость. Узнайте, какой материал л</span>
+            </a><a href="/articles/k/ka/kak-najti-klyuch-ot-mashiny-doma.html" class="pb-related-card">
+                <span class="pb-related-title">Как найти ключ от машины дома: 7 проверенных способов поиска</span>
+                <span class="pb-related-desc">Что делать, если вы потеряли ключи от авто в квартире? Пошаговая инструкция поиска, использование фо</span>
+            </a><a href="/articles/o/ot/otkuda-gonyat-yaponskie-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Откуда везут японские машины: порты, логистика и нюансы ввоза</span>
+                <span class="pb-related-desc">Полный разбор логистических маршрутов ввоза автомобилей из Японии. Узнайте о главных портах отгрузки</span>
+            </a><a href="/articles/v/vs/vse-elektrokary-v-gta-5.html" class="pb-related-card">
+                <span class="pb-related-title">Все электрокары в GTA 5: Полный список моделей и характеристик</span>
+                <span class="pb-related-desc">Подробный обзор всех электромобилей в GTA 5: от Cheburek до Ocelot Voltic. Характеристики, сравнение</span>
+            </a><a href="/articles/n/ne/neotgruzhennaya-rezina-dlya-rybalki.html" class="pb-related-card">
+                <span class="pb-related-title">Неотгруженная резина для рыбалки: Мифы, реальность и безопасность</span>
+                <span class="pb-related-desc">Разбираем термин «неотгруженная резина» в контексте рыбалки. Откуда миф, чем реально заменить и как </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

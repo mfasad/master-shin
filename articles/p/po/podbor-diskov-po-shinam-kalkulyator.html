@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Подбор дисков по шинам: калькулятор, таблица совместимости и советы — Мастер Шин</title>
+    <meta name="description" content="Как подобрать диски под имеющиеся шины? Используйте калькулятор, изучите PCD, вылет и широкие/узкие шины. Полная таблица параметров и чек-лист проверки.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/p/po/podbor-diskov-po-shinam-kalkulyator.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Подбор дисков по шинам: калькулятор, таблица совместимости и советы">
+    <meta property="og:description" content="Как подобрать диски под имеющиеся шины? Используйте калькулятор, изучите PCD, вылет и широкие/узкие шины. Полная таблица параметров и чек-лист проверки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diski-i-kolpaki/">Диски и колпаки</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Подбор дисков по шинам: калькулятор, таблица совместимости и советы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-параметры-совместимости-диска-и-шины">Основные параметры совместимости диска и шины</a></li><li><a href="#как-работает-алгоритм-подбора-и-что-такое-вылет">Как работает алгоритм подбора и что такое вылет</a></li><li><a href="#таблица-совместимости-ширины-диска-и-шины">Таблица совместимости ширины диска и шины</a></li><li><a href="#эксплуатационные-преимущества-правильного-подбора">Эксплуатационные преимущества правильного подбора</a></li><li><a href="#чек-лист-проверки-диска-перед-покупкой">Чек-лист проверки диска перед покупкой</a></li><li><a href="#частые-ошибки-при-использовании-калькуляторов">Частые ошибки при использовании калькуляторов</a></li><li><a href="#результаты-и-итоговые-рекомендации">Результаты и итоговые рекомендации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/d/di/diski-na-kalinu-14-razmery.html">Диски на Ладу Калину 14 дюймов: размеры, параметры и выбор</a></li><li><a href="/articles/r/ra/razboltovka-land-cruiser-200.html">Разболтовка Land Cruiser 200: Таблица PCD, вылет и размеры дисков</a></li><li><a href="/articles/r/re/rezinovyj-kolpachok-na-gajku.html">Резиновый колпачок на гайку: защита, выбор и монтаж</a></li><li><a href="/articles/r/ra/razboltovka-na-tiguan-1.html">Разболтовка на Фольксваген Тигуан 1: полная таблица PCD, ЦО и сверловка</a></li><li><a href="/articles/r/ra/razboltovka-land-cruiser-300.html">Разболтовка Toyota Land Cruiser 300: параметры PCD и диски</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Подбор дисков по шинам: калькулятор совместимости и таблица параметров</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-параметры-совместимости-диска-и-шины">Основные параметры совместимости диска и шины</a></li><li><a href="#как-работает-алгоритм-подбора-и-что-такое-вылет">Как работает алгоритм подбора и что такое вылет</a></li><li><a href="#таблица-совместимости-ширины-диска-и-шины">Таблица совместимости ширины диска и шины</a></li><li><a href="#эксплуатационные-преимущества-правильного-подбора">Эксплуатационные преимущества правильного подбора</a></li><li><a href="#чек-лист-проверки-диска-перед-покупкой">Чек-лист проверки диска перед покупкой</a></li><li><a href="#частые-ошибки-при-использовании-калькуляторов">Частые ошибки при использовании калькуляторов</a></li><li><a href="#результаты-и-итоговые-рекомендации">Результаты и итоговые рекомендации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2>Введение в мир совместимости колес</
+
+<p>Многие автовладельцы совершают ошибку, пытаясь подобрать <strong>диск</strong> исключительно по диаметру шины, игнорируя критически важные параметры крепёжной геометрии. Процесс замены резины часто требует смены и дисков, особенно при переходе на сезонный тип или увеличение размера, но здесь важно понимать, что <em>калькулятор подбора</em> работает только с цифрами.</p>
+
+<p>Если вы купили шину с маркировкой <code>205/55 R16</code>, это не значит, что на неё можно надеть любой диск с диаметром 16 дюймов. Неправильно выбранный <strong>вылет диска</strong> или <em>PCD</em> может привести к трению о кузов, разрушению подшипников или, в худшем случае, к отрыву колеса на ходу. Именно поэтому профессиональный подбор дисков по шинам требует точного расчета всех параметров.</p>
+
+<p>В этой статье мы разберем, как использовать <strong>онлайн калькулятор</strong> для проверки совместимости, какие параметры являются ключевыми и как избежать фатальных ошибок при покупке комплекта на вторичном рынке или в магазине.</p>
+
+<h2 id="основные-параметры-совместимости-диска-и-шины">Основные параметры совместимости диска и шины</h2>
+
+<p>Чтобы <em>калькулятор шин</em> выдал корректный результат, необходимо понимать, что именно он считает. Главным условием является совпадение посадочного диаметра: если на вашей покрышке стоит <code>R17</code>, диск должен быть строго 17 дюймов. Однако диаметр — это лишь верхушка айсберга, определяющая безопасность езды.</p>
+
+<p>Второй критический параметр — ширина диска (обозначается как <strong>J</strong>). Каждая шина имеет допустимый диапазон ширины посадочного места. Например, для шины <code>225/45 R17</code> оптимальной шириной диска будет <em>7.5J</em>, допустимым диапазоном — от <code>6.5J</code> до <code>8.5J</code>. Установка слишком узкого или широкого диска нарушает геометрию профиля резины, что ведет к неравномерному износу и потере управляемости.</p>
+
+<p>Не менее важна геометрия крепления. Параметры <strong>PCD</strong> (количество болтов и диаметр окружности) и <strong>диаметр центрального отверстия</strong> (DIA) должны соответствовать ступице вашего автомобиля, а не только шине. Если вы подобрали диск по шине, но он не подходит к ступице, колесо просто не встанет на место.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед открытием калькулятора обязательно найдите в сервисной книжке или на наклейке в проеме двери заводские параметры PCD и DIA для вашей модели авто.</p></aside>
+
+<h2 id="как-работает-алгоритм-подбора-и-что-такое-вылет">Как работает алгоритм подбора и что такое вылет</h2>
+
+<p>Вылет диска, или <strong>ET</strong>, определяет расстояние между привалочной плоскостью диска и осью симметрии его обода. Этот параметр напрямую влияет на то, как глубоко колесо будет сидеть в арке. При подборе дисков по шинам часто возникает желание поставить диски с меньшим вылетом для более агрессивного вида, но это опасно.</p>
+
+<p>Слишком маленький вылет увеличивает плечо обката, создавая огромную нагрузку на ступичные подшипники и рулевые наконечники. Слишком большой вылет приводит к тому, что шина будет тереться о внутреннюю часть подкрылка или элементы подвески при повороте руля. Калькулятор помогает визуализировать это смещение в миллиметрах.</p>
+
+<p>Существует формула расчета, где <em>ET</em> = (Ширина диска / 2) - (Расстояние от привалочной плоскости до центра). Современные утилиты делают это автоматически, но понимание физики процесса поможет вам оценить рекомендации. <mark>Оптимальный диапазон вылета для большинства легковых авто составляет от 35 до 55 мм, отклонение более 5 мм в любую сторону требует тщательной проверки.</mark></p>
+
+<blockquote>
+<p>⚠️ Внимание: Изменение вылета диска более чем на 5 мм от заводского значения может привести к ускоренному износу деталей подвески и нарушению работы ABS и ESP.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Почему нельзя просто поставить проставки?
+<p>Проставки увеличивают колею, но не меняют жесткость конструкции. Использование толстых проставок без усиленных болтов часто приводит к вырыванию болтов из ступицы из-за увеличения рычага силы.--></p>
+
+<h2 id="таблица-совместимости-ширины-диска-и-шины">Таблица совместимости ширины диска и шины</h2>
+
+<p>Ниже приведена таблица, показывающая рекомендуемую ширину диска для популярных размеров шин. Эти данные являются базовыми для большинства легковых автомобилей и служат отправной точкой для проверки через калькулятор.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Размер шины</th>
+<th>Рекомендуемая ширина диска (J)</th>
+<th>Допустимый диапазон (J)</th>
+<th>Пример модели авто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>195/65 R15</td>
+<td>6.0</td>
+<td>5.5 - 7.0</td>
+<td>Toyota Corolla</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>6.5</td>
+<td>6.0 - 7.5</td>
+<td>VW Golf, Ford Focus</td>
+</tr>
+<tr>
+<td>225/40 R18</td>
+<td>8.0</td>
+<td>7.5 - 9.0</td>
+<td>BMW 3 Series</td>
+</tr>
+<tr>
+<td>245/45 R19</td>
+<td>8.5</td>
+<td>8.0 - 9.5</td>
+<td>Audi A6</td>
+</tr>
+<tr>
+<td>265/35 R20</td>
+<td>9.5</td>
+<td>9.0 - 10.5</td>
+<td>Porsche Cayenne</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно учитывать, что для <em>зимних шин</em> часто рекомендуют ставить диск на 0.5J уже, чем для летних. Это позволяет покрышке быть более жесткой и устойчивой к деформации при низких температурах и плохом покрытии дороги. Однако, если вы планируете использовать один комплект круглый год, выбирайте ширину из середины допустимого диапазона.</p>
+
+<h2 id="эксплуатационные-преимущества-правильного-подбора">Эксплуатационные преимущества правильного подбора</h2>
+
+<p>Правильный подбор дисков по шинам не только обеспечивает безопасность, но и влияет на динамику автомобиля. Когда параметры совпадают с заводскими рекомендациями, <strong>расход топлива</strong> остается в норме, а управляемость предсказуемой. Любые отклонения увеличивают сопротивление качению.</p>
+
+<p>При увеличении ширины диска и резины машина становится устойчивее в поворотах, но может стать более чувствительной к неровностям дороги. Это связано с изменением профиля шины</summary><div class="pb-accordion-body"><p> низкий профиль хуже гасит удары. Калькулятор позволяет заранее увидеть изменения в общей высоте колеса, чтобы не нарушить показания спидометра.</p>
+
+<p>Дополнительно стоит рассмотреть использование <strong>разношироких колес</strong> (когда диски сзади шире, чем спереди), что часто практикуется в спорте. Для повседневной езды это не всегда оправдано, так как требует специального подбора резины и может вызвать проблемы с системой стабилизации.</p>
+
+
+
+<h2 id="чек-лист-проверки-диска-перед-покупкой">Чек-лист проверки диска перед покупкой</h2>
+
+<p>Даже если калькулятор показывает, что диск подходит, при покупке б/у комплекта или заказе новых изделий необходимо провести физическую сверку. Чек-лист поможет вам избежать ошибок при осмотре товара в магазине или на разборе.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка совместимости диска</h4><label class="check-item"><input type="checkbox"><span>Замерить PCD штангенциркулем</span></label><label class="check-item"><input type="checkbox"><span>Проверить вылет (ET) по маркировке</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии трещин и деформаций</span></label><label class="check-item"><input type="checkbox"><span>Сверить диаметр центрального отверстия (DIA)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<ul>
+<li>📏 Проверьте маркировку на внутренней стороне диска: она должна содержать полное описание <code>7.5J x 16 ET45 PCD 5x112</code>.</li>
+<li>🔍 Осмотрите привалочную плоскость: наличие коррозии или сколов может помешать плотному прилеганию диска к ступице, что приведет к биению колеса.</li>
+<li>⚖️ Измерьте вес диска: более легкие диски (например, кованые или литые с низкой плотностью) снижают неподрессоренную массу, улучшая разгон и торможение.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если на диске выцарапан или сбит заводской штамп с параметрами, не покупайте его "на глаз". Отсутствие маркировки — это риск того, что диск был перевернут с другого автомобиля или имеет скрытые дефекты.</p>
+</blockquote>
+
+<p>Обратите внимание на состояние крепежных отверстий. Если они разбиты или имеют следы ремонта (напайка металла), такой диск использовать категорически нельзя. <strong>Центральное отверстие</strong> должно плотно входить на ступицу (DIA) или использоваться переходное кольцо, чтобы исключить биение при вращении.</p>
+
+<h2 id="частые-ошибки-при-использовании-калькуляторов">Частые ошибки при использовании калькуляторов</h2>
+
+<p>Многие пользователи полагаются исключительно на автоматические расчеты, не вводя корректные исходные данные. Самая частая ошибка — путаница между диаметром в дюймах и миллиметрах при вводе параметров подвески. Также часто игнорируется наличие <em>болтов</em> или <strong>гаек</strong> с нестандартной формой.</p>
+
+<p>Другая проблема — выбор дисков с неправильным типом крепления. Например, использование гаек вместо болтов или наоборот, если в комплекте нет переходников. <strong>Ширина шины</strong> также влияет на выбор крепежа: широкие шины могут требовать гаек с удлинённой посадочной частью.</p>
+
+<p>Иногда калькулятор выдает "зеленый свет" для параметров, которые технически возможны, но не рекомендуются производителем. Например, установка диска с вылетом <code>ET20</code> на автомобиль, где штатный <code>ET50</code>, технически возможен при наличии проставок, но приведет к перекосу подшипника.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Калькулятор — это инструмент для первичной оценки, но окончательное решение всегда должно приниматься с учетом рекомендаций автопроизводителя и реальных условий эксплуатации.</p></aside>
+
+<h2 id="результаты-и-итоговые-рекомендации">Результаты и итоговые рекомендации</h2>
+
+<p>Подбор дисков по шинам — это комплексная задача, требующая внимания к деталям. Использование специализированных калькуляторов значительно упрощает процесс, позволяя быстро отсеять неподходящие варианты. Однако ни одна программа не заменит грамотного осмотра и здравого смысла.</p>
+
+<p>Запомните, что безопасность вас и ваших пассажиров зависит от того, насколько правильно колеса установлены на автомобиль. Не экономьте на качестве дисков и не пренебрегайте параметрами вылета и центрального отверстия. Правильный выбор продлит жизнь подвеске и обеспечит стабильное поведение машины на дороге.</p>
+
+<p>Если вы сомневаетесь в своих расчетах, лучше обратитесь к профессионалам в специализированный сервис. Они помогут подобрать идеальный комплект, учитывая все нюансы вашей модели автомобиля и стиля вождения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Идеальный комплект колес — это баланс между эстетикой, безопасностью и рекомендациями завода-изготовителя.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли ставить диски шире, чем рекомендует производитель?</summary>
+<p>Технически это возможно, если шина имеет соответствующий диапазон ширины, но необходимо убедиться, что широкая шина не будет цеплять кузов или элементы подвески при полном вывороте руля и сжатии пружин. Также меняется нагрузка на ступичные подшипники.</p>
+</details>
+
+<details>
+<summary>Что делать, если центральный отверстие диска больше, чем ступица?</summary>
+<p>Это распространенная ситуация при установке нештатных дисков. В этом случае необходимо использовать переходные кольца (центровочные кольца), которые заполнят зазор и обеспечат точную центровку колеса относительно ступицы, исключив биение на скорости.</p>
+</details>
+
+<details>
+<summary>Как влияет PCD на выбор дисков?</summary>
+<p>PCD (Pitch Circle Diameter) — это диаметр окружности, на которой расположены крепежные отверстия. Он должен совпадать со ступицей автомобиля строго. Даже отклонение в 1-2 мм не позволит правильно затянуть болты, что приведет к вибрации и возможному откручиванию колеса.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать диски с вылетом меньше заводского?</summary>
+<p>Использование дисков с меньшим вылетом (большей шириной по оси) смещает колесо наружу. Это увеличивает колею, но создает огромную нагрузку на подшипники. Допустимый разброс обычно составляет +/- 5 мм. Если разница больше, потребуются проставки, что не всегда безопасно без усиления крепежа.</p>
+</details>
+
+<details>
+<summary>Как правильно подобрать шины и диски для зимы?</summary>
+<p>Для зимы часто выбирают диски меньшего диаметра, но с более высоким профилем шины, чтобы улучшить амортизацию на плохом дорожном покрытии. Ширина диска может быть на 0.5-1.0J меньше летней для повышения жесткости резины. Обязательно используйте <strong>каталожные таблицы</strong> для вашей модели авто.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/d/di/diski-na-kalinu-14-razmery.html" class="pb-related-card">
+                <span class="pb-related-title">Диски на Ладу Калину 14 дюймов: размеры, параметры и выбор</span>
+                <span class="pb-related-desc">Полный гид по дискам 14 дюймов для Лады Калины. Разбор размеров R14, вылета, разболтовки и центровоч</span>
+            </a><a href="/articles/r/ra/razboltovka-land-cruiser-200.html" class="pb-related-card">
+                <span class="pb-related-title">Разболтовка Land Cruiser 200: Таблица PCD, вылет и размеры дисков</span>
+                <span class="pb-related-desc">Полный справочник по разболтовке Toyota Land Cruiser 200. Параметры PCD, вылет, диаметр центрального</span>
+            </a><a href="/articles/r/re/rezinovyj-kolpachok-na-gajku.html" class="pb-related-card">
+                <span class="pb-related-title">Резиновый колпачок на гайку: защита, выбор и монтаж</span>
+                <span class="pb-related-desc">Полный обзор резиновых колпачков на гайки крепления колес. Зачем нужны, как выбрать материал, размер</span>
+            </a><a href="/articles/r/ra/razboltovka-na-tiguan-1.html" class="pb-related-card">
+                <span class="pb-related-title">Разболтовка на Фольксваген Тигуан 1: полная таблица PCD, ЦО и сверловка</span>
+                <span class="pb-related-desc">Точные параметры разболтовки VW Tiguan I (2007-2016). Размеры PCD, диаметр центрального отверстия, в</span>
+            </a><a href="/articles/r/ra/razboltovka-land-cruiser-300.html" class="pb-related-card">
+                <span class="pb-related-title">Разболтовка Toyota Land Cruiser 300: параметры PCD и диски</span>
+                <span class="pb-related-desc">Полный обзор разболтовки Land Cruiser 300. Технические параметры PCD, центрального отверстия, вылета</span>
+            </a><a href="/articles/d/di/diskovyj-kalkulyator-dlya-legkovykh-avtomobilej-vizualnyj.html" class="pb-related-card">
+                <span class="pb-related-title">Визуальный дисковый калькулятор для легковых авто: точный подбор</span>
+                <span class="pb-related-desc">Узнайте, как работает визуальный дисковый калькулятор. Подбор дисков по параметрам, расчет вылета, ш</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

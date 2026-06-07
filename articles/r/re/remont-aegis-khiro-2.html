@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Ремонт Aegis Hero 2: диагностика, замена контроллера и устранение сбоев — Мастер Шин</title>
+    <meta name="description" content="Полное руководство по ремонту балансировочного стенда Aegis Hero 2. Диагностика ошибок, замена датчиков, настройка калибровки и устранение типичных неисправностей.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/r/re/remont-aegis-khiro-2.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт Aegis Hero 2: диагностика, замена контроллера и устранение сбоев">
+    <meta property="og:description" content="Полное руководство по ремонту балансировочного стенда Aegis Hero 2. Диагностика ошибок, замена датчиков, настройка калибровки и устранение типичных неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт Aegis Hero 2: диагностика, замена контроллера и устранение сбоев</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#анализ-типовых-неисправностей-и-первичная-диагностика">Анализ типовых неисправностей и первичная диагностика</a></li><li><a href="#проблемы-с-системой-измерения-и-калибровкой">Проблемы с системой измерения и калибровкой</a></li><li><a href="#механические-неисправности-привода-и-вала">Механические неисправности привода и вала</a></li><li><a href="#электронные-компоненты-и-блоки-управления">Электронные компоненты и блоки управления</a></li><li><a href="#инструкция-по-устранению-ошибки-e-03-и-подобных-кодов">Инструкция по устранению ошибки «E-03» и подобных кодов</a></li><li><a href="#таблица-частых-ошибок-и-методы-их-устранения">Таблица частых ошибок и методы их устранения</a></li><li><a href="#профилактическое-обслуживание-и-продление-срока-службы">Профилактическое обслуживание и продление срока службы</a></li><li><a href="#когда-стоит-обратиться-к-профессионалам">Когда стоит обратиться к профессионалам?</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/nf/nfs-pro-street-luchshie-mashiny-dlya-kazhdogo-klassa.html">NFS Pro Street: лучшие машины для каждого класса авто в гонках</a></li><li><a href="/articles/g/gi/gidrozatvor-dlya-brozheniya-chto-eto.html">Гидрозатвор для брожения: что это, виды и как выбрать правильно</a></li><li><a href="/articles/k/ka/kak-polzovatsya-donkoj-rezinkoj.html">Как пользоваться донкой резинкой: инструкция по оснастке и ловле</a></li><li><a href="/articles/r/re/rezina-dlya-3d-pechati.html">Резина для 3D печати: гибкие филаменты, свойства и советы по печати</a></li><li><a href="/articles/c/ch/chto-takoe-sazhen-mera-dliny-v-metrakh.html">Сажень в метрах: точный перевод и виды старинной меры длины</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Профессиональный ремонт балансировочного стенда Aegis Hero 2</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#анализ-типовых-неисправностей-и-первичная-диагностика">Анализ типовых неисправностей и первичная диагностика</a></li><li><a href="#проблемы-с-системой-измерения-и-калибровкой">Проблемы с системой измерения и калибровкой</a></li><li><a href="#механические-неисправности-привода-и-вала">Механические неисправности привода и вала</a></li><li><a href="#электронные-компоненты-и-блоки-управления">Электронные компоненты и блоки управления</a></li><li><a href="#инструкция-по-устранению-ошибки-e-03-и-подобных-кодов">Инструкция по устранению ошибки «E-03» и подобных кодов</a></li><li><a href="#таблица-частых-ошибок-и-методы-их-устранения">Таблица частых ошибок и методы их устранения</a></li><li><a href="#профилактическое-обслуживание-и-продление-срока-службы">Профилактическое обслуживание и продление срока службы</a></li><li><a href="#когда-стоит-обратиться-к-профессионалам">Когда стоит обратиться к профессионалам?</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Балансировочное оборудование <em>Aegis Hero 2</em> является надежным инструментом в шиномонтажных сервисах, однако даже такая техника подвержена износу и сбоям. Периодически владельцы сталкиваются с ошибками дисплея, неточностями измерений или полным отказом привода. В таких ситуациях критически важно понимать архитектуру устройства, чтобы отличить программный сбой от механической поломки.</p>
+
+<p><strong>Ремонт Aegis Hero 2</strong> требует специфических знаний электроники и механики станка. Часто проблема кроется не в самом оборудовании, а в неправильной эксплуатации или отсутствии регулярного обслуживания. Прежде чем обращаться в сервисный центр, стоит провести первичную диагностику, которая позволит выявить очевидные неисправности и сэкономить время.</p>
+
+<h2 id="анализ-типовых-неисправностей-и-первичная-диагностика">Анализ типовых неисправностей и первичная диагностика</h2>
+
+<p>Самым первым шагом при возникновении проблем является тщательный визуальный осмотр и проверка базовых параметров. Поломки могут проявляться по-разному: от отсутствия реакции на нажатие кнопок до хаотичного вращения вала. Важно установить, является ли сбой постоянным или он возникает только при определенных условиях, например, при установке тяжелых колес.</p>
+
+<p>Частой причиной сбоев становится нарушение контактов в силовых цепях или выход из строя датчиков положения. <strong>Диагностика Aegis Hero 2</strong> начинается с проверки подключения к электросети и состояния кабелей питания. Если оборудование не включается, необходимо проверить предохранители и исправность розетки.</p>
+
+<p>Для выявления более сложных проблем рекомендуется использовать специализированный тестовый режим, доступный в меню станка. Это позволяет проверить работоспособность всех узлов без нагрузки. Если ошибка сохраняется в тестовом режиме, проблема, скорее всего, аппаратная.</p>
+
+<h2 id="проблемы-с-системой-измерения-и-калибровкой">Проблемы с системой измерения и калибровкой</h2>
+
+<p>Неточные данные о весе дисбаланса — одна из самых распространенных жалоб пользователей. Это может быть вызвано износом подшипников или смещением заготовок калибровки. <strong>Калибровка Aegis Hero 2</strong> должна проводиться регулярно, особенно после транспортировки станка или замены компонентов.</p>
+
+<p>Если дисплей показывает нулевые значения при наличии груза или, наоборот, хаотично меняет цифры, проблема часто кроется в датчиках вибрации. Эти чувствительные элементы могут загрязняться или терять чувствительность со временем. В некоторых случаях помогает простая очистка контактов и проверка крепления датчиков.</p>
+
+<p>Иногда ошибка возникает из-за неправильной настройки параметров колеса в меню. Убедитесь, что введенные значения диаметра и ширины соответствуют реальности. Ошибочные данные могут приводить к неверным расчетам и невозможности проведения балансировки.</p>
+
+<h2 id="механические-неисправности-привода-и-вала">Механические неисправности привода и вала</h2>
+
+<p>Механическая часть станка подвергается наибольшей нагрузке во время работы. Износ подшипников вала приводит к люфтам, которые невозможно компенсировать даже после калибровки. <strong>Замена подшипников Aegis Hero 2</strong> — это процедура, требующая разборки корпуса и использования специального инструмента.</p>
+
+<p>При вращении вала должны отсутствовать посторонние шумы и вибрации. Если слышен скрежет или гул, необходимо немедленно остановить эксплуатацию оборудования. Игнорирование этих признаков может привести к разрушению посадочных мест и дорогостоящему ремонту привода.</p>
+
+<p>Также стоит обратить внимание на состояние ремня привода. Если он растянут или имеет повреждения, двигатель может работать нестабильно, вызывая ошибки вращения. Регулярная проверка натяжения ремня поможет избежать серьезных поломок.</p>
+
+<div class="pb-poll" id="poll-9bd76b7c"><div class="pb-poll-question">📊 Какая проблема чаще всего возникает с вашим балансировочным станком?</div><div class="pb-poll-option" data-poll="9bd76b7c" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Неточные измерения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9bd76b7c" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Вал не вращается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9bd76b7c" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ошибка на дисплее</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9bd76b7c" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Станок не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="электронные-компоненты-и-блоки-управления">Электронные компоненты и блоки управления</h2>
+
+<p>Электронный блок управления (ЭБУ) — это «мозг» станка, отвечающий за обработку сигналов от датчиков и управление двигателем. Сбои в работе ЭБУ могут быть вызваны скачками напряжения, перегревом или браком компонентов. <strong>Ремонт платы Aegis Hero 2</strong> часто требует пайки и замены микросхем.</p>
+
+<p>Если дисплей работает, но станок не реагирует на команды, проблема может быть в шлейфах, соединяющих панель управления с основным блоком. Окисление контактов или повреждение изоляции — частые причины таких сбоев. Проверка целостности шлейфов должна проводиться при каждом сервисном обслуживании.</p>
+
+<p>В редких случаях требуется перепрошивка программного обеспечения. Это необходимо, если заводская прошивка содержит ошибки или если была произведена замена контроллера на аналог с другой версией ПО. Перепрошивку лучше доверять производителям или сертифицированным специалистам.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист проверки электроники</h4><label class="check-item"><input type="checkbox"><span>Проверить шлейфы панели управления</span></label><label class="check-item"><input type="checkbox"><span>Визуально осмотреть плату на предмет подгоревших элементов</span></label><label class="check-item"><input type="checkbox"><span>Проверить напряжение на выходе блока питания</span></label><label class="check-item"><input type="checkbox"><span>Очистить разъемы от окислений</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="инструкция-по-устранению-ошибки-e-03-и-подобных-кодов">Инструкция по устранению ошибки «E-03» и подобных кодов</h2>
+
+<p>Коды ошибок на дисплее указывают на конкретные проблемы в системе. Например, ошибка <code>E-03</code> чаще всего связана с неисправностью датчика скорости вращения или проблемы в цепи двигателя. Для устранения необходимо проверить сопротивление обмоток двигателя и исправность датчика Холла.</p>
+
+<p>Если код ошибки сопровождается полной остановкой вала, следует проверить предохранитель, защищающий цепь двигателя. В некоторых моделях <em>Aegis Hero 2</em> предусмотрен отдельный автоматический выключатель, который может сработать при перегрузке. Его сброс часто восстанавливает работоспособность станка.</p>
+
+<blockquote>
+<strong>⚠️ Внимание!</strong> Перед проведением любых работ по ремонту электроники обязательно отключите станок от сети и убедитесь в отсутствии остаточного напряжения в конденсаторах.
+</blockquote>
+
+<p>Иногда ошибка возникает из-за программного сбоя при передаче данных. В этом случае помогает полная перезагрузка системы: отключите питание на 5-10 минут, затем включите снова. Если ошибка не исчезла, потребуется углубленная диагностика.</p>
+
+<details class="pb-accordion"><summary>Подробности по коду ошибки E-03</summary><div class="pb-accordion-body"><p>Ошибка E-03 обычно указывает на отсутствие сигнала от датчика оборотов. Это может быть вызвано разрывом провода, загрязнением датчика или выходом из строя самого датчика Холла. Для проверки используйте мультиметр в режиме измерения сопротивления.</p></div></details>
+
+<h2 id="таблица-частых-ошибок-и-методы-их-устранения">Таблица частых ошибок и методы их устранения</h2>
+
+<p>Ниже приведена таблица, объединяющая наиболее распространенные проблемы и способы их решения. Используйте её как шпаргалку при первом появлении неисправностей.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Код ошибки / Симптом</th>
+<th>Возможная причина</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>E-01</code> — Ошибка датчика веса</td>
+<td>Неисправность тензодатчика</td>
+<td>Проверить целостность шлейфа и контакты датчика</td>
+</tr>
+<tr>
+<td><code>E-03</code> — Ошибка скорости</td>
+<td>Проблема с двигателем или датчиком Холла</td>
+<td>Проверить обмотки двигателя и датчик оборотов</td>
+</tr>
+<tr>
+<td>Вал вращается рывками</td>
+<td>Износ подшипников или ремень</td>
+<td>Заменить подшипники или натянуть/заменить ремень</td>
+</tr>
+<tr>
+<td>Дисплей мигает при включении</td>
+<td>Нестабильное напряжение питания</td>
+<td>Проверить блок питания и заземление станка</td>
+</tr>
+<tr>
+<td>Нет реакции на кнопки</td>
+<td>Сбой ПО или повреждение панели</td>
+<td>Перезагрузить станок или заменить панель управления</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<strong>⚠️ Внимание!</strong> При замене электронных компонентов используйте только оригинальные запчасти или сертифицированные аналоги. Некачественные детали могут привести к повторному выходу из строя.
+</blockquote>
+
+<p>Если ошибка не устраняется простыми методами, возможно, проблема глубже и требует полной замены узла. В таких случаях не стоит продолжать попытки ремонта своими руками, если у вас нет соответствующего опыта.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При разборке станка фотографируйте каждый этап и расположение проводов, чтобы избежать ошибок при обратной сборке. Это сэкономит вам много времени.</p></aside>
+
+<h2 id="профилактическое-обслуживание-и-продление-срока-службы">Профилактическое обслуживание и продление срока службы</h2>
+
+<p>Чтобы минимизировать риск возникновения поломок, необходимо регулярно проводить профилактическое обслуживание. <strong>Техническое обслуживание Aegis Hero 2</strong> включает очистку станка от пыли, смазку движущихся частей и проверку креплений. Чистота внутри корпуса предотвращает перегрев электроники.</p>
+
+<p>Регулярная проверка заземления критически важна для безопасности и точности измерений. Плохой контакт с землей может вызывать помехи в работе датчиков и приводить к ложным срабатываниям защиты. Убедитесь, что заземляющий провод надежно подсоединен.</p>
+
+<p>Не забывайте о периодической калибровке, даже если станок работает без видимых сбоев. Со временем износ механических частей может приводить к постепенному накоплению погрешностей. Ежегодная профессиональная калибровка гарантирует точность балансировки.</p>
+
+<blockquote>
+<strong>⚠️ Внимание!</strong> Любые изменения в конструкции станка или использование нестандартных адаптеров могут привести к аннулированию гарантии и нарушению работы системы безопасности.
+</blockquote>
+
+<p>Соблюдение правил эксплуатации, таких как запрет на запуск станка с открытой крышкой или превышение допустимых весов, значительно продлевает его жизнь. Всегда следите за тем, чтобы колесо было правильно зафиксировано перед началом вращения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная очистка и проверка заземления — самые эффективные способы предотвратить до 80% типичных неисправностей балансировочного оборудования.</p></aside>
+
+<h2 id="когда-стоит-обратиться-к-профессионалам">Когда стоит обратиться к профессионалам?</h2>
+
+<p>Несмотря на то, что многие неисправности можно устранить самостоятельно, есть случаи, когда без помощи профессионалов не обойтись. Если проблема связана с заменой основного мотора или перепайкой сложных плат, лучше доверить работу специалистам.</p>
+
+<p>Отсутствие необходимых инструментов и опыта может привести к усугублению поломки. Например, неправильная замена подшипника может повредить вал, что потребует полной замены узла. В таких ситуациях самостоятельный ремонт становится экономически невыгодным.</p>
+
+<p>Также стоит обратиться в сервис, если после всех попыток ремонта ошибка сохраняется. Это может указывать на скрытые дефекты электроники, которые невозможно выявить без специализированного оборудования и ПО.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли проводить ремонт Aegis Hero 2 самостоятельно?</summary>
+<p>Да, многие неисправности, такие как замена предохранителей, очистка контактов или проверка шлейфов, можно устранить самостоятельно. Однако сложные работы с электроникой и механикой требуют квалификации.</p>
+</details>
+
+<details>
+<summary>Как часто нужно калибровать станок?</summary>
+<p>Рекомендуется проводить калибровку не реже одного раза в год, а также после транспортировки станка или замены любых механических узлов.</p>
+</details>
+
+<details>
+<summary>Что делать, если станок не включается?</summary>
+<p>Проверьте подключение к сети, целостность кабеля питания и состояние предохранителей. Также убедитесь, что выключатель на задней панели включен.</p>
+</details>
+
+<details>
+<summary>Где взять оригинальные запчасти?</summary>
+<p>Оригинальные запчасти можно приобрести у официальных дилеров производителя или в специализированных магазинах оборудования для шиномонтажа.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает ремонт?</summary>
+<p>Время ремонта зависит от сложности неисправности. Замена предохранителя занимает минуты, а ремонт электроники или замена двигателя может занять несколько дней.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/nf/nfs-pro-street-luchshie-mashiny-dlya-kazhdogo-klassa.html" class="pb-related-card">
+                <span class="pb-related-title">NFS Pro Street: лучшие машины для каждого класса авто в гонках</span>
+                <span class="pb-related-desc">Полный гид по выбору автотранспорта в Need for Speed Pro Street. Топовые авто для Drift, Drag, Speed</span>
+            </a><a href="/articles/g/gi/gidrozatvor-dlya-brozheniya-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Гидрозатвор для брожения: что это, виды и как выбрать правильно</span>
+                <span class="pb-related-desc">Что такое гидрозатвор и зачем он нужен при брожении? Подробный обзор видов, правила установки и сове</span>
+            </a><a href="/articles/k/ka/kak-polzovatsya-donkoj-rezinkoj.html" class="pb-related-card">
+                <span class="pb-related-title">Как пользоваться донкой резинкой: инструкция по оснастке и ловле</span>
+                <span class="pb-related-desc">Полное руководство по рыбалке на донку с резинкой. Сборка снасти, выбор поводков, заброс и техника в</span>
+            </a><a href="/articles/r/re/rezina-dlya-3d-pechati.html" class="pb-related-card">
+                <span class="pb-related-title">Резина для 3D печати: гибкие филаменты, свойства и советы по печати</span>
+                <span class="pb-related-desc">Полный гид по гибким материалам для 3D принтеров. Разбор TPU, TPE, сравнение характеристик, настройк</span>
+            </a><a href="/articles/c/ch/chto-takoe-sazhen-mera-dliny-v-metrakh.html" class="pb-related-card">
+                <span class="pb-related-title">Сажень в метрах: точный перевод и виды старинной меры длины</span>
+                <span class="pb-related-desc">Узнайте, чему равна сажень в метрах. Подробный разбор видов саженей (маховая, косая, мерная) и табли</span>
+            </a><a href="/articles/f/fi/fidergam-dlya-fidera-kak-svyazat.html" class="pb-related-card">
+                <span class="pb-related-title">Фидергам для фидера: как связать и установить правильно</span>
+                <span class="pb-related-desc">Полное руководство: как завязать фидергам, подобрать диаметр и связать монтаж. Инструкция по использ</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

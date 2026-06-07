@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Печать резиной на 3D принтере: материалы TPU и TPE — Мастер Шин</title>
+    <meta name="description" content="Может ли 3D принтер печатать резиной? Полный разбор гибких филаментов TPU и TPE, нюансы настройки принтера и сравнение свойств эластомеров.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/m/mo/mozhet-li-3d-printer-pechatat-rezinoj.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Печать резиной на 3D принтере: материалы TPU и TPE">
+    <meta property="og:description" content="Может ли 3D принтер печатать резиной? Полный разбор гибких филаментов TPU и TPE, нюансы настройки принтера и сравнение свойств эластомеров.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Печать резиной на 3D принтере: материалы TPU и TPE</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-мир-гибкой-аддитивной-печати">Введение в мир гибкой аддитивной печати</a></li><li><a href="#что-такое-tpu-и-tpe-материалы-для-имитации-резины">Что такое TPU и TPE: материалы для имитации резины</a></li><li><a href="#оборудование-какой-принтер-подходит-для-гибких-материалов">Оборудование: какой принтер подходит для гибких материалов</a></li><li><a href="#настройка-параметров-печати-для-идеального-качества">Настройка параметров печати для идеального качества</a></li><li><a href="#сравнение-свойств-tpu-tpe-и-натуральной-резины">Сравнение свойств TPU, TPE и натуральной резины</a></li><li><a href="#типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</a></li><li><a href="#сферы-применения-напечатанной-резины">Сферы применения напечатанной резины</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/zv/zvezdy-vorovskie-na-plechakh-chto-znachit.html">Звезды воровские на плечах: значение, виды и правила ношения</a></li><li><a href="/articles/c/ch/chto-oznachaet-tatuirovka-pauk-polzushchij-vverkh.html">Татуировка паук ползущий вверх: значение, символизм и нюансы эскиза</a></li><li><a href="/articles/k/ka/kakoj-patrubok-luchshe-rezinovyj-ili-silikonovyj.html">Резиновый или силиконовый патрубок: что лучше выбрать для авто</a></li><li><a href="/articles/k/ka/kak-podobrat-rezinovoe-uplotnitelnoe-koltso.html">Как подобрать резиновое уплотнительное кольцо: гид по размерам и материалам</a></li><li><a href="/articles/c/ch/chemu-ravna-1-versta-v-km.html">Сколько километров в одной версте: точный перевод и история меры</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Может ли 3D принтер печатать резиной: полный гид по гибким материалам</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-мир-гибкой-аддитивной-печати">Введение в мир гибкой аддитивной печати</a></li><li><a href="#что-такое-tpu-и-tpe-материалы-для-имитации-резины">Что такое TPU и TPE: материалы для имитации резины</a></li><li><a href="#оборудование-какой-принтер-подходит-для-гибких-материалов">Оборудование: какой принтер подходит для гибких материалов</a></li><li><a href="#настройка-параметров-печати-для-идеального-качества">Настройка параметров печати для идеального качества</a></li><li><a href="#сравнение-свойств-tpu-tpe-и-натуральной-резины">Сравнение свойств TPU, TPE и натуральной резины</a></li><li><a href="#типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</a></li><li><a href="#сферы-применения-напечатанной-резины">Сферы применения напечатанной резины</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-мир-гибкой-аддитивной-печати">Введение в мир гибкой аддитивной печати</h2>
+<p>Многие энтузиасты и профессионалы задаются вопросом: <strong>может ли 3D принтер печатать резиной</strong>? Ответ однозначен — да, современные станки справляются с этой задачей, используя специальные гибкие филаменты. Однако важно понимать, что речь идет не о натуральном каучуке, а о термопластичных эластомерах, которые имитируют свойства резины.</p>
+<p>Печать такими материалами требует от пользователя серьезных навыков настройки оборудования и понимания физики процессов экструзии. Если стандартный PLA или ABS плавятся и выдавливаются легко, то гибкие материалы ведут себя как жевательная резинка, создавая сопротивление шестерням экструдера.</p>
+<p>В этой статье мы разберем, какие именно материалы относятся к категории «резины», как подготовить ваш <em>Creality Ender 3</em> или любой другой принтер к работе с ними и какие технологии печати подходят лучше всего.</p>
+
+<h2 id="что-такое-tpu-и-tpe-материалы-для-имитации-резины">Что такое TPU и TPE: материалы для имитации резины</h2>
+<p>В мире 3D-печати под «резинкой» подразумеваются термопластичные полиуретаны (<strong>TPU</strong>) и термопластичные эластомеры (<strong>TPE</strong>). Эти материалы обладают уникальной способностью растягиваться и возвращаться в исходную форму, что делает их идеальными для создания прокладок, амортизаторов и захватных устройств.</p>
+<p>Материал <em>TPU</em> является более популярным выбором благодаря своей прочности и устойчивости к истиранию. В отличие от TPE, он менее подвержен расслаиванию и легче поддается печати на большинстве моделей настольных принтеров. TPE же часто используется для более мягких изделий, но требует идеальной настройки подачи.</p>
+<p>Существует градация жесткости этих материалов по шкале Шора. Чем ниже показатель, тем мягче изделие. Вы можете найти филаменты с жесткостью от 60A (очень мягкие, как ластик) до 95A (жесткие, как подошва кроссовок).</p>
+<ul>
+<li>🧪 TPU 95A — идеальный баланс между гибкостью и прочностью для большинства технических задач.</li>
+<li>🧪 TPU 85A — более мягкий материал, подходящий для демпферов и гибких шлангов.</li>
+<li>🧪 TPE — классический эластомер, требующий прямого экструдера и опытного печатника.</li>
+</ul>
+
+<h2 id="оборудование-какой-принтер-подходит-для-гибких-материалов">Оборудование: какой принтер подходит для гибких материалов</h2>
+<p>Критическим фактором успеха является тип экструдера вашей машины. Для печати резиноподобными материалами настоятельно рекомендуется использовать экструдер с <strong>прямым приводом</strong> (Direct Drive). В такой конструкции двигатель и шестерни подачи находятся в непосредственной близости к горячему концу, что минимизирует длинный путь для гибкой нити.</p>
+<p>Если вы попытаетесь печатать TPU на принтере с экструдером типа <em>Bowden</em> (где двигатель находится далеко от сопла), вы столкнетесь с серьезными проблемами. Длинная тефлоновая трубка будет задерживать гибкую нить, вызывая пропуски слоев и забивание сопла из-за накопления упругой энергии в материале.</p>
+<p>Однако, опытные пользователи могут адаптировать и принтеры с системой Bowden. Для этого необходимо уменьшить расстояние подачи и настроить скорость экструзии на минимальные значения. <strong>Скорость печати</strong> должна быть снижена до 20-40 мм/с, чтобы нить успевала плавиться без деформации.</p>
+<blockquote>⚠️ Внимание: Если вы используете принтер с Bowden-системой, обязательно проверьте состояние тефлоновой трубки в хотэнде. Любые заусенцы или обрывы PTFE внутри сопла гарантированно вызовут засор при печати гибким филаментом.</blockquote>
+
+<div class="pb-poll" id="poll-7374410a"><div class="pb-poll-question">📊 Какой тип экструдера у вашего принтера?</div><div class="pb-poll-option" data-poll="7374410a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Прямой привод (Direct Drive)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7374410a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Bowden (удаленный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7374410a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">План: Апгрейд на прямой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7374410a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-параметров-печати-для-идеального-качества">Настройка параметров печати для идеального качества</h2>
+<p>Настройка слайсера играет решающую роль в успехе печати. Вам необходимо увеличить высоту слоя, чтобы обеспечить лучшее сцепление между линиями, которые в гибком материале часто имеют тенденцию к отслоению. Рекомендуется устанавливать высоту слоя в диапазоне от 0.2 до 0.24 мм.</p>
+<p>Температура печати варьируется в зависимости от конкретного производителя филамента, но обычно составляет от 215°C до 235°C. Важно не перегревать материал, так как это приведет к его разложению и появлению пузырей. Также критически важно настроить скорость retractions (втягивания) на минимальное значение.</p>
+<p>Для гибких материалов скорость втягивания должна быть почти нулевой. Если вы оставите стандартные настройки для PLA, шестерни просто будут перемалывать нить внутри сопла. Попробуйте установить скорость retractions около 1 мм/с или вовсе отключить функцию.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Настройка слайсера для TPU</h4><label class="check-item"><input type="checkbox"><span>Отключить втягивание (Retraction) или поставить минимум</span></label><label class="check-item"><input type="checkbox"><span>Установить скорость печати 20-40 мм/с</span></label><label class="check-item"><input type="checkbox"><span>Повысить температуру сопла до 230°C</span></label><label class="check-item"><input type="checkbox"><span>Увеличить высоту слоя до 0.25 мм</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Еще один важный параметр — охлаждение. В отличие от PLA, который требует мощного обдува, TPU печатается лучше при умеренном или даже полном отсутствии вентилятора. Переохлаждение может привести к тому, что слои не успеют сплавиться друг с другом, и деталь разрушится при легком сжатии.</p>
+<blockquote>⚠️ Внимание: Проверьте скорость подачи филамента в вашем слайсере. Если вы видите, что скорость подачи превышает 100% от номинального сечения сопла, это приведет к заклиниванию экструдера. Материал слишком плотный для высокой скорости.</blockquote>
+
+<details class="pb-accordion"><summary>Почему слои могут отслаиваться при печати TPU?</summary><div class="pb-accordion-body"><p>Чаще всего причина в недостаточном прилипании к столу или слишком низкой температуре сопла. Убедитесь, что вы используете клей-карандаш или специальный лак для адгезии, и проверьте, что платформа нагрета до 50-60 градусов.</p></div></details>
+
+<h2 id="сравнение-свойств-tpu-tpe-и-натуральной-резины">Сравнение свойств TPU, TPE и натуральной резины</h2>
+<p>Хотя 3D-печать позволяет создавать изделия, визуально и тактически похожие на резину, физические свойства материала все же отличаются. Натуральная резина обладает более высокой эластичностью и способностью выдерживать многократные циклы растяжения без остаточной деформации.</p>
+<p>Термопластичные эластомеры, используемые в печати, имеют предел прочности и могут деформироваться при длительном растяжении. Они также уступают вулканизированной резине в стойкости к высоким температурам и агрессивным химическим средам, таким как масла и растворители.</p>
+<p>Тем не менее, для большинства бытовых и прототипных задач разница минимальна. <strong>Эластичность</strong> напечатанной детали достаточна для использования в качестве уплотнителей, шестерен с низким уровнем шума или амортизирующих подушек.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>TPU (3D печать)</th>
+<th>Натуральная резина</th>
+<th>TPE (3D печать)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Эластичность</td>
+<td>Средняя</td>
+<td>Высокая</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Термостойкость</td>
+<td>до 80°C</td>
+<td>до 120°C</td>
+<td>до 70°C</td>
+</tr>
+<tr>
+<td>Устойчивость к истиранию</td>
+<td>Отличная</td>
+<td>Хорошая</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Сложность печати</td>
+<td>Средняя</td>
+<td>Не применимо (литье)</td>
+<td>Сложная</td>
+</tr>
+<tr>
+<td>Стоимость материала</td>
+<td>Высокая</td>
+<td>Низкая (при объеме)</td>
+<td>Средняя</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="типичные-проблемы-и-способы-их-решения">Типичные проблемы и способы их решения</h2>
+<p>Даже при правильной настройке вы можете столкнуться с проблемами. Самая частая — это <strong>застревание нити</strong> в экструдере. Это происходит, когда гибкий материал начинает сжиматься перед входом в горячий конец, теряя форму и застревая между шестернями.</p>
+<p>Если вы видите, что нить не подается, немедленно остановите печать и проверьте путь подачи. Часто помогает ручное проталкивание нити или использование инструмента для прочистки сопла. Ни в коем случае не пытайтесь печатать дальше, если сопротивление возникло — это гарантированно приведет к поломке шестерен.</p>
+<p>Другая проблема — «слипание» слоев или отсутствие адгезии. Это решается увеличением температуры сопла на 5-10 градусов и снижением скорости печати. Также убедитесь, что ваше сопло не имеет острых краев внутри, которые могут зацепить мягкий материал.</p>
+<ul>
+<li>🛠️ Очистите тефлоновую трубку от остатков филамента перед загрузкой новой катушки.</li>
+<li>🛠️ Используйте пинцет или тонкую проволоку для прочистки сопла при первых признаках засора.</li>
+<li>🛠️ Попробуйте изменить направление подачи нити с катушки, чтобы избежать перекручивания.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом печати TPU обязательно намотайте катушку нити на подставку так, чтобы она разматывалась без сопротивления. Любая изогнутость катушки создаст лишнее трение, которое экструдер не сможет преодолеть.</p></aside>
+
+<h2 id="сферы-применения-напечатанной-резины">Сферы применения напечатанной резины</h2>
+<p>Возможности применения напечатанных эластомеров практически безграничны. В автомобильной сфере (с учетом темы сайта) это могут быть заглушки, уплотнители для багажника, амортизаторы для подвески или ремни безопасности для моделирования.</p>
+<p>В быту пользователи создают гибкие чехлы для электроники, накладки на рукоятки инструмента, протекторы для обуви или кастомные колеса для радиоуправляемых моделей. <strong>Прототипирование</strong> также активно использует TPU для создания прототипов деталей, которые должны выдерживать ударные нагрузки.</p>
+<p>Интересным направлением является создание гибких шестерен и подшипников скольжения. Благодаря способности TPU гасить вибрации, такие детали работают тише и долговечнее в определенных условиях, чем их жесткие пластиковые аналоги.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный вывод: Печать резиноподобными материалами требует терпения и правильной настройки, но позволяет создавать уникальные детали, которые невозможно изготовить из жестких пластиков.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли печатать TPU на обычном принтере с экструдером Bowden?</summary>
+<p>Технически можно, но качество будет низким. Вам придется сильно снизить скорость печати и настроить минимальное втягивание. Лучше всего использовать прямой привод или специальные хотэнды, разработанные для гибких материалов.</p>
+</details>
+<details>
+<summary>Какая температура стола оптимальна для TPU?</summary>
+<p>Оптимальная температура стола составляет 50-60°C. Это обеспечивает достаточную адгезию первого слоя, не вызывая деформации материала при остывании.</p>
+</details>
+<details>
+<summary>Почему моя деталь из TPU рвется при растяжении?</summary>
+<p>Скорее всего, слои не спаялись должным образом. Попробуйте увеличить температуру сопла, снизить скорость печати и отключить кулер обдува. Также проверьте влажность филамента.</p>
+</details>
+<details>
+<summary>Можно ли красить изделия из TPU?</summary>
+<p>Да, изделия из TPU можно красить, но предварительно их нужно загрунтовать специальной грунтовкой для эластичных материалов, чтобы краска не отслаивалась при изгибе.</p>
+</details>
+<details>
+<summary>Как хранить TPU филамент?</summary>
+<p>Филаменты TPU очень гигроскопичны и впитывают влагу из воздуха. Храните их в герметичных пакетах с силикагелем или в специальном сухом шкафу. Влажный материал будет пузыриться при печати.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/zv/zvezdy-vorovskie-na-plechakh-chto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">Звезды воровские на плечах: значение, виды и правила ношения</span>
+                <span class="pb-related-desc">Разбираем значение воровских звезд на плечах. Какие бывают виды, как определяют статус вора в законе</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-tatuirovka-pauk-polzushchij-vverkh.html" class="pb-related-card">
+                <span class="pb-related-title">Татуировка паук ползущий вверх: значение, символизм и нюансы эскиза</span>
+                <span class="pb-related-desc">Расшифровка смысла тату паука, ползущего вверх. Символика судьбы, защиты и преодоления препятствий. </span>
+            </a><a href="/articles/k/ka/kakoj-patrubok-luchshe-rezinovyj-ili-silikonovyj.html" class="pb-related-card">
+                <span class="pb-related-title">Резиновый или силиконовый патрубок: что лучше выбрать для авто</span>
+                <span class="pb-related-desc">Сравнение силиконовых и резиновых патрубков. Основные преимущества, недостатки и критерии выбора для</span>
+            </a><a href="/articles/k/ka/kak-podobrat-rezinovoe-uplotnitelnoe-koltso.html" class="pb-related-card">
+                <span class="pb-related-title">Как подобрать резиновое уплотнительное кольцо: гид по размерам и материалам</span>
+                <span class="pb-related-desc">Полное руководство по выбору уплотнительных колец: как измерить, подобрать резину под среду и давлен</span>
+            </a><a href="/articles/c/ch/chemu-ravna-1-versta-v-km.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько километров в одной версте: точный перевод и история меры</span>
+                <span class="pb-related-desc">Узнайте, чему равна 1 верста в километрах. Подробный разбор истории русской меры длины, таблица пере</span>
+            </a><a href="/articles/k/kh/kholodilnik-atlant-dvukhkamernyj-ne-morozit-nizhnyaya-kamera-v-chem-problema.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник Атлант не морозит нижнюю камеру: причины и ремонт</span>
+                <span class="pb-related-desc">Узнайте, почему холодильник Атлант двухкамерный перестал морозить в нижней камере. Главные поломки, </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Интерфейс I2C: полное описание, принцип работы и применение — Мастер Шин</title>
+    <meta name="description" content="Подробный разбор протокола I2C: шина, сигналы, режимы скорости, адресация и схемотехника. Практическое руководство для инженеров и разработчиков.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/i/i2/i2c-interfejs-opisanie-na-russkom.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Интерфейс I2C: полное описание, принцип работы и применение">
+    <meta property="og:description" content="Подробный разбор протокола I2C: шина, сигналы, режимы скорости, адресация и схемотехника. Практическое руководство для инженеров и разработчиков.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Интерфейс I2C: полное описание, принцип работы и применение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-архитектуру-шины-данных">Введение в архитектуру шины данных</a></li><li><a href="#физический-уровень-и-принцип-работы">Физический уровень и принцип работы</a></li><li><a href="#протокол-передачи-данных-и-адресация">Протокол передачи данных и адресация</a></li><li><a href="#режимы-работы-и-скорость-передачи">Режимы работы и скорость передачи</a></li><li><a href="#схемотехника-и-подключение-устройств">Схемотехника и подключение устройств</a></li><li><a href="#типичные-ошибки-и-методы-отладки">Типичные ошибки и методы отладки</a></li><li><a href="#практическое-применение-в-современных-системах">Практическое применение в современных системах</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/se/selo-gde-rodilsya-shukshin.html">Село где родился Шукшин: история и память великого писателя</a></li><li><a href="/articles/s/sh/shtof-eto-skolko-v-grammakh.html">Сколько весит штоф: перевод в граммы и литры для разных жидкостей</a></li><li><a href="/articles/m/ma/material-podoshvy-eva-chto-eto-takoe-otzyvy.html">Материал подошвы ЭВА: что это, плюсы, минусы и отзывы</a></li><li><a href="/articles/c/ch/chem-otmyt-krasku-ot-ballonchika.html">Как отмыть краску из баллончика: лучшие средства для разных поверхностей</a></li><li><a href="/articles/k/ka/kak-pravilno-nazyvaetsya-lipuchka-dlya-odezhdy.html">Как правильно называется липучка: термин, виды и применение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Интерфейс I2C: полное описание, принцип работы и применение</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-архитектуру-шины-данных">Введение в архитектуру шины данных</a></li><li><a href="#физический-уровень-и-принцип-работы">Физический уровень и принцип работы</a></li><li><a href="#протокол-передачи-данных-и-адресация">Протокол передачи данных и адресация</a></li><li><a href="#режимы-работы-и-скорость-передачи">Режимы работы и скорость передачи</a></li><li><a href="#схемотехника-и-подключение-устройств">Схемотехника и подключение устройств</a></li><li><a href="#типичные-ошибки-и-методы-отладки">Типичные ошибки и методы отладки</a></li><li><a href="#практическое-применение-в-современных-системах">Практическое применение в современных системах</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-архитектуру-шины-данных">Введение в архитектуру шины данных</h2>
+
+<p>В современном мире микроэлектроники обмен данными между компонентами является критически важной задачей. Одним из самых популярных и проверенных временем решений для этой цели является <strong>протокол I2C</strong> (Inter-Integrated Circuit), разработанный компанией Philips Semiconductor. Данная технология позволяет соединять множество периферийных устройств с микроконтроллером, используя всего две линии связи.</p>
+
+<p>Вам предстоит разобраться в том, как именно работает <em>SCL</em> (Serial Clock) и <em>SDA</em> (Serial Data), а также понять логику обмена пакетами информации. Особенность этой шины заключается в её <strong>мультимастерности</strong> и возможности динамического подключения устройств без сложных переключателей. Это делает её незаменимой при создании датчиков, дисплеев и модулей памяти.</p>
+
+<p>Необходимо учитывать, что хотя интерфейс выглядит простым на первый взгляд, тонкости его реализации могут вызвать трудности у начинающих инженеров. Правильная настройка <strong>подтягивающих резисторов</strong> и понимание временных диаграмм — залог стабильной работы системы. В этой статье мы детально разберем все аспекты эксплуатации данного протокола.</p>
+
+<h2 id="физический-уровень-и-принцип-работы">Физический уровень и принцип работы</h2>
+
+<p>Физическая реализация шины I2C базируется на использовании двух двунаправленных линий: линии данных и линии тактирования. Обе линии являются <strong>открытым коллектором</strong> (или открытым стоком), что означает необходимость наличия внешних <em>подтягивающих резисторов</em> к источнику питания. Без этих резисторов шина не сможет корректно передавать логическую единицу.</p>
+
+<p>Логика работы строится на том, что линии находятся в состоянии логической единицы, когда активен только резистор. Логический ноль создается устройством, которое физически замыкает линию на землю. Это позволяет любому устройству на шине инициировать передачу данных, не конфликтуя с другими узлами. Важно понимать, что <strong>активный низкий уровень</strong> является доминирующим в этой системе.</p>
+
+<p>Скорость работы интерфейса ограничена емкостью шин и временем нарастания сигнала. Стандартные режимы варьируются от 100 кбит/с до 3,4 Мбит/с в высокоскоростных версиях. Если вы планируете использовать <em>высокоскоростной режим</em>, вам придется учитывать параметры <strong>подъемного фронта</strong> сигнала и емкость проводов.</p>
+
+<blockquote>Внимание: При увеличении длины проводников между устройствами емкость линии растет, что может привести к искажению сигнала и сбоям в передаче данных без коррекции резисторов подтяжки.</blockquote>
+
+<p>Многие разработчики ошибочно полагают, что можно просто соединить провода и забыть о них. На практике, при большой длине трассы или большом количестве устройств, возникают паразитные эффекты. Поэтому всегда проверяйте <strong>временные диаграммы</strong> на осциллографе при проектировании сложной системы.</p>
+
+<div class="pb-poll" id="poll-c5634572"><div class="pb-poll-question">📊 Какой режим скорости I2C вы используете чаще всего?</div><div class="pb-poll-option" data-poll="c5634572" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Стандартный (100 кбит/с)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5634572" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Быстрый (400 кбит/с)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5634572" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Высокоскоростной (3.4 Мбит/с)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5634572" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не использую I2C</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="протокол-передачи-данных-и-адресация">Протокол передачи данных и адресация</h2>
+
+<p>Процесс обмена данными начинается с формирования стартового условия, когда линия данных <em>SDA</em> переходит из высокого уровня в низкий при высоком уровне тактовой линии <em>SCL</em>. Это сигнал для всех устройств на шине, что начинается новая транзакция. <strong>Стартовый бит</strong> является уникальным маркером начала коммуникации.</p>
+
+<p>После старта мастер отправляет 7-битный адрес устройства и бит направления (чтение или запись). Всего на шине теоретически может находиться 112 устройств, так как 8 адресов зарезервированы для специальных функций. Адресация осуществляется через <strong>уникальный ID</strong>, прошиваемый в чип при производстве или программируемый перемычками.</p>
+
+<p>Каждый байт данных подтверждается битом <em>Acknowledge</em> (ACK). Получатель должен опустить линию данных на такте подтверждения, чтобы показать, что пакет принят. Если устройство не отвечает, возникает сигнал <strong>Not Acknowledge</strong> (NACK), что обычно означает ошибку или отсутствие устройства по указанному адресу.</p>
+
+<p>Особое внимание стоит уделить <em>повторному стартовому условию</em>, которое позволяет мастеру переключаться между чтением и записью без отправки условия остановки. Это часто используется при работе с <strong>EEPROM</strong> и <em>RTC</em> модулями, где сначала записывается адрес регистра, а затем считываются данные.</p>
+
+<blockquote>Внимание: Ошибка в адресе устройства или битовом режиме чтения/записи приведет к тому, что все устройства на шине проигнорируют команду, и транзакция завершится безрезультатно.</blockquote>
+
+<details class="pb-accordion"><summary>Что такое 10-битная адресация?</summary><div class="pb-accordion-body"><p>В расширенном режиме I2C используется 10-битный адрес, что позволяет подключить значительно больше устройств. Для этого используется специальный префикс адреса, начинающийся с 11110.</p></div></details>
+
+<h2 id="режимы-работы-и-скорость-передачи">Режимы работы и скорость передачи</h2>
+
+<p>Стандартный режим работы (Standard-mode) поддерживает скорость до <code>100 кбит/с</code> и является наиболее распространенным в бытовой электронике. Для более требовательных приложений был разработан <strong>Fast-mode</strong> с частотой до <code>400 кбит/с</code>, который требует более точной настройки подтягивающих резисторов. Выбор режима зависит от конкретной задачи и характеристик используемых микросхем.</p>
+
+<p>Существуют также расширенные версии протокола: <em>Fast-mode Plus</em> (до <code>1 Мбит/с</code>) и <strong>High-speed mode</strong> (до <code>3.4 Мбит/с</code>). В высокоскоростном режиме используется специальная схема управления с активным подтягиванием, что делает её совместимость со стандартными устройствами ограниченной. Вам необходимо проверять <strong>технические спецификации</strong> каждого чипа перед включением в высокоскоростную конфигурацию.</p>
+
+<p>При переходе на высокие скорости критически важно учитывать длину проводников. На частотах выше 400 кГц паразитная емкость линии начинает играть решающую роль, вызывая искажения фронтов сигнала. Если длина трассы превышает несколько десятков сантиметров, рекомендуется использовать <strong>буферы шины</strong> или активные повторители.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим</th>
+<th>Макс. скорость</th>
+<th>Тип резисторов</th>
+<th>Применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard-mode</td>
+<td>100 кбит/с</td>
+<td>Пассивные</td>
+<td>Датчики, EEPROM, RTC</td>
+</tr>
+<tr>
+<td>Fast-mode</td>
+<td>400 кбит/с</td>
+<td>Пассивные (меньше R)</td>
+<td>Аудиокодеки, дисплеи</td>
+</tr>
+<tr>
+<td>Fast-mode Plus</td>
+<td>1 Мбит/с</td>
+<td>Пассивные/Активные</td>
+<td>Сложные сенсоры</td>
+</tr>
+<tr>
+<td>High-speed mode</td>
+<td>3.4 Мбит/с</td>
+<td>Активные</td>
+<td>Высокоскоростная память</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка скорости интерфейса</h4><label class="check-item"><input type="checkbox"><span>Проверить максимальную частоту чипа в даташите</span></label><label class="check-item"><input type="checkbox"><span>Выбрать оптимальное сопротивление резисторов</span></label><label class="check-item"><input type="checkbox"><span>Измерить фронты сигнала осциллографом</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии помех на линии</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="схемотехника-и-подключение-устройств">Схемотехника и подключение устройств</h2>
+
+<p>При проектировании схемы подключения необходимо внимательно относиться к выбору номиналов подтягивающих резисторов. Слишком высокое сопротивление приведет к медленному нарастанию сигнала, а слишком низкое — к перегрузке выводов устройств и повышенному потреблению тока. Оптимальное значение часто рассчитывается исходя из <strong>емкости шины</strong> и желаемой скорости.</p>
+
+<p>Каждое устройство на шине имеет свои требования к токам утечки и емкости входов. Если вы подключаете множество микросхем, общая емкость линии может превысить допустимые значения для выбранного режима. В таких случаях рекомендуется разделить шину с помощью <strong>I2C-мультиплексоров</strong> или использовать повторители.</p>
+
+<p>Важным аспектом является логическое согласование уровней напряжения. Шина I2C не является самосогласованной по уровню напряжения питания разных устройств. Если вы подключаете <em>3.3В</em> микроконтроллер к <strong>5В</strong> периферии, необходимо использовать логические преобразователи. Прямое подключение может привести к выходу из строя микроконтроллера.</p>
+
+<blockquote>Внимание: Неправильное согласование уровней напряжения (например, подключение 5В устройства к 3.3В входу без преобразователя) гарантированно выведет из строя микроконтроллер или периферийный чип.</blockquote>
+
+<p>Использование <strong>экранированных кабелей</strong> или витых пар для линий SDA и SCL рекомендуется в условиях сильных электромагнитных помех. Это поможет снизить риск ошибок при передаче данных, особенно в промышленной электронике. Не пренебрегайте правилами трассировки печатных плат, чтобы избежать наводок.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед пайкой устройств на плату всегда проверяйте даташит на максимальное напряжение линии данных — некоторые старые микросхемы могут не выдерживать 3.3В, если они рассчитаны только на 5В.</p></aside>
+
+<h2 id="типичные-ошибки-и-методы-отладки">Типичные ошибки и методы отладки</h2>
+
+<p>Отладка шины I2C часто вызывает затруднения из-за неявного характера ошибок. Самая распространенная проблема — отсутствие ответа от устройства (NACK). Это может быть вызвано неправильным <strong>адресом</strong>, отсутствием питания или сбоем в последовательности команд. Используйте анализаторы протоколов для визуализации обмена данными.</p>
+
+<p>Частой ошибкой является игнорирование временных ограничений между байтами. Некоторые устройства требуют задержки перед следующей командой. Если вы не соблюдаете эти <strong>тайминги</strong>, устройство может перейти в неопределенное состояние. Всегда проверяйте спецификации на время доступа к памяти или регистрам.</p>
+
+<p>Еще одна проблема — «залипание» линии данных в низком уровне, если одно из устройств удерживает её в состоянии логического нуля. Это происходит, если <strong>устройство зависло</strong> в середине транзакции или прошло сброс питания. Для восстановления работы часто требуется генерировать серию тактовых импульсов до тех пор, пока устройство не завершит передачу.</p>
+
+<p>Для диагностики используйте <em>логический анализатор</em> или специализированные отладчики. Они позволяют увидеть каждый бит и точно определить, на каком этапе происходит сбой. Это значительно упрощает поиск ошибки по сравнению с экспериментами «вслепую».</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Наиболее частая причина неработоспособности шины I2C — ошибка в адресе устройства или отсутствие подтягивающих резисторов правильного номинала.</p></aside>
+
+<h2 id="практическое-применение-в-современных-системах">Практическое применение в современных системах</h2>
+
+<p>Интерфейс I2C повсеместно используется в современной электронике, от смартфонов до промышленной автоматизации. В смартфонах через него подключаются <strong>акселерометры</strong>, гироскопы, магнитометры и датчики освещения. Компактность шины позволяет экономить драгоценные контакты микроконтроллера.</p>
+
+<p>В автомобильной электронике I2C используется для связи с датчиками давления в шинах, модулями управления окнами и системами комфорта. Надежность протокола и его способность работать в условиях помех делают его идеальным выбором для <strong>автомобильных систем</strong>. Однако здесь часто применяются дополнительные требования по защите от скачков напряжения.</p>
+
+<p>В IoT-устройствах и носимой электронике использование <em>Low-power</em> режимов I2C позволяет существенно экономить заряд батареи. Некоторые чипы поддерживают <strong>пробуждение по прерыванию</strong> через отдельную линию или через саму шину данных. Это критически важно для автономных устройств.</p>
+
+<p>Развитие стандарта продолжается, и появляются новые варианты, такие как <em>SMBus</em> (System Management Bus), который является надстройкой над I2C для систем управления питанием в компьютерах. Понимание базового протокола I2C дает фундамент для работы с любыми из этих расширений.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Сколько устройств можно подключить к одной шине I2C?</summary>
+<p>Теоретически до 112 устройств при использовании 7-битной адресации, так как 16 адресов зарезервированы. На практике количество ограничено емкостью шины и токовой нагрузкой на подтягивающие резисторы.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать разные уровни напряжения на одной шине?</summary>
+<p>Нет, без использования специальных логических преобразователей. Все устройства на шине должны работать от общего напряжения, либо необходимо использовать двунаправленные транзисторные ключи для согласования уровней.</p>
+</details>
+
+<details>
+<summary>Что делать, если линия SDA застряла в низком уровне?</summary>
+<p>Необходимо генерировать тактовые импульсы на линии SCL (обычно 8-9 импульсов), чтобы заставить устройство завершить текущую передачу и отпустить линию SDA. После этого можно отправить условие старта.</p>
+</details>
+
+<details>
+<summary>В чем разница между I2C и SPI?</summary>
+<p>I2C использует всего две линии, поддерживает мультимастерность и адресацию, но работает медленнее. SPI использует больше линий (MOSI, MISO, SCK, CS), работает быстрее, но не имеет встроенной адресации и требует больше выводов.</p>
+</details>
+
+<blockquote>Внимание: Артикулы и спецификации микросхем могут изменяться производителем без предварительного уведомления. Перед проектированием всегда проверяйте актуальные даташиты на официальном сайте производителя.</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/se/selo-gde-rodilsya-shukshin.html" class="pb-related-card">
+                <span class="pb-related-title">Село где родился Шукшин: история и память великого писателя</span>
+                <span class="pb-related-desc">Узнайте, в каком селе родился Василий Шукшин. Обзор села Сростки, музея-заповедника, памятников и пр</span>
+            </a><a href="/articles/s/sh/shtof-eto-skolko-v-grammakh.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько весит штоф: перевод в граммы и литры для разных жидкостей</span>
+                <span class="pb-related-desc">Узнайте точный вес штофа в граммах для водки, спирта и вина. Сравните исторические меры объема с сов</span>
+            </a><a href="/articles/m/ma/material-podoshvy-eva-chto-eto-takoe-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Материал подошвы ЭВА: что это, плюсы, минусы и отзывы</span>
+                <span class="pb-related-desc">Подробный разбор материала ЭВА для подошв обуви. Отзывы владельцев, сравнение с резиной, плюсы и мин</span>
+            </a><a href="/articles/c/ch/chem-otmyt-krasku-ot-ballonchika.html" class="pb-related-card">
+                <span class="pb-related-title">Как отмыть краску из баллончика: лучшие средства для разных поверхностей</span>
+                <span class="pb-related-desc">Эффективные способы удаления краски из баллончика с металла, стекла, пластика и одежды. Обзор раство</span>
+            </a><a href="/articles/k/ka/kak-pravilno-nazyvaetsya-lipuchka-dlya-odezhdy.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно называется липучка: термин, виды и применение</span>
+                <span class="pb-related-desc">Узнайте официальное название липучки для одежды и оборудования. Разбор терминологии, история создани</span>
+            </a><a href="/articles/t/ts/tsvet-mashiny-sine-fioletovyj.html" class="pb-related-card">
+                <span class="pb-related-title">Сине-фиолетовый цвет автомобиля: особенности, популярность и уход за кузовом</span>
+                <span class="pb-related-desc">Все о сине-фиолетовом цвете машин: от оттенков Chameleon до перламутровых красок. Как выбрать, и про</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Как создать идеальный промт для генерации машин в нейросетях — Мастер Шин</title>
+    <meta name="description" content="Пошаговое руководство по составлению запросов для Midjourney, Stable Diffusion и DALL-E. Узнайте, как описать авто, освещение и стиль для фотореалистичного результата.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/p/pr/promt-dlya-nejroseti-s-mashinoj.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как создать идеальный промт для генерации машин в нейросетях">
+    <meta property="og:description" content="Пошаговое руководство по составлению запросов для Midjourney, Stable Diffusion и DALL-E. Узнайте, как описать авто, освещение и стиль для фотореалистичного результата.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/obzory-brendov/">Обзоры брендов</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как создать идеальный промт для генерации машин в нейросетях</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#фундаментальные-принципы-описания-автомобиля">Фундаментальные принципы описания автомобиля</a></li><li><a href="#окружение-и-атмосферное-воздействие">Окружение и атмосферное воздействие</a></li><li><a href="#технические-параметры-камеры-и-рендеринга">Технические параметры камеры и рендеринга</a></li><li><a href="#примеры-готовых-промтов-для-разных-сценариев">Примеры готовых промтов для разных сценариев</a></li><li><a href="#работа-с-ошибками-и-артефактами">Работа с ошибками и артефактами</a></li><li><a href="#инструментарий-выбор-правильной-нейросети">Инструментарий: выбор правильной нейросети</a></li><li><a href="#специфика-генерации-классических-и-редких-авто">Специфика генерации классических и редких авто</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/o/ob/obzor-mashin-dlya-detej.html">Обзор лучших детских электромобилей: как выбрать надежную модель</a></li><li><a href="/articles/i/iz/iznosostojkost-shin-tablitsa-legkovykh-avtomobilej.html">Износостойкость шин: таблица индексов и сравнение брендов для легковых авто</a></li><li><a href="/articles/k/ku/kumho-ecsta-ps-71.html">Kumho Ecsta PS71: Обзор, характеристики и отзывы о шине</a></li><li><a href="/articles/n/no/nordman-7-205-50-r17.html">Шины Nordman 7 205/50 R17: Тест-драйв, плюсы, минусы и реальные отзывы</a></li><li><a href="/articles/r/re/rezina-landsail-otzyvy-letnyaya.html">Летняя резина Landsail: реальные отзывы, плюсы и минусы резины</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Мастерство промптинга: Как создать идеальную машину в нейросети</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#фундаментальные-принципы-описания-автомобиля">Фундаментальные принципы описания автомобиля</a></li><li><a href="#окружение-и-атмосферное-воздействие">Окружение и атмосферное воздействие</a></li><li><a href="#технические-параметры-камеры-и-рендеринга">Технические параметры камеры и рендеринга</a></li><li><a href="#примеры-готовых-промтов-для-разных-сценариев">Примеры готовых промтов для разных сценариев</a></li><li><a href="#работа-с-ошибками-и-артефактами">Работа с ошибками и артефактами</a></li><li><a href="#инструментарий-выбор-правильной-нейросети">Инструментарий: выбор правильной нейросети</a></li><li><a href="#специфика-генерации-классических-и-редких-авто">Специфика генерации классических и редких авто</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Генерация изображений автомобилей с помощью искусственного интеллекта перестала быть игрой для энтузиастов и превратилась в мощный инструмент для дизайнеров, маркетологов и автовладельцев. <strong>Создание качественного промта</strong> — это не просто набор слов, а точная инженерная работа, где каждый параметр влияет на результат. Если вы хотите получить изображение, которое невозможно отличить от профессиональной рекламы, вам необходимо освоить <strong>структуру запроса</strong> и досконально понимать возможности нейросетей.</p>
+
+<p>Большинство пользователей совершают одну и ту же ошибку: они пишут просто «красная машина» и удивляются, почему результат выглядит как мультфильм или абстракция. Нейросеть <em>Midjourney</em>, <em>Stable Diffusion</em> или <em>DALL-E 3</em> требует контекста. Вам нужно задать не только модель, но и окружение, освещение, ракурс и даже параметры камеры. В этой статье мы разберем, как превратить смутное желание увидеть красивый автомобиль в четкое техническое задание для ИИ.</p>
+
+<p>Правильно составленный запрос позволяет избежать артефактов, странных колес и неестественных пропорций кузова. <strong>Детализация описания</strong> — ключ к успеху. Мы рассмотрим конкретные примеры, разберем популярные модели нейросетей и научимся формулировать команды, которые дают предсказуемый и эстетичный результат.</p>
+
+<h2 id="фундаментальные-принципы-описания-автомобиля">Фундаментальные принципы описания автомобиля</h2>
+
+<p>Первое правило эффективного промптинга — это иерархия информации. Нейросети лучше всего воспринимают информацию в порядке от общего к частному. Начните с определения <strong>основного объекта</strong>: какая это машина? Это должен быть конкретный бренд и модель, например, <em>Bugatti Chiron</em> или <em>Tesla Model S Plaid</em>. Если вы не знаете точного названия, используйте описание класса автомобиля: «спорткар», «внедорожник», «классический седан 60-х годов».</p>
+
+<p>Далее необходимо определить <strong>визуальный стиль</strong>. Будет ли это фотореализм, киберпанк, ретро-футуризм, 3D-рендер или комикс? От этого выбора зависит весь ход генерации. Использование терминов вроде «photorealistic», «octane render», «unreal engine 5» или «cinematic lighting» задает тон всей картинке. Без этих маркеров результат может получиться плоским и неинтересным.</p>
+
+<p>Не забывайте про <strong>цветовую палитру</strong> и состояние кузова. Просто «синяя машина» звучит скучно. Лучше использовать специфические названия красок: «metalic blue», «matte black», «pearl white with gold trim». Также укажите состояние: «отполированный до блеска», «покрытый грязью после бездорожья», «с царапинами от гонок». Эти детали добавляют глубину и историю изображению.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Нейросети часто путают логотипы и надписи на бортах автомобилей. Даже при указании конкретной модели бренд может исказиться. Не ожидайте идеального воспроизведения шрифтов и эмблем.</p>
+</blockquote>
+
+<h2 id="окружение-и-атмосферное-воздействие">Окружение и атмосферное воздействие</h2>
+
+<p>Автомобиль не существует в вакууме. Окружение играет критическую роль в восприятии изображения. Если вы хотите показать мощь спорткара, поместите его на <strong>гоночную трассу</strong> или в городскую среду с размытым фоном (эффект боке). Для внедорожников идеально подходят сценарии: «грязная пустыня», «снежные горы», «мокрый лес». Контекст должен усиливать характеристики машины.</p>
+
+<p>Погодные условия и время суток создают настроение. <strong>Световые условия</strong> могут кардинально изменить цвета и тени. Опишите час дня: «золотой час», «сумерки», «ночная неоновая подсветка». Добавьте атмосферные эффекты: «дождь с отражениями», «туман», «пыль», «снежная занос». Эти элементы добавляют реалистичности и динамики статичному изображению.</p>
+
+<p>Позиционирование автомобиля в кадре также важно. Используйте термины для описания ракурса: «вид спереди», «профиль», «вид сзади», «низкий угол» (low angle), «вид сверху» (drone view). Низкий угол делает машину более агрессивной и величественной, а панорамный вид показывает масштаб окружения.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Сложные погодные эффекты, такие как сильный ливень или густой туман, могут иногда «съедать» детали автомобиля. Если машина кажется размытой, попробуйте упростить описание погоды или добавить параметр «sharp focus».</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-c1b9cb66"><div class="pb-poll-question">📊 Какой стиль генерации вы используете чаще всего?</div><div class="pb-poll-option" data-poll="c1b9cb66" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Фотореализм</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c1b9cb66" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">3D-рендер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c1b9cb66" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Киберпанк</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c1b9cb66" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ретро-стиль</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c1b9cb66" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Арт-стайл</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="технические-параметры-камеры-и-рендеринга">Технические параметры камеры и рендеринга</h2>
+
+<p>Чтобы изображение выглядело профессионально, нужно «настроить» виртуальную камеру. Используйте параметры, знакомые фотографам: <strong>фокусное расстояние</strong> (например, 35mm, 50mm, 85mm), <strong>диафрагму</strong> (f/1.8 для размытого фона, f/11 для резкости всего кадра), <strong>ISO</strong> и выдержку. Эти слова являются сигналом для нейросети о том, как именно нужно скомпоновать сцену.</p>
+
+<p>Добавление специфических терминов рендеринга значительно повышает качество картинки. Фразы вроде «ray tracing», «global illumination», «4k», «8k», «highly detailed» работают как усилители качества. Они заставляют модель генерировать более сложные текстуры, блики и отражения, которые свойственны современным графическим движкам.</p>
+
+<p>Не стоит перегружать промт техническими деталями, если они противоречат друг другу. Например, сочетание «макросъемка» и «широкоугольный вид» может запутать алгоритм. Выбирайте один основной ракурс и поддерживающие его параметры. <strong>Гармония описания</strong> важнее количества слов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка технического описания</h4><label class="check-item"><input type="checkbox"><span>Указан тип камеры или объектива?</span></label><label class="check-item"><input type="checkbox"><span>Заданы параметры освещения?</span></label><label class="check-item"><input type="checkbox"><span>Описаны текстуры и материалы?</span></label><label class="check-item"><input type="checkbox"><span>Выбрано разрешение или стиль рендера?</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<details class="pb-accordion"><summary>Что такое негативный промт и зачем он нужен?|Негативный промт (Negative Prompt) — это список того, чего вы НЕ хотите видеть на изображении. Вводите туда «размытые колеса», «искаженные фары», «лишние фары», «мутные текстуры». Это помогает отсеять типичные ошибки нейросетей.-->
+
+<h2 id="примеры-готовых-промтов-для-разных-сценариев">Примеры готовых промтов для разных сценариев</h2>
+
+<p>Рассмотрим конкретный пример для фотореалистичного изображения спортивного автомобиля. Запрос должен быть структурированным и насыщенным. Представьте, что вы заказываете фото у профессионального фотографа. Вам нужно описать не только объект, но и условия съемки.</p>
+<pre><code>A realistic photo of a vintage Ferrari 250 GTO, matte red paint, parked on a wet cobblestone street in Paris at night, neon signs reflecting on the hood, cinematic lighting, shot on Sony A7R IV, 35mm lens, f/1.8, rain droplets on the car, highly detailed, 8k resolution, cinematic atmosphere.</code></pre>
+
+<p>Для второй задачи — футуристического концепт-кара — стиль нужно полностью изменить. Здесь уместны более абстрактные описания и яркие цвета. Используйте слова, ассоциирующиеся с технологиями и будущим.</p>
+<pre><code>Futuristic electric hypercar, sleek silver design with glowing blue accents, driving through a cyberpunk city with flying vehicles, rain and neon lights, dynamic motion blur, unreal engine 5 render, octane render, ray tracing, high contrast, volumetric fog, 8k.</code></pre>
+
+<p>Третий пример — автомобиль в суровых природных условиях. Акцент делается на текстурах грязи, снега и контрасте с природой. Это проверка на устойчивость модели к сложным текстурам.</p>
+<pre><code>Off-road SUV, rugged black body covered in mud and snow, climbing a steep rocky mountain, dramatic stormy sky, lightning in the background, wide angle shot, 24mm lens, hyper-realistic, detailed textures, adventure photography style, 4k.</code></pre>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Элемент промта</th>
+      <th>Примеры ключевых слов</th>
+      <th>Эффект</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Стиль</td>
+      <td>Photorealistic, Cyberpunk, Oil Painting</td>
+      <td>Определяет общий вид и эстетику</td>
+    </tr>
+    <tr>
+      <td>Освещение</td>
+      <td>Golden Hour, Studio Lighting, Neon</td>
+      <td>Создает настроение и объем</td>
+    </tr>
+    <tr>
+      <td>Камера</td>
+      <td>Wide Angle, Macro, Telephoto</td>
+      <td>Задает ракурс и перспективу</td>
+    </tr>
+    <tr>
+      <td>Детализация</td>
+      <td>8k, Highly Detailed, Sharp Focus</td>
+      <td>Повышает четкость и качество</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>tip:Совет: Всегда начинайте промт с самого важного объекта. Если нейросеть генерирует слишком много фона, переместите описание машины в самое начало запроса или увеличьте его вес (в Stable Diffusion)</p></div></details>
+
+<h2 id="работа-с-ошибками-и-артефактами">Работа с ошибками и артефактами</h2>
+
+<p>Даже с лучшим промтом нейросети иногда выдают странные результаты. Самые частые проблемы — это <strong>искажение колес</strong> (разное количество спиц, странная форма), <strong>лишние фары</strong> или <strong>неправильная геометрия</strong> кузова. Это связано с тем, что ИИ обучается на миллионах изображений и иногда усредняет детали, теряя логику конструкции.</p>
+
+<p>Для решения проблемы колес используйте негативный промт или специфические команды. В <em>Midjourney</em> можно добавить параметр <code>--no wheels</code> (хотя это редко помогает полностью) или пересоздать изображение с уточнением «perfect wheels, realistic rims». В <em>Stable Diffusion</em> используйте негативный промт: «bad wheels, distorted rims, extra wheels, asymmetric wheels».</p>
+
+<p>Если машина «сливается» с фоном или теряет четкость, добавьте команды на резкость и контраст. Фразы «crisp details», «sharp focus», «high contrast» помогут выделить объект. <strong>Инверсия цветов</strong> или изменение баланса белого в промте также может помочь исправить цветовые перекосы.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если автомобиль выглядит неестественно (например, колеса повёрнуты в разные стороны), скорее всего, проблема в геометрии. Попробуйте использовать инструмент Inpainting (дообучение части изображения) для ручного исправления колес, не пересоздавая всю картинку.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Идеальный промт — это баланс между творческим описанием и техническими параметрами. Не бойтесь экспериментировать с комбинациями слов, но всегда проверяйте результат на наличие критических артефактов.</p></aside>
+
+<h2 id="инструментарий-выбор-правильной-нейросети">Инструментарий: выбор правильной нейросети</h2>
+
+<p>Каждая платформа имеет свои особенности при генерации автомобилей. <em>Midjourney v6</em> сейчас считается лидером в фотореализме и работе со светом. Она отлично понимает сложные атмосферные условия и архитектурные фоны. Однако контроль над композицией в ней ограничен по сравнению с другими инструментами.</p>
+
+<p><em>Stable Diffusion</em> (особенно с использованием ControlNet) — это выбор профессионалов, которым нужен полный контроль. Вы можете загрузить чертеж или эскиз кузова и заставить нейросеть нарисовать конкретную машину в нужном ракурсе. Это идеально для дизайнерских задач, где важна точность формы.</p>
+
+<p><em>DALL-E 3</em> отлично справляется с пониманием сложных инструкций и контекста, но часто жертвует фотореализмом в пользу художественной интерпретации. Если вам нужно нарисовать машину, которая выполняет специфическое действие (например, прыгает через препятствие), DALL-E 3 может быть более понятной, хотя и менее детализированной в текстурах.</p>
+
+<details class="pb-accordion"><summary>Как использовать ControlNet для точной генерации?|ControlNet — это плагин для Stable Diffusion, позволяющий использовать структуру исходного изображения (Canny, Depth, OpenPose) как каркас. Это позволяет нарисовать конкретную модель машины, сохранив её геометрию, но изменив цвет и окружение.-->
+
+<h2 id="специфика-генерации-классических-и-редких-авто">Специфика генерации классических и редких авто</h2>
+
+<p>Генерация редких автомобилей требует особого подхода. Если вы запросите «1962 Ferrari 250 GTO», нейросеть может выдать смесь с другими моделями. В этом случае необходимо описать <strong>уникальные черты</strong></summary><div class="pb-accordion-body"><p> «long hood, distinct fender vents, round headlights, specific grille shape». Чем точнее описание деталей, тем выше шанс получить узнаваемый образ.</p>
+
+<p>Для классических машин важно указать <strong>материалы</strong>: «chrome bumpers», «wire wheels», «leather interior». Эти элементы часто теряются в современном стиле. Добавление слов «vintage aesthetic», «classic car show» поможет подчеркнуть эпоху и стиль.</p>
+
+<p>Иногда нейросети путают модели разных лет выпуска одной марки. Если результат не устраивает, попробуйте уточнить год выпуска и поколение модели. Например, «BMW M3 E30» работает лучше, чем просто «BMW M3», так как модель E30 имеет уникальные пропорции, отличающиеся от современных версий.</p>
+
+
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли задать конкретный цвет колес и дисков?</summary>
+<p>Да, вы можете задать цвет дисков и шин, описав их отдельно. Например: «glossy black rims with blue calipers, thick off-road tires». Однако нейросеть может иногда менять их при перерисовке, поэтому лучше использовать Inpainting для точной настройки цвета.</p>
+</details>
+
+<details>
+<summary>Как избежать искажения логотипов на машине?</summary>
+<p>К сожалению, нейросети плохо генерируют текст и логотипы. Лучший способ — сгенерировать чистую машину без логотипов или с размытыми эмблемами, а затем добавить правильный логотип в графическом редакторе (Photoshop).</p>
+</details>
+
+<details>
+<summary>Какой промт лучше использовать для концепт-кара?</summary>
+<p>Для концепт-каров используйте слова-триггеры: «concept car», «futuristic design», «aerodynamic shape», «glowing accents», «sci-fi interior». Избегайте слов «production model» или «real car», если хотите получить футуристичный образ.</p>
+</details>
+
+<details>
+<summary>Зачем нужны параметры --ar и --v в Midjourney?</summary>
+<p>Параметр <code>--ar</code> задает соотношение сторон (например, <code>--ar 16:9</code> для широкоформатного кадра), что важно для автомобильной съемки. <code>--v</code> указывает версию нейросети (например, <code>--v 6</code>), которая влияет на реализм и понимание языка.</p>
+</details>
+
+<details>
+<summary>Почему машина выглядит мультяшной?</summary>
+<p>Если результат мультяшный, добавьте в начало промта слова «photorealistic», «8k», «unreal engine 5», «cinematic photography». Уберите слова вроде «cartoon», «illustration», «drawing». Иногда помогает увеличение веса ключевых слов через скобки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/o/ob/obzor-mashin-dlya-detej.html" class="pb-related-card">
+                <span class="pb-related-title">Обзор лучших детских электромобилей: как выбрать надежную модель</span>
+                <span class="pb-related-desc">Полный гид по выбору машин для детей: типы аккумуляторов, материалы, управление и безопасность. Срав</span>
+            </a><a href="/articles/i/iz/iznosostojkost-shin-tablitsa-legkovykh-avtomobilej.html" class="pb-related-card">
+                <span class="pb-related-title">Износостойкость шин: таблица индексов и сравнение брендов для легковых авто</span>
+                <span class="pb-related-desc">Полная таблица износостойкости шин легковых автомобилей. Разбор индекса Treadwear, сравнение реально</span>
+            </a><a href="/articles/k/ku/kumho-ecsta-ps-71.html" class="pb-related-card">
+                <span class="pb-related-title">Kumho Ecsta PS71: Обзор, характеристики и отзывы о шине</span>
+                <span class="pb-related-desc">Полный обзор шины Kumho Ecsta PS71. Тест-драйв, особенности состава, сравнение с конкурентами, плюсы</span>
+            </a><a href="/articles/n/no/nordman-7-205-50-r17.html" class="pb-related-card">
+                <span class="pb-related-title">Шины Nordman 7 205/50 R17: Тест-драйв, плюсы, минусы и реальные отзывы</span>
+                <span class="pb-related-desc">Полный обзор зимней шины Nordman 7 размерности 205/50 R17. Анализ сцепления, шума, надежности и срав</span>
+            </a><a href="/articles/r/re/rezina-landsail-otzyvy-letnyaya.html" class="pb-related-card">
+                <span class="pb-related-title">Летняя резина Landsail: реальные отзывы, плюсы и минусы резины</span>
+                <span class="pb-related-desc">Честные отзывы о летних шинах Landsail. Разбор моделей LS588 и LS788, сравнение характеристик, совет</span>
+            </a><a href="/articles/s/s-/s-kakoj-mashiny-skopirovali-zhiguli.html" class="pb-related-card">
+                <span class="pb-related-title">С какой машины скопировали Жигули: мифы и реальность Fiat 124</span>
+                <span class="pb-related-desc">Разбираем историю создания ВАЗ-2101. С какой именно модели итальянского Fiat были скопированы Жигули</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

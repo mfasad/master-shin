@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Как создать промт для замены фона в нейросетях: инструкция — Мастер Шин</title>
+    <meta name="description" content="Пошаговое руководство по написанию промтов для изменения фона изображения. Примеры запросов для Stable Diffusion, Midjourney и Photoshop.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/p/pr/promt-dlya-izmeneniya-fona.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как создать промт для замены фона в нейросетях: инструкция">
+    <meta property="og:description" content="Пошаговое руководство по написанию промтов для изменения фона изображения. Примеры запросов для Stable Diffusion, Midjourney и Photoshop.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как создать промт для замены фона в нейросетях: инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основы-формулирования-запроса-для-нейросетей">Основы формулирования запроса для нейросетей</a></li><li><a href="#технические-аспекты-работы-с-inpainting-и-outpainting">Технические аспекты работы с Inpainting и Outpainting</a></li><li><a href="#структурирование-запроса-от-объекта-к-окружению">Структурирование запроса: от объекта к окружению</a></li><li><a href="#инструменты-и-платформы-для-генерации-фона">Инструменты и платформы для генерации фона</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#примеры-эффективных-промтов-для-разных-задач">Примеры эффективных промтов для разных задач</a></li><li><a href="#faq-частые-вопросы-о-замене-фона">FAQ: Частые вопросы о замене фона</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-nazyvayutsya-ostatki-ot-kofe-v-kofemashine.html">Как называются остатки от кофе в кофемашине: Жмых, гуща и отходы</a></li><li><a href="/articles/k/ka/kakoj-kofe-luchshe-brat-dlya-kofemashiny.html">Какой кофе лучше брать для кофемашины: молотый, зерна и сорта</a></li><li><a href="/articles/1/1-/1-pud-skolko-eto-v-kilogrammakh.html">1 пуд сколько кг: точный перевод и таблица мер веса</a></li><li><a href="/articles/g/gr/grafitovyj-metallik-eto-kakoj-tsvet.html">Графитовый металлик: какой это цвет, оттенки и особенности применения</a></li><li><a href="/articles/k/ka/kak-podbirat-ofsetnye-kryuchki-k-silikonovym-primankam.html">Подбор офсетного крючка к силиконовой приманке: гид по размерам и формам</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Промт для изменения фона: полное руководство по генерации и редактированию</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основы-формулирования-запроса-для-нейросетей">Основы формулирования запроса для нейросетей</a></li><li><a href="#технические-аспекты-работы-с-inpainting-и-outpainting">Технические аспекты работы с Inpainting и Outpainting</a></li><li><a href="#структурирование-запроса-от-объекта-к-окружению">Структурирование запроса: от объекта к окружению</a></li><li><a href="#инструменты-и-платформы-для-генерации-фона">Инструменты и платформы для генерации фона</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#примеры-эффективных-промтов-для-разных-задач">Примеры эффективных промтов для разных задач</a></li><li><a href="#faq-частые-вопросы-о-замене-фона">FAQ: Частые вопросы о замене фона</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Современные инструменты искусственного интеллекта кардинально меняют подход к обработке фотографий. Если раньше для замены фона требовались часы работы в графических редакторах, то сейчас достаточно правильно составить текстовый запрос. <strong>Промт для изменения фона</strong> — это ключ к получению идеального результата без ручного вырезания объектов. Нейросети способны анализировать освещение, тени и текстуры, создавая seamless-интеграцию предмета в новую среду.</p>
+
+<p>Однако успех генерации зависит не только от мощности алгоритма, но и от точности формулировок. Многие пользователи сталкиваются с проблемой искажения краев объекта или несоответствия стиля фона. Чтобы избежать артефактов, необходимо понимать логику работы <em>Stable Diffusion</em>, <em>Midjourney</em> или <em>Adobe Firefly</em>. Правильно расставленные акценты в запросе позволяют контролировать каждый аспект визуального ряда.</p>
+
+<h2 id="основы-формулирования-запроса-для-нейросетей">Основы формулирования запроса для нейросетей</h2>
+<p>Любой эффективный запрос строится по определенной структуре, которая помогает алгоритму понять приоритеты. В первую очередь нужно четко описать объект, который должен остаться неизменным, а затем детализировать желаемый фон. <strong>Семантическое ядро</strong> запроса должно содержать название объекта, его цвет, материал и текущее состояние. После этого следует описание окружения, освещения и атмосферы.</p>
+
+<p>Использование <em>ключевых слов-триггеров</em> значительно повышает качество результата. Фразы вроде "seamless blend" (бесшовное смешение) или "consistent lighting" (последовательное освещение) дают модели понять, что нужно сохранить целостность изображения. Важно избегать противоречивых описаний, так как это может привести к генерации нескольких объектов или размытию границ.</p>
+
+<p>Нейросети по-разному интерпретируют абстрактные понятия. Вместо слова "красиво" лучше использовать конкретные стилистические направления, такие как <em>cyanotype</em>, <em>cyberpunk</em>, <em>minimalist studio</em>. Это сузит поиск в latent space модели и выдаст более предсказуемый результат.</p>
+
+<ul>
+<li>🎨 Используйте конкретные названия стилей искусства вместо общих прилагательных.</li>
+<li>💡 Описывайте источник света, его цвет и температуру (холодный, теплый, мягкий).</li>
+<li>📐 Указывайте перспективу и ракурс камеры для сохранения геометрии объекта.</li>
+</ul>
+
+<p>Часто пользователи забывают про параметр веса ключевых слов. В некоторых моделях можно усилить важность фона или объекта, добавляя двоеточия и цифры. Это позволяет гибко управлять балансом между детализацией предмета и атмосферой сцены.</p>
+
+<h2 id="технические-аспекты-работы-с-inpainting-и-outpainting">Технические аспекты работы с Inpainting и Outpainting</h2>
+<p>Существует два основных подхода к замене фона, которые требуют разных стратегий написания промтов. Первый метод — <strong>Inpainting</strong> (доскаживание), когда выделяется область фона, а объект остается нетронутым. Второй — <strong>Outpainting</strong>, который расширяет границы изображения, создавая фон за пределами исходной области. Выбор техники определяет структуру вашего запроса.</p>
+
+<p>При работе с Inpainting критически важно использовать маски высокой точности. Промт должен фокусироваться исключительно на заполнении выделенной области, не пытаясь изменить сам объект. Упоминание объекта в тексте может привести к его искажению или дублированию. Лучше писать: "background only", "studio backdrop", "blurred bokeh".</p>
+
+<p>Для Outpainting запросы должны быть более описательными, чтобы новая часть изображения гармонично перетекала в старую. Необходимо указывать, как свет падает с оригинальной части на новую. Параметры <em>denoising strength</em> играют решающую роль здесь: слишком высокое значение разрушит оригинал, слишком низкое — не изменит фон достаточно сильно.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> При использовании маски для инпейнтинга всегда оставляйте небольшой полупрозрачный край (feather) вокруг объекта, чтобы избежать резких границ и артефактов смешивания пикселей.</blockquote>
+
+<p>Разные нейросети имеют свои особенности обработки этих задач. Например, в <em>Stable Diffusion</em> часто используется ControlNet для сохранения позы и формы, в то время как <em>Photoshop Generative Fill</em> автоматически подстраивает контекст без сложных настроек. Понимание этих различий помогает выбрать оптимальный инструмент.</p>
+
+<h2 id="структурирование-запроса-от-объекта-к-окружению">Структурирование запроса: от объекта к окружению</h2>
+<p>Правильная иерархия слов в запросе помогает модели расставить приоритеты. Начинайте с описания того, что должно остаться неизменным, даже если вы меняете только фон. Это обеспечивает стабильность объекта. Затем переходите к деталям фона, указывая текстуру, цвет и освещение. Не забывайте про технические параметры качества.</p>
+
+<p>Использование разделителей помогает алгоритму лучше понять структуру предложения. Запятые, квадратные скобки или специальные символы (в зависимости от модели) могут менять вес терминов. Например, [(background:1.3)] усилит влияние описания фона на итоговый результат. Это полезно, если модель игнорирует окружение в пользу объекта.</p>
+
+<p>Важно учитывать контекст использования изображения. Если это товар для маркетплейса, фон должен быть чистым и нейтральным. Для портрета или арт-проекта можно использовать сложные сцены. <strong>Целевое назначение</strong> диктует выбор стиля и сложности запроса. Не переусердствуйте с деталями, если нужен простой результат.</p>
+
+<div class="pb-poll" id="poll-d6b873de"><div class="pb-poll-question">📊 Что вам важнее всего при замене фона?</div><div class="pb-poll-option" data-poll="d6b873de" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Бесшовность границ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d6b873de" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сохранение деталей объекта</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d6b873de" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Креативность фона</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d6b873de" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Скорость генерации</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Пример идеальной структуры запроса выглядит так: [Объект], [Фон:1.5], [Освещение], [Стиль], [Технические параметры]. Такая формула работает в большинстве современных генераторов. Экспериментируйте с весом параметров, чтобы найти идеальный баланс для вашей конкретной задачи.</p>
+
+<h2 id="инструменты-и-платформы-для-генерации-фона">Инструменты и платформы для генерации фона</h2>
+<p>Сегодня существует множество платформ для работы с изображениями, и каждая требует своего подхода. <em>Midjourney</em> отлично справляется с художественными фонами благодаря своему сильному пониманию стиля. <em>Stable Diffusion</em> предлагает максимальный контроль через настройки и плагины. <em>DALL-E 3</em> удобен для простых задач благодаря пониманию естественного языка.</p>
+
+<p>В таблице ниже представлены сравнительные характеристики популярных инструментов для замены фона:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Сложность управления</th>
+<th>Качество фона</th>
+<th>Поддержка масок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Midjourney v6</td>
+<td>Средняя</td>
+<td>Высокое</td>
+<td>Частичная</td>
+</tr>
+<tr>
+<td>Stable Diffusion XL</td>
+<td>Высокая</td>
+<td>Максимальное</td>
+<td>Полная</td>
+</tr>
+<tr>
+<td>Adobe Photoshop AI</td>
+<td>Низкая</td>
+<td>Высокое</td>
+<td>Полная</td>
+</tr>
+<tr>
+<td>Leonardo.ai</td>
+<td>Средняя</td>
+<td>Высокое</td>
+<td>Полная</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор платформы зависит от ваших навыков и задач. Если вам нужен быстрый результат без глубоких технических знаний, лучше подойдут <em>Adobe Firefly</em> или онлайн-сервисы. Для профессиональной работы с деталями и сложными сценами незаменим <em>Stable Diffusion</em> с настройкой ControlNet. Каждый инструмент имеет свои сильные стороны, которые нужно уметь использовать.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед запуском генерации на сложных моделях всегда делайте тестовый прогон с минимальным количеством шагов, чтобы проверить совместимость маски и запроса.</p></aside>
+
+<p>Не забывайте о подписках и ограничениях. Некоторые сервисы имеют лимиты на количество генераций в день или требуют оплаты за высокое разрешение. Это может быть критично при работе над масштабными проектами. Всегда проверяйте условия использования перед началом работы.</p>
+
+<h2 id="типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</h2>
+<p>Даже опытные пользователи сталкиваются с проблемами при замене фона. Одна из самых частых ошибок — несоответствие освещения объекта и фона. Если объект находится в тени, а фон яркий солнечный день, изображение будет выглядеть неестественно. Нужно <strong>синхронизировать параметры света</strong> в запросе.</p>
+
+<p>Другая проблема — потеря деталей по краям объекта. Это часто происходит при слишком высокой температуре денойзинга или плохой маске. Решение кроется в наложении <em>soft mask</em> и снижении агрессивности генерации. Иногда помогает повторная генерация с изменением семплера.</p>
+
+<p>Также встречается ситуация, когда фон "съедает" объект или искажает его форму. Это происходит из-за недостаточного веса объекта в промте. Попробуйте увеличить вес ключевых слов, описывающих объект, или использовать градиентную маску. Важно найти баланс между творчеством ИИ и сохранением оригинала.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если фон выглядит "пластиковым" или слишком однородным, добавьте в промт слова "texture", "grain", "noise" или "imperfections" для придания реалистичности.</blockquote>
+
+<p>Иногда модель генерирует лишние объекты на фоне или дублирует части объекта. Это сигнал о том, что запрос слишком размыт или содержит противоречивые инструкции. Упрощайте описание, убирайте лишние детали и четко разделяйте зоны ответственности в промте. Ясность формулировок — залог успеха.</p>
+
+<h2 id="примеры-эффективных-промтов-для-разных-задач">Примеры эффективных промтов для разных задач</h2>
+<p>Рассмотрим конкретные примеры запросов, которые дают отличный результат. Для фотографии товара на белом фоне используйте: "product shot, clean white background, studio lighting, soft shadows, high resolution, 8k". Это классический запрос, который дает чистый и профессиональный вид.</p>
+
+<p>Для создания атмосферного портрета подойдет: "portrait of a woman, cyberpunk city background, neon lights, rain, reflections, cinematic lighting, depth of field, photorealistic". Здесь важно указать детали окружения и стиль освещения, чтобы создать настроение.</p>
+
+<p>Для художественной иллюстрации можно использовать: "fantasy landscape background, magical forest, glowing mushrooms, ethereal fog, digital art style, intricate details, vibrant colors". Такой запрос поможет создать уникальную и выразительную сцену, подходящую для книг или игр.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка качества сгенерированного фона</h4><label class="check-item"><input type="checkbox"><span>Проверка границ объекта</span></label><label class="check-item"><input type="checkbox"><span>Согласованность освещения</span></label><label class="check-item"><input type="checkbox"><span>Отсутствие артефактов</span></label><label class="check-item"><input type="checkbox"><span>Соответствие стилю</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Экспериментируйте с комбинациями. Попробуйте добавить конкретные имена фотографов или художников в промт, чтобы задать определенный стиль. Например, "style of Roger Deakins" для кинематографичного света или "style of Greg Rutkowski" для фэнтези. Это мощный инструмент для управления визуальным результатом.</p>
+
+<p>Помните, что универсального промта не существует. Каждый случай уникален и требует индивидуального подхода. Анализ ошибок и постоянная практика помогут вам научиться составлять идеальные запросы. <strong>Искусство промтинга</strong> — это сочетание технических знаний и творческого видения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный секрет качественного фона — это не просто описание сцены, а точная настройка освещения и текстуры, соответствующих оригинальному объекту.</p></aside>
+
+<h2 id="faq-частые-вопросы-о-замене-фона">FAQ: Частые вопросы о замене фона</h2>
+
+<details>
+<summary>Можно ли изменить фон на видео?</summary>
+<p>Да, современные нейросети позволяют заменять фон на видео, но процесс более сложный и требует больших вычислительных ресурсов. Инструменты вроде Runway Gen-2 или специальные плагины для After Effects могут справляться с этой задачей, сохраняя временную согласованность кадров.</p>
+</details>
+
+<details>
+<summary>Нужно ли платить за использование нейросетей?</summary>
+<p>Многие сервисы имеют бесплатные тарифы с лимитами, но для профессиональной работы и высокого разрешения обычно требуется подписка. Бесплатные версии часто имеют водяные знаки или ограниченный набор стилей, что может быть недостаточно для коммерческих проектов.</p>
+</details>
+
+<details>
+<summary>Как сохранить оригинальную детализацию объекта?</summary>
+<p>Используйте маски высокой точности и параметры ControlNet для сохранения структуры. Важно не переусердствовать с силой генерации (denoising strength), чтобы алгоритм не перерисовал сам объект, а только заполнил пустоты вокруг него.</p>
+</details>
+
+<details>
+<summary>Какой инструмент лучше всего подходит для новичков?</summary>
+<p>Для новичков лучше всего подойдут <em>Adobe Photoshop (Generative Fill)</em> или онлайн-сервисы типа <em>Canva</em> и <em>Remove.bg</em>. Они имеют интуитивно понятный интерфейс и не требуют написания сложных текстовых запросов, автоматизируя процесс замены фона.</p>
+</details>
+
+<p>Освоение навыков работы с промтами открывает новые возможности для творчества и профессиональной деятельности. Не бойтесь экспериментировать и тестировать разные подходы. <mark>Каждый успешный промт — это результат анализа ошибки и точной настройки параметров.</mark> Постоянная практика и изучение новых функций нейросетей помогут вам достигать впечатляющих результатов в обработке изображений.</p></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-nazyvayutsya-ostatki-ot-kofe-v-kofemashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как называются остатки от кофе в кофемашине: Жмых, гуща и отходы</span>
+                <span class="pb-related-desc">Узнайте, как правильно называются кофейные отходы после варки. Разбор терминов: жмых, гуща, пудра. С</span>
+            </a><a href="/articles/k/ka/kakoj-kofe-luchshe-brat-dlya-kofemashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Какой кофе лучше брать для кофемашины: молотый, зерна и сорта</span>
+                <span class="pb-related-desc">Узнайте, какой кофе выбрать для кофемашин рожкового и автоматического типа. Разбор сортов, степени о</span>
+            </a><a href="/articles/1/1-/1-pud-skolko-eto-v-kilogrammakh.html" class="pb-related-card">
+                <span class="pb-related-title">1 пуд сколько кг: точный перевод и таблица мер веса</span>
+                <span class="pb-related-desc">Узнайте, сколько килограммов в одном пуде. Точные данные, история русской системы мер, таблица перес</span>
+            </a><a href="/articles/g/gr/grafitovyj-metallik-eto-kakoj-tsvet.html" class="pb-related-card">
+                <span class="pb-related-title">Графитовый металлик: какой это цвет, оттенки и особенности применения</span>
+                <span class="pb-related-desc">Узнайте, какой это цвет — графитовый металлик. Разбор оттенков, отличия от серого, влияние на кузов </span>
+            </a><a href="/articles/k/ka/kak-podbirat-ofsetnye-kryuchki-k-silikonovym-primankam.html" class="pb-related-card">
+                <span class="pb-related-title">Подбор офсетного крючка к силиконовой приманке: гид по размерам и формам</span>
+                <span class="pb-related-desc">Узнайте, как правильно подобрать офсетный крючок под длину и тип силикона. Разбор геометрии, калибро</span>
+            </a><a href="/articles/m/ma/mashiny-dzhejmsa-bonda-spisok.html" class="pb-related-card">
+                <span class="pb-related-title">Машины Джеймса Бонда: Полный список автомобилей из фильмов 007</span>
+                <span class="pb-related-desc">Полный список автомобилей Джеймса Бонда от Aston Martin DB5 до Aston Martin DBS. Технические характе</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

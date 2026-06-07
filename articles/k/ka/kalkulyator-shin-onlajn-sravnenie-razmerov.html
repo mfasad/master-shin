@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Калькулятор шин онлайн: как сравнить размеры и не повредить авто — Мастер Шин</title>
+    <meta name="description" content="Полное руководство по использованию калькулятора шин. Узнайте, как сравнивать размеры, расшифровывать параметры и избежать ошибок при подборе резины для вашего авто.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kalkulyator-shin-onlajn-sravnenie-razmerov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Калькулятор шин онлайн: как сравнить размеры и не повредить авто">
+    <meta property="og:description" content="Полное руководство по использованию калькулятора шин. Узнайте, как сравнивать размеры, расшифровывать параметры и избежать ошибок при подборе резины для вашего авто.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/" class="pb-nav-active">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/podbor-shin/">Подбор шин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Калькулятор шин онлайн: как сравнить размеры и не повредить авто</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-мир-шинной-геометрии">Введение в мир шинной геометрии</a></li><li><a href="#основные-параметры-маркировки-и-их-влияние-на-расчет">Основные параметры маркировки и их влияние на расчет</a></li><li><a href="#как-работает-онлайн-сравнение-размеров-шин">Как работает онлайн-сравнение размеров шин</a></li><li><a href="#критические-отклонения-и-допустимые-погрешности">Критические отклонения и допустимые погрешности</a></li><li><a href="#влияние-ширины-профиля-и-вылета-диска">Влияние ширины профиля и вылета диска</a></li><li><a href="#скрытые-нюансы-и-технические-ограничения">Скрытые нюансы и технические ограничения</a></li><li><a href="#законодательные-аспекты-и-техосмотр">Законодательные аспекты и техосмотр</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sh/shiny-matador-mr-72-izzarda-at-2-kupit.html">Шины Matador MR72 Izarda AT2: обзор, характеристики и где купить</a></li><li><a href="/articles/r/ra/razmer-29-koles-na-nivu.html">Шины 29 дюймов на Ниву: плюсы, минусы и необходимость лифта</a></li><li><a href="/articles/3/31/315-75-16-zimnyaya-rezina.html">Шина 315/75 R16: выбор, установка и особенности зимней резины</a></li><li><a href="/articles/b/bf/bf-goodridge-all-terrain-265-70-r16-kupit.html">Купить BF Goodrich All Terrain T/A KO2 265/70 R16: Обзор и критерии</a></li><li><a href="/articles/c/co/continental-icecontact-3-testy.html">Continental IceContact 3 тесты: безопасность и износ в 2026-2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Калькулятор шин онлайн: полное руководство по сравнению размеров</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-мир-шинной-геометрии">Введение в мир шинной геометрии</a></li><li><a href="#основные-параметры-маркировки-и-их-влияние-на-расчет">Основные параметры маркировки и их влияние на расчет</a></li><li><a href="#как-работает-онлайн-сравнение-размеров-шин">Как работает онлайн-сравнение размеров шин</a></li><li><a href="#критические-отклонения-и-допустимые-погрешности">Критические отклонения и допустимые погрешности</a></li><li><a href="#влияние-ширины-профиля-и-вылета-диска">Влияние ширины профиля и вылета диска</a></li><li><a href="#скрытые-нюансы-и-технические-ограничения">Скрытые нюансы и технические ограничения</a></li><li><a href="#законодательные-аспекты-и-техосмотр">Законодательные аспекты и техосмотр</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-мир-шинной-геометрии">Введение в мир шинной геометрии</h2>
+<p>Каждый автовладелец рано или поздно сталкивается с необходимостью смены резины или тюнинга подвески. В этот момент на помощь приходит <strong>калькулятор шин онлайн</strong>, который помогает виртуально примерить новые размеры на ваш автомобиль. Многие ошибочно полагают, что достаточно лишь совпадения ширины профиля, но реальная геометрия колеса куда сложнее и требует точных расчетов.</p>
+<p>Современные онлайн-сервисы позволяют не просто увидеть цифру, а получить наглядное сравнение диаметра, высоты профиля и вылета. Это критически важно, чтобы избежать трения колеса о арку или детали подвески. Игнорирование этих данных может привести к дорогостоящему ремонту ходовой части.</p>
+<p>В этой статье мы разберем, как правильно пользоваться инструментами для расчета, на какие параметры смотреть в первую очередь и какие скрытые нюансы скрываются за привычными маркировками.</p>
+
+<h2 id="основные-параметры-маркировки-и-их-влияние-на-расчет">Основные параметры маркировки и их влияние на расчет</h2>
+<p>Чтобы калькулятор шин выдал корректный результат, необходимо досконально понимать, что означают цифры на боковине покрышки. Стандартная маркировка, например <code>205/55 R16</code>, содержит три ключевых параметра, определяющих габариты колеса. Первая цифра — это ширина профиля в миллиметрах, вторая — отношение высоты профиля к ширине в процентах, а третья — посадочный диаметр диска.</p>
+<p>Часто водители меняют только ширину, забывая, что изменение высоты профиля (серии) меняет общий диаметр колеса. Даже незначительное отклонение в пару миллиметров может серьезно повлиять на показания спидометра и работу <strong>системы ESP</strong>. Именно поэтому визуальная оценка «на глаз» здесь абсолютно не работает.</p>
+<p>Необходимо учитывать и тип резины: <em>летние</em> и <em>зимние</em> шины одного размера могут иметь разную реальную высоту из-за особенностей рисунка протектора и состава смеси. Калькулятор обычно оперирует теоретическими геометрическими размерами, поэтому реальные замеры могут незначительно отличаться.</p>
+<blockquote>⚠️ Внимание: Производители резины могут незначительно варьировать реальные размеры одной и той же маркировки. Калькулятор показывает теоретический расчет, а не фактические замеры конкретной партии.</blockquote>
+
+<h2 id="как-работает-онлайн-сравнение-размеров-шин">Как работает онлайн-сравнение размеров шин</h2>
+<p>Алгоритм работы большинства <strong>калькуляторов шин</strong> основан на математических формулах, учитывающих геометрию круга. Вводные данные преобразуются в общий диаметр колеса, который затем сопоставляется с исходным параметром автомобиля. Система автоматически высчитывает разницу в процентах и миллиметрах, показывая вам итоговый результат.</p>
+<p>Вы можете сравнить сразу два или даже три разных размера на одной странице. Это удобно, когда вы стоите перед выбором между более широкой резиной для лучшего сцепления и более узкой для снижения расхода топлива. Визуализация разницы помогает принять взвешенное решение.</p>
+<p>Важным аспектом является учет дисков. При замене резины часто меняют и диски, что влияет на вылет (ET) и ширину обода. Эти параметры напрямую влияют на то, как колесо будет сидеть в арке. Без учета этих данных расчет будет неполным.</p>
+<p><strong>Ключевой вывод раздела:</strong> Точность расчета зависит от корректности введенных исходных данных. Ошибка в одной цифре может повлечь за собой неверные выводы о совместимости шины с вашим авто.</p>
+
+<div class="pb-poll" id="poll-8df199dc"><div class="pb-poll-question">📊 Какой параметр для вас самый важный при выборе шин?</div><div class="pb-poll-option" data-poll="8df199dc" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Точный размер (диаметр)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8df199dc" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Цена и бренд</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8df199dc" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Рисунок протектора</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8df199dc" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Сезонность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="критические-отклонения-и-допустимые-погрешности">Критические отклонения и допустимые погрешности</h2>
+<p>Существуют строгие ограничения по отклонению диаметра колеса от заводского значения. Обычно допустимая погрешность составляет не более 2-3%. Превышение этого порога может привести к тому, что колесо начнет задевать за арку при полной загрузке автомобиля или в поворотах.</p>
+<p>Кроме того, изменение диаметра колеса напрямую влияет на показания спидометра и одометра. Если вы установили колеса большего диаметра, спидометр будет показывать скорость ниже реальной. Это опасно, так как вы можете превысить, не заметив этого по приборной панели.</p>
+<p>Также страдает работа <strong>ABS</strong> и <strong>контроля давления</strong>, если они жестко привязаны к заводскому диаметру колеса. Датчики на дисках могут выдавать ложные ошибки, которые придется постоянно сбрасывать сканером.</p>
+<p>Особое внимание следует уделить дорожному просвету (клиренсу). Установка колес меньшего диаметра уменьшает просвет между днищем и дорогой. Для автомобилей с низкой посадкой это может стать критичным при проезде «лежачих полицейских» или ям.</p>
+<p>Вот таблица, демонстрирующая влияние изменения размера на основные параметры:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Исходный размер</th>
+<th>Новый размер</th>
+<th>Изменение диаметра</th>
+<th>Влияние на клиренс</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>205/55 R16</td>
+<td>205/50 R16</td>
+<td>-1.9%</td>
+<td>Уменьшение на 10 мм</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>215/55 R16</td>
+<td>+0.0%</td>
+<td>Без изменений</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>225/50 R16</td>
+<td>-0.7%</td>
+<td>Незначительное снижение</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>235/45 R17</td>
+<td>+1.2%</td>
+<td>Незначительное увеличение</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>⚠️ Внимание: Если разница в диаметре превышает 3%, это может быть расценено службой техосмотра как изменение конструкции автомобиля, что повлечет за собой юридические проблемы.</blockquote>
+
+<details class="pb-accordion"><summary>Почему меняются показания спидометра?
+<p>Спидометр считывает скорость вращения колеса. Если диаметр колеса увеличивается, то за один оборот машина проезжает большее расстояние, но компьютер считает, что это один стандартный оборот. В результате скорость отображается заниженной.--></p>
+
+<h2 id="влияние-ширины-профиля-и-вылета-диска">Влияние ширины профиля и вылета диска</h2>
+<p>Ширина профиля шины — это не просто величина, влияющая на внешний вид. Она определяет площадь контакта с дорогой. Более широкая шина (<em>широкий профиль</em>) обеспечивает лучшее сцепление на сухом асфальте, но может ухудшить поведение на снегу или льду.</p>
+<p>При увеличении ширины необходимо учитывать ширину диска. Слишком широкая шина на узком диске будет работать нестабильно, «плавать» в поворотах. И наоборот, узкая шина на широком диске может неплотно прилегать к бортам, что опасно при резких маневрах.</p>
+<p>Вылет диска (параметр ET) играет решающую роль при установке нестандартных размеров. Изменение вылета сдвигает колесо внутрь или наружу. Если колесо сдвинется слишком сильно наружу, оно будет тереться о крыло. Если внутрь — задевать элементы подвески или рулевые тяги.</p>
+<p>Используйте <code>калькулятор вылета дисков</code> в связке с шинным калькулятором для полного понимания картины. Это позволит заранее понять, нужны ли проставки для корректной установки.</p>
+<p>Вот чек-лист для проверки совместимости ширины и вылета</summary><div class="pb-accordion-body"><p></p>
+<ul>
+<li>🔍 Проверьте максимальную ширину диска для вашей модели шины</li>
+<li>🔍 Убедитесь, что колесо не касается арок при полном повороте руля</li>
+<li>🔍 Проверьте наличие зазора между колесом и элементами подвески</li>
+<li>🔍 Сравните заводской вылет с планируемым новым вылетом</li>
+</ul>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка установки широкой резины</h4><label class="check-item"><input type="checkbox"><span>Измерить ширину диска</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии трения о подвеску</span></label><label class="check-item"><input type="checkbox"><span>Проверить зазор в арке</span></label><label class="check-item"><input type="checkbox"><span>Сверить вылет с заводским</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="скрытые-нюансы-и-технические-ограничения">Скрытые нюансы и технические ограничения</h2>
+<p>Калькулятор шин не учитывает жесткость подвески и состояние амортизаторов. Старая подвеска может «пробиваться» сильнее, и даже теоретически подходящая резина может начать тереть о кузов. Это особенно актуально для автомобилей с пробегом.</p>
+<p>Также стоит помнить о <strong>индексе скорости и нагрузки</strong>. Даже если геометрические размеры идеально совпали, использование резины с заниженными индексами запрещено законом и опасно для жизни. Неправильный выбор может привести к разрушению шины на высокой скорости.</p>
+<p>Для автомобилей с полным приводом (4x4) требования к точности диаметра колес значительно выше. Разница в окружности колес на разных осях может привести к перегреву и выходу из строя вискомуфты или межосевого дифференциала.</p>
+<blockquote>⚠️ Внимание: Для полных приводов разница в диаметре всех четырех колес не должна превышать 0.5%. Игнорирование этого правила может привести к дорогостоящему ремонту трансмиссии.</blockquote>
+<p>Зимой ситуация усложняется наличием цепей противоскольжения или шипов, которые могут увеличить эффективный диаметр колеса. Учитывайте это при расчете, если планируете использовать дополнительные приспособления.</p>
+
+
+<h2 id="законодательные-аспекты-и-техосмотр">Законодательные аспекты и техосмотр</h2>
+<p>В России и многих других странах существуют строгие правила допуска изменений конструкции транспортного средства. Если вы устанавливаете размеры, которые не указаны в <em>ПТС</em> вашего автомобиля, это может быть расценено как внесение изменений.</p>
+<p>При прохождении техосмотра инспектор может запретить эксплуатацию, если заметит явные расхождения. Штрафы за несоответствие размеров могут быть существенными, а в худшем случае — аннулирование регистрации.</p>
+<p>Чтобы избежать проблем, лучше выбирать размеры, которые входят в заводские допуски производителя. Часто автопроизводители указывают несколько разрешенных размеров для одной модели, и использовать их можно без лишних вопросов от инспекторов ГИБДД.</p>
+<p>Если вы все же решили поставить нестандартную резину, необходимо пройти процедуру легализации изменений. Это включает в себя получение разрешения, установку, проверку и внесение записи в ПТС.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Законность установки нестандартных размеров зависит от их соответствия заводским допускам производителя. Если размер не указан в документах, его установка требует официальной регистрации изменений конструкции.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли ставить резину разного размера на одну ось?</summary>
+<p>Категорически запрещено. На одной оси должны быть установлены шины одинакового размера, рисунка протектора и производителя. Разные размеры нарушат балансировку и работу электронных систем стабилизации.</p>
+</details>
+
+<details>
+<summary>Как изменение размера влияет на расход топлива?</summary>
+<p>Увеличение диаметра и ширины колеса обычно ведет к росту аэродинамического сопротивления и массы, что увеличивает расход топлива. Однако более узкая резина может снизить расход, но ухудшить сцепление на мокрой дороге.</p>
+</details>
+
+<details>
+<summary>Нужно ли делать развал-схождение при смене размера?</summary>
+<p>Да, при любой смене размера колес, а особенно при установке дисков с другим вылетом, необходимо делать развал-схождение. Иначе это приведет к неравномерному износу резины и ухудшению управляемости.</p>
+</details>
+
+<details>
+<summary>Что делать, если калькулятор показывает погрешность 2%?</summary>
+<p>Погрешность в 2% обычно находится в пределах допустимого, но на грани. Рекомендуется проверить реальный диаметр колес штангенциркулем и убедиться, что они не задевают арки при полной загрузке и сжатии подвески.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sh/shiny-matador-mr-72-izzarda-at-2-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Шины Matador MR72 Izarda AT2: обзор, характеристики и где купить</span>
+                <span class="pb-related-desc">Полный разбор всесезонных шин Matador MR72 Izarda AT2. Особенности протектора, критерии выбора разме</span>
+            </a><a href="/articles/r/ra/razmer-29-koles-na-nivu.html" class="pb-related-card">
+                <span class="pb-related-title">Шины 29 дюймов на Ниву: плюсы, минусы и необходимость лифта</span>
+                <span class="pb-related-desc">Полный разбор установки резины 29 дюймов на Ниву 4x4. Расчет лифта кузова, выбор колесных дисков и в</span>
+            </a><a href="/articles/3/31/315-75-16-zimnyaya-rezina.html" class="pb-related-card">
+                <span class="pb-related-title">Шина 315/75 R16: выбор, установка и особенности зимней резины</span>
+                <span class="pb-related-desc">Полное руководство по выбору зимних шин размера 315/75 R16. Обзор моделей, нюансы установки на внедо</span>
+            </a><a href="/articles/b/bf/bf-goodridge-all-terrain-265-70-r16-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Купить BF Goodrich All Terrain T/A KO2 265/70 R16: Обзор и критерии</span>
+                <span class="pb-related-desc">Где купить шины BFGoodrich All Terrain 265/70 R16? Полный разбор характеристик, сравнение с аналогам</span>
+            </a><a href="/articles/c/co/continental-icecontact-3-testy.html" class="pb-related-card">
+                <span class="pb-related-title">Continental IceContact 3 тесты: безопасность и износ в 2026-2026</span>
+                <span class="pb-related-desc">Подробный обзор тестов шин Continental IceContact 3. Сравнение с конкурентами, анализ поведения на л</span>
+            </a><a href="/articles/2/21/215-50-r18-leto.html" class="pb-related-card">
+                <span class="pb-related-title">Шины 215/50 R18 лето: Полный гид по выбору и характеристикам</span>
+                <span class="pb-related-desc">Подробный обзор летних шин размера 215/50 R18. Сравнение брендов, анализ характеристик, советы по вы</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

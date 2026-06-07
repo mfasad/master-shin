@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Расчет нагрузки на колесо: формулы, индекс и таблица грузоподъемности — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как правильно рассчитать нагрузку на колесо автомобиля. Разбираем индекс грузоподъемности, методы вычисления и влияние перегруза на безопасность.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kak-rasschitat-nagruzku-na-koleso-avtomobilya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет нагрузки на колесо: формулы, индекс и таблица грузоподъемности">
+    <meta property="og:description" content="Узнайте, как правильно рассчитать нагрузку на колесо автомобиля. Разбираем индекс грузоподъемности, методы вычисления и влияние перегруза на безопасность.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет нагрузки на колесо: формулы, индекс и таблица грузоподъемности</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-физику-колеса">Введение в физику колеса</a></li><li><a href="#что-такое-индекс-грузоподъемности-и-как-его-расшифровать">Что такое индекс грузоподъемности и как его расшифровать</a></li><li><a href="#базовый-метод-расчета-статической-нагрузки">Базовый метод расчета статической нагрузки</a></li><li><a href="#учет-динамических-факторов-и-неравномерного-распределения">Учет динамических факторов и неравномерного распределения</a></li><li><a href="#таблица-соответствия-индексов-нагрузки-и-веса">Таблица соответствия индексов нагрузки и веса</a></li><li><a href="#влияние-давления-в-шинах-на-воспринимаемую-нагрузку">Влияние давления в шинах на воспринимаемую нагрузку</a></li><li><a href="#специфика-расчета-для-грузовых-и-коммерческих-автомобилей">Специфика расчета для грузовых и коммерческих автомобилей</a></li><li><a href="#частые-ошибки-при-подборе-и-расчете">Частые ошибки при подборе и расчете</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-vyschitat-vysotu-profilya-reziny.html">Как правильно рассчитать высоту профиля шины: формула и таблица</a></li><li><a href="/articles/r/ra/rasshifrovka-shiny-na-avtomobil-tablitsa.html">Расшифровка маркировки шин: полная таблица и описание символов</a></li><li><a href="/articles/s/sk/skolko-mozhno-proekhat-na-ranflete.html">Сколько можно проехать на шине RunFlat: дистанция и скорость</a></li><li><a href="/articles/c/ch/chto-takoe-vershok-mera-dliny.html">Вершок мера длины: история, значение в дюймах и применение в обувном деле</a></li><li><a href="/articles/z/zh/zheltye-i-krasnye-metki-na-shinakh-zachem.html">Желтые и красные метки на шинах: зачем нужны и как правильно устанавливать</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать нагрузку на колесо автомобиля: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-физику-колеса">Введение в физику колеса</a></li><li><a href="#что-такое-индекс-грузоподъемности-и-как-его-расшифровать">Что такое индекс грузоподъемности и как его расшифровать</a></li><li><a href="#базовый-метод-расчета-статической-нагрузки">Базовый метод расчета статической нагрузки</a></li><li><a href="#учет-динамических-факторов-и-неравномерного-распределения">Учет динамических факторов и неравномерного распределения</a></li><li><a href="#таблица-соответствия-индексов-нагрузки-и-веса">Таблица соответствия индексов нагрузки и веса</a></li><li><a href="#влияние-давления-в-шинах-на-воспринимаемую-нагрузку">Влияние давления в шинах на воспринимаемую нагрузку</a></li><li><a href="#специфика-расчета-для-грузовых-и-коммерческих-автомобилей">Специфика расчета для грузовых и коммерческих автомобилей</a></li><li><a href="#частые-ошибки-при-подборе-и-расчете">Частые ошибки при подборе и расчете</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-физику-колеса">Введение в физику колеса</h2>
+<p>Каждый автовладелец знает, что шины — это единственная точка контакта вашего транспорта с дорогой. Однако мало кто задумывается о том, какое давление испытывает каждый квадратный сантиметр резины, когда машина стоит на месте или движется по трассе. <strong>Нагрузка на колесо</strong> — это не просто вес автомобиля, деленный на четыре, а сложная динамическая величина.</p>
+<p>Неправильный подбор шин по допустимой нагрузке может привести к катастрофическим последствиям. Перегрузка вызывает перегрев <em>каркаса шины</em>, что ведет к расслоению корта или внезапному взрыву. В то же время, использование шин с избыточным запасом прочности часто означает более жесткую езду и худшее сцепление с покрытием.</p>
+<p>Ваша задача — найти баланс между комфортом и безопасностью. Для этого необходимо понимать физику процессов и уметь выполнять точные вычисления. Мы разберем, как <strong>индекс нагрузки</strong> влияет на выбор резины и почему официальные таблицы от производителей шин — это главный ориентир.</p>
+
+<h2 id="что-такое-индекс-грузоподъемности-и-как-его-расшифровать">Что такое индекс грузоподъемности и как его расшифровать</h2>
+<p>На боковине любой современной шины вы найдете комбинацию цифр и букв. Цифра, идущая перед обозначением скорости, — это и есть <strong>индекс нагрузки</strong> (Load Index). Это не вес в килограммах, а условный код, соответствующий максимальной нагрузке, которую шина может выдержать при определенной скорости.</p>
+<p>Например, индекс <em>91</em> соответствует <strong>615 килограммам</strong> на одно колесо, а индекс <em>104</em> — уже <strong>900 килограммам</strong>. Эти данные строго регламентированы международными стандартами. Важно понимать, что при росте скорости допустимая нагрузка на шину снижается. Это физический предел материала.</p>
+<p>Если вы видите маркировку <code>205/55 R16 91V</code>, то цифра 91 говорит о том, что каждое колесо может нести до 615 кг. Если на машину с такой маркировкой поставить шины с индексом <em>88</em> (560 кг), это будет прямым нарушением правил эксплуатации и угрозой безопасности.</p>
+
+<h2 id="базовый-метод-расчета-статической-нагрузки">Базовый метод расчета статической нагрузки</h2>
+<p>Самый простой способ понять, какую нагрузку испытывают ваши колеса — разделить массу автомобиля на количество осей и колес. Однако этот метод дает лишь усредненное значение и часто вводит в заблуждение. <strong>Распределение веса</strong> редко бывает равномерным. Двигатель обычно тяжелее багажника, поэтому передняя ось нагружена сильнее.</p>
+<p>Для точного расчета необходимо знать <strong>снаряженную массу</strong> (без пассажиров и груза) и <strong>полную массу</strong> (максимально допустимую по ПТС). Многие водители ошибочно ориентируются только на первый показатель. Это грубая ошибка, особенно если вы часто перевозите детей, собак или строительные материалы.</p>
+<p>Возьмите паспорт транспортного средства. Найдите графу «Масса ТС с полной нагрузкой». Разделите это число на количество колес. Полученная цифра — это теоретический максимум, который должна выдержать каждая шина в худшем сценарии. Это значение должно быть меньше или равно допустимой нагрузке вашей шины.</p>
+
+<div class="pb-poll" id="poll-c5193edb"><div class="pb-poll-question">📊 Какой индекс нагрузки стоит на вашем автомобиле?</div><div class="pb-poll-option" data-poll="c5193edb" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">88 (до 560 кг)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5193edb" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">91 (до 615 кг)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5193edb" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">99 (до 710 кг)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c5193edb" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">104+ (более 900 кг)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="учет-динамических-факторов-и-неравномерного-распределения">Учет динамических факторов и неравномерного распределения</h2>
+<p>Автомобиль в движении — это сложная механическая система, где нагрузка постоянно перераспределяется. При резком торможении вес переносится на переднюю ось, увеличивая нагрузку на передние шины на 20-30%. При разгрузке на неровностях колесо может полностью потерять контакт с дорогой, а при ударе — испытать кратковременную перегрузку в несколько раз.</p>
+<p>Кроме того, нельзя забывать про <strong>дополнительную оснастку</strong>. Если у вас установлен лифт подвески, лебедка или бампер из стали, вес передней части увеличивается. Это требует пересмотра выбора шин. Стандартный индекс может не подойти для подготовленного внедорожника, даже если он выглядит как обычный легковой автомобиль.</p>
+<p>Для коммерческого транспорта или машин, используемых в такси, расчет должен производиться исходя из полной загрузке салона и багажника. В таких случаях рекомендуется использовать шины с индексом <strong>XL (Extra Load)</strong>, которые имеют усиленный каркас и более высокое давление накачки.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка соответствия шин нагрузке</h4><label class="check-item"><input type="checkbox"><span>Узнайте полную массу авто из ПТС</span></label><label class="check-item"><input type="checkbox"><span>Вычислите нагрузку на одну ось</span></label><label class="check-item"><input type="checkbox"><span>Сверьте с индексом на боковине резины</span></label><label class="check-item"><input type="checkbox"><span>Проверьте давление в шинах по табличке</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="таблица-соответствия-индексов-нагрузки-и-веса">Таблица соответствия индексов нагрузки и веса</h2>
+<p>Чтобы не производить сложные вычисления каждый раз при смене резины, используйте готовую таблицу соответствия. Она поможет быстро определить, подходит ли выбранная шина под ваш автомобиль. Обратите внимание, что значения приведены для одной шины.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Индекс</th>
+      <th>Допустимая нагрузка (кг)</th>
+      <th>Индекс</th>
+      <th>Допустимая нагрузка (кг)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>85</td>
+      <td>515</td>
+      <td>95</td>
+      <td>690</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>560</td>
+      <td>98</td>
+      <td>750</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>615</td>
+      <td>100</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>670</td>
+      <td>104</td>
+      <td>900</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Использование данных таблицы позволяет быстро отсеять неподходящие варианты. Если ваш расчет показывает, что на колесо приходится 650 кг, а вы ставите шину с индексом 91 (615 кг), вы создаете аварийную ситуацию.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Индексы нагрузки рассчитываются при максимальной скорости для данного индекса скорости. Если вы превысите скорость, указанную в маркировке (например, буквой V), максимально допустимая нагрузка должна быть снижена.</p>
+</blockquote>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> <mark>Наибольший риск перегруза возникает при сочетании полной загрузки автомобиля, низкого давления в шинах и высокой скорости движения по плохой дороге.</mark></p>
+</blockquote>
+
+<h2 id="влияние-давления-в-шинах-на-воспринимаемую-нагрузку">Влияние давления в шинах на воспринимаемую нагрузку</h2>
+<p>Давление воздуха внутри шины — это главный фактор, удерживающий вес автомобиля. Если давление ниже нормы, площадь пятна контакта увеличивается, но боковина начинает работать неправильно. <strong>Гибкость боковины</strong> приводит к тому, что каркас шины начинает тереться о диск, что вызывает перегрев.</p>
+<p>Производители автомобилей указывают рекомендуемое давление на табличке в дверном проеме или лючке бензобака. Эти значения рассчитаны с учетом полной загрузки. Не стоит ориентироваться на «запас» по давлению. Чрезмерное накачивание (например, до 3.5 атмосфер в легковушку) делает подвеску «колючей» и снижает сцепление.</p>
+<p>Для внедорожников и прицепов существуют специальные режимы накачки. При буксировке прицепа нагрузка на заднюю ось может возрасти на 100-200%. В таких случаях необходимо повышать давление в задних шинах до значений, указанных в инструкции по эксплуатации, но не выше максимального предела, указанного на боковине.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед дальней поездкой с полной загрузкой обязательно проверьте давление в шинах на холодном двигателе. Разница в 0.2 атмосферы может существенно изменить поведение автомобиля и износ резины.</p></aside>
+
+<h2 id="специфика-расчета-для-грузовых-и-коммерческих-автомобилей">Специфика расчета для грузовых и коммерческих автомобилей</h2>
+<p>Для грузовиков, фургонов и микроавтобусов расчет нагрузки имеет свои особенности. Здесь часто используется маркировка <em>Load Range</em> (например, Load Range C, D, E). Это обозначает не вес, а способность шины выдерживать определенное давление воздуха. Чем выше класс, тем больше давление и нагрузка.</p>
+<p>Грузовые шины также делятся по типу использования: для развозки по городу (<em>Urban</em>) и для дальних перевозок (<em>Highway</em>). Шины для города рассчитаны на частые остановки и старты, что создает пики нагрузки. Трассовые шины оптимизированы для постоянного движения с максимальной скоростью.</p>
+<p>Неправильный подбор <strong>грузовых шин</strong> может привести к быстрому износу протектора и выходу из строя колесных дисков. Всегда сверяйте индекс нагрузки с технической документацией на автомобиль, особенно если вы меняете тип кузова или грузоподъемность.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя ставить шины с меньшим индексом?Снижение индекса нагрузки ниже заводского значения лишает автомобиль гарантии и может привести к отказу в выплате страховки в случае ДТП. Инженеры рассчитывают запас прочности именно под заявленные характеристики автомобиля.-->
+
+<h2 id="частые-ошибки-при-подборе-и-расчете">Частые ошибки при подборе и расчете</h2>
+<p>Одна из самых распространенных ошибок — установка шин с разным индексом нагрузки на одну ось. Это категорически запрещено. Даже если разница кажется незначительной, при торможении или повороте автомобиль может уйти в занос из-за разной жесткости шин.</p>
+<p>Вторая ошибка — игнорирование маркировки <em>Reinforced</em> или <em>R</em>. Эти шины имеют усиленный корд и рассчитаны на большую нагрузку, чем стандартные. Их использование допустимо, но требует соблюдения повышенного давления, указанного на боковине.</p>
+<p>Не забывайте и про сезонность. Зимние шины часто имеют более мягкий состав, что снижает их способность выдерживать высокие нагрузки. Если вы любите зимой возить тяжелые грузы, выбирайте модели с индексом нагрузки, превышающим летний аналог на 1-2 единицы.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</summary><div class="pb-accordion-body"><p></strong> Официальные стандарты допускают установку шин с более высоким индексом нагрузки, но категорически запрещают использование шин с индексом ниже рекомендованного производителем автомобиля.</p>
+</blockquote>
+
+
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли ставить шины с индексом нагрузки выше, чем у оригинала?</summary>
+<p>Да, это не только разрешено, но и рекомендуется для автомобилей, часто нагруженных до предела. Усиленные шины лучше справляются с перегрузками, однако они могут быть чуть жестче, что влияет на комфорт.</p>
+</details>
+
+<details>
+<summary>Как узнать точный вес автомобиля, если он не указан в документах?</summary>
+<p>Точный вес можно узнать на специализированных весовых постах. Разделите вес на 4 (или на количество осей, если весы позволяют взвесить ось отдельно), чтобы получить нагрузку на колесо. Для приблизительного расчета используйте данные из ПТС.</p>
+</details>
+
+<details>
+<summary>Влияет ли размер диска на нагрузку на шину?</summary>
+<p>Прямого влияния на допустимую нагрузку размер диска не оказывает, так как она определяется конструкцией самой шины. Однако неправильный вылет (ET) диска может изменить распределение веса на подвеску, что косвенно повлияет на работу колеса.</p>
+</details>
+
+<details>
+<summary>Что делать, если индекс нагрузки на шине совпадает с расчетным?</summary>
+<p>Если индекс нагрузки в точности совпадает с расчетной нагрузкой на колесо, запас прочности отсутствует. В этом случае рекомендуется выбирать шину с индексом на 1-2 единицы выше, чтобы учесть динамические нагрузки и возможные перегрузки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-vyschitat-vysotu-profilya-reziny.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно рассчитать высоту профиля шины: формула и таблица</span>
+                <span class="pb-related-desc">Узнайте, как вычислить высоту профиля резины в миллиметрах и процентах. Пошаговая инструкция, таблиц</span>
+            </a><a href="/articles/r/ra/rasshifrovka-shiny-na-avtomobil-tablitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Расшифровка маркировки шин: полная таблица и описание символов</span>
+                <span class="pb-related-desc">Узнайте, как правильно читать маркировку резины. Таблица расшифровки всех символов на боковине покры</span>
+            </a><a href="/articles/s/sk/skolko-mozhno-proekhat-na-ranflete.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько можно проехать на шине RunFlat: дистанция и скорость</span>
+                <span class="pb-related-desc">Узнайте реальный ресурс пробегов на спущенной шине RunFlat. Пределы скорости, температурные нагрузки</span>
+            </a><a href="/articles/c/ch/chto-takoe-vershok-mera-dliny.html" class="pb-related-card">
+                <span class="pb-related-title">Вершок мера длины: история, значение в дюймах и применение в обувном деле</span>
+                <span class="pb-related-desc">Узнайте, что такое вершок, сколько он составляет в сантиметрах и дюймах. Историческая справка о русс</span>
+            </a><a href="/articles/z/zh/zheltye-i-krasnye-metki-na-shinakh-zachem.html" class="pb-related-card">
+                <span class="pb-related-title">Желтые и красные метки на шинах: зачем нужны и как правильно устанавливать</span>
+                <span class="pb-related-desc">Разбираем назначение желтых и красных точек на покрышках. Узнайте, как метки облегчают балансировку </span>
+            </a><a href="/articles/9/95/95mm-skolko-v-sm.html" class="pb-related-card">
+                <span class="pb-related-title">95мм сколько в см: точный перевод и таблица размеров шин</span>
+                <span class="pb-related-desc">Узнайте, сколько сантиметров в 95 миллиметрах. Полная таблица перевода мм в см для дисков, шин и выс</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

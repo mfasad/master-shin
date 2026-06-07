@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Технология Schneider R18: Обзор инверторных систем управления — Мастер Шин</title>
+    <meta name="description" content="Детальный разбор технологии Schneider R18 для промышленной автоматизации. Характеристики, преимущества инверторов и особенности интеграции в системы управления.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/a/a-/a-tech-schneider-r18.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Технология Schneider R18: Обзор инверторных систем управления">
+    <meta property="og:description" content="Детальный разбор технологии Schneider R18 для промышленной автоматизации. Характеристики, преимущества инверторов и особенности интеграции в системы управления.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Технология Schneider R18: Обзор инверторных систем управления</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принципы-работы-системы-schneider-r18">Принципы работы системы Schneider R18</a></li><li><a href="#ключевые-преимущества-для-производственных-линий">Ключевые преимущества для производственных линий</a></li><li><a href="#этапы-интеграции-и-настройки-параметров">Этапы интеграции и настройки параметров</a></li><li><a href="#диагностика-и-устранение-неполадок">Диагностика и устранение неполадок</a></li><li><a href="#перспективы-развития-технологии">Перспективы развития технологии</a></li><li><a href="#заключение">Заключение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/t/ts/tsvet-mashiny-sine-fioletovyj.html">Сине-фиолетовый цвет автомобиля: особенности, популярность и уход за кузовом</a></li><li><a href="/articles/t/tv/tverskoj-balzam-staryj-kashin.html">Тверской бальзам Старый Кашин: состав, польза и как выбрать оригинал</a></li><li><a href="/articles/c/ch/chto-takoe-fidergam-i-dlya-chego-on.html">Фидергам в рыбалке: что это такое и зачем нужен</a></li><li><a href="/articles/k/ka/kak-nazyvaetsya-rezinovaya-primanka-dlya-ryby.html">Как называется резиновая приманка: виды силиконовых насадок для рыбалки</a></li><li><a href="/articles/r/ra/razmer-koles-na-lend-kruzer-200.html">Размер колес на Toyota Land Cruiser 200: Шины, диски и параметры</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Технология Schneider R18: Инновации в промышленной автоматизации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принципы-работы-системы-schneider-r18">Принципы работы системы Schneider R18</a></li><li><a href="#ключевые-преимущества-для-производственных-линий">Ключевые преимущества для производственных линий</a></li><li><a href="#этапы-интеграции-и-настройки-параметров">Этапы интеграции и настройки параметров</a></li><li><a href="#диагностика-и-устранение-неполадок">Диагностика и устранение неполадок</a></li><li><a href="#перспективы-развития-технологии">Перспективы развития технологии</a></li><li><a href="#заключение">Заключение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные промышленные предприятия сталкиваются с необходимостью постоянного повышения эффективности производственных линий. В этом контексте <strong>технология Schneider R18</strong> выступает одним из ключевых решений, позволяющих оптимизировать работу электродвигателей и систем управления. Интеграция подобных систем открывает новые горизонты для автоматизации процессов, обеспечивая стабильность и точность выполнения задач.</p>
+
+<p>Вы наверняка заметили, что старые методы управления оборудованием становятся все менее актуальными на фоне быстро меняющихся требований рынка. Внедрение <em>Schneider R18</em> позволяет снизить энергопотребление и минимизировать риски простоя оборудования из-за технических сбоев. Это особенно важно для крупных производств, где каждая минута остановки несет существенные финансовые потери.</p>
+
+<p>Грамотное использование данного технологического решения требует глубокого понимания принципов его работы. Необходимо учитывать не только базовые параметры настройки, но и специфику интеграции с существующей инфраструктурой предприятия. Только комплексный подход гарантирует максимальную отдачу от внедрения <strong>промышленных инверторов</strong>.</p>
+
+<h2 id="принципы-работы-системы-schneider-r18">Принципы работы системы Schneider R18</h2>
+
+<p>В основе функционирования технологии лежит сложный алгоритм преобразования электрической энергии. <strong>Инверторная топология</strong> позволяет плавно регулировать частоту вращения вала двигателя, что исключает резкие скачки нагрузки. Это критически важно для механизмов, работающих в непрерывном режиме с высокой интенсивностью.</p>
+
+<p>Система использует передовые методы <em>микропроцессорного управления</em>, которые анализируют состояние сети в реальном времени. Если вы обратите внимание на технические спецификации, то увидите, что диапазон рабочих частот значительно шире, чем у аналогов предыдущих поколений. Это дает возможность адаптировать оборудование под любые производственные задачи.</p>
+
+<p>Особое внимание стоит уделить системе охлаждения и защите от перегрузок. <strong>Термостатический контроль</strong> автоматически корректирует работу вентиляторов в зависимости от температуры корпуса. Такой подход продлевает срок службы электронных компонентов и снижает необходимость в частом техническом обслуживании.</p>
+
+<h2 id="ключевые-преимущества-для-производственных-линий">Ключевые преимущества для производственных линий</h2>
+
+<p>Внедрение <em>Schneider R18</em> приносит ощутимую пользу на всех этапах эксплуатации оборудования. Снижение энергозатрат становится заметным уже в первые месяцы использования. <strong>Энергоэффективность</strong> достигается за счет оптимизации потребляемой мощности в зависимости от текущей нагрузки.</p>
+
+<p>Помимо экономии энергии, пользователи отмечают повышение надежности всей производственной цепочки. Меньше аварийных остановок — значит больше выпускаемой продукции. <strong>Стабильность работы</strong> обеспечивает предсказуемость плановых показателей и упрощает логистику.</p>
+
+<p>Вот список основных выгод, которые получает предприятие:</p>
+<ul>
+<li>🚀 Снижение расхода электроэнергии до 30% по сравнению со стандартными схемами подключения</li>
+<li>🛡️ Увеличенный ресурс работы электродвигателей за счет плавного пуска и торможения</li>
+<li>📊 Удобный мониторинг параметров через интегрированные интерфейсы диагностики</li>
+</ul>
+
+<p>Важно понимать, что экономия достигается не только за счет счетчиков, но и за счет отсутствия штрафов за реактивную мощность. <strong>Коэффициент мощности</strong> поддерживается на оптимальном уровне автоматически. Это особенно актуально для предприятий с большим количеством индуктивных нагрузок.</p>
+
+<blockquote>⚠️ Внимание: При расчете окупаемости оборудования обязательно учитывайте стоимость дополнительного монтажа и пусконаладочных работ, так как они могут составлять до 15-20% от общей стоимости проекта.</blockquote>
+
+<p>Следует также отметить удобство эксплуатации для персонала. Современные интерфейсы позволяют операторам быстро вносить изменения в настройки без глубоких технических знаний. <strong>Интуитивно понятное меню</strong> сокращает время обучения новых сотрудников. Это снижает зависимость от узких специалистов и распределяет нагрузку на штат.</p>
+
+<div class="pb-poll" id="poll-c2976554"><div class="pb-poll-question">📊 Ваше предприятие использует частотные преобразователи?</div><div class="pb-poll-option" data-poll="c2976554" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, активно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c2976554" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Используем, но редко</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c2976554" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Планируем внедрение</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c2976554" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока нет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="этапы-интеграции-и-настройки-параметров">Этапы интеграции и настройки параметров</h2>
+
+<p>Процесс внедрения <em>технологии Schneider R18</strong> в существующую инфраструктуру требует тщательной подготовки. Первым шагом всегда является аудит текущих систем и оценка совместимости. Необходимо проверить соответствие напряжению сети и мощностным характеристикам.</p>
+
+<p>После физического монтажа начинается этап программирования контроллеров. Здесь вам нужно будет задать базовые параметры работы двигателя. <strong>Настройка ускорения</strong> и замедления критична для предотвращения механических ударов в редукторах и конвейерах.</p>
+
+<p>Для корректной работы системы необходимо выполнить следующие действия:</p>
+<ul>
+<li>🔌 Правильное заземление корпуса и силовых цепей для защиты от помех</li>
+<li>⚙️ Калибровка датчиков обратной связи для точного контроля скорости</li>
+<li>📡 Настройка протоколов обмена данными с верхним уровнем управления (SCADA)</li>
+</ul>
+
+<p>После завершения базовой настройки важно провести тестовый запуск под нагрузкой. Не стоит сразу выводить оборудование на максимальные обороты. <strong>Поэтапное увеличение</em> нагрузки позволит выявить скрытые дефекты монтажа или настройки. Это стандартная практика, которую игнорировать нельзя.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед первым запуском</h4><label class="check-item"><input type="checkbox"><span>Проверить фазировку питания</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии короткого замыкания</span></label><label class="check-item"><input type="checkbox"><span>Настроить параметры двигателя</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу систем защиты</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание: При работе с высокими напряжениями обязательна блокировка ввода питания и вывешивание предупредительных плакатов. Несоблюдение правил техники безопасности может привести к тяжелым травмам.</blockquote>
+
+<p>Существуют и специфические нюансы настройки, зависящие от типа приводимого в движение механизма. Например, для насосов и вентиляторов алгоритмы управления отличаются от конвейерных лент. <strong>Специализированные алгоритмы</em> учитывают нагрузку на валу и момент инерции.</p>
+
+<h2 id="диагностика-и-устранение-неполадок">Диагностика и устранение неполадок</h2>
+
+<p>Даже самая совершенная система может потребовать вмешательства в процессе эксплуатации. <em>Schneider R18</strong> обладает развитой системой самодиагностики, которая выводит коды ошибок на дисплей. Это существенно упрощает работу инженеров по обслуживанию. <strong>Локализация неисправностей</strong> занимает минимум времени.</p>
+
+<p>Чаще всего проблемы возникают из-за перегрева или скачков напряжения в сети. В таких случаях система автоматически отключает двигатель и блокирует повторный пуск. <strong>Защитные алгоритмы</strong> предотвращают выход компонентов из строя. Вам достаточно устранить причину перегрузки и перезагрузить систему.</p>
+
+<p>Если ошибка не сбрасывается, рекомендуется провести более глубокую диагностику через сервисный порт. <strong>Анализ логов</strong> поможет выявить периодические сбои, которые не фиксируются визуально. Это может быть связано с помехами в линии связи или нестабильной работой сенсоров.</p>
+
+<p>Вот таблица распространенных кодов ошибок и методов их устранения:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Код ошибки</th>
+<th>Описание проблемы</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERR-01</td>
+<td>Перегрев силового модуля</td>
+<td>Очистить радиатор, проверить вентиляцию</td>
+</tr>
+<tr>
+<td>ERR-02</td>
+<td>Просадка напряжения</td>
+<td>Проверить входной кабель и трансформатор</td>
+</tr>
+<tr>
+<td>ERR-03</td>
+<td>Перегрузка по току</td>
+<td>Уменьшить момент нагрузки или увеличить время разгона</td>
+</tr>
+<tr>
+<td>ERR-04</td>
+<td>Сбой связи с контроллером</td>
+<td>Проверить кабель интерфейса и настройки адреса</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что делать при частых отключениях?</summary><div class="pb-accordion-body"><p>Если система отключается без явных ошибок, проверьте качество заземления. Часто паразитные токи наводки вызывают ложные срабатывания защиты.</p></div></details>
+
+<p>Регулярное техническое обслуживание является залогом долгой службы оборудования. <strong>Плановые проверки</em> контактов и чистка от пыли должны проводиться не реже одного раза в полгода. Это предотвратит развитие мелких проблем в крупные аварии.</p>
+
+<h2 id="перспективы-развития-технологии">Перспективы развития технологии</h2>
+
+<p>Технология <em>Schneider R18</em> продолжает развиваться, адаптируясь к новым требованиям индустрии 4.0. <strong>Интеграция с IoT</strong> позволяет передавать данные о состоянии оборудования в облачные сервисы для предиктивной аналитики. Это меняет подход к обслуживанию с планового на прогнозный.</p>
+
+<p>Будущее за автономными системами, способными самостоятельно оптимизировать свои параметры. <strong>Машинное обучение</strong> в контроллерах позволит предсказывать износ деталей до того, как это приведет к остановке производства. Это следующий логический шаг в эволюции промышленных приводов.</p>
+
+<p>Совместимость с различными протоколами связи расширяет возможности применения. <strong>Гибкая архитектура</strong> позволяет легко интегрировать <em>Schneider R18</em> в гетерогенные системы управления. Вы сможете объединять оборудование разных производителей в единую экосистему.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для получения максимальной эффективности от системы регулярно обновляйте прошивку контроллера до последней стабильной версии, доступной на официальном сайте производителя.</p></aside>
+
+<p>Важно следить за новостями отрасли и обновлениями программного обеспечения. <strong>Актуальные алгоритмы</strong> часто содержат улучшения производительности и исправления уязвимостей. Игнорирование обновлений может снизить эффективность работы системы на 5-10%.</p>
+
+<blockquote>⚠️ Внимание: Детали конфигурации и спецификации протоколов могут меняться в зависимости от региона поставки и версии firmware. Всегда сверяйте требования в официальной документации перед началом работ.<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Понимание принципов работы и регулярное обслуживание гарантируют долгую и бесперебойную работу технологии Schneider R18 на вашем предприятии.</p></aside>
+
+<h2 id="заключение">Заключение</h2>
+
+<p>Технология <em>Schneider R18</em> представляет собой надежное решение для современных промышленных задач. <strong>Баланс между производительностью и энергоэффективностью</strong> делает её привлекательной для широкого круга предприятий. Инвестиции в такое оборудование окупаются за счет снижения эксплуатационных расходов.</p>
+
+<p>Правильная настройка и своевременное обслуживание позволяют раскрыть весь потенциал системы. <strong>Профессиональный подход</strong> к эксплуатации исключает большую часть возможных проблем. Это ключ к стабильной работе вашего производства.</p>
+
+<p>Выбирая между различными решениями на рынке, стоит обратить внимание на долгосрочную перспективу. <em>Технологии Schneider</em> доказали свою состоятельность в самых суровых условиях. <strong>Надежность и поддержка</strong> со стороны производителя — важные факторы выбора.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Какова максимальная мощность двигателя, которую можно подключить к системе?</summary>
+<p>Максимальная мощность зависит от конкретной модификации инвертора. Обычно диапазон варьируется от 0.75 кВт до 315 кВт. Точные данные необходимо смотреть в паспорте изделия.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать оборудование в пыльных и влажных помещениях?</summary>
+<p>Да, многие модели имеют защиту IP54 и выше. Однако для особо агрессивных сред рекомендуется установка в отдельные шкафы с принудительной фильтрацией воздуха.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проводить техническое обслуживание?</summary>
+<p>Рекомендуется проводить визуальный осмотр и чистку раз в 6 месяцев. Полная диагностика с проверкой всех параметров — раз в год или после критических сбоев.</p>
+</details>
+
+<details>
+<summary>Есть ли возможность удаленного управления системой?</summary>
+<p>Да, при подключении модуля связи и настройке протокола обмена данными. Это позволяет контролировать параметры и управлять запуском из любой точки мира.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/t/ts/tsvet-mashiny-sine-fioletovyj.html" class="pb-related-card">
+                <span class="pb-related-title">Сине-фиолетовый цвет автомобиля: особенности, популярность и уход за кузовом</span>
+                <span class="pb-related-desc">Все о сине-фиолетовом цвете машин: от оттенков Chameleon до перламутровых красок. Как выбрать, и про</span>
+            </a><a href="/articles/t/tv/tverskoj-balzam-staryj-kashin.html" class="pb-related-card">
+                <span class="pb-related-title">Тверской бальзам Старый Кашин: состав, польза и как выбрать оригинал</span>
+                <span class="pb-related-desc">Полный обзор легендарного Тверского бальзама Старый Кашин. История создания, состав трав, отличие от</span>
+            </a><a href="/articles/c/ch/chto-takoe-fidergam-i-dlya-chego-on.html" class="pb-related-card">
+                <span class="pb-related-title">Фидергам в рыбалке: что это такое и зачем нужен</span>
+                <span class="pb-related-desc">Полный гид по фидергаму: назначение, преимущества перед леской, выбор плетеного шнура и техники осна</span>
+            </a><a href="/articles/k/ka/kak-nazyvaetsya-rezinovaya-primanka-dlya-ryby.html" class="pb-related-card">
+                <span class="pb-related-title">Как называется резиновая приманка: виды силиконовых насадок для рыбалки</span>
+                <span class="pb-related-desc">Узнайте, как называется резиновая приманка для рыбалки. Подробный обзор силикона, виброхвостов, твис</span>
+            </a><a href="/articles/r/ra/razmer-koles-na-lend-kruzer-200.html" class="pb-related-card">
+                <span class="pb-related-title">Размер колес на Toyota Land Cruiser 200: Шины, диски и параметры</span>
+                <span class="pb-related-desc">Полный справочник по размерам шин и дисков для Toyota Land Cruiser 200. Разбор штатных размеров, выл</span>
+            </a><a href="/articles/p/po/potreblyaemaya-moshchnost-kholodilnika-v-kvt.html" class="pb-related-card">
+                <span class="pb-related-title">Потребляемая мощность холодильника в кВт: классы, расчет и реальное потребление</span>
+                <span class="pb-related-desc">Узнайте реальную мощность холодильника в кВт, как рассчитать расход электричества и сэкономить. Разб</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

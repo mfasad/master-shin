@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Визуальный дисковый калькулятор для легковых авто: точный подбор — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как работает визуальный дисковый калькулятор. Подбор дисков по параметрам, расчет вылета, ширины и PCD. Избегайте ошибок при выборе колес.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/d/di/diskovyj-kalkulyator-dlya-legkovykh-avtomobilej-vizualnyj.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Визуальный дисковый калькулятор для легковых авто: точный подбор">
+    <meta property="og:description" content="Узнайте, как работает визуальный дисковый калькулятор. Подбор дисков по параметрам, расчет вылета, ширины и PCD. Избегайте ошибок при выборе колес.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diski-i-kolpaki/">Диски и колпаки</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Визуальный дисковый калькулятор для легковых авто: точный подбор</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#зачем-нужен-визуальный-подход-к-выбору-дисков">Зачем нужен визуальный подход к выбору дисков</a></li><li><a href="#ключевые-параметры-для-расчета-совместимости">Ключевые параметры для расчета совместимости</a></li><li><a href="#как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</a></li><li><a href="#расчет-ширины-колеи-и-влияния-на-управляемость">Расчет ширины колеи и влияния на управляемость</a></li><li><a href="#важность-учета-тормозной-системы-и-подвески">Важность учета тормозной системы и подвески</a></li><li><a href="#сравнение-с-заводскими-параметрами-и-допуски">Сравнение с заводскими параметрами и допуски</a></li><li><a href="#практические-советы-по-использованию-сервисов">Практические советы по использованию сервисов</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/d/di/diski-oktaviya-a7-r18.html">Диски на Октавия А7 R18: размеры, параметры и лучшие варианты</a></li><li><a href="/articles/c/ch/chem-otlichaetsya-lite-ot-diskov.html">Литье или штамповка: чем отличаются диски и что выбрать</a></li><li><a href="/articles/v/vn/vnutrennyaya-shirina-oboda-i-razmer-pokryshki.html">Внутренняя ширина обода и размер покрышки: совместимость и выбор</a></li><li><a href="/articles/d/di/diski-rav-4-r17.html">Диски R17 для Toyota RAV4: выбор, размеры и установка</a></li><li><a href="/articles/r/ra/razboltovka-diskov-fokus-3.html">Разболтовка дисков Ford Focus 3: полные параметры PCD и крепеж</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Визуальный дисковый калькулятор для легковых автомобилей: полный гид по подбору</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#зачем-нужен-визуальный-подход-к-выбору-дисков">Зачем нужен визуальный подход к выбору дисков</a></li><li><a href="#ключевые-параметры-для-расчета-совместимости">Ключевые параметры для расчета совместимости</a></li><li><a href="#как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</a></li><li><a href="#расчет-ширины-колеи-и-влияния-на-управляемость">Расчет ширины колеи и влияния на управляемость</a></li><li><a href="#важность-учета-тормозной-системы-и-подвески">Важность учета тормозной системы и подвески</a></li><li><a href="#сравнение-с-заводскими-параметрами-и-допуски">Сравнение с заводскими параметрами и допуски</a></li><li><a href="#практические-советы-по-использованию-сервисов">Практические советы по использованию сервисов</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="зачем-нужен-визуальный-подход-к-выбору-дисков">Зачем нужен визуальный подход к выбору дисков</h2>
+<p>Выбор новых колесных дисков часто превращается в мучительный процесс, когда сухие технические характеристики не дают понимания того, как будет выглядеть <strong>готовое колесо</strong> в арке вашего автомобиля. Вы можете прекрасно знать параметры <em>PCD</em> или диаметр центрального отверстия, но без визуализации невозможно оценить, насколько широкое колесо будет выступать за крыло или, наоборот, упрется в элементы подвески.</p>
+<p>Именно здесь на помощь приходит <strong>визуальный дисковый калькулятор</strong> — специализированный сервис, который позволяет не просто проверить совместимость, но и увидеть результат виртуальной установки. Такой инструмент превращает скучную математику в наглядную 3D-модель, где вы можете покрутить <em>колесо</em> под любым углом и оценить эстетику.</p>
+<p>Многие водители совершают ошибки, полагаясь только на таблицы совместимости, забывая, что даже при идеально совпадающих <strong>развертках болтов</strong> геометрия тормозных суппортов может не позволить установить диск с низким вылетом. Визуализация позволяет заранее увидеть эти конфликты и избежать дорогостоящего возврата товара.</p>
+
+<h2 id="ключевые-параметры-для-расчета-совместимости">Ключевые параметры для расчета совместимости</h2>
+<p>Прежде чем доверять любой программе или онлайн-сервису, необходимо досконально разобраться в параметрах, которые формируют <strong>геометрию колеса</strong>. Ошибка даже в одном миллиметре может привести к тому, что колесо будет тереться о колесную арку при полной загрузке автомобиля или на кочках. Самый критичный параметр — это <em>диаметр посадочного отверстия</em>, который должен точно совпадать с центрирующим выступом ступицы вашего авто.</p>
+<p>Далее идет параметр <strong>P</strong><em>CD</em> (Pitch Circle Diameter), определяющий диаметр окружности, на которой расположены крепежные болты. Для большинства легковых автомобилей это значения типа 4x100 или 5x112, но существуют и редкие спецификации, которые требуют особого внимания. Неправильно подобранный <strong>шаг болтов</strong> приведет к невозможности установки диска или к критическим вибрациям на высоких скоростях.</p>
+<p>Самым сложным для понимания новичками является параметр <strong>ET</strong> (вылет), который определяет расстояние от монтажной плоскости диска до центральной линии symmetry. Изменение вылета напрямую влияет на ширину колеи и нагрузку на ступичные подшипники. Визуальный калькулятор помогает быстро понять, что такое <em>отрицательный вылет</em> и как он меняет внешний вид автомобиля, расширяя <strong>посадочную ширину</strong>.</p>
+
+<blockquote>⚠️ Внимание: Изменение вылета диска (ET) более чем на 5 мм от заводского значения без внесения изменений в конструкцию подвески может негативно сказаться на ресурсе ступичных подшипников и рулевого управления.</blockquote>
+
+<h2 id="как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</h2>
+<p>Современные визуальные калькуляторы используют сложные алгоритмы, которые строят модели колесных арок конкретных марок автомобилей. Пользователь вводит марку, модель и год выпуска, после чего система подгружает базу данных геометрии подвески. Затем вы вводите параметры диска: <strong>ширину</strong> (J-значение), диаметр (R) и вылет (ET). Система накладывает 3D-модель диска на 3D-модель арки, показывая реальное положение колеса.</p>
+<p>Интерфейс таких сервисов обычно позволяет вращать <em>автомобиль</em> на 360 градусов, приближать и отдалять зоны интереса. Вы можете увидеть, как диск заходит внутрь арки или выступает за её пределы. Это особенно полезно при подборе <strong>широких дисков</strong> для улучшения внешнего вида, так как позволяет объективно оценить, не будет ли колесо торчать слишком сильно и не нарушит ли это правила дорожного движения.</p>
+<p>Важно отметить, что большинство качественных визуальных калькуляторов также учитывают размер шин. Ведь даже идеальный диск может быть испорчен неправильно подобранной резиной. Если вы выберете слишком толстую покрышку, она может коснуться арок даже при идеальном диске. Поэтому вводить лучше сразу полный комплект: <em>диск + шина</em>.</p>
+
+<div class="pb-poll" id="poll-0c3e4545"><div class="pb-poll-question">📊 Как часто вы меняете диски на своем автомобиле?</div><div class="pb-poll-option" data-poll="0c3e4545" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в 5 лет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c3e4545" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при поломке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c3e4545" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Каждый сезон</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c3e4545" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Часто меняю по настроению</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расчет-ширины-колеи-и-влияния-на-управляемость">Расчет ширины колеи и влияния на управляемость</h2>
+<p>Одной из главных функций визуального калькулятора является оценка изменения ширины колеи. Установка дисков с меньшим вылетом (например, с ET35 вместо штатного ET45) автоматически увеличивает ширину колеи на 10 мм с каждой стороны. Это может улучшить устойчивость автомобиля в поворотах, но также создает дополнительную нагрузку на <strong>ступицу</strong> и элементы подвески.</p>
+<p>Визуализация помогает наглядно увидеть, как меняется <em>очертание автомобиля</em>. Широкая колея делает машину более "приземистой" и агрессивной. Однако необходимо помнить, что чрезмерное расширение колеи может привести к тому, что колесо будет тереться о брызговики или элементы <strong>подкрылков</strong> при повороте руля до упора.</p>
+<p>Для тюнинг-проектов визуальный калькулятор — незаменимый инструмент. Он позволяет подобрать комбинацию <strong>ширины диска</strong> и вылета, которая даст максимальную ширину без фактического контакта с кузовом. Это так называемый "нулевой зазор", который часто ищут владельцы спортивных автомобилей, чтобы колесо было вровень с аркой.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка параметров перед установкой</h4><label class="check-item"><input type="checkbox"><span>Значение PCD совпадает</span></label><label class="check-item"><input type="checkbox"><span>Диаметр отверстия (DIA) подходит</span></label><label class="check-item"><input type="checkbox"><span>Вылет (ET) в допустимом диапазоне</span></label><label class="check-item"><input type="checkbox"><span>Ширина диска не задевает арку</span></label><label class="check-item"><input type="checkbox"><span>Размер тормозного суппорта учитывается</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="важность-учета-тормозной-системы-и-подвески">Важность учета тормозной системы и подвески</h2>
+<p>Не только геометрия кузова ограничивает выбор дисков. Внутри колеса находится тормозная система, ширина и высота которой могут значительно варьироваться даже в рамках одной модели автомобиля. Стандартный калькулятор может показать, что диск встает в арку, но не учитывает габариты тормозных суппортов. Крупные <strong>тормозные суппорты</strong> могут не поместиться в диск с малым диаметром или узким "полкой".</p>
+<p>Визуальные калькуляторы премиум-класса имеют базы данных с габаритами тормозных систем для разных комплектаций (например, <em>АБС</em>, <em>ESP</em>, спортивные пакеты). Это позволяет пользователю увидеть, влезет ли суппорт в диск с радиусом R16 или потребуется переходить на R17 для обеспечения достаточного зазора.</p>
+<p>Также стоит учитывать элементы передней подвески, такие как рычаги и амортизаторы. При установке дисков с отрицательным вылетом колесо смещается наружу, и внутренний край диска может подойти слишком близко к амортизационной стойке или пружине. Визуализация позволяет проверить этот зазор, который в реальности должен составлять минимум несколько миллиметров.</p>
+
+<blockquote>⚠️ Внимание: Даже если калькулятор показывает, что диск заходит в арку, всегда проверяйте зазор между диском и элементами подвески при полном вывороте руля, так как виртуальная модель может не учитывать деформацию резиновых втулок рычагов.</blockquote>
+
+<h2 id="сравнение-с-заводскими-параметрами-и-допуски">Сравнение с заводскими параметрами и допуски</h2>
+<p>При работе с визуальным калькулятором важно понимать понятие допустимых отклонений. Заводские параметры указаны для обеспечения идеального баланса и долговечности всех узлов. Однако современные допуски позволяют отклоняться от них в определенных пределах. Обычно допускается изменение вылета (ET) в диапазоне от -5 до +5 мм от заводского значения без существенного вреда.</p>
+<p>Если вы планируете более радикальные изменения, например, использование адаптеров или дисков с нестандартным <strong>PCD</strong>, визуальный калькулятор поможет оценить эстетику, но не гарантирует механическую безопасность. В таких случаях необходимо сверяться с техническими регламентами и рекомендациями производителей подвески.</p>
+<p>Сравнение с заводскими параметрами помогает понять, насколько радикальным будет изменение внешнего вида. Если разница в ширине колеи составляет всего 1-2 мм, визуально вы этого не заметите, но если вы планируете установку дисков на 2 дюйма шире, эффект будет кардинальным. Визуализация позволяет оценить этот эффект заранее, чтобы избежать разочарования после покупки.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Обозначение</th>
+      <th>Влияние на авто</th>
+      <th>Риск при ошибке</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Диаметр диска</td>
+      <td>R</td>
+      <td>Внешний вид, клиренс</td>
+      <td>Трение о арку, потеря комфорта</td>
+    </tr>
+    <tr>
+      <td>Ширина диска</td>
+      <td>J</td>
+      <td>Стабильность, сцепление</td>
+      <td>Заклинивание, повреждение шины</td>
+    </tr>
+    <tr>
+      <td>Вылет</td>
+      <td>ET</td>
+      <td>Ширина колеи, нагрузка</td>
+      <td>Разрушение подшипников</td>
+    </tr>
+    <tr>
+      <td>Развертка</td>
+      <td>PCD</td>
+      <td>Центрирование, крепление</td>
+      <td>Биение колеса, откручивание</td>
+    </tr>
+    <tr>
+      <td>Центральное отверстие</td>
+      <td>DIA</td>
+      <td>Посадка, центровка</td>
+      <td>Сильная вибрация на скорости</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<blockquote>⚠️ Внимание: Данные в визуальных калькуляторах могут обновляться с задержкой. Перед окончательной покупкой специфических дисков всегда проверяйте параметры на официальном сайте производителя дисков или в сервисной книжке автомобиля.</blockquote>
+
+<h2 id="практические-советы-по-использованию-сервисов">Практические советы по использованию сервисов</h2>
+<p>Чтобы получить максимально точный результат, используйте актуальные данные о вашем автомобиле. Часто производители меняют параметры подвески для разных годов выпуска одной и той же модели. Вводите в калькулятор не просто "Toyota Camry", а конкретный год выпуска и тип кузова (седан, универсал). Это позволит системе загрузить правильную модель <strong>колесной арки</strong>.</p>
+<p>Обращайте внимание на то, какой именно профиль шины вы выбираете в калькуляторе. Даже если диаметр диска (R) совпадает, высота профиля шины (например, 55 против 45) кардинально меняет общую высоту колеса. Неправильный выбор профиля может привести к тому, что колесо упрется в подкрылок или арку при проезде неровностей.</p>
+<p>Не забывайте сохранять результаты подбора в виде скриншотов или ссылок. Это поможет вам при общении с продавцами в магазине, чтобы они точно поняли, какой результат вы ожидаете получить. Если вы видите в калькуляторе, что диск выступает на 10 мм, предложите продавцу показать именно такой вариант в реальности.</p>
+
+<details class="pb-accordion"><summary>Секреты расчета адаптеров</summary><div class="pb-accordion-body"><p>Использование проставок (адаптеров) позволяет изменить вылет диска, но при этом увеличивается нагрузка на ступичные подшипники и рычаги. Визуальный калькулятор покажет, как изменится положение колеса, но не сможет рассчитать износ деталей подвески в будущем.</p></div></details>
+
+<p>Визуальный дисковый калькулятор — это не панацея от всех ошибок, но мощный инструмент минимизации рисков. Он позволяет отсечь заведомо неподходящие варианты и сосредоточиться на тех, которые гарантированно встанут в арки и будут гармонично смотреться на кузове. Правильный подбор <strong>дисков</strong> — это баланс между эстетикой и технической безопасностью.</p>
+<p>Помните, что даже самый совершенный алгоритм не заменит человеческого глаза и здравого смысла. Если калькулятор показывает, что колесо "чуть-чуть" не влезает, скорее всего, оно не влезет и в реальности. Лучше выбрать более аккуратный вариант, чем пытаться подогнать неподходящие диски с помощью болгарки или спиливания арок.</p>
+<p>Используйте визуализацию как первый этап планирования, а затем обязательно согласуйте свой выбор с профессионалами в магазине или на СТО. Они смогут подтвердить, что выбранные вами параметры <em>вылета и ширины</em> безопасны для вашей конкретной модели автомобиля с учетом её состояния и комплектации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Визуальный калькулятор позволяет увидеть, как диск будет выглядеть в арке, но окончательное решение должно приниматься с учетом рекомендаций производителя по допустимым отклонениям вылета и ширины.</p></aside>
+
+<details>
+<summary>Можно ли полагаться на визуальный калькулятор на 100%?</summary>
+<p>Нет, визуальный калькулятор дает ориентировочную модель. Реальные зазоры могут отличаться из-за допусков в производстве кузова, состояния резины, различий в комплектациях подвески и колесных арок.</p>
+</details>
+<details>
+<summary>Что делать, если диск задевает арку в калькуляторе?</summary>
+<p>Вам нужно либо увеличить вылет (ET), чтобы утопить диск глубже, либо выбрать диск с меньшей шириной (J). Также можно рассмотреть установку проставок, но это меняет нагрузку на подвеску.</p>
+</details>
+<details>
+<summary>Влияет ли размер шин на работу калькулятора?</summary>
+<p>Да, размер шин критически важен. Выбор шины с неправильным профилем может привести к тому, что даже идеальный диск будет тереться о подкрылки или арку при проезде неровностей.</p>
+</details>
+<details>
+<summary>Можно ли использовать калькулятор для подбора дисков на грузовики?</summary>
+<p>Большинство визуальных калькуляторов ориентированы на легковые автомобили. Для грузовиков и спецтехники требуются специализированные программы с учетом более тяжелых нагрузок и специфической геометрии подвески.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/d/di/diski-oktaviya-a7-r18.html" class="pb-related-card">
+                <span class="pb-related-title">Диски на Октавия А7 R18: размеры, параметры и лучшие варианты</span>
+                <span class="pb-related-desc">Полный гид по подбору дисков R18 для Skoda Octavia A7. Размеры, вылет, сверловка и советы по выбору </span>
+            </a><a href="/articles/c/ch/chem-otlichaetsya-lite-ot-diskov.html" class="pb-related-card">
+                <span class="pb-related-title">Литье или штамповка: чем отличаются диски и что выбрать</span>
+                <span class="pb-related-desc">Подробный разбор отличий литых и штампованных дисков. Сравнение веса, прочности, цены и эксплуатацио</span>
+            </a><a href="/articles/v/vn/vnutrennyaya-shirina-oboda-i-razmer-pokryshki.html" class="pb-related-card">
+                <span class="pb-related-title">Внутренняя ширина обода и размер покрышки: совместимость и выбор</span>
+                <span class="pb-related-desc">Полное руководство по подбору ширины диска под шину. Таблицы совместимости, влияние на управляемость</span>
+            </a><a href="/articles/d/di/diski-rav-4-r17.html" class="pb-related-card">
+                <span class="pb-related-title">Диски R17 для Toyota RAV4: выбор, размеры и установка</span>
+                <span class="pb-related-desc">Полный гид по подбору штатных и нештатных дисков R17 для Toyota RAV4. Разбор размеров, вылета, нагру</span>
+            </a><a href="/articles/r/ra/razboltovka-diskov-fokus-3.html" class="pb-related-card">
+                <span class="pb-related-title">Разболтовка дисков Ford Focus 3: полные параметры PCD и крепеж</span>
+                <span class="pb-related-desc">Актуальная разболтовка дисков Ford Focus 3, центральный отверстие, вылет ET и размер болтов. Таблица</span>
+            </a><a href="/articles/v/ve/vertushki-diski-r-16.html" class="pb-related-card">
+                <span class="pb-related-title">Вертушки (колпаки) на диски R16: виды, монтаж и советы по выбору</span>
+                <span class="pb-related-desc">Подробный гид по выбору, установке и эксплуатации колпаков на диски R16. Обзор типов, материалов, ню</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

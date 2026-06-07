@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Калькулятор радиуса колеса: расчет и влияние на авто — Мастер Шин</title>
+    <meta name="description" content="Как правильно рассчитать радиус колеса автомобиля. Влияние размера диска и резины на спидометр, клиренс и работу ABS. Таблица соответствия и советы.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kalkulyator-radiusa-kolesa-avtomobilya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Калькулятор радиуса колеса: расчет и влияние на авто">
+    <meta property="og:description" content="Как правильно рассчитать радиус колеса автомобиля. Влияние размера диска и резины на спидометр, клиренс и работу ABS. Таблица соответствия и советы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Калькулятор радиуса колеса: расчет и влияние на авто</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-колеса-чем-отличается-диаметр-от-радиуса">Физика колеса: чем отличается диаметр от радиуса</a></li><li><a href="#математика-перевода-как-найти-радиус-по-маркировке">Математика перевода: как найти радиус по маркировке</a></li><li><a href="#влияние-изменения-радиуса-на-динамику-и-подвеску">Влияние изменения радиуса на динамику и подвеску</a></li><li><a href="#специфика-зимней-и-летней-резины">Специфика зимней и летней резины</a></li><li><a href="#таблица-соответствия-распространенных-размеров">Таблица соответствия распространенных размеров</a></li><li><a href="#распространенные-ошибки-при-подборе">Распространенные ошибки при подборе</a></li><li><a href="#вопросы-и-ответы">Вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-znachit-na-shine-88t.html">Шина 88Т: расшифровка индекса нагрузки и скорости</a></li><li><a href="/articles/k/ka/kak-uznat-vysotu-kolesa-po-razmeru-shin-formula.html">Как узнать высоту колеса по размеру шин: формула и расчет диаметра</a></li><li><a href="/articles/r/re/rezinovoe-izdelie-nomer-4.html">Резиновое изделие №4: Расшифровка маркировки и особенности применения</a></li><li><a href="/articles/k/ka/kak-opredelit-datu-vypuska-pokryshki.html">Как определить дату выпуска шины: полное руководство по маркировке DOT</a></li><li><a href="/articles/r/re/rezina-vnutri-kolesa-kak-nazyvaetsya.html">Что такое резина внутри колеса: устройство, назначение и виды автокамер</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Расчет радиуса колеса автомобиля: от математической формулы до влияния на подвеску</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-колеса-чем-отличается-диаметр-от-радиуса">Физика колеса: чем отличается диаметр от радиуса</a></li><li><a href="#математика-перевода-как-найти-радиус-по-маркировке">Математика перевода: как найти радиус по маркировке</a></li><li><a href="#влияние-изменения-радиуса-на-динамику-и-подвеску">Влияние изменения радиуса на динамику и подвеску</a></li><li><a href="#специфика-зимней-и-летней-резины">Специфика зимней и летней резины</a></li><li><a href="#таблица-соответствия-распространенных-размеров">Таблица соответствия распространенных размеров</a></li><li><a href="#распространенные-ошибки-при-подборе">Распространенные ошибки при подборе</a></li><li><a href="#вопросы-и-ответы">Вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие автолюбители сталкиваются с необходимостью изменить штатный размер колес, чтобы улучшить внешний вид автомобиля или адаптировать его для конкретных дорожных условий. Однако простое увеличение диаметра диска без учета полного профиля шины может привести к плачевным последствиям для подвески и трансмиссии. <mark>Неправильный расчет общего радиуса колеса является одной из главных причин преждевременного выхода из строя ступичных подшипников.</mark></p>
+
+<p>Для того чтобы избежать ошибок при подборе резины, необходимо понимать разницу между диаметром диска и общим радиусом колеса в сборе. <strong>Общий радиус</strong> зависит не только от размера литого или штампованного диска, но и от высоты профиля резины, которая часто игнорируется новичками. Именно этот нюанс определяет, насколько далеко от кузова будет находиться колесо и как изменится дорожный просвет.</p>
+
+<p>В этой статье мы разберем, как работает расчетная формула, почему данные в <strong>калькуляторе радиуса колеса</strong> могут отличаться от реальных замеров и какие параметры критически важны для безопасности. Понимание этих процессов позволит вам самостоятельно проверить рекомендации продавцов шин.</p>
+
+<h2 id="физика-колеса-чем-отличается-диаметр-от-радиуса">Физика колеса: чем отличается диаметр от радиуса</h2>
+
+<p>В технической документации и на боковине покрышки чаще всего указывается диаметр обода в дюймах, что создает путаницу при попытке определить реальный размер колеса. Вам нужно четко разграничивать три понятия: <strong>диаметр диска</strong>, <strong>высоту профиля</strong> и <strong>общий диаметр колеса</strong>. Радиус, в свою очередь, равен половине от общего диаметра всей конструкции.</p>
+
+<p>Большинство водителей ошибочно полагают, что переход с 14-го на 15-й диск автоматически увеличивает радиус на полтора дюйма. На самом деле <em>Nokian</em> или <em>Michelin</em> могут компенсировать это увеличение снижением профиля резины. Если вы уменьшите высоту боковины, общий радиус может остаться практически прежним, несмотря на рост диаметра металла.</p>
+
+<p> Любое отклонение в большую или меньшую сторону приведет к тому, что показания прибора будут некорректными. Иногда это кажется безобидным, но в реальности влияет на расход топлива и работу системы стабилизации.</p>
+
+<h2 id="математика-перевода-как-найти-радиус-по-маркировке">Математика перевода: как найти радиус по маркировке</h2>
+
+<p>Маркировка шины выглядит как набор цифр и букв, например, <code>205/55 R16</code>. Чтобы узнать радиус, необходимо сначала перевести все значения в метрическую систему. Число <code>205</code> означает ширину протектора в миллиметрах, а <code>55</code> — это процентное отношение высоты профиля к ширине. Именно эта цифра часто вызывает вопросы при расчетах.</p>
+
+<p>Высота профиля рассчитывается путем умножения ширины на процентное значение: <code>205 * 0.55 = 112.75 мм</code>. Это расстояние от диска до протектора с одной стороны. Чтобы получить полный диаметр колеса, нужно добавить два таких значения (верх и низ) и диаметр диска в миллиметрах.</p>
+
+<p>Диаметр диска в 16 дюймов равен <code>406.4 мм</code> (так как 1 дюйм = 25.4 мм). Суммируя все значения, получаем общий диаметр: <code>112.75 + 112.75 + 406.4 = 631.9 мм</code>. Осталось разделить полученную цифру на два, чтобы получить искомый <strong>радиус колеса</strong>, который составит примерно <code>316 мм</code> (или <code>31.6 см</code>).</p>
+
+<blockquote>⚠️ Внимание: Исходя из текущих стандартов ISO, допустимое отклонение реального радиуса от расчетного может составлять до 3%. Превышение этого порога может привести к задеванию арочных крыльев при полной загрузке автомобиля.</blockquote>
+
+<h2 id="влияние-изменения-радиуса-на-динамику-и-подвеску">Влияние изменения радиуса на динамику и подвеску</h2>
+
+<p>Увеличение общего радиуса колеса меняет передаточные числа главной пары, что заставляет двигатель работать с меньшей нагрузкой при той же скорости. Это может снизить расход топлива на трассе, но при разгоне автомобиль станет более "вялым". <strong>Динамические характеристики</strong> напрямую зависят от того, насколько изменился рычаг силы.</p>
+
+<p>С другой стороны, уменьшение радиуса приведет к более резкому разгону и увеличению крутящего момента на колесах, но максимальная скорость автомобиля может снизиться. Кроме того, <strong>клинчус</strong> (вылет колеса) и ширина плеча рулевого управления могут измениться, что скажется на управляемости в поворотах.</p>
+
+<p>Не менее важным фактором является работа электронных систем безопасности. Датчики ABS и ESP измеряют скорость вращения колес для выявления блокировки или пробуксовки. Если вы установите колеса с разным <strong>радиусом качения</strong>, система может начать выдавать ложные ошибки или отключаться в критических ситуациях.</p>
+
+<div class="pb-poll" id="poll-8481c288"><div class="pb-poll-question">📊 Изменили ли вы размер колес на своем автомобиле?</div><div class="pb-poll-option" data-poll="8481c288" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, увеличили диаметр дисков</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8481c288" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, уменьшили для зимы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8481c288" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, остались на штатных размерах</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8481c288" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Планирую сменить в ближайший сезон</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Перед тем как экспериментировать с размерами, обязательно проверьте техническую карту вашего автомобиля. Некоторые производители допускают установку колес только в строго определенном диапазоне радиусов, чтобы не нарушить работу <strong>амортизационных стоек</strong>.</p>
+
+<h2 id="специфика-зимней-и-летней-резины">Специфика зимней и летней резины</h2>
+
+<p>Чаще всего водители меняют радиус колес при сезонной смене резины, устанавливая на зимний период диски меньшего диаметра. Это связано с тем, что зимняя шина требует более высокого профиля для лучшей амортизации на неровностях. <strong>Зимний комплект</strong> обычно имеет меньший внешний диаметр, чтобы компенсировать увеличенную высоту профиля.</p>
+
+<p>Летние шины, напротив, часто монтируются на диски большего диаметра с низким профилем. Такая конфигурация обеспечивает лучшую сцепность с асфальтом и более точное рулевое управление. Однако низкий профиль крайне чувствителен к ямам и может привести к <strong>деформации диска</strong> даже при небольшой скорости.</p>
+
+<p>При переходе с летнего на зимний комплект важно следить, чтобы общий радиус колеса не отличался более чем на 2-3%. Иначе показания спидометра будут существенно расходиться с реальной скоростью, что может быть опасно при движении по трассе в гололед.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка совместимости колес</h4><label class="check-item"><input type="checkbox"><span>Замерить общий диаметр старой резины</span></label><label class="check-item"><input type="checkbox"><span>Рассчитать радиус новой шины</span></label><label class="check-item"><input type="checkbox"><span>Проверить зазор до арки</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в совпадении несущих параметров</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="таблица-соответствия-распространенных-размеров">Таблица соответствия распространенных размеров</h2>
+
+<p>Для быстрого ориентирования в мире размеров колес мы подготовили таблицу, которая показывает, как меняется радиус при переходе с одного размера на другой. Данные рассчитаны для стандартных шин без учета особенностей конкретного бренда.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Размер шины</th>
+<th>Диаметр диска (дюймы)</th>
+<th>Высота профиля (мм)</th>
+<th>Общий диаметр (мм)</th>
+<th>Радиус колеса (мм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>185/65 R15</td>
+<td>15</td>
+<td>120.25</td>
+<td>646.9</td>
+<td>323.45</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>16</td>
+<td>112.75</td>
+<td>631.9</td>
+<td>315.95</td>
+</tr>
+<tr>
+<td>225/45 R17</td>
+<td>17</td>
+<td>101.25</td>
+<td>648.9</td>
+<td>324.45</td>
+</tr>
+<tr>
+<td>235/40 R18</td>
+<td>18</td>
+<td>94.00</td>
+<td>654.4</td>
+<td>327.20</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что даже при увеличении диаметра диска на 2 дюйма, общий радиус может остаться практически неизменным благодаря снижению процента профиля. Это позволяет менять внешний вид автомобиля без существенного влияния на технические показатели.</p>
+
+<h2 id="распространенные-ошибки-при-подборе">Распространенные ошибки при подборе</h2>
+
+<p>Самой частой ошибкой является игнорирование ширины диска. Шина с широким протектором на узком диске будет иметь неправильную форму, что снизит пятно контакта и увеличит износ. Наоборот, узкая резина на широком диске будет "стоять горкой", что также негативно скажется на <strong>управляемости</strong>.</p>
+
+<p>Еще одна проблема — использование шин от разных моделей, даже если они имеют одинаковую маркировку. У разных производителей фактический внешний диаметр может отличаться на несколько миллиметров из-за разницы в технологии производства. Это недопустимо при установке на одну ось.</p>
+
+<p>Не стоит забывать и про допуски производителя. Устанавливать колеса с радиусом, превышающим допустимые значения, опасно не только для подвески, но и для габаритов автомобиля. Колесо может задевать за элементы кузова при повороте руля или срабатывании подвески.</p>
+
+<blockquote>⚠️ Внимание: Если вы планируете установку дисков с нестандартным вылетом (ET), обязательно проконсультируйтесь со специалистом. Неправильный вылет может привести к задеванию колесом арки или элементов тормозной системы.</blockquote>
+
+<details class="pb-accordion"><summary>Влияние радиуса на расход топлива</summary><div class="pb-accordion-body"><p>Увеличение радиуса колеса снижает частоту вращения двигателя при той же скорости, что может уменьшить расход топлива на трассе. Однако в городе разгон становится тяжелее, и водителю приходится чаще нажимать на газ, что увеличивает расход. Оптимальный размер всегда находится где-то посередине.</p></div></details>
+
+<p>При выборе размера также нужно учитывать <strong>грузоподъемность</strong> шин. Индекс нагрузки должен соответствовать или превышать рекомендуемые значения для вашего автомобиля. Игнорирование этого параметра при увеличении радиуса может привести к быстрому разрушению каркаса шины.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда измеряйте реальную высоту боковины резины штангенциркулем после покупки, так как фактический размер может отличаться от заявленного на 5-10 мм из-за особенностей резиновой смеси.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный подбор радиуса колеса гарантирует безопасность, точность показаний приборов и сохранность дорогостоящих узлов подвески вашего автомобиля.</p></aside>
+
+<h2 id="вопросы-и-ответы">Вопросы и ответы</h2>
+
+<details>
+<summary>Можно ли ставить колеса с разным радиусом на одну ось?</summary>
+<p>Категорически нет. Разница в радиусе колес на одной оси приведет к тому, что одно колесо будет буксовать, а другое — тормозить. Это вызовет мгновенное срабатывание дифференциала, перегрев трансмиссии и может привести к поломке полуоси.</p>
+</details>
+
+<details>
+<summary>Как радиус колеса влияет на клиренс автомобиля?</summary>
+<p>Клиренс (дорожный просвет) — это расстояние от земли до нижней точки автомобиля. Увеличение общего радиуса колеса напрямую увеличивает клиренс, так как ось поднимается выше. Однако нужно учитывать, что при полной загрузке клиренс уменьшается.</p>
+</details>
+
+<details>
+<summary>Почему спидометр врет после установки новых колес?</summary>
+<p>Спидометр измеряет скорость вращения колес. Если вы установили колеса с большим радиусом, за один оборот машина проедет большее расстояние, чем заложено в программе компьютера. В итоге спидометр будет показывать скорость меньше реальной. При меньшем радиусе — наоборот.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать калькулятор для расчета радиуса грузовиков?</summary>
+<p>Принцип расчета математически одинаков для любого транспортного средства. Однако для грузовиков и спецтехники существуют свои стандарты маркировки (например, в миллиметрах или дюймах с буквенными обозначениями типа R), которые нужно учитывать при вводе данных.</p>
+</details>
+
+<details>
+<summary>Что делать, если после смены колес загорелась лампа ABS?</summary>
+<p>Это может означать, что разница в радиусе колес превысила допустимый порог, и блок управления ABS видит несоответствие скоростей вращения колес. Попробуйте проехать несколько километров, чтобы система адаптировалась, или проверьте давление в шинах. Если ошибка не исчезла — возможно, колеса подобраны неверно.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-znachit-na-shine-88t.html" class="pb-related-card">
+                <span class="pb-related-title">Шина 88Т: расшифровка индекса нагрузки и скорости</span>
+                <span class="pb-related-desc">Что означает индекс 88T на боковине шины? Разбор допустимой нагрузки в кг и максимальной скорости до</span>
+            </a><a href="/articles/k/ka/kak-uznat-vysotu-kolesa-po-razmeru-shin-formula.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать высоту колеса по размеру шин: формула и расчет диаметра</span>
+                <span class="pb-related-desc">Узнайте, как рассчитать высоту колеса по маркировке шин. Пошаговая формула, примеры для разных типор</span>
+            </a><a href="/articles/r/re/rezinovoe-izdelie-nomer-4.html" class="pb-related-card">
+                <span class="pb-related-title">Резиновое изделие №4: Расшифровка маркировки и особенности применения</span>
+                <span class="pb-related-desc">Полный разбор резинового изделия №4: что скрывается за маркировкой, технические характеристики и сфе</span>
+            </a><a href="/articles/k/ka/kak-opredelit-datu-vypuska-pokryshki.html" class="pb-related-card">
+                <span class="pb-related-title">Как определить дату выпуска шины: полное руководство по маркировке DOT</span>
+                <span class="pb-related-desc">Узнайте, как найти дату производства резины по коду DOT. Расшифровка 4 цифр, проверка возраста шин и</span>
+            </a><a href="/articles/r/re/rezina-vnutri-kolesa-kak-nazyvaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Что такое резина внутри колеса: устройство, назначение и виды автокамер</span>
+                <span class="pb-related-desc">Узнайте, как называется резина внутри колеса автомобиля. Подробный разбор конструкции камеры, её фун</span>
+            </a><a href="/articles/s/sk/skolko-vesit-odna-pokryshka.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько весит одна покрышка: точный вес шин разных размеров</span>
+                <span class="pb-related-desc">Узнайте точный вес автомобильной покрышки от 13 до 20 дюймов. Факторы влияния: профиль, резина, брен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

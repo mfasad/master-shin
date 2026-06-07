@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Диагностический интерфейс J533 (01299): Сканер Gateway и шлюз Volkswagen — Мастер Шин</title>
+    <meta name="description" content="Полный разбор диагностического интерфейса 01299 J533. Функции шлюза Gateway, подключение, настройка и устранение ошибок в автомобилях VAG. Технические детали.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/0/01/01299-diagnosticheskij-interfejs-shin-dannykh-j533.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Диагностический интерфейс J533 (01299): Сканер Gateway и шлюз Volkswagen">
+    <meta property="og:description" content="Полный разбор диагностического интерфейса 01299 J533. Функции шлюза Gateway, подключение, настройка и устранение ошибок в автомобилях VAG. Технические детали.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-i-vulkanizatsiya/">Ремонт и вулканизация</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Диагностический интерфейс J533 (01299): Сканер Gateway и шлюз Volkswagen</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#специфика-работы-диагностического-канала-01299">Специфика работы диагностического канала 01299</a></li><li><a href="#архитектура-и-функции-шлюза-данных">Архитектура и функции шлюза данных</a></li><li><a href="#методы-подключения-и-настройки-диагностического-оборудования">Методы подключения и настройки диагностического оборудования</a></li><li><a href="#типовые-неисправности-и-их-проявление">Типовые неисправности и их проявление</a></li><li><a href="#восстановление-и-кодирование-параметров">Восстановление и кодирование параметров</a></li><li><a href="#взаимодействие-с-другими-системами-автомобиля">Взаимодействие с другими системами автомобиля</a></li><li><a href="#перспективы-развития-и-обновление-по">Перспективы развития и обновление ПО</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/b/bi/biznes-po-proizvodstvu-rezinovoj-kroshki.html">Бизнес по производству резиновой крошки: технологии, оборудование и рентабельность</a></li><li><a href="/articles/k/ka/kak-snyat-pylnik-s-podshipnika.html">Как снять пыльник с подшипника: пошаговая инструкция и советы</a></li><li><a href="/articles/k/ka/kak-proverit-rele-tim-01.html">Как проверить реле TIM 01: диагностика, тест и замена</a></li><li><a href="/articles/k/ka/kak-razobrat-bak-na-khiro-2.html">Как разобрать бак HiRo 2: пошаговая инструкция по демонтажу</a></li><li><a href="/articles/p/po/polez-kord-na-pokryshke-chto-delat.html">Полез корд на покрышке: что делать, можно ли ездить, ремонт и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Диагностический интерфейс 01299 J533: Шлюз данных и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#специфика-работы-диагностического-канала-01299">Специфика работы диагностического канала 01299</a></li><li><a href="#архитектура-и-функции-шлюза-данных">Архитектура и функции шлюза данных</a></li><li><a href="#методы-подключения-и-настройки-диагностического-оборудования">Методы подключения и настройки диагностического оборудования</a></li><li><a href="#типовые-неисправности-и-их-проявление">Типовые неисправности и их проявление</a></li><li><a href="#восстановление-и-кодирование-параметров">Восстановление и кодирование параметров</a></li><li><a href="#взаимодействие-с-другими-системами-автомобиля">Взаимодействие с другими системами автомобиля</a></li><li><a href="#перспективы-развития-и-обновление-по">Перспективы развития и обновление ПО</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="специфика-работы-диагностического-канала-01299">Специфика работы диагностического канала 01299</h2>
+<p>В современных автомобилях концерна <em>Volkswagen Group</em>, включая бренды <em>Skoda</em>, <em>Seat</em> и <em>Audi</em>, центральным узлом обмена информацией является модуль с адресом <code>01299</code>. Этот адрес в диагностических сканерах соответствует блоку управления <strong>Gateway</strong> (шлюз), который в технической документации часто обозначается как <em>J533</em>. Именно через него происходит передача команд между различными шинами данных, что критично для корректной работы всей электронной архитектуры автомобиля.</p>
+<p>При подключении к системе вы можете заметить, что сканер сначала регистрирует соединение именно с этим адресом, прежде чем перейти к конкретным узлам, таким как двигатель или коробка передач. Это происходит потому, что <strong>шлюз J533</strong> выполняет роль маршрутизатора, переводя сигналы с высокой скорости шины <strong>High-Speed CAN</strong> на низкоскоростную <strong>Low-Speed CAN</strong> и наоборот. Без корректной работы этого интерфейса диагностика иных систем становится невозможной или полуправильной.</p>
+<p>Понимание природы адреса <code>01299</code> позволяет специалистам быстрее локализовать проблемы. Если сканер не видит другие блоки, но видит <em>J533</em>, проблема скорее всего в физической линии связи или настройках маршрутизации. Если же и сам <strong>адрес 01299</strong> недоступен, это указывает на глобальное нарушение питания или целостности самой шины данных.</p>
+
+<h2 id="архитектура-и-функции-шлюза-данных">Архитектура и функции шлюза данных</h2>
+<p>Модуль <em>J533</em> не просто соединяет провода, он активно участвует в фильтрации и трансформации данных. Внутри блока происходит конвертация протоколов, что позволяет старым модулям, работающим по <strong>K-Line</strong>, общаться с современными системами, использующими <strong>FlexRay</strong> или <strong>Ethernet</strong>. Это делает <strong>интерфейс 01299</strong> одним из самых сложных компонентов в диагностической цепочке, требующим глубоких знаний сетевых протоколов для его обслуживания.</p>
+<p>Одной из ключевых функций является управление питанием бортовых систем. Именно <em>Gateway</em> решает, когда перевести электронные блоки в спящий режим, когда автомобиль заглушен, а когда разбудить их при попытке запуска двигателя. Ошибки в логике работы <strong>шлюза J533</strong> часто приводят к тому, что аккумулятор разряжается за ночь, несмотря на исправность генератора и стартера.</p>
+<p>Важно отметить, что каждый автомобиль имеет уникальную конфигурацию <strong>адресов шлюза</strong>. В зависимости от года выпуска и комплектации, список доступных подсистем, которые транслирует <code>01299</code>, может существенно отличаться. Инженеры при разработке программного обеспечения для сканеров должны учитывать эти нюансы, чтобы не выдавать ложные ошибки при проверке <strong>интерфейса диагностики</strong>.</p>
+
+<blockquote><strong>⚠️ Внимание:</strong> Некорректное вмешательство в настройки <em>J533</em> может привести к полному отключению определенных систем автомобиля, таких как ABS или подушки безопасности, пока не будет сброшена конфигурация через официальный сервисный инструмент.</blockquote>
+
+<div class="pb-poll" id="poll-7d086c64"><div class="pb-poll-question">📊 Насколько часто вы сталкиваетесь с ошибками шлюза J533?</div><div class="pb-poll-option" data-poll="7d086c64" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d086c64" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Редко</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d086c64" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Часто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d086c64" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="методы-подключения-и-настройки-диагностического-оборудования">Методы подключения и настройки диагностического оборудования</h2>
+<p>Для работы с <strong>адресом 01299</strong> необходимо использовать специализированное оборудование, способное поддерживать протоколы <strong>VCDS</strong>, <strong>ODIS</strong> или <strong>CarSoft</strong>. Простые китайские адаптеры ELM327 часто не могут корректно обработать сложные запросы к шлюзу, выдавая ошибку соединения. Вам потребуется качественное устройство, которое эмулирует работу оригинального диагностического интерфейса <em>VAG-COM</em> с полной поддержкой линий CAN и LIN.</p>
+<p>Процесс подключения начинается с проверки физического состояния разъема OBD-II. Контакты 6 и 14 должны обеспечивать надежный контакт с линией <strong>CAN-High</strong> и <strong>CAN-Low</strong> соответственно. Если корпус разъема поврежден, сигнал может прерываться, что приведет к нестабильной работе <strong>шлюза J533</strong> и невозможности считать коды неисправностей.</p>
+<p>После физического подключения необходимо настроить программное обеспечение. В меню <code>System Status</code> вы увидите список всех обнаруженных блоков. Если <code>01299</code> отображается как <strong>OK</strong>, но другие блоки отсутствуют, проблема может быть в конфигурации каналов. В этом случае необходимо зайти в <code>Installation List</code> и убедиться, что нужные системы активированы в списке оборудования <em>J533</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка подключения шлюза J533</h4><label class="check-item"><input type="checkbox"><span>Проверить контакты OBD-II</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в наличии питания 12В</span></label><label class="check-item"><input type="checkbox"><span>Настроить скорость CAN-шины</span></label><label class="check-item"><input type="checkbox"><span>Считать статус всех блоков</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote><strong>⚠️ Внимание:</strong> При перепрошивке <em>J533</em> категорически нельзя отключать диагностический кабель. Если напряжение в сети падает ниже <code>11.5В</code>, блок может уйти в "кирпич", что потребует сложного программаторного восстановления.</blockquote>
+
+<h2 id="типовые-неисправности-и-их-проявление">Типовые неисправности и их проявление</h2>
+<p>Наиболее распространенной проблемой является потеря связи с отдельными узлами при сохранении связи с самим <strong>адресом 01299</strong>. Это часто сопровождается кодами ошибок <code>01312</code> (Data Bus Off) или <code>01314</code> (Engine Control Module). В таких случаях <em>Gateway</em> правильно работает, но не может передать данные от конкретного модуля, который, возможно, физически отключен или имеет перебитый провод.</p>
+<p>Другой частый сценарий — это "зависание" шлюза, когда он перестает переводить модули в спящий режим. Это приводит к тому, что после парковки автомобиль продолжает потреблять ток, и через пару часов аккумулятор полностью садится. Диагностика показывает, что <strong>шлюз J533</strong> не получает сигнала "Закрыто" от центрального замка или сигнализации.</p>
+<p>Иногда причиной сбоя становится не сам блок, а некорректная установка дополнительного оборудования. Установка неофициальной аудиосистемы или сигнализации может нарушить логику работы <strong>CAN-шины</strong>, вызывая конфликты адресов. В результате <code>01299</code> начинает выдавать множество ошибок "No Signal" на все подключенные системы.</p>
+
+<details class="pb-accordion"><summary>Что делать, если после замены аккумулятора исчезли настройки?После отключения питания блок J533 может потерять кратковременные настройки адаптации. Это нормально. Обычно требуется 10-15 минут работы двигателя и поездка, чтобы модули снова синхронизировали свои данные. Если ошибка не исчезает, попробуйте сбросить адаптацию через диагностический сканер.-->
+
+<h2 id="восстановление-и-кодирование-параметров">Восстановление и кодирование параметров</h2>
+<p>Восстановление работоспособности <em>J533</em> часто требует процедуры кодирования. Это необходимо при замене блока на новый или после перепрошивки. Вам нужно ввести правильный <strong>код конфигурации</strong>, который соответствует комплектации вашего автомобиля. Неправильный код может привести к тому, что <strong>шлюз</strong> перестанет опрашивать определенные датчики, например, датчик давления в шинах или модуль освещения.</p>
+<p>Для точного кодирования используется функция <code>Long Coding Helper</code> в профессиональных сканерах. Она позволяет менять отдельные биты в двоичном коде, активируя или деактивируя конкретные функции. Например, включение функции <strong>Comfort Mode</strong> требует изменения определенных байтов в настройках <em>Gateway</em>, чтобы он корректно управлял центральным замком и окнами.</p>
+<p> Ошибка в одном бите может отключить работу стеклоподъемников или климат-контроля. Поэтому перед внесением изменений обязательно сохраните текущий файл конфигурации. Это позволит быстро вернуть исходные настройки в случае неудачи.</p>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>keypoint:Кодирование шлюза J533 — это тонкий процесс настройки маршрутизации данных, который требует точного соответствия заводской конфигурации автомобиля.</p></div></details>
+
+<h2 id="взаимодействие-с-другими-системами-автомобиля">Взаимодействие с другими системами автомобиля</h2>
+<p><strong>Шлюз J533</strong> находится в центре сложной паутины коммуникаций. Он взаимодействует с блоком управления двигателем (<code>01</code>), коробкой передач (<code>02</code>), ABS (<code>03</code>) и множеством других систем. Любая ошибка в одной из этих систем может быть передана через <em>Gateway</em> и зафиксирована как общая ошибка шины данных. Это создает иллюзию неисправности самого шлюза, когда на самом деле проблема в периферийном устройстве.</p>
+<p>Система диагностики <code>U</code>-кодов часто указывает на потерю связи с конкретным модулем. Например, код <code>U0100</code> означает потерю связи с ЭБУ двигателя. В этом случае первым делом проверяется не сам двигатель, а линия связи, идущая от <strong>J533</strong> до ЭБУ. Если <em>адрес 01299</em> работает стабильно, то проблема скорее всего в физическом соединении или питании самого модуля двигателя.</p>
+<p>Также <strong>интерфейс 01299</strong> играет роль в работе мультимедийных систем. Современные информационно-развлекательные модули (<em>MMI</em> или <em>Car-Net</em>) получают данные о пробеге, скорости и настройках автомобиля именно через шлюз. Если связь нарушена, на экране мультимедиа могут отображаться пустые поля или некорректные данные.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Параметр</th>
+   <th>Значение для J533</th>
+   <th>Влияние на систему</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Адрес в диагностике</td>
+   <td><code>01299</code></td>
+   <td>Основной узел маршрутизации</td>
+  </tr>
+  <tr>
+   <td>Тип шины</td>
+   <td><strong>CAN-High / CAN-Low</strong></td>
+   <td>Высокоскоростной обмен данными</td>
+  </tr>
+  <tr>
+   <td>Напряжение питания</td>
+   <td><code>12В</code> (Nominal)</td>
+   <td>Безопасная работа электроники</td>
+  </tr>
+  <tr>
+   <td>Режим сна</td>
+   <td>Активен при заглушке</td>
+   <td>Экономия заряда аккумулятора</td>
+  </tr>
+  <tr>
+   <td>Протокол</td>
+   <td>ISO 15765-4</td>
+   <td>Стандарт диагностики OBD-II</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При поиске обрывов в шине CAN используйте осциллограф. Визуальное прозвонка мультиметром часто не выявляет высокоомные контакты, которые критичны для работы J533.</p></aside>
+
+<h2 id="перспективы-развития-и-обновление-по">Перспективы развития и обновление ПО</h2>
+<p>С развитием технологий <strong>электронной архитектуры</strong> роль <em>J533</em> становится все более значимой. В новых моделях концерн внедряет центральные вычислительные модули, которые берут на себя функции шлюза, объединяя их с другими системами. Однако в текущем поколении автомобилей <em>VAG</em> <strong>адрес 01299</strong> остается ключевым элементом.</p>
+<p>Производитель регулярно выпускает обновления программного обеспечения для <strong>шлюза</strong>, которые исправляют ошибки логики и добавляют поддержку новых функций. Например, обновление может улучшить работу адаптации фар или оптимизировать потребление энергии в спящем режиме. Рекомендуется периодически проверять наличие обновлений через официальный сервис <em>ODIS</em>.</p>
+<p>При обновлении ПО важно соблюдать строгий порядок действий. Сначала обновляется <strong>J533</strong>, а затем уже другие модули, так как новые версии шлюза могут требовать обновленных протоколов для взаимодействия с остальной электроникой. Пропуск этого шага может привести к конфликтам версий и неработоспособности части систем.</p>
+
+<blockquote><strong>⚠️ Внимание:</strong> Перед обновлением ПО шлюза убедитесь, что заряд аккумулятора выше <code>12.5В</code>. Использование зарядного устройства во время процесса обязательно, так как сканер не будет поддерживать напряжение в случае просадки.</blockquote>
+
+
+
+<h2 id="заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</h2>
+<p>Диагностический интерфейс <code>01299</code> является критически важным компонентом в экосистеме автомобиля <em>Volkswagen Group</em>. Понимание его функций, принципов работы и возможных неисправностей позволяет специалистам эффективно решать сложные задачи по ремонту и диагностике. Игнорирование статуса <strong>шлюза J533</strong> при поиске проблем часто ведет к потере времени и замене исправных деталей.</p>
+<p>При работе с <em>Gateway</em> всегда используйте качественное оборудование и актуальное программное обеспечение. Это минимизирует риск возникновения ошибок и обеспечит точность диагностики. Помните, что <strong>адрес 01299</strong> — это центральный нервный узел, и любые манипуляции с ним требуют высокой квалификации и осторожности.</p>
+<p>Регулярная проверка состояния <strong>шины данных</strong> и обновление ПО могут предотвратить многие проблемы в будущем. Следите за состоянием контактов, качеством аккумулятора и актуальностью прошивок, чтобы ваш автомобиль оставался надежным и безопасным.</p>
+
+<details>
+ <summary>Почему сканер не видит адрес 01299?</summary>
+ <p>Это может быть вызвано отсутствием питания на контактах OBD-II, обрывом линии CAN-шины, неисправностью самого блока J533 или программным сбоем. Проверьте предохранители и целостность проводки.</p>
+</details>
+
+<details>
+ <summary>Можно ли сбросить ошибки в шлюзе?</summary>
+ <p>Да, ошибки можно сбросить через функцию "Clear Codes" в диагностическом сканере. Однако, если причина ошибки не устранена физически, она появится снова после цикла зажигания.</p>
+</details>
+
+<details>
+ <summary>Как проверить работоспособность J533?</summary>
+ <p>Используйте функцию "System Status" в сканере. Если блок отображается как OK и может связываться с другими модулями, значит, он работает исправно. Также проверьте потребление тока в спящем режиме.</p>
+</details>
+
+<details>
+ <summary>Нужно ли кодировать новый блок J533?</summary>
+ <p>Да, новый блок требует кодирования и адаптации. Без этого он не сможет корректно взаимодействовать с другими системами автомобиля. Используйте заводские данные или копию конфигурации старого блока.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/b/bi/biznes-po-proizvodstvu-rezinovoj-kroshki.html" class="pb-related-card">
+                <span class="pb-related-title">Бизнес по производству резиновой крошки: технологии, оборудование и рентабельность</span>
+                <span class="pb-related-desc">Полный гид по запуску завода резиновой крошки. Обзор оборудования, технологии переработки шин и расч</span>
+            </a><a href="/articles/k/ka/kak-snyat-pylnik-s-podshipnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять пыльник с подшипника: пошаговая инструкция и советы</span>
+                <span class="pb-related-desc">Узнайте, как аккуратно демонтировать пыльник подшипника без повреждений. Инструменты, методы, разбор</span>
+            </a><a href="/articles/k/ka/kak-proverit-rele-tim-01.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить реле TIM 01: диагностика, тест и замена</span>
+                <span class="pb-related-desc">Полное руководство по проверке реле TIM 01. Узнайте, как диагностировать неисправности, измерить соп</span>
+            </a><a href="/articles/k/ka/kak-razobrat-bak-na-khiro-2.html" class="pb-related-card">
+                <span class="pb-related-title">Как разобрать бак HiRo 2: пошаговая инструкция по демонтажу</span>
+                <span class="pb-related-desc">Пошаговое руководство по разборке топливного бака HiRo 2. Инструменты, техника безопасности и нюансы</span>
+            </a><a href="/articles/p/po/polez-kord-na-pokryshke-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Полез корд на покрышке: что делать, можно ли ездить, ремонт и замена</span>
+                <span class="pb-related-desc">Обнаружили, что полез корд на покрышке? Узнайте, опасно ли это, можно ли ремонтировать повреждение и</span>
+            </a><a href="/articles/r/re/remkomplekt-dlya-remonta-kolesa-avtomobilya.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект для колеса: виды, выбор и инструкция по ремонту</span>
+                <span class="pb-related-desc">Полный гид по ремкомплектам для авто: жгуты, герметики и заплатки. Как выбрать, что лучше для бескам</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

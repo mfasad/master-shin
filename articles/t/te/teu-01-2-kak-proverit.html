@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>ТЭУ 01-2: Как проверить исправность и расшифровать показания счетчика — Мастер Шин</title>
+    <meta name="description" content="Полная инструкция по проверке электросчетчика ТЭУ 01-2. Методы диагностики, проверка правильности подключения, расшифровка кодов ошибок и тестирование надежности.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/t/te/teu-01-2-kak-proverit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ТЭУ 01-2: Как проверить исправность и расшифровать показания счетчика">
+    <meta property="og:description" content="Полная инструкция по проверке электросчетчика ТЭУ 01-2. Методы диагностики, проверка правильности подключения, расшифровка кодов ошибок и тестирование надежности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">ТЭУ 01-2: Как проверить исправность и расшифровать показания счетчика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение">Введение</a></li><li><a href="#визуальный-осмотр-и-проверка-целостности-корпуса">Визуальный осмотр и проверка целостности корпуса</a></li><li><a href="#анализ-показаний-и-расшифровка-ошибок">Анализ показаний и расшифровка ошибок</a></li><li><a href="#проверка-правильности-подключения-и-фазировки">Проверка правильности подключения и фазировки</a></li><li><a href="#тестирование-функциональности-и-поверка">Тестирование функциональности и поверка</a></li><li><a href="#работа-с-программным-обеспечением-и-настройками">Работа с программным обеспечением и настройками</a></li><li><a href="#критерии-замены-и-сроки-службы">Критерии замены и сроки службы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pravilno-zakidyvat-rybolovnuyu-dorozhku.html">Как правильно закидывать рыболовную дорожку: техника и секреты</a></li><li><a href="/articles/k/ka/kak-razobrat-giroskopicheskij-espander.html">Как разобрать гироскопический эспандер для чистки и ремонта</a></li><li><a href="/articles/n/no/norma-starorusskaya-mera-obema.html">Норма — старорусская мера объема: значение, перевод в литры и история</a></li><li><a href="/articles/4/4-/4-vershka-na-rusi-4.html">4 вершка на Руси: Что значит 4 вершка и как переводить в сантиметры</a></li><li><a href="/articles/k/ka/kak-raskrutit-espander-giroskopicheskij.html">Как правильно раскрутить гироскопический эспандер: инструкция и советы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Проверка электросчетчика ТЭУ 01-2: методы диагностики и расшифровка параметров</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение">Введение</a></li><li><a href="#визуальный-осмотр-и-проверка-целостности-корпуса">Визуальный осмотр и проверка целостности корпуса</a></li><li><a href="#анализ-показаний-и-расшифровка-ошибок">Анализ показаний и расшифровка ошибок</a></li><li><a href="#проверка-правильности-подключения-и-фазировки">Проверка правильности подключения и фазировки</a></li><li><a href="#тестирование-функциональности-и-поверка">Тестирование функциональности и поверка</a></li><li><a href="#работа-с-программным-обеспечением-и-настройками">Работа с программным обеспечением и настройками</a></li><li><a href="#критерии-замены-и-сроки-службы">Критерии замены и сроки службы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение">Введение</h2>
+
+<p>Электросчетчик <em>ТЭУ 01-2</em> представляет собой специализированное устройство учета электроэнергии, часто применяемое в промышленных и коммерческих объектах. В отличие от бытовых аналогов, данный прибор требует более глубокого понимания принципов его работы и диагностики при возникновении сбоев. Проблемы с показаниями или внезапные отключения могут указывать как на неисправность самого устройства, так и на ошибки в цепи питания.</p>
+
+<p>Для владельцев объектов, где установлен этот <strong>счетчик электроэнергии</strong>, важно понимать, как самостоятельно провести первичную проверку без вызова специалиста. Это позволяет сэкономить время и оперативно выявить критические поломки. Однако, прежде чем приступать к действиям, необходимо убедиться в безопасности проводимых работ, так как речь идет о высоком напряжении.</p>
+
+<p>В данной статье мы детально разберем алгоритм проверки устройства, способы интерпретации его кодов и методы оценки работоспособности. Вы узнаете, какие параметры являются ключевыми для диагностики и как отличить программный сбой от аппаратной поломки.</p>
+
+<h2 id="визуальный-осмотр-и-проверка-целостности-корпуса">Визуальный осмотр и проверка целостности корпуса</h2>
+
+<p>Первым этапом диагностики всегда является <strong>визуальный осмотр</strong>. Перед тем как снимать показания или пытаться перезагрузить устройство, необходимо внимательно изучить внешний вид корпуса <em>ТЭУ 01-2</em>. Ищите признаки механических повреждений, следы перегрева на клеммной колодке или нарушения пломбирования.</p>
+
+<blockquote>⚠️ Внимание: Любое нарушение целостности пломбы контролирующей организации является основанием для штрафов и перерасчета электроэнергии. Никогда не пытайтесь самостоятельно снимать пломбы даже для визуального осмотра внутренних контактов.</blockquote>
+
+<p>Особое внимание уделите индикаторному дисплею. Если он полностью черный, это может свидетельствовать об отсутствии питания или выходе из строя блока индикации. Иногда причина кроется в разрядившейся батарейке питания памяти, что не влияет на учет, но лишает вас возможности видеть текущие параметры.</p>
+
+<p>Проверьте состояние проводов, подключенных к устройству. Перегрев в местах контактов часто приводит к оплавлению изоляции и изменению сопротивления цепи. Если вы видите почернение пластика рядом с клеммами, это сигнал о том, что требуется немедленная <strong>замена клеммной колодки</strong> или всего прибора учета.</p>
+
+<h2 id="анализ-показаний-и-расшифровка-ошибок">Анализ показаний и расшифровка ошибок</h2>
+
+<p>Современные приборы учета, такие как <em>ТЭУ 01-2</em>, оснащены системами самодиагностики, которые выводят коды ошибок на дисплей. Чтобы проверить работоспособность, нужно уметь считывать эти сигналы. Обычно код ошибки мигает или выводится после нажатия на кнопку переключения режимов просмотра.</p>
+
+<p>Наиболее распространенные ошибки связаны с нарушением фазировки, падением напряжения ниже допустимого порога или обрывом фазы. В таких случаях прибор может продолжать учет, но с погрешностью или остановкой. Важно зафиксировать код ошибки и сопоставить его с технической документацией.</p>
+
+<p>Для корректной расшифровки необходимо знать, какой именно режим отображения активен. Иногда дисплей циклически переходит от показаний активной энергии к реактивной, а затем к текущему времени. Если в цикле появляется символ ошибки, это требует немедленного вмешательства.</p>
+
+<div class="pb-poll" id="poll-d202acb0"><div class="pb-poll-question">📊 Что чаще всего вызывает проблемы с показаниями счетчика?</div><div class="pb-poll-option" data-poll="d202acb0" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Скачки напряжения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d202acb0" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Плохой контакт</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d202acb0" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Программный сбой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d202acb0" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Поломка датчика</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Используйте следующую таблицу для быстрого определения наиболее частых проблем:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Дисплей не включается</td>
+<td>Отсутствие напряжения на входе</td>
+<td>Проверить автомат перед счетчиком</td>
+</tr>
+<tr>
+<td>Мигает индикатор ошибки</td>
+<td>Обрыв фазы или перекос</td>
+<td>Вызвать электрика для проверки сети</td>
+</tr>
+<tr>
+<td>Показания не меняются</td>
+<td>Неисправность шунта или датчика</td>
+<td>Замена прибора учета</td>
+</tr>
+<tr>
+<td>Самовольное отключение</td>
+<td>Превышение тока или перегрев</td>
+<td>Проверить нагрузку и охлаждение</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="проверка-правильности-подключения-и-фазировки">Проверка правильности подключения и фазировки</h2>
+
+<p>Одной из самых частых причин некорректной работы является ошибка при монтаже. <strong>Фазировка</strong> — это процесс проверки соответствия фазных проводов их назначению. Если провода перепутаны местами, счетчик может вращаться в обратную сторону (если это механический принцип) или выдавать ошибку "обратная мощность".</p>
+
+<p>Для проверки используются мультиметры или фазометры. Необходимо измерить напряжение между фазами и между фазой и нулем. В трехфазной системе напряжение между фазами должно составлять около <code>380 В</code>, а между фазой и нулем — <code>220 В</code>. Отклонения более чем на 10% указывают на проблемы в сети.</p>
+
+<p>Также важно проверить правильность подключения токовых цепей. Ток должен проходить через шунт или трансформатор тока в строго определенном направлении. Ошибка здесь приведет к тому, что энергия будет учитываться неверно, а устройство будет выдавать предупреждения о некорректных данных.</p>
+
+<blockquote>⚠️ Внимание: Работы с токовыми цепями под напряжением должны проводиться только квалифицированным персоналом с использованием средств индивидуальной защиты. Ошибка в 180 градусов в подключении токовой цепи может привести к короткому замыканию.</blockquote>
+
+<p>Перед началом работ убедитесь, что у вас есть схема подключения конкретного экземпляра <em>ТЭУ 01-2</em>. Разные модификации могут иметь отличия в расположении контактных групп.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка схемы подключения</h4><label class="check-item"><input type="checkbox"><span>Проверить напряжение на входе</span></label><label class="check-item"><input type="checkbox"><span>Сверить порядок фаз с маркировкой</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность нулевого провода</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии нагрева контактов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="тестирование-функциональности-и-поверка">Тестирование функциональности и поверка</h2>
+
+<p>Если визуальный осмотр и проверка сети не выявили проблем, стоит перейти к тестированию функционала. <strong>Поверка</strong> — это процедура, подтверждающая точность измерений. Она может быть проведена только в специализированной лаборатории, но предварительную проверку можно выполнить самостоятельно, сравнив показания с эталонным устройством.</p>
+
+<p>Для этого подключите известную нагрузку (например, мощный обогреватель с паспортной мощностью) и измерьте время, за которое счетчик насчитает определенное количество ватт-часов. Если расхождение с расчетным временем превышает допустимую погрешность (обычно 1-2%), прибор требует ремонта или замены.</p>
+
+<p>Также проверьте работоспособность интерфейсов связи. Если <em>ТЭУ 01-2</em> оснащен портом для передачи данных (RS-485, импульсный выход), убедитесь, что сигнал передается корректно. Отсутствие сигнала может говорить о поломке модуля связи, что делает невозможным автоматический сбор показаний.</p>
+
+<details class="pb-accordion"><summary>Как проверить импульсный выход</summary><div class="pb-accordion-body"><p>Подключите к импульсному выходу счетчика светодиодный индикатор. При потреблении энергии светодиод должен мигать с частотой, пропорциональной нагрузке. Если мигания нет, модуль выхода неисправен.</p></div></details>
+
+<p>Важно отметить, что многие современные счетчики имеют функцию <strong>самодиагностики</strong> при включении. При подаче питания устройство проходит серию тестов внутренних цепей. Если на дисплее появляется сообщение о прохождении теста, значит, основные узлы исправны.</p>
+
+<h2 id="работа-с-программным-обеспечением-и-настройками">Работа с программным обеспечением и настройками</h2>
+
+<p>Сложные модели, такие как <em>ТЭУ 01-2</em>, часто требуют настройки через программный интерфейс. Для этого используется специальный кабель и <strong>ПО для конфигурирования</strong>. Через программу можно проверить историю ошибок, изменить тарифные планы и установить время.</p>
+
+<p>Если счетчик работает некорректно, попробуйте сбросить настройки до заводских. Это действие часто устраняет программные "зависания". Однако помните, что сброс настроек может привести к потере накопленной статистики или сбросу тарифных графиков.</p>
+
+<p>Необходимо также проверить наличие обновлений прошивки. Производители периодически выпускают патчи, устраняющие ошибки в алгоритмах работы. Обновление может быть выполнено через порт связи, если у вас есть доступ к соответствующему оборудованию.</p>
+
+<blockquote>⚠️ Внимание: При обновлении прошивки или изменении настроек через ПО обязательно сохраняйте скриншоты или выписки текущих параметров. В случае неудачного обновления восстановить данные будет крайне сложно.</blockquote>
+
+<p>Если вы не обладаете навыками работы с профессиональным ПО, лучше доверить этот этап специалистам сервисного центра. Неправильная настройка может привести к штрафам со стороны энергоснабжающей организации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка настроек и обновление прошивки помогают предотвратить накопление ошибок и обеспечивают точность учета электроэнергии на долгие годы.</p></aside>
+
+<h2 id="критерии-замены-и-сроки-службы">Критерии замены и сроки службы</h2>
+
+<p>Даже идеально работающий счетчик имеет свой срок службы. Для <em>ТЭУ 01-2</em> он обычно составляет от 15 до 20 лет. По истечении этого срока прибор подлежит <strong>замене</strong>, так как электронные компоненты стареют, а магниты в измерительных катушках теряют свои свойства.</p>
+
+<p>Признаками того, что счетчик нужно менять, являются: частые сбои в работе, невозможность проведения поверки, отсутствие запчастей для ремонта, а также моральное устаревание (невозможность подключения к современным системам АИИС КУЭ).</p>
+
+<p>Если прибор был поврежден в результате воздействия внешней среды (влажность, пыль, перегрев), его ремонт часто экономически нецелесообразен. В таких случаях проще и надежнее установить новое устройство.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене счетчика обязательно запросите у старого устройства акт его снятия и передачу показаний, а у нового — акт ввода в эксплуатацию. Это защитит вас от претензий по начислениям.</p></aside>
+
+<p>Соблюдение правил эксплуатации и регулярная проверка состояния устройства помогут избежать внеплановых затрат и простоя оборудования. Помните, что безопасность и точность учета — приоритетные задачи при работе с электроустановками.</p>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Что делать, если счетчик ТЭУ 01-2 показывает ошибку?</summary>
+<p>Сначала запишите код ошибки. Затем проверьте напряжение в сети и целостность контактов. Если проблема не устранена, обратитесь в сервисный центр для диагностики.</p>
+</details>
+
+<details>
+<summary>Можно ли самостоятельно снять пломбу для осмотра?</summary>
+<p>Нет, это запрещено законом. Любое вмешательство в пломбировку без присутствия представителя энергоснабжающей организации повлечет за собой штраф и перерасчет.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проводить поверку счетчика?</summary>
+<p>Согласно законодательству, межповерочный интервал для большинства современных счетчиков составляет 16 лет, но это зависит от конкретной модели и условий эксплуатации. Уточняйте в паспорте изделия.</p>
+</details>
+
+<details>
+<summary>Причины отсутствия показаний на дисплее?</summary>
+<p>Это может быть вызвано полным отсутствием напряжения, разрядом батарейки памяти или выходом из строя дисплейного модуля. Проверьте автоматический выключатель перед счетчиком.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать счетчик в помещении с высокой влажностью?</summary>
+<p>Только если степень защиты корпуса (IP) соответствует условиям. Стандартные модели имеют защиту IP51, что не подходит для влажных помещений без дополнительной герметизации.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-pravilno-zakidyvat-rybolovnuyu-dorozhku.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно закидывать рыболовную дорожку: техника и секреты</span>
+                <span class="pb-related-desc">Пошаговая инструкция по установке рыболовной дорожки. Выбор места, техника заброса, глубина проводки</span>
+            </a><a href="/articles/k/ka/kak-razobrat-giroskopicheskij-espander.html" class="pb-related-card">
+                <span class="pb-related-title">Как разобрать гироскопический эспандер для чистки и ремонта</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как безопасно вскрыть корпус гироскопического эспандера, очистить подшипник и </span>
+            </a><a href="/articles/n/no/norma-starorusskaya-mera-obema.html" class="pb-related-card">
+                <span class="pb-related-title">Норма — старорусская мера объема: значение, перевод в литры и история</span>
+                <span class="pb-related-desc">Подробный разбор старинной меры «норма». Историческое значение, связь с житой и соломой, таблица пер</span>
+            </a><a href="/articles/4/4-/4-vershka-na-rusi-4.html" class="pb-related-card">
+                <span class="pb-related-title">4 вершка на Руси: Что значит 4 вершка и как переводить в сантиметры</span>
+                <span class="pb-related-desc">Изучите значение меры длины 4 вершка на Руси. Узнайте точный перевод в сантиметры, рост человека в 4</span>
+            </a><a href="/articles/k/ka/kak-raskrutit-espander-giroskopicheskij.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно раскрутить гироскопический эспандер: инструкция и советы</span>
+                <span class="pb-related-desc">Узнайте, как быстро и безопасно раскрутить гироскопический эспандер. Пошаговая техника, методы запус</span>
+            </a><a href="/articles/d/dl/dlya-chego-nuzhen-gidrozatvor-dlya-brozheniya.html" class="pb-related-card">
+                <span class="pb-related-title">Гидрозатвор для брожения: зачем нужен, виды и правила выбора</span>
+                <span class="pb-related-desc">Узнайте, для чего нужен гидрозатвор в бродильной емкости. Разбор типов конструкций, правила установк</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

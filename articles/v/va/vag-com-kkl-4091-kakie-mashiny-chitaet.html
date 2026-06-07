@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>VAG COM KKL 409.1: какие машины считает и с какими ПО работает — Мастер Шин</title>
+    <meta name="description" content="Полный разбор совместимости диагностического кабеля VAG COM KKL 409.1. Какие модели VW, Audi, Skoda, Seat поддерживаются и ограничения по годам выпуска.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/v/va/vag-com-kkl-4091-kakie-mashiny-chitaet.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="VAG COM KKL 409.1: какие машины считает и с какими ПО работает">
+    <meta property="og:description" content="Полный разбор совместимости диагностического кабеля VAG COM KKL 409.1. Какие модели VW, Audi, Skoda, Seat поддерживаются и ограничения по годам выпуска.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">VAG COM KKL 409.1: какие машины считает и с какими ПО работает</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#список-поддерживаемых-марок-и-платформ">Список поддерживаемых марок и платформ</a></li><li><a href="#протоколы-k-line-и-их-ограничения-по-годам">Протоколы K-Line и их ограничения по годам</a></li><li><a href="#совместимость-с-версией-программного-обеспечения">Совместимость с версией программного обеспечения</a></li><li><a href="#особенности-диагностики-ранних-моделей-90-е-и-00-е">Особенности диагностики ранних моделей (90-е и 00-е)</a></li><li><a href="#проблемы-совместимости-с-can-шиной">Проблемы совместимости с CAN-шиной</a></li><li><a href="#альтернативы-и-рекомендации-по-выбору">Альтернативы и рекомендации по выбору</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-znachit-perstni-na-paltsakh-tatu.html">Значение тату перстня на пальце: символика, выбор места и скрытый смысл</a></li><li><a href="/articles/c/ch/chto-takoe-kupola-na-spine.html">Купола на спине: причины, диагностика и методы лечения</a></li><li><a href="/articles/k/ku/kupola-vo-vsyu-spinu.html">Купола во всю спину: виды, правила выбора и техника ношения</a></li><li><a href="/articles/r/ra/radiator-pa66-gf30-kupit.html">Радиаторы PA66 GF30 купить: цена, характеристики и монтаж</a></li><li><a href="/articles/k/ka/kakaya-edinitsa-izmereniya-menshe-millimetra.html">Единицы измерения меньше миллиметра: микрон, нанометр и их применение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>VAG COM KKL 409.1: совместимость с автомобилями VAG</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#список-поддерживаемых-марок-и-платформ">Список поддерживаемых марок и платформ</a></li><li><a href="#протоколы-k-line-и-их-ограничения-по-годам">Протоколы K-Line и их ограничения по годам</a></li><li><a href="#совместимость-с-версией-программного-обеспечения">Совместимость с версией программного обеспечения</a></li><li><a href="#особенности-диагностики-ранних-моделей-90-е-и-00-е">Особенности диагностики ранних моделей (90-е и 00-е)</a></li><li><a href="#проблемы-совместимости-с-can-шиной">Проблемы совместимости с CAN-шиной</a></li><li><a href="#альтернативы-и-рекомендации-по-выбору">Альтернативы и рекомендации по выбору</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Диагностический кабель <em>VAG COM KKL 409.1</em> остается одним из самых популярных инструментов для владельцев автомобилей концерна Volkswagen Group. Несмотря на появление новых интерфейсов через Ethernet и USB-C, именно этот старый добрый COM-интерфейс (через переходник в USB) поддерживает огромное количество моделей, выпущенных в 90-х и 00-х годах. Понимание того, какие именно машины он читает, критически важно перед покупкой, чтобы не получить устройство, которое не увидит блок управления вашего автомобиля.</p>
+<p>Совместимость данного оборудования напрямую зависит не только от самого кабеля, но и от версии программного обеспечения <strong>VAG-COM</strong> или <strong>VCDS</strong>, которое вы устанавливаете на компьютер. Существует четкая граница, после которой протоколы обмена данными изменились, и старые адаптеры перестали поддерживать новые электронные блоки. В этой статье мы детально разберем перечень поддерживаемых марок, модельные ряды и нюансы работы с разными протоколами.</p>
+
+<h2 id="список-поддерживаемых-марок-и-платформ">Список поддерживаемых марок и платформ</h2>
+<p>Кабель <em>VAG COM KKL 409.1</em> спроектирован для работы с автомобилями, использующими протоколы диагностики K-Line. Это означает, что он идеально подходит для большинства моделей концерна <strong>Volkswagen Group</strong>, выпущенных до середины 2000-х годов. Основными марками, которые вы сможете диагностировать, являются <em>Volkswagen</em>, <em>Audi</em>, <em>Skoda</em> и <em>Seat</em>. Уникальность этого адаптера заключается в его способности работать с ранними системами управления двигателем, ABS и подушками безопасности, где современные интерфейсы могут не иметь обратной совместимости без дополнительных эмуляторов.</p>
+<p>Важно понимать, что список автомобилей не ограничивается только немецкими брендами. Благодаря тому, что платформа VAG использовалась и на других заводах, этот кабель часто используют для диагностики <em>Lada</em> (после внедрения электронных блоков управления по стандарту VAG) и некоторых моделей <em>Škoda</em> ранних поколений. Однако, для китайских копий или подержанных авто из других регионов, поддержка может быть частичной, и некоторые специфические функции могут быть недоступны.</p>
+<p>В таблице ниже представлен сводный список основных платформ и примерных лет выпуска, с которыми работает KKL 409.1:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Марка</th>
+<th>Платформа / Серия</th>
+<th>Годы выпуска (ориентир)</th>
+<th>Тип протокола</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volkswagen</td>
+<td>Golf IV, Bora, Passat B4/B5</td>
+<td>1997–2005</td>
+<td>K-Line (ISO 9141-2)</td>
+</tr>
+<tr>
+<td>Audi</td>
+<td>A4 B5, A3 8L, A6 C4/C5</td>
+<td>1996–2004</td>
+<td>K-Line (ISO 9141-2)</td>
+</tr>
+<tr>
+<td>Skoda</td>
+<td>Octavia A5 (ранние), Fabia I</td>
+<td>1996–2006</td>
+<td>K-Line</td>
+</tr>
+<tr>
+<td>Seat</td>
+<td>Leon I, Toledo II, Ibiza 6L</td>
+<td>1999–2006</td>
+<td>K-Line</td>
+</tr>
+<tr>
+<td>Saab</td>
+<td>9-3 (на базе VAG)</td>
+<td>2000–2003</td>
+<td>K-Line</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="протоколы-k-line-и-их-ограничения-по-годам">Протоколы K-Line и их ограничения по годам</h2>
+<p>Основным фактором, определяющим возможность чтения блоков, является тип протокола обмена данными. Адаптер <em>VAG COM KKL 409.1</em> поддерживает протоколы <strong>ISO 9141-2</strong> и <strong>KWP2000</strong> (в режиме K-Line). Это позволяет ему эффективно общаться с блоками управления двигателем (ECU), которые использовались на автомобилях до перехода на CAN-шину. Если ваш автомобиль оснащен системой, работающей через <strong>CAN-bus</strong> (Controller Area Network), стандартный KKL-кабель, скорее всего, не сможет установить связь с основными модулями без использования специальных переходников или эмуляции.</p>
+<p>Для многих владельцев ранних моделей это не проблема, так как K-Line обеспечивает высокую скорость и стабильность для тех лет. Однако, если вы пытаетесь подключить этот кабель к автомобилю, выпущенному после 2006-2008 годов, вы можете столкнуться с тем, что диагностика будет доступна только для некоторых второстепенных модулей, таких как иммобилайзер или центральный замок, но не для двигателя или коробки передач. <strong>Протоколы CAN</strong> требуют совершенно другой физической структуры сигнала, которую простой KKL-адаптер передать не в состоянии.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание!</strong> Если ваш автомобиль выпущен после 2008 года и имеет диагностический разъем OBD-II с поддержкой CAN-шины, стандартный кабель KKL 409.1 может не определить двигатель и коробку передач. В этом случае потребуется более современный адаптер VAG-COM 5053 или 5054 на базе CAN-шины.</p>
+</blockquote>
+
+<p>Некоторые очень старые модели, выпущенные до 1996 года, также могут вызывать проблемы, так как они используют еще более древние протоколы диагностики, которые не всегда корректно эмулируются современным ПО на базе Windows 10/11. В таких случаях необходимо проверять совместимость конкретной версии прошивки адаптера с моделью автомобиля.</p>
+
+<div class="pb-poll" id="poll-08946679"><div class="pb-poll-question">📊 Какой тип диагностического разъема у вашего авто?</div><div class="pb-poll-option" data-poll="08946679" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Круглый 2-pin (OBD1)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="08946679" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">16-pin OBD2 (K-Line)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="08946679" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">16-pin OBD2 (CAN)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="08946679" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю разъем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="совместимость-с-версией-программного-обеспечения">Совместимость с версией программного обеспечения</h2>
+<p>Даже если физически кабель подходит к разъему вашего автомобиля, успех диагностики на 90% зависит от установленного программного обеспечения. Существует несколько версий <strong>VAG-COM</strong> (например, версии 409.1, 608.1, 805), и каждая из них имеет свой список поддерживаемых автомобилей. Старая версия программы может не содержать баз данных для двигателей, выпущенных в последние годы совместимости, в то время как слишком новая версия может требовать более продвинутого оборудования.</p>
+<p>Для работы с <em>KKL 409.1</em> оптимально подходят версии ПО серий 409.1 и 608.1. Более новые версии, такие как 806 или 13.1, обычно требуют адаптеров на базе CAN-шины (как 5053 или 5054) и могут не запуститься или выдавать ошибку "Cab not found" при подключении простого KKL кабеля. Поэтому перед установкой дистрибутива необходимо убедиться, что версия софта соответствует типу вашего адаптера.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда проверяйте версию прошивки самого адаптера через меню "Interface" в программе VAG-COM перед началом диагностики. Если версия прошивки не совпадает с версией ПО, соединение может быть нестабильным.</p></aside>
+
+<p>Часто пользователи сталкиваются с ситуацией, когда программа видит кабель, но не может найти модули в автомобиле. Это происходит из-за того, что программа пытается опрашивать шины данных, которые физически отсутствуют на машине, или использует неправильный алгоритм поиска. В таких случаях необходимо вручную выбрать протокол в настройках <code>Interface → Select Interface</code>.</p>
+
+<h2 id="особенности-диагностики-ранних-моделей-90-е-и-00-е">Особенности диагностики ранних моделей (90-е и 00-е)</h2>
+<p>Для автомобилей 90-х годов, таких как <em>Volkswagen Passat B3</em> или <em>Audi 80</em>, диагностика через KKL 409.1 имеет свои нюансы. Эти машины часто имеют круглый диагностический разъем (OBD1), для которого требуется специальный переходник. Без правильного переходника подключение невозможно. Важно отметить, что на этих авто часто встречаются механические или полу-электронные системы управления, где чтение ошибок может быть ограничено базовыми кодами.</p>
+<p>Возможности адаптера на таких машинах включают чтение и стирание ошибок двигателя, проверку иммобилайзера (Immobilizer II), адаптацию дроссельной заслонки и считывание параметров работы топливного насоса. Однако, функция "Глубокая диагностика" или "Базовые настройки" (Basic Settings) может работать некорректно или требовать специфических действий водителя во время процесса.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание!</strong> На автомобилях с ранними системами управления двигателем (например, Bosch Motronic 2.9) процесс адаптации дроссельной заслонки может занять до 30-40 секунд, и в это время двигатель может глохнуть. Не выключайте зажигание во время процедуры.</p>
+</blockquote>
+
+<p>Также стоит учитывать, что на некоторых старых моделях <em>Skoda Octavia</em> или <em>Seat Toledo</em> с дизельными двигателями TDI раннего образца, адаптер может не поддерживать чтение параметров турбонаддува в реальном времени, так как эти данные передавались через специфические протоколы, которые не были стандартизированы в ранних версиях ПО.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности к диагностике</h4><label class="check-item"><input type="checkbox"><span>Есть ли адаптер OBD1 (круглый)?</span></label><label class="check-item"><input type="checkbox"><span>Установлен ли драйвер CH340/FTDI?</span></label><label class="check-item"><input type="checkbox"><span>Запущена ли программа от имени администратора?</span></label><label class="check-item"><input type="checkbox"><span>Выбрана ли правильная версия ПО для адаптера?</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="проблемы-совместимости-с-can-шиной">Проблемы совместимости с CAN-шиной</h2>
+<p>Критическим моментом является переход на шину CAN, который начался массово в 2004-2005 годах и стал стандартом к 2008 году. Если вы попытаетесь использовать KKL 409.1 на автомобиле с CAN-шиной, вы, скорее всего, получите ошибку соединения. Протокол CAN использует две линии (High и Low) для передачи данных с высокой скоростью, в то время как K-Line использует одну линию (K-line) и работает медленнее.</p>
+<p>Некоторые современные программы пытаются эмулировать CAN через K-Line, но это работает крайне нестабильно и только для очень ограниченного набора функций. Например, вы можете прочитать ошибки система ABS, но не сможете адаптировать датчик давления в шинах или настроить управление коробкой передач. Это делает адаптер непригодным для полноценного обслуживания новых автомобилей.</p>
+
+<p>Список функций, которые будут недоступны на CAN-авто с KKL кабелем, включает:</p>
+<ul>
+<li>🚫 Адаптация новых датчиков (ДМРВ, ДК)</li>
+<li>🚫 Считывание графиков в реальном времени (Measuring Blocks) для CAN-модулей</li>
+<li>🚫 Кодирование блоков управления (Coding)</li>
+<li>🚫 Обновление прошивки (Flash)</li>
+</ul>
+
+<details class="pb-accordion"><summary>Что такое CAN-шина и почему она не работает с KKL?</summary><div class="pb-accordion-body"><p>CAN-bus (Controller Area Network) — это высокоскоростная система обмена данными, используемая в современных авто. KKL 409.1 работает по старому протоколу K-Line, который физически не может передать сигнал по двум линиям CAN одновременно. Это как пытаться передать видео через старый телефонный провод — физика не позволяет.</p></div></details>
+
+<p> Поэтому всегда сверяйте инструкции к программному обеспечению с годом выпуска авто.</p>
+
+<h2 id="альтернативы-и-рекомендации-по-выбору">Альтернативы и рекомендации по выбору</h2>
+<p>Если вы владеете автомобилем, выпущенным после 2006 года, использование KKL 409.1 будет нецелесообразным. В таких случаях лучше рассмотреть адаптеры <em>VAG-COM 5053</em> или <em>5054</em> (на базе CAN), которые поддерживают полный функционал и новые протоколы. Они стоят дороже, но обеспечивают полную совместимость с современными блоками управления, включая системы DSG и TDI с электронным впрыском.</p>
+<p>Однако, для ретро-автомобилей и классики VAG, KKL 409.1 остается "золотым стандартом". Он надежен, дешев и прост в подключении. Для таких машин как <em>Golf IV</em> или <em>Passat B5</em> (ранние) он справляется с задачами на 100%. Главное — не пытаться использовать его там, где он заведомо не подходит, и не тратить время на попытки заставить его работать с CAN-шиной.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Кабель VAG COM KKL 409.1 — идеальное решение для диагностики авто VAG 1996–2005 годов выпуска, но бесполезен для современных моделей с CAN-шиной без доп. оборудования.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли использовать KKL 409.1 на современных Lada (Vesta, XRAY)?</summary>
+<p>Нет, современные Lada используют протоколы UDS и CAN, которые не поддерживаются KKL-адаптерами. Для них нужны диагностические сканеры с поддержкой J2534 или специализированные адаптеры типа ELM327 с подходящим ПО.</p>
+</details>
+<details>
+<summary>Поддерживает ли этот кабель дизельные двигатели TDI?</summary>
+<p>Да, KKL 409.1 отлично работает с дизельными TDI двигателями (PD и Common Rail ранних версий) на Audi, VW, Skoda и Seat, выпущенных до 2005-2006 года. Позже переход на CAN ограничивает функционал.</p>
+</details>
+<details>
+<summary>Почему программа не видит кабель?</summary>
+<p>Чаще всего проблема в драйверах. Убедитесь, что установлены драйверы CH340 или FTDI для вашего конкретного чипа в адаптере. Также проверьте, выбран ли правильный COM-порт в настройках программы.</p>
+</details>
+<details>
+<summary>Какая версия ПО лучшая для KKL 409.1?</summary>
+<p>Наиболее стабильной считается версия 409.1 или 608.1. Более новые версии могут не работать с этим типом "железа" или работать с ошибками.</p>
+</details>
+<details>
+<summary>Нужен ли переходник для круглого разъема?</summary>
+<p>Да, для автомобилей до 1996-1999 года (круглый разъем) необходим специальный переходник OBD1 на OBD2 или прямой кабель с круглым коннектором, в зависимости от модели авто.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-znachit-perstni-na-paltsakh-tatu.html" class="pb-related-card">
+                <span class="pb-related-title">Значение тату перстня на пальце: символика, выбор места и скрытый смысл</span>
+                <span class="pb-related-desc">Раскрываем тайный смысл татуировки перстня на разных пальцах. Узнайте, как расположение кольца влияе</span>
+            </a><a href="/articles/c/ch/chto-takoe-kupola-na-spine.html" class="pb-related-card">
+                <span class="pb-related-title">Купола на спине: причины, диагностика и методы лечения</span>
+                <span class="pb-related-desc">Почему образуются горбы на спине? Разбираем причины появления куполов, методы диагностики и эффектив</span>
+            </a><a href="/articles/k/ku/kupola-vo-vsyu-spinu.html" class="pb-related-card">
+                <span class="pb-related-title">Купола во всю спину: виды, правила выбора и техника ношения</span>
+                <span class="pb-related-desc">Полный гид по экипировке с куполами на спину. Разбор материалов, анатомии, безопасности и мифов об и</span>
+            </a><a href="/articles/r/ra/radiator-pa66-gf30-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Радиаторы PA66 GF30 купить: цена, характеристики и монтаж</span>
+                <span class="pb-related-desc">Купить радиаторы из PA66 GF30: пластик для автокондиционеров. Обзор свойств, сравнение с металлом, и</span>
+            </a><a href="/articles/k/ka/kakaya-edinitsa-izmereniya-menshe-millimetra.html" class="pb-related-card">
+                <span class="pb-related-title">Единицы измерения меньше миллиметра: микрон, нанометр и их применение</span>
+                <span class="pb-related-desc">Какая единица измерения меньше миллиметра? Полный обзор микрона, нанометра и ангстрема. Таблица пере</span>
+            </a><a href="/articles/m/me/mera-eto-kakoj-obem.html" class="pb-related-card">
+                <span class="pb-related-title">Мера это какой объем: определение, системы и перевод единиц</span>
+                <span class="pb-related-desc">Разбираем, что означает термин &#x27;мера&#x27; в контексте объема. Таблицы перевода, исторические системы, со</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

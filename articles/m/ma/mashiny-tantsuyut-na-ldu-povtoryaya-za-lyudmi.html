@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Автономный лед: как роботы танцуют за людьми на катке — Мастер Шин</title>
+    <meta name="description" content="Технологии синхронизации в робототехнике: как беспилотные автомобили учатся повторять движения фигуристов на льду. Обзор алгоритмов и безопасности.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/m/ma/mashiny-tantsuyut-na-ldu-povtoryaya-za-lyudmi.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Автономный лед: как роботы танцуют за людьми на катке">
+    <meta property="og:description" content="Технологии синхронизации в робототехнике: как беспилотные автомобили учатся повторять движения фигуристов на льду. Обзор алгоритмов и безопасности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Автономный лед: как роботы танцуют за людьми на катке</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механизмы-движения-на-скользкой-поверхности">Механизмы движения на скользкой поверхности</a></li><li><a href="#алгоритмы-синхронизации-с-фигуристами">Алгоритмы синхронизации с фигуристами</a></li><li><a href="#роль-искусственного-интеллекта-в-кинематике">Роль искусственного интеллекта в кинематике</a></li><li><a href="#технические-требования-к-ледовой-арене">Технические требования к ледовой арене</a></li><li><a href="#сравнение-различных-платформ-для-ледовых-шоу">Сравнение различных платформ для ледовых шоу</a></li><li><a href="#безопасность-зрителей-и-участников">Безопасность зрителей и участников</a></li><li><a href="#будущее-синхронизации-человека-и-машины">Будущее синхронизации человека и машины</a></li><li><a href="#частые-вопросы-о-робототехнике-на-льду">Частые вопросы о робототехнике на льду</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-oznachaet-zvezdy-na-kolenyakh-tatuirovka.html">Тату звезды на коленях: значение, боль, уход и история</a></li><li><a href="/articles/n/na/na-skolko-khvataet-kilogramma-kofe-v-zernakh-dlya-kofemashiny.html">Хватит ли 1 кг кофе: расчет порций в кофемашине на день и неделю</a></li><li><a href="/articles/b/ba/bagazhnyj-karman-na-lipuchke.html">Багажный карман на липучке: виды, монтаж и выбор для авто</a></li><li><a href="/articles/a/an/analiz-kachestvennogo-sostava-zhevatelnykh-rezinok.html">Анализ состава жевательной резинки: химия, польза и вред для здоровья</a></li><li><a href="/articles/k/ka/kak-podobrat-razmer-kryuchka-k-silikonovoj-primanke.html">Как подобрать размер крючка к силиконовой приманке: полное руководство</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Машины танцуют на льду: как роботы повторяют движения людей</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механизмы-движения-на-скользкой-поверхности">Механизмы движения на скользкой поверхности</a></li><li><a href="#алгоритмы-синхронизации-с-фигуристами">Алгоритмы синхронизации с фигуристами</a></li><li><a href="#роль-искусственного-интеллекта-в-кинематике">Роль искусственного интеллекта в кинематике</a></li><li><a href="#технические-требования-к-ледовой-арене">Технические требования к ледовой арене</a></li><li><a href="#сравнение-различных-платформ-для-ледовых-шоу">Сравнение различных платформ для ледовых шоу</a></li><li><a href="#безопасность-зрителей-и-участников">Безопасность зрителей и участников</a></li><li><a href="#будущее-синхронизации-человека-и-машины">Будущее синхронизации человека и машины</a></li><li><a href="#частые-вопросы-о-робототехнике-на-льду">Частые вопросы о робототехнике на льду</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Представьте себе ледяное поле, где вместо привычных фигуристов скользят массивные, технологичные агрегаты. Это не фантастика из далекого будущего, а реальность современных шоу, где <strong>автономные роботы</strong> и беспилотные платформы начинают <strong>танцевать на льду</strong>, идеально копируя траектории людей. Зрелище вызывает смешанные чувства: от восхищения точностью инженерии до легкого недоумения перед слиянием природы и технологий.</p>
+
+<p>Механизация ледовых трасс — это сложный вызов для инженеров. Обычное колесо не способно удержать равновесие на скользкой поверхности без специальных систем стабилизации. Поэтому разработчики создают уникальные <strong>роботизированные системы</strong>, оснащенные гироскопами, датчиками давления и адаптивным управлением. Именно эти компоненты позволяют машине не просто двигаться, а именно "танцевать", сохраняя баланс при резких поворотах и остановках.</p>
+
+<h2 id="механизмы-движения-на-скользкой-поверхности">Механизмы движения на скользкой поверхности</h2>
+
+<p>Основная сложность заключается в физике взаимодействия корпуса машины с льдом. В отличие от асфальта, здесь коэффициент трения минимален, что требует применения <strong>специализированных шасси</strong>. Многие прототипы используют систему сферических колес или ледорезные элементы, которые врезаются в поверхность для создания точек опоры.</p>
+
+<p>Управление таким транспортом осуществляется через сложные алгоритмы, анализирующие состояние покрытия в реальном времени. <em>Искусственный интеллект</em> постоянно корректирует вектор движения, чтобы машина не ушла в неконтролируемый занос. Это требует мгновенной обработки данных с множества сенсоров, расположенных по всему периметру платформы.</p>
+
+<p>Важным аспектом является безопасность конструкции. Массивные детали должны быть защищены от ударов, так как ледовое покрытие часто становится ареной для столкновений. <strong>Энергоемкие аккумуляторы</strong> размещаются в укрепленных отсеках, чтобы исключить риск возгорания при падении.</p>
+
+<h2 id="алгоритмы-синхронизации-с-фигуристами">Алгоритмы синхронизации с фигуристами</h2>
+
+<p>Чтобы машина могла повторять движения человека, необходимо создать идеальную цифровую связь между танцором и роботом. Система использует <strong>компьютерное зрение</strong> для отслеживания положения каждого участника шоу. Камеры высокого разрешения фиксируют малейшие изменения в позе и скорости движения человека.</p>
+
+<p>Далее данные передаются в центральный процессор, который рассчитывает оптимальную траекторию для машины. <strong>Машинное обучение</strong> позволяет системе адаптироваться к ошибкам человека. Если фигурист споткнулся или изменил ритм, робот мгновенно подстраивается под новую динамику, не теряя синхронности.</p>
+
+<p>Интересно, что задержка сигнала должна быть минимальной, иначе танец превратится в хаотичное мельтешение. <strong>Низкая задержка</strong> (латентность) является критическим параметром для всей системы управления. Без этого невозможно достичь эффекта "зеркального отражения", который так завораживает зрителя.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Точность синхронизации зависит от освещения на арене. При ярком свете солнца или бликах на льду камеры могут терять объекты, что нарушает ритм танца.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-894f7862"><div class="pb-poll-question">📊 Какой аспект робототанцев вас больше всего удивляет?</div><div class="pb-poll-option" data-poll="894f7862" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Точность движений</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="894f7862" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Скорость реакции</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="894f7862" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Сложность алгоритмов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="894f7862" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Внешний вид роботов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="роль-искусственного-интеллекта-в-кинематике">Роль искусственного интеллекта в кинематике</h2>
+
+<p>Искусственный интеллект выступает в роли "мозга" всего шоу. Он не просто передает команды, но и прогнозирует развитие ситуации. <strong>Нейронные сети</strong> анализируют историю движений, чтобы предугадать, куда направится фигурист в следующую секунду. Это позволяет роботу начинать маневр заранее, делая плавный и естественный переход.</p>
+
+<p>Алгоритмы также отвечают за распределение нагрузки на разные части корпуса. <strong>Динамическая стабилизация</strong> позволяет машине наклоняться в сторону поворота, имитируя работу ног человека. Без этого робот просто бы объехал препятствие, а не "протанцевал" его.</p>
+
+<p>Сложность программного кода возрастает с количеством участников. Если танцует один человек и одна машина, задача относительно проста. Но когда на льду <strong>групповая постановка</strong>, ИИ должен координировать действия десятков устройств, исключая столкновения между самими роботами.</p>
+
+<h2 id="технические-требования-к-ледовой-арене">Технические требования к ледовой арене</h2>
+
+<p>Не каждое ледовое шоу может принять таких гостей. Арену необходимо подготовить специально для взаимодействия с роботами. Покрытие должно быть <strong>абсолютно ровным</strong>, без трещин и ям, которые могут застрять в механизмах шасси. Температура льда также играет роль: слишком мягкий лед увеличивает сопротивление, а слишком твердый может повредить датчики.</p>
+
+<p>Особое внимание уделяется системе освещения и связи. Для работы компьютерного зрения необходимо равномерное освещение без резких теней. <strong>Сеть передачи данных</strong> должна обеспечивать стабильное соединение на всей площади катка, так как даже кратковременный разрыв может привести к аварии.</p>
+
+<p>Также требуется наличие системы экстренной остановки. Если робот выходит из под контроля, оператор должен иметь возможность мгновенно заблокировать его двигатели. <strong>Аварийные тосты</strong> и протоколы безопасности разрабатываются отдельно для каждого конкретного проекта.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Влага и ледяная крошка могут попасть в электронику. Все компоненты должны иметь защиту не ниже IP67, иначе система выйдет из строя после первого же шоу.</p>
+</blockquote>
+
+<h2 id="сравнение-различных-платформ-для-ледовых-шоу">Сравнение различных платформ для ледовых шоу</h2>
+
+<p>Существует несколько типов платформ, способных выполнять подобные задачи. Одни используют классические колеса с ледорезами, другие — сферические механизмы, третьи — магнитное левитацию. Каждая технология имеет свои преимущества и недостатки, которые определяют выбор для конкретного шоу.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип платформы</th>
+<th>Скорость</th>
+<th>Точность маневра</th>
+<th>Сложность эксплуатации</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>С колесными ледорезами</td>
+<td>Высокая</td>
+<td>Средняя</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Сферические колеса</td>
+<td>Средняя</td>
+<td>Очень высокая</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Магнитная левитация</td>
+<td>Очень высокая</td>
+<td>Идеальная</td>
+<td>Критическая</td>
+</tr>
+<tr>
+<td>Гусеничная система</td>
+<td>Низкая</td>
+<td>Низкая</td>
+<td>Средняя</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор платформы зависит от задач, которые ставит режиссер. Для быстрых и динамичных номеров лучше подходят колесные решения, а для сложных пируэтов и вращения — сферические механизмы. <strong>Гибридные системы</strong> позволяют комбинировать преимущества разных технологий, но стоят значительно дороже.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности робота к шоу</h4><label class="check-item"><input type="checkbox"><span>Проверка зарядки аккумуляторов</span></label><label class="check-item"><input type="checkbox"><span>Калибровка гироскопов</span></label><label class="check-item"><input type="checkbox"><span>Очистка датчиков от льда</span></label><label class="check-item"><input type="checkbox"><span>Тестирование связи с пультом</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="безопасность-зрителей-и-участников">Безопасность зрителей и участников</h2>
+
+<p>Когда на одной площадке находятся люди и тяжелые машины, безопасность становится приоритетом номер один. <strong>Зоны безопасности</strong> должны быть четко обозначены, а роботы должны иметь физические ограничители скорости вблизи людей. Датчики ближнего действия (LiDAR) постоянно сканируют окружение, останавливая машину при обнаружении препятствия.</p>
+
+<p>В случае сбоя системы робот должен переходить в режим "безопасной остановки". Это означает плавное снижение скорости и остановку без резких рывков. <strong>Визуальные индикаторы</strong> на корпусе помогают публике понимать, в каком состоянии находится машина. Красный мигающий свет обычно означает тревогу или ошибку.</p>
+
+<p>Персонал шоу должен регулярно проходить обучение по работе с робототехникой. Неправильное управление может привести к травмам, поэтому <strong>протоколы взаимодействия</strong> строго регламентированы. Операторы должны уметь быстро реагировать на нестандартные ситуации, возникающие во время выступления.</p>
+
+<details class="pb-accordion"><summary>Что происходит при падении робота?</summary><div class="pb-accordion-body"><p>При падении робот автоматически отключает основные двигатели и включает аварийные тормоза, чтобы предотвратить дальнейшее скольжение и повреждение льда.</p></div></details>
+
+<blockquote>
+<p>⚠️ Внимание: Даже при наличии датчиков не допускайте детей к краю сцены. Роботы могут реагировать с задержкой в несколько миллисекунд, что при высокой скорости достаточно для инцидента.</p>
+</blockquote>
+
+<h2 id="будущее-синхронизации-человека-и-машины">Будущее синхронизации человека и машины</h2>
+
+<p>Технологии развиваются стремительно. Уже сегодня мы видим, как <strong>автономные системы</strong> учатся не просто повторять, но и импровизировать. В будущем роботы смогут понимать настроение танцора и подбирать музыку в реальном времени, создавая уникальный перформанс.</p>
+
+<p>Возможно, однажды мы увидим полноценные соревнования, где человек и машина выступают как единая команда. <strong>Смешанные дуэты</strong> открывают новые горизонты для фигурного катания и хореографии. Это стирает грань между искусством и инженерией, создавая совершенно новый вид развлечения.</p>
+
+<p>Развитие таких технологий требует сотрудничества специалистов из разных областей: программистов, инженеров, хореографов и физиков. Только совместная работа позволит создать <strong>идеальную гармонию</strong> между живым организмом и механическим устройством. Мы стоим на пороге новой эры ледовых представлений.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При организации шоу обязательно предусмотрите резервный источник питания для системы управления. Отключение света может парализовать работу всех роботов одновременно.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Ключевым фактором успеха является не только мощность двигателей, но и алгоритмическая точность взаимодействия с живыми фигуристами.</p></aside>
+
+<h2 id="частые-вопросы-о-робототехнике-на-льду">Частые вопросы о робототехнике на льду</h2>
+
+<details>
+<summary>Могут ли роботы танцевать без участия человека?</summary>
+<p>Да, существуют автономные шоу, где роботы выполняют заранее запрограммированные хореографические номера без участия живых людей. Однако синхронизация с человеком значительно усложняет задачу, но делает шоу более зрелищным.</p>
+</details>
+
+<details>
+<summary>Насколько громко работают роботы на льду?</summary>
+<p>Современные модели оснащены бесшумными приводами, но звук трения о лед все же присутствует. В некоторых случаях звук специально добавляют в саундтрек шоу для создания атмосферы.</p>
+</details>
+
+<details>
+<summary>Что делать, если робот застрял в льду?</summary>
+<p>Система должна иметь функцию "срыва" — кратковременное увеличение мощности для выбивания из застревания. Если это не помогает, включается режим остановки, и персонал manually извлекает устройство.</p>
+</details>
+
+<details>
+<summary>Как долго могут работать роботы без подзарядки?</summary>
+<p>Время работы зависит от интенсивности движений и типа аккумулятора. Обычно это составляет от 45 минут до 2 часов. Для длинных шоу часто предусматривается быстрая смена батарей.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать эту технологию для тренировки фигуристов?</summary>
+<p>Да, роботы могут служить идеальными партнерами для отработки синхронности и точности движений. Они никогда не устают и могут повторять движение бесконечное количество раз.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-oznachaet-zvezdy-na-kolenyakh-tatuirovka.html" class="pb-related-card">
+                <span class="pb-related-title">Тату звезды на коленях: значение, боль, уход и история</span>
+                <span class="pb-related-desc">Что означают звезды на коленях? Разбираем символику, этапы заживления, влияние на суставы и психолог</span>
+            </a><a href="/articles/n/na/na-skolko-khvataet-kilogramma-kofe-v-zernakh-dlya-kofemashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Хватит ли 1 кг кофе: расчет порций в кофемашине на день и неделю</span>
+                <span class="pb-related-desc">Узнайте, на сколько дней хватает килограмма зерен. Расчет количества чашек, влияние помола и крепост</span>
+            </a><a href="/articles/b/ba/bagazhnyj-karman-na-lipuchke.html" class="pb-related-card">
+                <span class="pb-related-title">Багажный карман на липучке: виды, монтаж и выбор для авто</span>
+                <span class="pb-related-desc">Узнайте, как выбрать и установить багажный карман на липучке. Обзор моделей, способы крепления, плюс</span>
+            </a><a href="/articles/a/an/analiz-kachestvennogo-sostava-zhevatelnykh-rezinok.html" class="pb-related-card">
+                <span class="pb-related-title">Анализ состава жевательной резинки: химия, польза и вред для здоровья</span>
+                <span class="pb-related-desc">Полный разбор качественного состава жевательных резинок. Изучаем химический состав основы, подсласти</span>
+            </a><a href="/articles/k/ka/kak-podobrat-razmer-kryuchka-k-silikonovoj-primanke.html" class="pb-related-card">
+                <span class="pb-related-title">Как подобрать размер крючка к силиконовой приманке: полное руководство</span>
+                <span class="pb-related-desc">Узнайте, как правильно выбрать размер и форму крючка для силиконовых приманок. Таблица соответствий,</span>
+            </a><a href="/articles/t/te/terminalnyj-rezistor-can-shiny.html" class="pb-related-card">
+                <span class="pb-related-title">Терминальный резистор CAN-шины: назначение, проверка и установка</span>
+                <span class="pb-related-desc">Подробный разбор роли терминального резистора в CAN-сети автомобиля. Как проверить сопротивление, пр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

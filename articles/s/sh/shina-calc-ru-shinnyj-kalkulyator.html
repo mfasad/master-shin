@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Shina Calc RU: Точный шинный калькулятор для подбора резины — Мастер Шин</title>
+    <meta name="description" content="Используйте онлайн-калькулятор Shina Calc RU для расчета изменения клиренса, скорости и совместимости шин. Полное руководство по подбору ширины и профиля.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/s/sh/shina-calc-ru-shinnyj-kalkulyator.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Shina Calc RU: Точный шинный калькулятор для подбора резины">
+    <meta property="og:description" content="Используйте онлайн-калькулятор Shina Calc RU для расчета изменения клиренса, скорости и совместимости шин. Полное руководство по подбору ширины и профиля.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/" class="pb-nav-active">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/podbor-shin/">Подбор шин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Shina Calc RU: Точный шинный калькулятор для подбора резины</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основы-расчета-параметров-колеса">Основы расчета параметров колеса</a></li><li><a href="#анализ-совместимости-с-заводскими-параметрами">Анализ совместимости с заводскими параметрами</a></li><li><a href="#влияние-изменения-размера-на-работу-спидометра">Влияние изменения размера на работу спидометра</a></li><li><a href="#особенности-расчета-клиренса-и-дорожного-просвета">Особенности расчета клиренса и дорожного просвета</a></li><li><a href="#технические-нюансы-при-установке-нестандартных-дисков">Технические нюансы при установке нестандартных дисков</a></li><li><a href="#визуализация-и-сверка-размеров">Визуализация и сверка размеров</a></li><li><a href="#частые-вопросы-и-ответы">Частые вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/ra/radialnye-i-diagonalnye-shiny-v-chem-raznitsa.html">Радиальные и диагональные шины: главные отличия и выбор</a></li><li><a href="/articles/c/ch/chem-khorosha-nizkoprofilnaya-rezina.html">Низкопрофильная резина: плюсы, минусы и особенности эксплуатации</a></li><li><a href="/articles/r/ra/razmer-shin-avensis-t250.html">Размер шин Toyota Avensis T250: заводские параметры и рекомендации</a></li><li><a href="/articles/a/am/amtel-nordmaster-evo-175-65-r14.html">Шины Amtel Nordmaster Evo 175/65 R14: Обзор, характеристики и плюсы</a></li><li><a href="/articles/c/ch/chto-znachit-simmetrichnye-shiny.html">Симметричные шины: что это, плюсы, минусы и правила установки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полное руководство по использованию шинного калькулятора Shina Calc RU</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основы-расчета-параметров-колеса">Основы расчета параметров колеса</a></li><li><a href="#анализ-совместимости-с-заводскими-параметрами">Анализ совместимости с заводскими параметрами</a></li><li><a href="#влияние-изменения-размера-на-работу-спидометра">Влияние изменения размера на работу спидометра</a></li><li><a href="#особенности-расчета-клиренса-и-дорожного-просвета">Особенности расчета клиренса и дорожного просвета</a></li><li><a href="#технические-нюансы-при-установке-нестандартных-дисков">Технические нюансы при установке нестандартных дисков</a></li><li><a href="#визуализация-и-сверка-размеров">Визуализация и сверка размеров</a></li><li><a href="#частые-вопросы-и-ответы">Частые вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Правильный подбор резины — это фундамент безопасности и комфорта на дороге, ведь ошибка в размерах может привести к серьезным последствиям для подвески и двигателя. Многие автовладельцы сталкиваются с необходимостью изменения заводских параметров, будь то желание увеличить дорожный просвет или установить более широкую резину для лучшей курсовой устойчивости. Именно здесь на помощь приходит специализированный инструмент <strong>шинный калькулятор</strong>, позволяющий в считанные секунды рассчитать все возможные изменения геометрии ходовой части.</p>
+
+<p>Сервис <em>Shina Calc RU</em> зарекомендовал себя как один из самых надежных помощников для российских водителей, предлагая точные вычисления для огромного количества моделей автомобилей. В отличие от простых таблиц совместимости, такой инструмент учитывает не только базовые размеры, но и сложные физические параметры, такие как изменение угла поворота колес и влияние на спидометр. Использование <strong>калькулятора шин</strong> позволяет избежать дорогостоящих ошибок при тюнинге и гарантирует, что новые колеса не будут задевать арки или элементы кузова.</p>
+
+<h2 id="основы-расчета-параметров-колеса">Основы расчета параметров колеса</h2>
+<p>Чтобы понять, как работает любой <strong>шинный калькулятор</strong>, необходимо разобрать базовую формулу определения внешнего диаметра колеса. Внешний диаметр складывается из диаметра диска (в дюймах, переведенных в миллиметры) и удвоенной высоты профиля шины, которая рассчитывается от ширины покрышки и ее процентного соотношения.</p>
+
+<p>Например, если вы берете резину <em>205/55 R16</em>, то ширина составляет 205 мм, а высота профиля равна 55% от ширины. Калькулятор автоматически выполняет эту арифметику, но важно понимать, что даже небольшое отклонение в высоте профиля может существенно изменить клиренс автомобиля. <strong>Диаметр диска</strong> часто является ограничивающим фактором, так как он определяет минимальную высоту шины, необходимую для безопасного движения.</p>
+
+<p>Особое внимание стоит уделить <strong>вылету диска</strong> (ET), который также учитывается в продвинутых версиях калькуляторов. Неправильный вылет меняет плечо обката, что напрямую влияет на усилие на руле и износ подшипников ступицы. Игнорирование этого параметра при подборе может привести к преждевременному выходу из строя подвески.</p>
+
+<h2 id="анализ-совместимости-с-заводскими-параметрами">Анализ совместимости с заводскими параметрами</h2>
+<p>Перед тем как внести изменения в размеры, необходимо свериться с таблицей допустимых размеров для вашей конкретной модели авто. Завод-изготовитель уже провел краш-тесты и рассчитал допустимые отклонения, которые не нарушают работу <strong>антиблокировочной системы (ABS)</strong> и <strong>системы курсовой устойчивости (ESP)</strong>. Любое отклонение от стандарта требует перепрошивки или замены датчиков, что не всегда возможно.</p>
+
+<p>В таблице ниже представлены типичные сочетания для популярного седана, показывающие, как меняется клиренс и скорость при смене размерности:</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Размер резины</th>
+   <th>Диаметр колеса (мм)</th>
+   <th>Клиренс (мм)</th>
+   <th>Показания скорости 100 км/ч</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>195/65 R15</td>
+   <td>617</td>
+   <td>145</td>
+   <td>100 км/ч</td>
+  </tr>
+  <tr>
+   <td>205/55 R16</td>
+   <td>621</td>
+   <td>149</td>
+   <td>99.4 км/ч</td>
+  </tr>
+  <tr>
+   <td>215/45 R17</td>
+   <td>623</td>
+   <td>151</td>
+   <td>99.1 км/ч</td>
+  </tr>
+  <tr>
+   <td>225/40 R18</td>
+   <td>630</td>
+   <td>158</td>
+   <td>98.0 км/ч</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<p>Как видно из данных, даже при увеличении диаметра диска на два дюйма, общий диаметр колеса может остаться практически неизменным, если снизить профиль шины. Это основной принцип, который позволяет <strong>калькулятор шин</strong> предлагать альтернативные варианты. Однако </p>
+
+<blockquote>
+<p>⚠️ Внимание: Увеличение размера колеса более чем на 30 мм может привести к задеванию арки при полной загрузке автомобиля или проезде лежачих полицейских.</p>
+</blockquote>
+
+<p>Существуют также нюансы, связанные с шириной диска. Если вы устанавливаете <em>широкую резину</em> на узкий диск, пятно контакта деформируется, и шина работает некорректно. И наоборот, узкая резина на широком диске может слететь при резком повороте. <strong>Ширина диска</strong> должна строго соответствовать рекомендациям производителя шины, указанным на боковине.</p>
+
+<div class="pb-poll" id="poll-9696d077"><div class="pb-poll-question">📊 Какие параметры для вас важнее всего при выборе шин?</div><div class="pb-poll-option" data-poll="9696d077" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Максимальный клиренс</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9696d077" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Точность спидометра</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9696d077" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Внешний вид и стиль</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9696d077" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Комфорт и мягкость</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-изменения-размера-на-работу-спидометра">Влияние изменения размера на работу спидометра</h2>
+<p>Одной из самых частых проблем при тюнинге колес является рассинхронизация показаний <strong>спидометра</strong> с реальной скоростью автомобиля. Датчики скорости считывают количество оборотов колеса, поэтому, если фактический диаметр колеса изменился, компьютер автомобиля будет показывать неверные данные. Калькулятор помогает предсказать эту погрешность заранее.</p>
+
+<p>Если вы установили колеса большего диаметра, спидометр будет занижать скорость. Например, при реальной скорости 110 км/ч приборная панель может показывать 100 км/ч. Это опасно тем, что водитель может неосознанно превысить скоростной режим, получая штраф. <strong>Погрешность спидометра</strong> должна быть учтена при планировании поездок по трассе.</p>
+
+<p>В обратном случае, при установке колес меньшего диаметра, спидометр будет завышать показания. Это создает ощущение, что машина едет медленнее, чем есть на самом деле, но при этом двигатель работает с повышенной нагрузкой и оборотами. <strong>Расход топлива</strong> в такой ситуации также может неоправданно вырасти из-за некорректной работы системы управления двигателем.</p>
+
+<details class="pb-accordion"><summary>Как рассчитывается погрешность?</summary><div class="pb-accordion-body"><p>Погрешность вычисляется как разница между фактическим диаметром колеса и стандартным, выраженная в процентах. Если диаметр увеличился на 2%, то и показания спидометра будут меньше на 2% при той же реальной скорости.</p></div></details>
+
+<blockquote>
+<p>⚠️ Внимание: В некоторых автомобилях изменение диаметра колес более чем на 2-3% может вызвать ошибку на приборной панели и отключить систему стабилизации.</p>
+</blockquote>
+
+<h2 id="особенности-расчета-клиренса-и-дорожного-просвета">Особенности расчета клиренса и дорожного просвета</h2>
+<p>Клиренс или дорожный просвет — это расстояние от самой нижней точки кузова (обычно защита картера) до земли. Изменяя размер колеса, вы напрямую влияете на этот параметр. Для владельцев внедорожников и кроссоверов использование <strong>шинного калькулятора</strong> критически важно для повышения проходимости.</p>
+
+<p>Увеличение внешнего диаметра колеса на 25 мм дает реальный прирост клиренса ровно на 12.5 мм, так как радиус увеличивается только наполовину от изменения диаметра. Это кажется малым значением, но в условиях бездорожья именно эти сантиметры решают, не застрянет ли автомобиль в грязи или снегу. <strong>Дорожный просвет</strong> также влияет на аэродинамику и центр тяжести.</p>
+
+<p>Однако, чрезмерное увеличение клиренса поднимает центр тяжести автомобиля, что ухудшает его устойчивость на поворотах. Это особенно опасно для легковых седанов, где <strong>курсовая устойчивость</strong> является приоритетом. Баланс между проходимостью и управляемостью необходимо искать с помощью точных расчетов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка совместимости колес</h4><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии трения об арки</span></label><label class="check-item"><input type="checkbox"><span>Проверить длину болтов и вылет диска</span></label><label class="check-item"><input type="checkbox"><span>Оценить влияние на спидометр</span></label><label class="check-item"><input type="checkbox"><span>Сверить нагрузку на подшипники</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>При выборе зимней резины часто возникает желание поставить колеса большего размера для лучшего сцепления с дорогой и большей высоты профиля. Это разумное решение, но только если <strong>калькулятор шин</strong> подтвердит отсутствие interference (помех) в арках при работе подвески на отбой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При установке колес на зиму проверяйте, не цепляются ли боковины шин за пластиковые накладки порогов или брызговики при полном сжатии подвески.</p></aside>
+
+<h2 id="технические-нюансы-при-установке-нестандартных-дисков">Технические нюансы при установке нестандартных дисков</h2>
+<p>Помимо размеров резины, критическую роль играют параметры самого диска. Один из главных показателей — это PCD (разболтовка), который должен строго соответствовать ступице автомобиля. Даже 1 мм погрешности в <strong>PCD</strong> сделает установку невозможной или крайне опасной.</p>
+
+<p>Второй важный параметр — диаметр центрального отверстия (DIA). Если отверстие на диске больше, чем на ступице, необходимы переходные кольца. Если меньше — диск просто не налезет на ступицу. <strong>Центральное отверстие</strong> обеспечивает центровку колеса без нагрузки на болты.</p>
+
+<p>Увеличение ширины диска позволяет установить более широкую шину, что улучшает сцепление на асфальте. Но для этого также необходимо правильно подобрать <strong>вылет диска (ET)</strong>, чтобы колесо не вышло за пределы арки или не ушло слишком глубоко внутрь. Калькулятор визуализирует эти изменения, показывая смещение колеса относительно арки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Использование колес с неправильным вылетом (ET) приводит к ускоренному износу ступичных подшипников и может вызвать их разрушение на высокой скорости.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный подбор параметров диска (PCD, DIA, ET) так же важен, как и выбор размера резины, для обеспечения безопасности и долговечности подвески.</p></aside>
+
+<h2 id="визуализация-и-сверка-размеров">Визуализация и сверка размеров</h2>
+<p>Современные онлайн-сервисы позволяют не только увидеть цифры, но и получить визуальное представление о том, как будет выглядеть автомобиль с новыми колесами. Это особенно полезно при планировании тюнинга, когда внешний вид имеет значение. <strong>Визуализация</strong> помогает избежать ситуации, когда технически все сходится, но эстетически результат не нравится.</p>
+
+<p> На практике могут влиять деформация шин при накачке, состояние подвески и даже температура воздуха. Поэтому <strong>реальный замер</strong> колес перед установкой всегда будет более точным, чем любой онлайн-инструмент. Используйте расчеты как ориентир, а не как абсолютную истину.</p>
+
+<p>Для профессионального подбора рекомендуется использовать специализированное ПО, которое учитывает конкретную модель подвески вашего автомобиля. Простые калькуляторы дают общую картину, но сложные системы могут смоделировать работу подвески в полном диапазоне хода. <strong>Профессиональный подбор</strong> спасает от ошибок, которые могут стоить ремонта ходовой части.</p>
+
+<details class="pb-accordion"><summary>Влияние давления в шинах</summary><div class="pb-accordion-body"><p>Давление в шинах влияет на их эффективный радиус. При высоком давлении колесо становится чуть выше, при низком — чуть ниже, что может добавить или убрать пару миллиметров клиренса.</p></div></details>
+
+<h2 id="частые-вопросы-и-ответы">Частые вопросы и ответы</h2>
+<details>
+ <summary>Можно ли ставить резину шире, чем рекомендует завод?</summary>
+ <p>Да, это возможно, но необходимо проверить, не будет ли шина тереться о крыло или элементы подвески при повороте и сжатии пружины. Используйте шинный калькулятор для проверки ширины и вылета.</p>
+</details>
+<details>
+ <summary>Как изменится расход топлива при увеличении размера колеса?</summary>
+ <p>Увеличение диаметра и ширины обычно приводит к росту массы колеса и аэродинамического сопротивления, что может увеличить расход топлива на 3-7% в зависимости от стиля вождения.</p>
+</details>
+<details>
+ <summary>Нужно ли делать развал-схождение после установки новых колес?</summary>
+ <p>Обязательно. Любая замена колес, особенно с изменением параметров вылета или ширины, требует регулировки углов установки колес для ровного хода и нормального износа резины.</p>
+</details>
+<details>
+ <summary>Можно ли использовать разные диски на одной оси?</summary>
+ <p>Категорически нет. На одной оси должны стоять колеса с одинаковым диаметром, шириной, вылетом и профилем шины. Разные размеры на одной оси приводят к поломке дифференциала.</p>
+</details>
+<details>
+ <summary>Зачем нужен калькулятор, если есть таблица допустимых размеров?</summary>
+ <p>Таблица показывает только допустимые варианты. Калькулятор позволяет оценить влияние любого размера на клиренс, скорость и скорость спидометра, открывая больше возможностей для тюнинга.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/ra/radialnye-i-diagonalnye-shiny-v-chem-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Радиальные и диагональные шины: главные отличия и выбор</span>
+                <span class="pb-related-desc">Подробное сравнение радиальных и диагональных шин. Узнайте о конструкции, ходовых качествах, плюсах </span>
+            </a><a href="/articles/c/ch/chem-khorosha-nizkoprofilnaya-rezina.html" class="pb-related-card">
+                <span class="pb-related-title">Низкопрофильная резина: плюсы, минусы и особенности эксплуатации</span>
+                <span class="pb-related-desc">Чем хороша низкопрофильная резина? Разбираем управляемость, дизайн и комфорт. Узнайте, когда стоит м</span>
+            </a><a href="/articles/r/ra/razmer-shin-avensis-t250.html" class="pb-related-card">
+                <span class="pb-related-title">Размер шин Toyota Avensis T250: заводские параметры и рекомендации</span>
+                <span class="pb-related-desc">Полный справочник по размерам шин для Toyota Avensis T250. Таблица допустимых дисков, давление в шин</span>
+            </a><a href="/articles/a/am/amtel-nordmaster-evo-175-65-r14.html" class="pb-related-card">
+                <span class="pb-related-title">Шины Amtel Nordmaster Evo 175/65 R14: Обзор, характеристики и плюсы</span>
+                <span class="pb-related-desc">Полный разбор зимних шин Amtel Nordmaster Evo в размере 175/65 R14. Тест-драйв, особенности рисунка </span>
+            </a><a href="/articles/c/ch/chto-znachit-simmetrichnye-shiny.html" class="pb-related-card">
+                <span class="pb-related-title">Симметричные шины: что это, плюсы, минусы и правила установки</span>
+                <span class="pb-related-desc">Разбираем, что значит симметричные шины, как они устроены и чем отличаются от асимметричных. Полное </span>
+            </a><a href="/articles/k/ku/kumho-ecowing-es31-185-60-r15.html" class="pb-related-card">
+                <span class="pb-related-title">Шины Kumho Ecowing ES31 185/60 R15: Обзор, характеристики и отзывы</span>
+                <span class="pb-related-desc">Подробный анализ моделей Kumho Ecowing ES31 в размере 185/60 R15. Тест-драйв, особенности рисунка пр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

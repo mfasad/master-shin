@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Потребляемая мощность холодильника: расчет, классы и экономия — Мастер Шин</title>
+    <meta name="description" content="Узнайте, сколько электроэнергии потребляет холодильник в месяц. Разбор классов энергоэффективности, таблица расхода и советы по снижению счетов.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/s/sk/skolko-potreblyaemaya-moshchnost-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Потребляемая мощность холодильника: расчет, классы и экономия">
+    <meta property="og:description" content="Узнайте, сколько электроэнергии потребляет холодильник в месяц. Разбор классов энергоэффективности, таблица расхода и советы по снижению счетов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Потребляемая мощность холодильника: расчет, классы и экономия</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#фундаментальные-понятия-энергопотребления">Фундаментальные понятия энергопотребления</a></li><li><a href="#классы-энергоэффективности-и-их-значение">Классы энергоэффективности и их значение</a></li><li><a href="#таблица-расхода-для-популярных-моделей">Таблица расхода для популярных моделей</a></li><li><a href="#факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</a></li><li><a href="#методы-снижения-энергопотребления">Методы снижения энергопотребления</a></li><li><a href="#техническое-обслуживание-и-экономия">Техническое обслуживание и экономия</a></li><li><a href="#расчет-стоимости-эксплуатации">Расчет стоимости эксплуатации</a></li><li><a href="#частые-вопросы-о-потреблении">Частые вопросы о потреблении</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ku/kuda-primenyayut-kofejnyj-zhmykh.html">Куда применить кофейный жмых: 10 лучших способов повторного использования отхода</a></li><li><a href="/articles/k/ka/kak-nauchitsya-chinit-mashiny.html">Как научиться чинить машины: Полное руководство для новичка</a></li><li><a href="/articles/r/ra/raritety-v-forza-horizon-1.html">Раритеты в Forza Horizon 1: Полный гид по легендарным авто</a></li><li><a href="/articles/k/ka/kak-odet-shinu-na-disk-svoimi-rukami.html">Как одеть шину на диск своими руками: пошаговая инструкция</a></li><li><a href="/articles/c/ch/chto-delat-so-staroj-posudomojkoj.html">Что делать со старой посудомойкой: 5 способов утилизации и продажи</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сколько электроэнергии потребляет холодильник: полный расчет и анализ</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#фундаментальные-понятия-энергопотребления">Фундаментальные понятия энергопотребления</a></li><li><a href="#классы-энергоэффективности-и-их-значение">Классы энергоэффективности и их значение</a></li><li><a href="#таблица-расхода-для-популярных-моделей">Таблица расхода для популярных моделей</a></li><li><a href="#факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</a></li><li><a href="#методы-снижения-энергопотребления">Методы снижения энергопотребления</a></li><li><a href="#техническое-обслуживание-и-экономия">Техническое обслуживание и экономия</a></li><li><a href="#расчет-стоимости-эксплуатации">Расчет стоимости эксплуатации</a></li><li><a href="#частые-вопросы-о-потреблении">Частые вопросы о потреблении</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Охлаждение продуктов — одна из самых больших статей расходов в домашнем бюджете, так как этот прибор работает круглосуточно. Многие пользователи ошибочно полагают, что потребление зависит только от объема камеры, но на деле ключевую роль играют теплоизоляция, компрессор и режимы эксплуатации. Понимание того, как считается <strong>потребляемая мощность</strong>, позволяет точно прогнозировать сумму в счете за электричество.</p>
+
+<p>В современных реалиях, когда тарифы на коммунальные услуги постоянно растут, выбор экономичной техники становится критически важным. Знание реальных цифр потребления помогает не только выбрать правильный <em>Samsung</em> или <em>Bosch</em> при покупке, но и скорректировать привычки использования текущего прибора. Давайте разберем, от чего на самом деле зависит расход и как его минимизировать без ущерба для сохранности продуктов.</p>
+
+<h2 id="фундаментальные-понятия-энергопотребления">Фундаментальные понятия энергопотребления</h2>
+<p>Многие путают номинальную мощность компрессора с реальным расходом за месяц. <strong>Номинальная мощность</strong> указывает на то, сколько киловатт прибор потребляет в момент работы компрессора, но он включается циклично. Именно поэтому для расчета оплаты важнее <strong>энергопотребление в год</strong>, которое производители указывают на <em>Energy Label</em> (европейская наклейка).</p>
+
+<p>Реальный расход зависит от того, как часто и как долго работает мотор. Если холодильник установлен в жаркой кухне без вентиляции, компрессор будет включаться чаще, увеличивая фактическое потребление в разы по сравнению с паспортными данными. <strong>Теплоизоляция</strong> и герметичность уплотнителя играют здесь решающую роль.</p>
+
+<p>Важно различать пиковую нагрузку и среднее потребление. В момент запуска компрессора ток может быть выше, но в установившемся режиме расход стабилизируется. Для корректного расчета бюджета следует брать показатель <strong>кВт·ч в год</strong> и делить его на 12 месяцев, а затем умножать на ваш локальный тариф.</p>
+
+<h2 id="классы-энергоэффективности-и-их-значение">Классы энергоэффективности и их значение</h2>
+<p>Система классификации A-G (ранее A+++, A++, A+) помогает быстро оценить экономичность устройства. Современные приборы класса <strong>A+</strong> и выше потребляют значительно меньше энергии, чем старые модели класса C или D. Однако стоит помнить, что стандарты обновляются, и теперь даже класс A может не быть самым экономичным на рынке.</p>
+
+<p>Разница между классами может достигать 30-40% расходов. Если вы планируете эксплуатировать технику 10-15 лет, то переплата за модель с более высоким классом окупится за счет снижения счетов. <strong>Инверторный компрессор</strong> — это технология, которая чаще всего обеспечивает высшие классы эффективности, так как она работает плавно, не сжигая лишней энергии на пусках.</p>
+
+<p>При выборе обращайте внимание не только на букву класса, но и на конкретное числовое значение в кВт·ч/год. Два холодильника с классом A+ могут иметь разный реальный расход, если их объем или система охлаждения отличаются. <strong>Сравнительный анализ</strong> характеристик всегда выгоднее слепого доверия одной лишь наклейке на двери.</p>
+
+<div class="pb-poll" id="poll-6ab27de8"><div class="pb-poll-question">📊 Какой класс энергоэффективности у вашего холодильника?</div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">A (или выше)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">A+</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">A++</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">B или ниже</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="таблица-расхода-для-популярных-моделей">Таблица расхода для популярных моделей</h2>
+<p>Сводная таблица ниже демонстрирует примерное годовое потребление для холодильников разного объема и класса. Эти данные позволяют приблизительно оценить, сколько придется платить за электричество в зависимости от выбранной модели.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Объем камеры (л)</th>
+<th>Класс энергоэффективности</th>
+<th>Расход в год (кВт·ч)</th>
+<th>Примерный расход в месяц (кВт·ч)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>180-200</td>
+<td>A+</td>
+<td>200-230</td>
+<td>16-19</td>
+</tr>
+<tr>
+<td>250-300</td>
+<td>A++</td>
+<td>220-250</td>
+<td>18-21</td>
+</tr>
+<tr>
+<td>350-400</td>
+<td>A</td>
+<td>300-350</td>
+<td>25-29</td>
+</tr>
+<tr>
+<td>500-600 (Side-by-Side)</td>
+<td>A+</td>
+<td>400-450</td>
+<td>33-37</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что объемные модели типа <em>Side-by-Side</em> требуют больше энергии не только из-за габаритов, но и из-за сложности системы распределения холода. Двойные контуры охлаждения увеличивают нагрузку на электросеть, даже при использовании инверторных технологий.</p>
+
+<blockquote>
+<strong>⚠️ Внимание!</strong> Указанные в таблице значения являются усредненными. Реальные показатели могут отличаться на 10-15% в зависимости от температуры окружающей среды и качества установки. Производитель указывает данные, полученные в лабораторных условиях при температуре +25°C.
+</blockquote>
+
+<h2 id="факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</h2>
+<p>Даже самый экономичный прибор может стать "энергетическим вампиром" при неправильной эксплуатации. Температура в помещении — один из главных факторов: в жару компрессор работает гораздо активнее, чтобы компенсировать теплопотери через стенки. Если кухня находится на солнечной стороне, потребление вырастет.</p>
+
+<p>Частое открывание дверцы приводит к выбросу холодного воздуха и поступлению теплого извне. Это заставляет компрессор включаться заново. <strong>Температурный режим</strong> также важен: установка режима "Суперзаморозка" или минимальных градусов в холодильной камере увеличивает нагрузку на систему.</p>
+
+<p>Состояние уплотнителя двери часто игнорируется пользователями. Трещины или потеря эластичности резинки приводят к тому, что холодный воздух постоянно уходит, а компрессор не может отключиться. <strong>Проверка герметичности</strong> должна проводиться регулярно, чтобы избежать лишнего расхода.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка состояния холодильника</h4><label class="check-item"><input type="checkbox"><span>Осмотрите уплотнитель на предмет трещин</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь в отсутствии льда в морозилке</span></label><label class="check-item"><input type="checkbox"><span>Проверьте расстояние от стены до задней стенки</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь, что дверь закрывается плотно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="методы-снижения-энергопотребления">Методы снижения энергопотребления</h2>
+<p>Существует ряд простых действий, которые помогут снизить потребление без существенных затрат. Во-первых, не ставьте горячую пищу в камеру. Нагрев продуктов заставляет компрессор работать на пределе возможностей, чтобы вернуть температуру к норме. <strong>Охлаждение продуктов</strong> перед загрузкой — это базовое правило экономии.</p>
+
+<p>Регулярная разморозка также влияет на эффективность. Ледяная корка толщиной в несколько миллиметров работает как теплоизолятор внутри камеры, мешая теплообмену. Компрессор вынужден работать дольше, чтобы охладить содержимое. <strong>Своевременная разморозка</strong> морозильной камеры обязательна для моделей без системы No Frost.</p>
+
+<p>Расстановка продуктов тоже имеет значение. Не загромождайте вентиляционные отверстия внутри камеры, иначе холодный воздух не будет циркулировать правильно. Это создает "горячие зоны", где продукты портятся, а датчики ложно сигнализируют о необходимости охлаждения. <strong>Правильное размещение</strong> продуктов улучшает эффективность охлаждения.</p>
+
+<details class="pb-accordion"><summary>Что такое No Frost и как он влияет на потребление?</summary><div class="pb-accordion-body"><p>Система No Frost предотвращает образование льда, но потребляет больше энергии из-за работы вентиляторов и нагревателя оттайки. Однако она обеспечивает более стабильную температуру и исключает потери на борьбу со льдом. В долгосрочной перспективе экономия может быть сопоставима с капельной системой при условии правильного обслуживания.</p></div></details>
+
+<p>Важно не переусердствовать с настройками. Установка температуры ниже +4°C в холодильной камере не дает видимого преимущества для свежих продуктов, но заметно увеличивает счета. Оптимальный режим для свежих продуктов — от +3°C до +5°C, а для морозилки — -18°C. <strong>Оптимальный температурный режим</strong> — залог баланса качества и экономии.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Не ставьте холодильник вплотную к стене. Оставляйте минимум 5-10 см пространства для циркуляции воздуха вокруг конденсатора, иначе тепло будет накапливаться, и мотор будет работать усиленно.</p></aside>
+
+<h2 id="техническое-обслуживание-и-экономия">Техническое обслуживание и экономия</h2>
+<p>Запыленные радиаторы на задней стенке или под холодильником ухудшают теплоотдачу. Пыль работает как теплоизолятор, не давая компрессору эффективно сбрасывать тепло. <strong>Чистка радиатора</strong> раз в 6 месяцев может снизить потребление на 5-10%, так как системе будет легче поддерживать нужную температуру.</p>
+
+<p>Установка прибора на ровную поверхность критична для работы компрессора. Если холодильник стоит криво, двери могут не закрываться герметично, или внутренние механизмы будут работать с перегрузкой. <strong>Уровень установки</strong> часто становится причиной скрытых потерь энергии.</p>
+
+<p>Использование встроенных режимов экономии, если они есть, может быть полезным. Некоторые модели <em>LG</em> или <em>Beko</em> имеют функцию "Eco" или "Vacation", которая снижает потребление, когда вы надолго уходите из дома. Однако для постоянного использования лучше оставить стандартные настройки, настроенные на оптимальный режим.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная чистка задней стенки от пыли и контроль герметичности дверей — это самые простые и бесплатные способы снизить расход электроэнергии на 10-15%.</p></aside>
+
+<h2 id="расчет-стоимости-эксплуатации">Расчет стоимости эксплуатации</h2>
+<p>Чтобы понять, сколько именно вы платите за охлаждение продуктов, нужно умножить годовое потребление (из паспорта) на ваш тариф. Например, если холодильник потребляет 300 кВт·ч в год, а тариф составляет 5 рублей за кВт·ч, то годовая стоимость составит 1500 рублей. Это совсем немного для прибора, работающего 24/7.</p>
+
+<p>Однако реальные цифры могут быть выше. Если у вас старый холодильник с утечками холода, фактический расход может превысить паспортный на 50%. В этом случае ежемесячные платежи будут ощутимее. <strong>Фактический расчет</strong> с учетом тарифов помогает понять реальную выгоду от покупки новой техники.</p>
+
+<p><mark>При тарифе 6 рублей за кВт·ч холодильник класса A++ с расходом 200 кВт·ч/год обойдется владельцу всего в 1000 рублей в год, что делает его крайне выгодным вложением по сравнению с устаревшими моделями.</mark></p>
+
+<p>Важно учитывать, что с ростом цен на электроэнергию экономичная техника становится все более привлекательной. Разница в стоимости между моделями разных классов окупается быстрее, чем раньше. <strong>Инвестиция в эффективность</strong> — это грамотный подход к управлению домашним бюджетом.</p>
+
+<blockquote>
+<strong>⚠️ Внимание!</strong> Тарифы на электроэнергию меняются ежегодно. Для точного расчета стоимости эксплуатации используйте актуальные тарифы вашей энергоснабжающей организации, указанные в личном кабинете или на сайте поставщика.
+</blockquote>
+
+<h2 id="частые-вопросы-о-потреблении">Частые вопросы о потреблении</h2>
+
+<details>
+<summary>Какой холодильник потребляет меньше: с No Frost или капельный?</summary>
+<p>Капельные системы обычно потребляют меньше энергии, так как в них нет вентиляторов и нагревателей для оттайки. Однако системы No Frost обеспечивают лучшую циркуляцию воздуха и не требуют ручной разморозки, что также влияет на эффективность в долгосрочной перспективе при правильном использовании.</p>
+</details>
+
+<details>
+<summary>Влияет ли объем холодильника на потребление?</summary>
+<p>Да, объем напрямую влияет на потребление. Чем больше камера, тем больше воздуха нужно охладить и тем больше площадь стенок, через которые проникает тепло. Большие модели (Side-by-Side) всегда потребляют больше, чем компактные однокамерные устройства.</p>
+</details>
+
+<details>
+<summary>Можно ли экономить, выключая холодильник на ночь?</summary>
+<p>Нет, выключать холодильник на ночь категорически не рекомендуется. Продукты могут испортиться за считанные часы, а при повторном включении компрессору придется работать на пределе возможностей, чтобы охладить камеру, что съест всю выгоду от простоя.</p>
+</details>
+
+<details>
+<summary>Как проверить, сколько реально потребляет мой холодильник?</summary>
+<p>Самый точный способ — использовать специальный счетчик электроэнергии (розеточный ваттметр), который подключается между розеткой и холодильником. Он покажет реальное потребление за сутки или месяц с учетом всех факторов вашей кухни.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ku/kuda-primenyayut-kofejnyj-zhmykh.html" class="pb-related-card">
+                <span class="pb-related-title">Куда применить кофейный жмых: 10 лучших способов повторного использования отхода</span>
+                <span class="pb-related-desc">Узнайте, как использовать кофейный жмых в саду, косметологии и быту. Пошаговые рецепты, советы по уд</span>
+            </a><a href="/articles/k/ka/kak-nauchitsya-chinit-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Как научиться чинить машины: Полное руководство для новичка</span>
+                <span class="pb-related-desc">Пошаговая инструкция: с чего начать обучение ремонту авто, какие инструменты нужны, где брать знания</span>
+            </a><a href="/articles/r/ra/raritety-v-forza-horizon-1.html" class="pb-related-card">
+                <span class="pb-related-title">Раритеты в Forza Horizon 1: Полный гид по легендарным авто</span>
+                <span class="pb-related-desc">Ищете редкие классические автомобили в Forza Horizon 1? Узнайте, где найти раритеты, как их открыват</span>
+            </a><a href="/articles/k/ka/kak-odet-shinu-na-disk-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Как одеть шину на диск своими руками: пошаговая инструкция</span>
+                <span class="pb-related-desc">Полное руководство по самостоятельной установке автошины на диск. Инструменты, техники монтажа, разб</span>
+            </a><a href="/articles/c/ch/chto-delat-so-staroj-posudomojkoj.html" class="pb-related-card">
+                <span class="pb-related-title">Что делать со старой посудомойкой: 5 способов утилизации и продажи</span>
+                <span class="pb-related-desc">Узнайте, как правильно утилизировать или продать старую посудомоечную машину. Инструкция по сдаче в </span>
+            </a><a href="/articles/3/35/35-nedelya-kakoj-mesyats-shiny.html" class="pb-related-card">
+                <span class="pb-related-title">35 неделя беременности: какой это месяц и нужно ли менять шины?</span>
+                <span class="pb-related-desc">Разбираем, какой месяц наступает на 35 неделе беременности. Узнайте, опасно ли менять шины в этот пе</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

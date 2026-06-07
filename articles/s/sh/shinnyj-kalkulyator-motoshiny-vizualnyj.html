@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Визуальный шинный калькулятор для мотоциклетных шин: онлайн расчет — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как работает визуальный шинный калькулятор. Расчет изменений в габаритах, клиренсе и характеристиках мотоцикла при смене резины.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/s/sh/shinnyj-kalkulyator-motoshiny-vizualnyj.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Визуальный шинный калькулятор для мотоциклетных шин: онлайн расчет">
+    <meta property="og:description" content="Узнайте, как работает визуальный шинный калькулятор. Расчет изменений в габаритах, клиренсе и характеристиках мотоцикла при смене резины.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Визуальный шинный калькулятор для мотоциклетных шин: онлайн расчет</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-расчеты-размеров-шин">Введение в расчеты размеров шин</a></li><li><a href="#как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</a></li><li><a href="#влияние-изменений-на-характеристики-мотоцикла">Влияние изменений на характеристики мотоцикла</a></li><li><a href="#таблица-соответствия-популярных-размеров">Таблица соответствия популярных размеров</a></li><li><a href="#особенности-подбора-для-разных-типов-мотоциклов">Особенности подбора для разных типов мотоциклов</a></li><li><a href="#чек-лист-проверки-совместимости">Чек-лист проверки совместимости</a></li><li><a href="#как-правильно-интерпретировать-результаты">Как правильно интерпретировать результаты</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/so/sostav-shiny-legkovogo-avtomobilya.html">Состав шины легкового автомобиля: слои, материалы и устройство</a></li><li><a href="/articles/k/ka/kak-uznat-god-vypuska-reziny-na-avto.html">Как узнать год выпуска резины: читаем маркировку DOT и дату производства</a></li><li><a href="/articles/r/ra/razmer-koles-lifan-kh50.html">Размер колес Lifan X50: шины, диски, давление и параметры</a></li><li><a href="/articles/t/tw/twi-na-shine-chto-oznachaet.html">Что означает аббревиатура TWI на шине: расшифровка и назначение</a></li><li><a href="/articles/g/gd/gde-najti-god-vypuska-reziny.html">Как найти год выпуска шины: расшифровка DOT и маркировки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Визуальный шинный калькулятор мотошины: полный гид по расчету изменений</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-расчеты-размеров-шин">Введение в расчеты размеров шин</a></li><li><a href="#как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</a></li><li><a href="#влияние-изменений-на-характеристики-мотоцикла">Влияние изменений на характеристики мотоцикла</a></li><li><a href="#таблица-соответствия-популярных-размеров">Таблица соответствия популярных размеров</a></li><li><a href="#особенности-подбора-для-разных-типов-мотоциклов">Особенности подбора для разных типов мотоциклов</a></li><li><a href="#чек-лист-проверки-совместимости">Чек-лист проверки совместимости</a></li><li><a href="#как-правильно-интерпретировать-результаты">Как правильно интерпретировать результаты</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-расчеты-размеров-шин">Введение в расчеты размеров шин</br></h2>
+
+<p>Смена резины — это не просто покупка нового набора для вашего <em>Yamaha MT-07</em> или <em>Ducati Monster</em>. Часто байкеры хотят изменить внешний вид байка, поставив более широкую покрышку, или улучшить сцепные свойства, выбрав профиль с другой геометрии. Однако любое вмешательство в размеры колеса несет риски, которые невозможно предугадать без точных расчетов.</p>
+
+<p>Именно здесь на помощь приходит <strong>визуальный шинный калькулятор</strong>. Это специализированный инструмент, который позволяет сравнить штатные параметры с желаемыми, показывая разницу в диаметре, ширине и объеме воздушной камеры. Он помогает избежать фатальных ошибок при тюнинге, когда новая резина просто не влезает в крыло или трется о подрамник.</p>
+
+<p>В отличие от обычных таблиц соответствия, <strong>визуальный расчет</strong> дает наглядное представление о том, как изменится геометрия мотоцикла. Вы увидите, насколько поднимется задний маятник, изменится ли угол наклона рулевой колонки и не заденет ли новая шина элементы подвески при сжатии. Это критически важно для безопасности и сохранности техники.</p>
+
+<h2 id="как-работает-алгоритм-визуализации">Как работает алгоритм визуализации</h2>
+
+<p>Работа калькулятора основана на математической интерпретации маркировки, нанесенной на боковину. Маркировка состоит из трех основных цифр, которые определяют геометрию изделия. Например, в обозначении <code>120/70-17</code> число <code>120</code> означает ширину профиля в миллиметрах, а <code>70</code> — это отношение высоты профиля к ширине в процентах.</p>
+
+<p>Программа вычисляет общий диаметр колеса по формуле, складывая диаметр диска и удвоенную высоту профиля. При смене ширины или профиля меняется и высота боковины. Если вы ставите более высокую резину, например, <code>180/60-17</code> вместо штатной <code>150/70-17</code>, общий диаметр изменится, что повлияет на работу спидометра и передаточные числа.</p>
+
+<p><strong>Визуализация</strong> происходит путем наложения контуров двух разных шин друг на друга. Вы сразу видите, где именно происходит наложение или зазор. Это позволяет оценить не только общие габариты, но и локальные изменения, такие как выступ резины за края диска или изменение радиуса качения. Для сложных случаев, например установки широких шин на узкие диски, это единственно верный способ проверки.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Визуальные модели могут не учитывать реальные особенности конструкции подвески конкретного мотоцикла, такие как ход вилки или маятника, поэтому всегда проверяйте зазоры механически после установки.</p>
+</blockquote>
+
+<h2 id="влияние-изменений-на-характеристики-мотоцикла">Влияние изменений на характеристики мотоцикла</h2>
+
+<p>Изменение размера шины — это не только вопрос эстетики. Когда вы увеличиваете диаметр колеса, вы меняете передаточное отношение трансмиссии. Это означает, что мотоцикл станет медленнее разгоняться, но его максимальная скорость на той же передаче может возрасти. И наоборот, уменьшение диаметра даст более резкий старт, но снизит топ-скорость.</p>
+
+<p>Ширина профиля напрямую влияет на устойчивость мотоцикла в поворотах и при прямолинейном движении. Более широкая шина, например <code>190/50-17</code>, вместо <code>160/60-17</code>, увеличивает пятно контакта. Это улучшает сцепление на прямой, но может затруднить вход в поворот из-за изменения геометрии пятна контакта в наклоне.</p>
+
+<p>Важно учитывать и клиренс. Если новая шина имеет больший диаметр, центральная часть мотоцикла поднимется выше. Это может привести к тому, что подрамник или выхлопная система начнут касаться асфальта при преодолении препятствий. Визуальный калькулятор помогает заранее спрогнозировать эти изменения, сравнивая параметры штатной и желаемой конфигурации.</p>
+
+<ul>
+<li>🛑 <strong>Изменение передаточных чисел</strong> напрямую влияет на динамику разгона и расход топлива.</li>
+<li>🚀 <strong>Геометрия рулевого управления</strong> меняется при изменении диаметра колеса, что влияет на управляемость.</li>
+<li>⚖️ <strong>Клиренс и зазоры</strong> могут стать критическими при установке шин с большим профилем.</li>
+</ul>
+
+<div class="pb-poll" id="poll-e2471d5e"><div class="pb-poll-question">📊 Какой параметр для вас важнее при смене шин?</div><div class="pb-poll-option" data-poll="e2471d5e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Эстетика и внешний вид</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e2471d5e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Динамика разгона</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e2471d5e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Максимальная скорость</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e2471d5e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Устойчивость в поворотах</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="таблица-соответствия-популярных-размеров">Таблица соответствия популярных размеров</h2>
+
+<p>Ниже приведена таблица, демонстрирующая, как меняются расчетные параметры при переходе с одного размера на другой в популярном классе дорожных мотоциклов. Данные рассчитаны для дисков диаметром <code>17</code> дюймов.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Текущий размер</th>
+<th>Новый размер</th>
+<th>Изменение диаметра (мм)</th>
+<th>Изменение клиренса</th>
+<th>Влияние на спидометр</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>120/70-17</td>
+<td>120/60-17</td>
+<td>-6.8 мм</td>
+<td>Понижение</td>
+<td>Показывает меньше</td>
+</tr>
+<tr>
+<td>150/70-17</td>
+<td>160/60-17</td>
+<td>-1.2 мм</td>
+<td>Незначительно</td>
+<td>Почти нет</td>
+</tr>
+<tr>
+<td>150/70-17</td>
+<td>180/55-17</td>
+<td>+18.5 мм</td>
+<td>Подъем</td>
+<td>Показывает больше</td>
+</tr>
+<tr>
+<td>120/70-17</td>
+<td>140/70-17</td>
+<td>+14.2 мм</td>
+<td>Подъем</td>
+<td>Показывает больше</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что даже небольшое изменение цифр может привести к существенной разнице. Например, переход с <code>150/70</code> на <code>180/55</code> дает прирост диаметра почти на 2 сантиметра. Это уже не просто визуальная разница, а реальное изменение характеристик транспортного средства.</p>
+
+<p>Калькулятор также учитывает ширину диска. Установка широкой шины на узкий диск может привести к тому, что протектор станет похож на арбуз (сильно выпуклым), что ухудшит управляемость. И наоборот, узкая шина на широком диске будет иметь плоский профиль, что также нежелательно для правильного поведения в повороте.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Даже незначительное изменение диаметра колеса (более 10 мм) может существенно повлиять на точность спидометра и динамику мотоцикла, поэтому проверка обязательна.</p></aside>
+
+<h2 id="особенности-подбора-для-разных-типов-мотоциклов">Особенности подбора для разных типов мотоциклов</h2>
+
+<p>Для чопперов и круизеров, таких как <em>Harley-Davidson</em> или <em>Indian</em>, визуальный калькулятор играет особую роль. Здесь часто используют колеса разного диаметра спереди и сзади, а также очень широкие задние шины. Расчет помогает подобрать шину, которая впишется в арку и не будет тереть о маятник при полной нагрузке.</p>
+
+<p>В классе эндуро и кроссовых мотоциклов, где используются колеса <code>21</code> и <code>18</code> дюймов, важность визуализации возрастает. Здесь часто меняют диаметр колеса для улучшения проходимости. Калькулятор показывает, как изменение высоты колеса повлияет на центр тяжести и проходимость через препятствия.</p>
+
+<p>Для спортивных мотоциклов (<em>Superbike</em>) расчеты должны быть идеальными. Любые отклонения в геометрии могут нарушить баланс шасси, что критично на трассе. Здесь часто используют шины с измененным профилем для быстрой смены траектории. Визуальный инструмент позволяет увидеть, как изменится радиус скругления профиля при смене модели.</p>
+
+<details class="pb-accordion"><summary>Секреты тюнинга для круизеров</summary><div class="pb-accordion-body"><p>Часто владельцы круизеров ставят более широкие задние шины (на 1-2 дюйма шире штатных). Однако, если диск не имеет соответствующей ширины, это приведет к искажению профиля. Рекомендуется использовать калькулятор для подбора диска под новую резину, если вы хотите радикально изменить внешний вид.</p></div></details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Для мотоциклов с интегрированными дисками (без спиц) замена шин требует специального оборудования. Убедитесь, что новая шина имеет необходимую степень защиты от проколов (RSL) или использует бескамерную технологию, если это предусмотрено конструкцией.</p>
+</blockquote>
+
+<h2 id="чек-лист-проверки-совместимости">Чек-лист проверки совместимости</h2>
+
+<p>Прежде чем заказывать резину, которая не была рекомендована производителем, пройдите по пунктам, предложенным ниже. Это поможет вам избежать лишних расходов и проблем с безопасностью. Используйте данные визуального калькулятора как первый этап проверки.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка совместимости новой шины</h4><label class="check-item"><input type="checkbox"><span>Сравнить общий диаметр (макс. допуск +/- 2 см)</span></label><label class="check-item"><input type="checkbox"><span>Проверить ширину диска под новую шину</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии трения о подрамник</span></label><label class="check-item"><input type="checkbox"><span>Проверить нагрузку и скорость (индекс)</span></label><label class="check-item"><input type="checkbox"><span>Оценить изменение клиренса</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Первым делом сравните общий диаметр колеса. Допустимое отклонение обычно составляет не более 2 см от штатного значения. Если разница больше, это может привести к проблемам с системой ABS, если она у вас установлена. Датчики могут давать некорректные показания скорости вращения колеса.</p>
+
+<p>Второй этап — проверка ширины диска. Каждый диск имеет диапазон совместимости с шинами. Например, диск шириной <code>4.5</code> дюйма идеально подходит для шины <code>120</code> или <code>130</code> мм, но установка шины <code>180</code> мм может быть опасной. Визуальный калькулятор часто показывает рекомендуемую ширину диска для выбранной шины.</p>
+
+<p>Третий пункт — зазоры. Посмотрите на схему в калькуляторе, где находятся точки максимального сближения резины с элементами рамы. Учтите, что при полной нагрузке (пассажир + багаж) подвеска проседает, и зазоры уменьшаются. Оставьте запас минимум 1-2 см.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Запомните или запишите индекс нагрузки и скорости вашей старой шины. Новая шина должна иметь равные или более высокие показатели, иначе вы рискуете получить взрыв покрышки при высокой нагрузке или скорости.</p></aside>
+
+<h2 id="как-правильно-интерпретировать-результаты">Как правильно интерпретировать результаты</h2>
+
+<p>Получив результаты расчета, вы увидите разницу в миллиметрах. Положительное значение означает, что новая шина больше, отрицательное — меньше. Если разница по ширине составляет более 10-15 мм, это уже существенное изменение, требующее внимательного осмотра. Особенно если речь идет о передней шине.</p>
+
+<p>Обратите внимание на изменение радиуса качения. Если он увеличился, мотоцикл станет «тяжелее» в управлении на низких скоростях, но более устойчивым на трассе. Если уменьшился — управление станет более легким и резким, но устойчивость может пострадать. Это баланс, который каждый райдер выбирает для себя.</p>
+
+<p>Иногда визуальный калькулятор показывает, что шина влезает по диаметру, но не влезает по ширине. Это частая ситуация при попытке поставить широкую спортивную резину на дорожный мотоцикл. В таком случае, возможно, потребуется замена не только шины, но и диска, или даже маятника (если он узкий).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Никогда не полагайтесь только на визуальное сходство. Математические расчеты в калькуляторе часто выявляют скрытые конфликты геометрии, которые не видны на глаз.</p></aside>
+
+<h2 id="вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Можно ли ставить шину другого диаметра?</summary>
+<p>Да, но с ограничениями. Допустимое отклонение диаметра обычно составляет до 2-3% от штатного. Большие отклонения могут привести к ошибкам спидометра, проблемам с ABS и изменению дорожного просвета.</p>
+</details>
+
+<details>
+<summary>Что делать, если калькулятор пишет "не совместимо"?</summary>
+<p>Это означает, что геометрия новой шины выходят за допустимые рамки для выбранного диска или мотоцикла. Не игнорируйте предупреждение, так как это может привести к трению о раму или повреждению шины.</p>
+</details>
+
+<details>
+<summary>Влияет ли ширина шины на расход топлива?</summary>
+<p>Да, более широкая шина увеличивает сопротивление качению и аэродинамическое сопротивление, что может незначительно повысить расход топлива, особенно при городском стиле вождения.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять диск, если я меняю ширину шины?</summary>
+<p>Не всегда. Большинство дисков имеют диапазон допустимых шириных шин. Однако, если вы хотите радикально изменить ширину (например, с 120 до 180 мм), скорее всего, потребуется диск другой ширины для правильного профиля покрышки.</p>
+</details>
+
+<details>
+<summary>Как визуально проверить, что шина не трется о раму?</summary>
+<p>Проверьте зазоры в самом узком месте подвески (обычно это место крепления маятника). Спросите на сервисе или посмотрите в калькуляторе, где находятся точки контакта. При полной нагрузке зазор должен быть не менее 1 см.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/so/sostav-shiny-legkovogo-avtomobilya.html" class="pb-related-card">
+                <span class="pb-related-title">Состав шины легкового автомобиля: слои, материалы и устройство</span>
+                <span class="pb-related-desc">Подробный разбор конструкции автошины: от каркаса до протектора. Узнайте, какие материалы и слои обе</span>
+            </a><a href="/articles/k/ka/kak-uznat-god-vypuska-reziny-na-avto.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать год выпуска резины: читаем маркировку DOT и дату производства</span>
+                <span class="pb-related-desc">Узнайте точную дату производства шин по маркировке DOT. Инструкция, как найти код, интерпретация циф</span>
+            </a><a href="/articles/r/ra/razmer-koles-lifan-kh50.html" class="pb-related-card">
+                <span class="pb-related-title">Размер колес Lifan X50: шины, диски, давление и параметры</span>
+                <span class="pb-related-desc">Полный гид по размеру колес Lifan X50. Стандартные размеры шин, параметры дисков, вылет и давление. </span>
+            </a><a href="/articles/t/tw/twi-na-shine-chto-oznachaet.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает аббревиатура TWI на шине: расшифровка и назначение</span>
+                <span class="pb-related-desc">Расшифровка маркировки TWI на шинах. Что такое индикатор износа протектора, как его найти и когда ну</span>
+            </a><a href="/articles/g/gd/gde-najti-god-vypuska-reziny.html" class="pb-related-card">
+                <span class="pb-related-title">Как найти год выпуска шины: расшифровка DOT и маркировки</span>
+                <span class="pb-related-desc">Узнайте, как определить дату производства резины по коду DOT. Полная инструкция с примерами, таблица</span>
+            </a><a href="/articles/s/sh/shiny-91-t-chto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">Шины 91 T: расшифровка индексов нагрузки и скорости, технические нюансы</span>
+                <span class="pb-related-desc">Что означает индекс 91 T на шине? Полная расшифровка допустимой нагрузки и максимальной скорости. Те</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

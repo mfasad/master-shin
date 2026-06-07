@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Как рассчитать площадь диска: формулы, примеры и нюансы — Мастер Шин</title>
+    <meta name="description" content="Пошаговая инструкция: как вычислить площадь круга диска, используя радиус или диаметр. Таблицы, формулы и примеры расчета для автодисков.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kak-rasschitat-ploshchad-diska.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать площадь диска: формулы, примеры и нюансы">
+    <meta property="og:description" content="Пошаговая инструкция: как вычислить площадь круга диска, используя радиус или диаметр. Таблицы, формулы и примеры расчета для автодисков.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как рассчитать площадь диска: формулы, примеры и нюансы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-основы-геометрии-колеса">Введение в основы геометрии колеса</a></li><li><a href="#основная-формула-расчета-площади-круга">Основная формула расчета площади круга</a></li><li><a href="#расчет-по-диаметру-удобный-способ-для-автолюбителей">Расчет по диаметру: удобный способ для автолюбителей</a></li><li><a href="#учет-конструктивных-особенностей-и-вычитание-отверстий">Учет конструктивных особенностей и вычитание отверстий</a></li><li><a href="#сравнительная-таблица-площадей-дисков-разных-диаметров">Сравнительная таблица площадей дисков разных диаметров</a></li><li><a href="#практическое-применение-расчетов-в-автосервисе">Практическое применение расчетов в автосервисе</a></li><li><a href="#важные-нюансы-при-измерениях">Важные нюансы при измерениях</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-vyglyadit-kord-v-shine.html">Как выглядит корд в шине: виды, строение и признаки разрушения</a></li><li><a href="/articles/c/ch/chto-znachit-na-shine-88t.html">Шина 88Т: расшифровка индекса нагрузки и скорости</a></li><li><a href="/articles/s/sk/skorostnye-kharakteristiki-shin-tablitsa.html">Скоростные характеристики шин: полная таблица индексов скорости</a></li><li><a href="/articles/t/ti/tiguan-1-razmery-koles.html">Размерность колес для VW Tiguan 1: Полная таблица шин и дисков</a></li><li><a href="/articles/s/sh/shiny-kakoj-naibolshej-shiriny-mozhno-ustanavlivat-na-avtomobil-esli-diametr-diska-raven-15-dyujmov.html">Максимальная ширина шины на диск 15 дюймов: Точные размеры и правила подбора</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать площадь поверхности автомобильного диска</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-основы-геометрии-колеса">Введение в основы геометрии колеса</a></li><li><a href="#основная-формула-расчета-площади-круга">Основная формула расчета площади круга</a></li><li><a href="#расчет-по-диаметру-удобный-способ-для-автолюбителей">Расчет по диаметру: удобный способ для автолюбителей</a></li><li><a href="#учет-конструктивных-особенностей-и-вычитание-отверстий">Учет конструктивных особенностей и вычитание отверстий</a></li><li><a href="#сравнительная-таблица-площадей-дисков-разных-диаметров">Сравнительная таблица площадей дисков разных диаметров</a></li><li><a href="#практическое-применение-расчетов-в-автосервисе">Практическое применение расчетов в автосервисе</a></li><li><a href="#важные-нюансы-при-измерениях">Важные нюансы при измерениях</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-основы-геометрии-колеса">Введение в основы геометрии колеса</h2>
+<p>Многие автовладельцы сталкиваются с необходимостью точного расчета геометрических параметров своих колес при покупке новой резины или покрытии дисков порошковой краской. <strong>Площадь диска</strong> — это не просто абстрактная математическая величина, а ключевой показатель, влияющий на количество материала, необходимого для обработки, а также на расчет аэродинамических свойств или теплоотвода тормозной системы. Понимание того, как <strong>вычислить площадь круга</strong>, позволяет избежать ошибок при заказе услуг и закупке расходных материалов.</p>
+<p>С точки зрения геометрии, если мы говорим о внешней видимой части диска, то чаще всего речь идет о площади кругового сегмента или полноты круга, ограниченного внешним ободом. В инженерных расчетах может потребоваться <strong>площадь сечения</strong> диска для определения прочности, но для бытовых задач (покраска, мытье, расчет стоимости) достаточно классической формулы площади круга. Важно различать <em>диаметр</em> и <strong>радиус</strong>, так как ошибка в этом параметре приведет к четырехкратной погрешности в результате.</p>
+
+<h2 id="основная-формула-расчета-площади-круга">Основная формула расчета площади круга</h2>
+<p>Классическая математика предлагает нам универсальный инструмент для решения этой задачи. Фундаментальная формула площади круга (S) зависит от квадрата его радиуса (r) и математической константы Пи (π). Формула выглядит следующим образом: <em>S = π × r²</em>. В этой формуле <strong>π (Пи)</strong> — это иррациональное число, приблизительно равное 3,14159, которое показывает отношение длины окружности к её диаметру.</p>
+<p>Чтобы получить корректный результат, необходимо точно измерить расстояние от центра круга до любой точки на его окружности. Это расстояние и есть <strong>радиус</strong>. Если у вас есть только диаметр (расстояние через центр от края до края), радиус всегда равен половине диаметра. Не стоит путать эти понятия при вводе данных в калькуляторы или при ручных вычислениях, так как перепутав диаметр и радиус, вы получите значение, в четыре раза отличающееся от истинного.</p>
+<p>В практическом применении для автомобильных дисков часто используется упрощенный вариант расчета, где радиус округляется до сотых долей, а число Пи берется как 3,14. Однако для точного окрашивания, где важен каждый грамм краски, лучше использовать более точное значение константы. <strong>Площадь поверхности</strong> будет прямо пропорциональна квадрату радиуса, поэтому даже небольшое увеличение диаметра диска (например, с 15 до 16 дюймов) значительно увеличивает площадь покрытия.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При расчете площади под покраску учитывайте, что реальная площадь поверхности сложного профиля диска (с канавками, спицами и рельефом) всегда больше, чем площадь плоского круга того же диаметра.</p>
+</blockquote>
+
+<h2 id="расчет-по-диаметру-удобный-способ-для-автолюбителей">Расчет по диаметру: удобный способ для автолюбителей</h2>
+<p>Поскольку производители дисков всегда маркируют их диаметром (например, <code>R16</code>, <code>R17</code>, <code>R18</code>), расчет через диаметр является наиболее удобным методом. Формула преобразуется следующим образом: <em>S = (π × D²) / 4</em>, где <strong>D</strong> — диаметр круга. Это позволяет не делить диаметр на два вручную перед возведением в квадрат, что снижает риск арифметической ошибки.</p>
+<p>Рассмотрим пример на практике. Допустим, у вас стоит диск диаметром 17 дюймов. Для расчета в системе СИ (квадратные метры или квадратные сантиметры) необходимо сначала перевести дюймы в сантиметры (1 дюйм = 2,54 см). Таким образом, 17 дюймов превращаются в 43,18 см. Подставляя это значение в формулу, мы получаем точную геометрическую площадь проекции диска.</p>
+<p>Почему это важно? Если вы заказываете порошковую покраску, цена часто зависит от площади покрытия или диаметра изделия. Зная точную формулу, вы можете проверить смету мастера. <strong>Площадь сечения</strong> диска влияет и на его жесткость: более широкие диски с большим диаметром имеют иную площадь распределения нагрузки, что критично для спортивных автомобилей.</p>
+
+<div class="pb-poll" id="poll-0fdf0535"><div class="pb-poll-question">📊 Какой диаметр дисков установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="0fdf0535" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">R14-R15</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0fdf0535" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">16-17 дюймов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0fdf0535" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">18-19 дюймов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0fdf0535" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">20+ дюймов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="учет-конструктивных-особенностей-и-вычитание-отверстий">Учет конструктивных особенностей и вычитание отверстий</h2>
+<p>Автомобильный диск редко бывает сплошным кругом. Обычно это сложная конструкция со спицами, отверстиями под болты и центральным посадочным отверстием. Чтобы получить <strong>реальную площадь металла</strong> или площадь, которая будет окрашиваться, необходимо учитывать вычитание пустот. Это особенно актуально при расчете веса диска или количества антикоррозийного состава.</p>
+<p>Для этого нужно вычислить площадь каждого отверстия и вычесть их из общей площади большого круга, рассчитанного по внешнему диаметру. Отверстия под крепежные болты (обычно их 4, 5 или 6) имеют свой радиус. Формула для вычитания: <em>S_реальная = S_общая - (n × S_отверстия)</em>, где <strong>n</strong> — количество отверстий, а <em>S_отверстия</em> — площадь одного отверстия.</p>
+<p>Не забудьте про центральное отверстие (ЦО), через которое проходит ступица. Оно также занимает определенную площадь. Если вы рассчитываете площадь для нанесения покрытия на <em>двустороннюю</em> сторону диска (снаружи и изнутри), просто умножьте полученный результат на два, но учтите, что внутренняя сторона часто имеет другую конфигурацию спиц.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка данных для расчета</h4><label class="check-item"><input type="checkbox"><span>Измерить внешний диаметр диска</span></label><label class="check-item"><input type="checkbox"><span>Определить количество крепежных отверстий</span></label><label class="check-item"><input type="checkbox"><span>Измерить диаметр центрального отверстия</span></label><label class="check-item"><input type="checkbox"><span>Перевести все размеры в одну систему (см или мм)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="сравнительная-таблица-площадей-дисков-разных-диаметров">Сравнительная таблица площадей дисков разных диаметров</h2>
+<p>Для быстрого ориентирования в цифрах мы подготовили таблицу, показывающую, как меняется площадь проекции диска при увеличении его диаметра. Эти данные рассчитаны для сплошного круга (без учета спиц и отверстий) в квадратных сантиметрах. Это поможет вам оценить масштаб изменения при переходе на более крупные колесные диски.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Диаметр дюйма (R)</th>
+<th>Диаметр (см)</th>
+<th>Радиус (см)</th>
+<th>Площадь (см²)</th>
+<th>Прирост площади (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15</td>
+<td>38,10</td>
+<td>19,05</td>
+<td>1139,8</td>
+<td>—</td>
+</tr>
+<tr>
+<td>16</td>
+<td>40,64</td>
+<td>20,32</td>
+<td>1298,7</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>17</td>
+<td>43,18</td>
+<td>21,59</td>
+<td>1464,7</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>18</td>
+<td>45,72</td>
+<td>22,86</td>
+<td>1637,8</td>
+<td>43%</td>
+</tr>
+<tr>
+<td>19</td>
+<td>48,26</td>
+<td>24,13</td>
+<td>1818,0</td>
+<td>60%</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, переход с 15-го на 19-й радиус увеличивает площадь проекции почти в 1,6 раза. Это означает, что для покраски такого диска потребуется значительно больше материала, а если речь идет о расчете теплоотдачи тормозов, то площадь радиатора (диска) существенно возрастает. <strong>Теплоемкость</strong> диска напрямую зависит от его массы и площади поверхности, контактирующей с воздухом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Параметры, указанные в маркировке (например, 7.5Jx17), означают ширину диска и его диаметр. Ширина не влияет на расчет площади кругового сечения, но определяет <strong>общую площадь поверхности</strong> (включая боковины), что важно при расчете расхода краски на весь диск целиком.</p>
+</blockquote>
+
+<h2 id="практическое-применение-расчетов-в-автосервисе">Практическое применение расчетов в автосервисе</h2>
+<p>Зачем вообще знать точную площадь? В первую очередь это нужно для экономии при покупке материалов. Если вы планируете самостоятельную покраску дисков в аэрозольной баллончике, знание площади поможет рассчитать необходимое количество баллонов. Производитель обычно указывает покрываемую площадь на 1 литр краски, и зная площадь вашего диска, вы сможете сделать точный заказ.</p>
+<p>Также расчеты используются при определении <strong>массы диска</strong>. Зная площадь поперечного сечения и толщину металла, а также плотность сплава (алюминий или сталь), можно вычислить вес. Это критически важно для спортивной езды, где снижение неподрессоренной массы улучшает динамику автомобиля. <em>Легкосплавные диски</em> часто имеют сложную геометрию, где площадь сечения спиц варьируется для оптимизации веса.</p>
+<p>В некоторых случаях, при подборе колес для внедорожников или спецтехники, инженеры рассчитывают <strong>площадь контакта</strong> или площадь, необходимую для отвода тепла от тормозных дисков. Здесь расчеты становятся еще сложнее и требуют учета трехмерной геометрии, но базовый принцип площади круга остается фундаментом всех этих вычислений.</p>
+
+<details class="pb-accordion"><summary>Что такое коэффициент заполнения диска?</summary><div class="pb-accordion-body"><p>Это отношение площади спиц к общей площади круга. Чем он больше, тем жестче диск, но хуже обдув тормозов.</p></div></details>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда округляйте полученные значения площади в большую сторону при расчете материалов, чтобы избежать дефицита краски или лака в процессе работы.</p></aside>
+
+<h2 id="важные-нюансы-при-измерениях">Важные нюансы при измерениях</h2>
+<p>При снятии размеров для расчета <strong>площади диска</strong> необходимо учитывать реальное состояние колеса. Изношенный обод, деформация после удара или наличие грязи могут исказить результаты. Всегда измеряйте диаметр в нескольких местах по окружности и берите среднее арифметическое значение. Это повысит точность ваших расчетов.</p>
+<p>Особое внимание уделите тому, измеряете ли вы диаметр по внешнему краю посадочного места для резины или по самому широкому месту диска (включая борта). Стандартная маркировка (например, <code>17x7.5</code>) указывает диаметр именно по посадочному поясу. Для расчета площади покрытия часто берут именно внешний габаритный размер, чтобы покрыть краской все выступы.</p>
+<p>Если диск имеет нестандартную форму (например, кованый диск с глубокой выточкой), простая формула площади круга даст лишь приблизительный результат. В таких случаях используется метод водного вытеснения для объема или 3D-сканирование для площади поверхности, но для бытовых задач аппроксимация через круг вполне допустима.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный расчет площади требует учета как геометрических параметров (диаметр, радиус), так и конструктивных особенностей (отверстия, спицы, ширина обода).</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Как перевести площадь из квадратных сантиметров в квадратные метры?</summary>
+<p>Для перевода квадратных сантиметров в квадратные метры нужно разделить полученное число на 10 000. Например, площадь диска 1500 см² равна 0,15 м². Это важно при расчете стоимости покраски, если цена указана за квадратный метр.</p>
+</details>
+
+<details>
+<summary>Почему реальная площадь диска больше площади круга?</summary>
+<p>Реальная площадь поверхности диска (для окраски) всегда больше площади его проекции (круга), так как диск имеет объем, спицы, изгибы и рельеф. Площадь "развертки" диска может быть в 1,5-2 раза больше площади круга того же диаметра.</p>
+</details>
+
+<details>
+<summary>Как рассчитать площадь внутренней стороны диска?</summary>
+<p>Внутренняя сторона диска часто имеет другую геометрию спиц и канавок. Для точного расчета необходимо измерить диаметр внутренней части (там, где крепятся спицы) и сложить площади всех элементов. Часто проще оценить её как 80-90% от площади внешней стороны, если конструкция симметрична.</p>
+</details>
+
+<details>
+<summary>Влияет ли ширина диска на расчет площади круга?</summary>
+<p>Нет, ширина диска не влияет на расчет площади его проекции (круга). Формула <em>S = πr²</em> зависит только от радиуса. Однако ширина влияет на общую площадь поверхности, которую нужно покрасить, и на объем материала для заполнения диска.</p>
+</details>
+
+<blockquote>
+<p>⚠️ Внимание: Техническая документация на диски может меняться производителями. Всегда сверяйте фактические размеры измерительным инструментом, а не полагайтесь только на маркировку, так как допуски могут отличаться.</p>
+</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-vyglyadit-kord-v-shine.html" class="pb-related-card">
+                <span class="pb-related-title">Как выглядит корд в шине: виды, строение и признаки разрушения</span>
+                <span class="pb-related-desc">Подробный разбор строения корда в автомобильной шине. Узнайте, как отличить тканевый от металлическо</span>
+            </a><a href="/articles/c/ch/chto-znachit-na-shine-88t.html" class="pb-related-card">
+                <span class="pb-related-title">Шина 88Т: расшифровка индекса нагрузки и скорости</span>
+                <span class="pb-related-desc">Что означает индекс 88T на боковине шины? Разбор допустимой нагрузки в кг и максимальной скорости до</span>
+            </a><a href="/articles/s/sk/skorostnye-kharakteristiki-shin-tablitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Скоростные характеристики шин: полная таблица индексов скорости</span>
+                <span class="pb-related-desc">Полная таблица индексов скорости шин: от L до Y. Разбор маркировки, правила подбора и влияние на без</span>
+            </a><a href="/articles/t/ti/tiguan-1-razmery-koles.html" class="pb-related-card">
+                <span class="pb-related-title">Размерность колес для VW Tiguan 1: Полная таблица шин и дисков</span>
+                <span class="pb-related-desc">Полное руководство по подбору шин и дисков для Volkswagen Tiguan первого поколения. Таблица размерно</span>
+            </a><a href="/articles/s/sh/shiny-kakoj-naibolshej-shiriny-mozhno-ustanavlivat-na-avtomobil-esli-diametr-diska-raven-15-dyujmov.html" class="pb-related-card">
+                <span class="pb-related-title">Максимальная ширина шины на диск 15 дюймов: Точные размеры и правила подбора</span>
+                <span class="pb-related-desc">Узнайте, какой наибольшей ширины шины можно ставить на диски R15. Таблица совместимости, влияние на </span>
+            </a><a href="/articles/r/re/relef-na-avtopokryshke-9-bukv.html" class="pb-related-card">
+                <span class="pb-related-title">Рельеф на автопокрышке 9 букв: расшифровка маркировки протектора</span>
+                <span class="pb-related-desc">Ищем слово из 9 букв про рельеф шины. Разбираем, как рисунок протектора влияет на сцепление, шум и б</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

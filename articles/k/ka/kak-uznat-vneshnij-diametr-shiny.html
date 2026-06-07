@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Как узнать внешний диаметр шины: расчет, маркировка и таблица — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как точно рассчитать внешний диаметр шины по маркировке. Формулы, готовые таблицы размеров и важные нюансы подбора резины для вашего авто.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kak-uznat-vneshnij-diametr-shiny.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как узнать внешний диаметр шины: расчет, маркировка и таблица">
+    <meta property="og:description" content="Узнайте, как точно рассчитать внешний диаметр шины по маркировке. Формулы, готовые таблицы размеров и важные нюансы подбора резины для вашего авто.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как узнать внешний диаметр шины: расчет, маркировка и таблица</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение">Введение</a></li><li><a href="#расшифровка-маркировки-и-основные-параметры">Расшифровка маркировки и основные параметры</a></li><li><a href="#формула-расчета-внешнего-диаметра">Формула расчета внешнего диаметра</a></li><li><a href="#примеры-расчетов-для-популярных-размеров">Примеры расчетов для популярных размеров</a></li><li><a href="#готовые-таблицы-размеров-шин">Готовые таблицы размеров шин</a></li><li><a href="#допустимые-отклонения-и-влияние-на-авто">Допустимые отклонения и влияние на авто</a></li><li><a href="#особенности-расчета-для-грузовиков-и-спецтехники">Особенности расчета для грузовиков и спецтехники</a></li><li><a href="#частые-ошибки-при-подборе">Частые ошибки при подборе</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-pishetsya-na-rezine-god-vypuska.html">Где на резине написан год выпуска: расшифровка DOT и даты производства</a></li><li><a href="/articles/r/ra/razmer-shin-tiguan-2021.html">Размер шин Volkswagen Tiguan 2021: полные таблицы и выбор резины</a></li><li><a href="/articles/1/10/107-t-na-shinakh.html">Шины с индексом 107T: расшифровка, грузоподъемность и скорость</a></li><li><a href="/articles/r/ra/razmer-reziny-logan-2.html">Размер резины Логан 2: полный гид по выбору шин и дисков</a></li><li><a href="/articles/k/ka/kak-ukazyvaetsya-data-proizvodstva-shin.html">Как найти дату производства шин: расшифровка кода DOT</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как узнать внешний диаметр шины: полная инструкция по расчету и подбору</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение">Введение</a></li><li><a href="#расшифровка-маркировки-и-основные-параметры">Расшифровка маркировки и основные параметры</a></li><li><a href="#формула-расчета-внешнего-диаметра">Формула расчета внешнего диаметра</a></li><li><a href="#примеры-расчетов-для-популярных-размеров">Примеры расчетов для популярных размеров</a></li><li><a href="#готовые-таблицы-размеров-шин">Готовые таблицы размеров шин</a></li><li><a href="#допустимые-отклонения-и-влияние-на-авто">Допустимые отклонения и влияние на авто</a></li><li><a href="#особенности-расчета-для-грузовиков-и-спецтехники">Особенности расчета для грузовиков и спецтехники</a></li><li><a href="#частые-ошибки-при-подборе">Частые ошибки при подборе</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение">Введение</h2>
+
+<p>Выбор новых шин часто ограничивается поиском подходящей ширины и профиля, но опытные водители всегда обращают пристальное внимание на <strong>внешний диаметр</strong> колеса. Именно этот параметр определяет, встанет ли покрышка в колесную арку, не будет ли задевать элементы подвески и сохранятся ли верные показания спидометра. Ошибка всего в несколько миллиметров может привести к серьезным проблемам с диагностикой системы ABS или даже заклиниванию колеса при повороте руля.</p>
+
+<p>Многие автовладельцы полагают, что достаточно знать диаметр <em>диска</em>, но это глубокое заблуждение. <strong>Общий диаметр колеса</strong> складывается из диаметра посадочного обода и двух высот боковины покрышки. Без точного знания этой величины невозможно грамотно подобрать резину при замене штатного размера, особенно если вы планируете установить нестандартные диски или изменить клиренс автомобиля.</p>
+
+<p>В этой статье мы детально разберем, как самостоятельно вычислить этот параметр по маркировке, воспользоваться готовыми таблицами и понять логику производителей шин. Мы также затронем вопросы влияния изменений диаметра на технические характеристики вашего транспортного средства.</p>
+
+<h2 id="расшифровка-маркировки-и-основные-параметры">Расшифровка маркировки и основные параметры</h2>
+
+<p>Каждая шина имеет уникальную маркировку, нанесенную на ее боковину. Чтобы найти необходимые цифры, внимательно осмотрите боковую поверхность резины. Вам нужно найти набор символов, который выглядит как <code>205/55 R16 91V</code>. Каждая часть этой строки несет конкретную информацию о геометрии изделия.</p>
+
+<p>Первая цифра (в примере <strong>205</strong>) обозначает ширину профиля в миллиметрах. Это расстояние между внешними стенками борта. Вторая цифра (в примере <strong>55</strong>) — это процентное отношение высоты боковины к ширине профиля. Она называется <em>серией</em> или профилем. Третья часть (буква <strong>R</strong>) указывает на конструкцию корда (радикальная), а следующая цифра (в примере <strong>16</strong>) — это диаметр посадочного обода в дюймах.</p>
+
+<p>Особое внимание уделите последнему параметру — <strong>диаметру диска</strong>. Именно он является отправной точкой для всех расчетов. Если вы видите маркировку <code>R15</code>, значит, шина предназначена для установки на диск диаметром 15 дюймов. Помните, что дюйма в миллиметрах — это ровно 25,4 мм, и этот коэффициент станет ключевым при ваших вычислениях.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не путайте внутренний диаметр (посадочный) с внешним. Многие новички ошибочно принимают цифру после буквы <em>R</em> за общий размер колеса, что приводит к покупке резины, которая физически не налезет на диск или будет слишком маленькой.</p>
+</blockquote>
+
+<h2 id="формула-расчета-внешнего-диаметра">Формула расчета внешнего диаметра</h2>
+
+<p>Чтобы узнать точный внешний диаметр, необходимо выполнить математические вычисления, используя данные с маркировки. Формула достаточно проста, но требует внимательности при переводе единиц измерения. Вам нужно сложить диаметр диска в миллиметрах с удвоенной высотой профиля покрышки.</p>
+
+<p>Процесс расчета выглядит следующим образом. Сначала переводим диаметр диска из дюймов в миллиметры: умножаем значение на <code>25,4</code>. Затем вычисляем высоту одной боковины: умножаем ширину профиля на процент профиля (делим на 100). Поскольку колесо имеет две боковины (верхнюю и нижнюю), полученное значение высоты умножаем на два и прибавляем к диаметру диска.</p>
+
+<p>Итоговая формула для расчета <strong>общего диаметра</strong> (D) в миллиметрах:
+<code>D = (ширина × (процент / 100) × 2) + (диаметр диска × 25.4)
+</code>
+<p>Не забудьте, что результат будет в миллиметрах, поэтому для удобства его часто делят на 10, чтобы получить значение в сантиметрах, или на 100 для метров.</p></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом расчетов убедитесь, что вы правильно определили ширину и процент профиля. Ошибка в одной цифре на маркировке (например, перепутать 55 и 65) приведет к ошибке в расчете диаметра в несколько сантиметров, что критично для посадки колеса в арку.</p></aside>
+
+<h2 id="примеры-расчетов-для-популярных-размеров">Примеры расчетов для популярных размеров</h2>
+
+<p>Давайте применим формулу на практике, рассчитав диаметр для одного из самых распространенных размеров в Европе и СНГ — <code>205/55 R16</code>. Ширина составляет 205 мм, профиль — 55%, а диск — 16 дюймов. Сначала находим высоту боковины: 205 × 0,55 = 112,75 мм. Теперь умножаем на два, так как боковины две: 112,75 × 2 = 225,5 мм.</p>
+
+<p>Далее переводим диаметр диска: 16 × 25,4 = 406,4 мм. Складываем полученные значения: 225,5 мм (высота двух боковин) + 406,4 мм (диаметр диска) = 631,9 мм. Таким образом, внешний диаметр этой шины составляет примерно <strong>632 мм</strong> или 63,2 см.</p>
+
+<p>Рассмотрим другой пример для более низкого профиля — <code>225/40 R18</code>. Это часто встречается на спортивных седанах. Расчет: высота боковины 225 × 0,40 = 90 мм. Две боковины: 180 мм. Диаметр диска 18 × 25,4 = 457,2 мм. Итого: 180 + 457,2 = 637,2 мм. Как видите, при увеличении диаметра диска с 16 до 18 дюймов, общий диаметр изменился незначительно, так как уменьшился профиль.</p>
+
+<div class="pb-poll" id="poll-cc7fefb1"><div class="pb-poll-question">📊 Какой способ расчетов вы используете чаще всего?</div><div class="pb-poll-option" data-poll="cc7fefb1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Ручной калькулятор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cc7fefb1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Специальные онлайн-сервисы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cc7fefb1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Таблицы совместимости</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cc7fefb1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не считаю, полагаюсь на шиномонтажников</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="готовые-таблицы-размеров-шин">Готовые таблицы размеров шин</h2>
+
+<p>Если у вас нет желания заниматься математикой, самым быстрым решением будет использование готовых таблиц соответствия. В таких таблицах уже произведены все сложные вычисления, и вы можете просто найти свой размер и увидеть итоговый диаметр. Это особенно удобно при сравнении штатного размера с альтернативным.</p>
+
+<p>В таблице ниже приведены данные для нескольких популярных размеров, включая зимние и летние варианты. Обратите внимание, как меняются значения при увеличении ширины или профиля.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Размер шины</th>
+<th>Ширина (мм)</th>
+<th>Профиль (%)</th>
+<th>Диаметр диска (дюймы)</th>
+<th>Внешний диаметр (мм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>185/65 R15</td>
+<td>185</td>
+<td>65</td>
+<td>15</td>
+<td>622.1</td>
+</tr>
+<tr>
+<td>195/65 R15</td>
+<td>195</td>
+<td>65</td>
+<td>15</td>
+<td>635.1</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>205</td>
+<td>55</td>
+<td>16</td>
+<td>631.9</td>
+</tr>
+<tr>
+<td>225/45 R17</td>
+<td>225</td>
+<td>45</td>
+<td>17</td>
+<td>634.5</td>
+</tr>
+<tr>
+<td>245/40 R18</td>
+<td>245</td>
+<td>40</td>
+<td>18</td>
+<td>634.8</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Используя таблицу, вы можете легко увидеть, что размер <code>195/65 R15</code> имеет диаметр 635,1 мм, что на 3 мм больше, чем у <code>205/55 R16</code>. Такое небольшое отклонение (менее 1%) обычно допустимо и не влияет на работу датчиков скорости. Однако, если разница превышает 2-3%, это уже повод задуматься о последствиях.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Производители шин могут допускать незначительные отклонения в фактическом размере готового изделия из-за технологии производства и давления накачки. Табличные значения являются теоретическими. Фактический зазор в колесной арке всегда проверяйте "по месту" или с помощью штангенциркуля.</p>
+</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед покупкой</h4><label class="check-item"><input type="checkbox"><span>Сверить маркировку с таблицей</span></label><label class="check-item"><input type="checkbox"><span>Учесть допустимую погрешность спидометра</span></label><label class="check-item"><input type="checkbox"><span>Проверить подвеску на наличие износа</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии повреждений диска</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="допустимые-отклонения-и-влияние-на-авто">Допустимые отклонения и влияние на авто</h2>
+
+<p>Почему так важно знать внешний диаметр? Дело в том, что автомобильные системы проектируются под строго определенный радиус качения колеса. Изменение этого параметра напрямую влияет на <strong>показания спидометра</strong> и одометра. Если вы установите колеса с большим диаметром, реальная скорость будет выше, чем показывает приборная панель, что опасно при превышении скорости.</p>
+
+<p>При увеличении диаметра более чем на 3% могут возникнуть проблемы с электроникой. Датчики ABS и системы стабилизации (ESP) рассчитывают скорость вращения колес. Если одно колесо вращается иначе из-за другого диаметра, система может счесть это за потерю сцепления и включить торможение или снизить мощность двигателя без причины.</p>
+
+<p>Кроме того, изменение зазора между шиной и элементами подвески может привести к трению в поворотах или при полной загрузке автомобиля. Это чревато повреждением как самой резины (появление грыж, разрывов), так и пластиковых подкрылков или металла арки. Особенно это критично для автомобилей с низкой посадкой и спортивными подвесками.</p>
+
+<details class="pb-accordion"><summary>Как влияет диаметр на расход топлива и динамику?</summary><div class="pb-accordion-body"><p>Увеличение диаметра колеса (при сохранении общего радиуса) обычно означает более широкую резину и более тяжелый диск. Это увеличивает момент инерции, что может привести к небольшой потере динамики разгона и незначительному росту расхода топлива. Однако на больших скоростях более широкая резина улучшает устойчивость и сцепление с дорогой.</p></div></details>
+
+<h2 id="особенности-расчета-для-грузовиков-и-спецтехники">Особенности расчета для грузовиков и спецтехники</h2>
+
+<p>Расчет диаметра для грузовых автомобилей и спецтехники имеет свои нюансы, так как маркировка там может отличаться от легковой. Часто используются обозначения в дюймах для всей шины (например, <code>11R22.5</code>), где первая цифра указывает на ширину в дюймах, а вторая — на диаметр диска. В таких случаях формула остается той же, но единицы измерения изначально дюймовые.</p>
+
+<p>Для грузовиков критически важным является радиус качения, так как он влияет на передаточные числа главной пары. Изменение диаметра даже на 1% может привести к тому, что двигатель будет работать в неоптимальном режиме, повышая расход топлива и износ мотора. Поэтому при подборе резины для грузовиков отклонения должны быть минимальными.</p>
+
+<p>Также стоит учитывать, что у некоторых моделей спецтехники (например, погрузчиков или тракторов) маркировка может быть нестандартной, указывающей на общий диаметр в дюймах. В таких случаях внимательно читайте техническую документацию изготовителя, так как стандартные формулы могут не подойти без корректировок.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене шин на грузовике или спецтехнике отклонение внешнего диаметра не должно превышать 1-1,5% от штатного значения, чтобы не нарушить работу трансмиссии и системы ABS.</p></aside>
+
+<h2 id="частые-ошибки-при-подборе">Частые ошибки при подборе</h2>
+
+<p>Одной из самых частых ошибок является путаница между радиусом и диаметром. Буква <strong>R</strong> в маркировке означает радиальную конструкцию корда, а не радиус. Многие ошибочно думают, что цифра после R — это радиус в дюймах, и пытаются умножать ее на два, получая неверный диаметр диска. Цифра после R — это уже диаметр посадочного места (обода).</p>
+
+<p>Другая ошибка — игнорирование высоты профиля при увеличении ширины шины. Например, переход с <code>205/55 R16</code> на <code>225/55 R16</code> увеличит внешний диаметр, так как ширина выросла, а процент остался прежним. Это значит, что высота боковины станет больше, и шина может не влезть в арку. При увеличении ширины часто приходится уменьшать высоту профиля, чтобы сохранить общий диаметр колес.</p>
+
+<p>Также водители иногда забывают о сезонных отличиях. Зимние шины часто имеют больший протектор и могут быть чуть толще летних аналогов того же размера. Хотя это редко влияет на диаметр существенно, при установке зимней резины на диски меньшего размера (чтобы сэкономить) нужно быть особенно внимательным к расчетам.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не пытайтесь "подогнать" шину под диск механически. Если внешний диаметр не совпадает с расчетным или не влезает в арку, не используйте распорки или силы. Это приведет к разрушению конструкции шины и потере управляемости на ходу.</p>
+</blockquote>
+
+<h2 id="faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</h2>
+
+<details>
+<summary>Что будет, если внешний диаметр шины отличается от штатного на 5%?</summary>
+<p>Отклонение в 5% считается критическим. Спидометр будет врать более чем на 5 км/ч при скорости 100 км/ч, что опасно и грозит штрафами. Кроме того, могут отключиться системы ABS, ESP, круиз-контроль, а также возрастет нагрузка на подшипники ступицы и элементы подвески.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать широкую шину с меньшим профилем, чтобы сохранить диаметр?</summary>
+<p>Да, это распространенная практика. При увеличении ширины (например, с 205 до 225 мм) необходимо уменьшать процент профиля (с 55 до 45), чтобы сохранить общий внешний диаметр колеса в пределах допустимой погрешности (обычно ±2-3%).</p>
+</details>
+
+<details>
+<summary>Как узнать диаметр диска без маркировки на шине?</summary>
+<p>Если шины нет, диаметр диска можно измерить штангенциркулем, замерив расстояние между посадочными полками обода. Однако проще посмотреть маркировку на самом диске, которая часто выбита на внутренней стороне или на ободе. Там будет указано, например, 6.5Jx16.</p>
+</details>
+
+<details>
+<summary>Влияет ли давление в шине на внешний диаметр?</summary>
+<p>Да, давление влияет. При низком давлении шина сплющивается, и эффективный радиус качения уменьшается. При повышенном давлении диаметр увеличивается. Однако для расчетов используется номинальный размер при стандартном давлении. Изменения обычно составляют несколько миллиметров и не влияют на выбор размера, но могут влиять на точность спидометра.</p>
+</details>
+
+<details>
+<summary>Есть ли разница в расчете для RunFlat шин?</summary>
+<p>Нет, формула расчета внешнего диаметра для <em>RunFlat</em> шин такая же, как и для обычных. Разница лишь в конструкции боковины, которая позволяет ездить при отсутствии давления. Геометрические параметры (ширина, профиль, диаметр диска) определяются маркировкой и используются в тех же расчетах.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-pishetsya-na-rezine-god-vypuska.html" class="pb-related-card">
+                <span class="pb-related-title">Где на резине написан год выпуска: расшифровка DOT и даты производства</span>
+                <span class="pb-related-desc">Узнайте точно, где на шине находится код даты производства, как читать цифры DOT и почему покупка ст</span>
+            </a><a href="/articles/r/ra/razmer-shin-tiguan-2021.html" class="pb-related-card">
+                <span class="pb-related-title">Размер шин Volkswagen Tiguan 2021: полные таблицы и выбор резины</span>
+                <span class="pb-related-desc">Полный гид по размерам шин для VW Tiguan 2021. Таблицы, рекомендации по давлению, сезонные особеннос</span>
+            </a><a href="/articles/1/10/107-t-na-shinakh.html" class="pb-related-card">
+                <span class="pb-related-title">Шины с индексом 107T: расшифровка, грузоподъемность и скорость</span>
+                <span class="pb-related-desc">Что означает маркировка 107T на шинах? Полная расшифровка индекса грузоподъемности 905 кг и скорости</span>
+            </a><a href="/articles/r/ra/razmer-reziny-logan-2.html" class="pb-related-card">
+                <span class="pb-related-title">Размер резины Логан 2: полный гид по выбору шин и дисков</span>
+                <span class="pb-related-desc">Официальные размеры шин для Renault Logan 2. Таблица параметров, давление в шинах, совместимость дис</span>
+            </a><a href="/articles/k/ka/kak-ukazyvaetsya-data-proizvodstva-shin.html" class="pb-related-card">
+                <span class="pb-related-title">Как найти дату производства шин: расшифровка кода DOT</span>
+                <span class="pb-related-desc">Узнайте, как правильно определить возраст резины по коду DOT. Расшифровка маркировки недели и года в</span>
+            </a><a href="/articles/n/no/norma-slojnosti-shiny-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Норма слойности шины: что это и как влияет на эксплуатацию</span>
+                <span class="pb-related-desc">Разбираем, что такое норма слойности шины, отличие от реального количества слоев и как этот параметр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

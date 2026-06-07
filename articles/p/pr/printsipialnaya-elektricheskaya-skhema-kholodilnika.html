@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Принципиальная электрическая схема холодильника: устройство и диагностика — Мастер Шин</title>
+    <meta name="description" content="Полный разбор принципиальной электрической схемы холодильника. Изучите работу компрессора, термостата и пускового реле. Инструкция по поиску неисправностей.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/p/pr/printsipialnaya-elektricheskaya-skhema-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принципиальная электрическая схема холодильника: устройство и диагностика">
+    <meta property="og:description" content="Полный разбор принципиальной электрической схемы холодильника. Изучите работу компрессора, термостата и пускового реле. Инструкция по поиску неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принципиальная электрическая схема холодильника: устройство и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-компоненты-электрической-цепи">Основные компоненты электрической цепи</a></li><li><a href="#принцип-работы-пускозащитного-реле">Принцип работы пускозащитного реле</a></li><li><a href="#анализ-типовых-схем-подключения">Анализ типовых схем подключения</a></li><li><a href="#диагностика-неисправностей-по-схеме">Диагностика неисправностей по схеме</a></li><li><a href="#особенности-работы-инверторных-компрессоров">Особенности работы инверторных компрессоров</a></li><li><a href="#таблица-параметров-обмоток-компрессора">Таблица параметров обмоток компрессора</a></li><li><a href="#безопасность-при-работе-с-электричеством">Безопасность при работе с электричеством</a></li><li><a href="#частые-вопросы-и-ответы">Частые вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/me/mej-iz-top-gir.html">Мэй из Top Gear: Миф, легенда и разбор радиотакси</a></li><li><a href="/articles/p/po/pochemu-lyudi-stali-menshe-pokupat.html">Почему люди стали меньше покупать: экономика, психология и тренды 2026</a></li><li><a href="/articles/k/ka/kak-sdelat-divan-iz-dverej.html">Диван из дверей: пошаговая инструкция, материалы и идеи дизайна</a></li><li><a href="/articles/p/po/polvershka-eto-skolko-v-sm.html">Полвершка это сколько в см: точный перевод и применение</a></li><li><a href="/articles/k/ka/kak-strelyat-rezinkoj-s-ruki.html">Как стрелять резинкой с руки: техника, снаряды и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принципиальная электрическая схема холодильника: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-компоненты-электрической-цепи">Основные компоненты электрической цепи</a></li><li><a href="#принцип-работы-пускозащитного-реле">Принцип работы пускозащитного реле</a></li><li><a href="#анализ-типовых-схем-подключения">Анализ типовых схем подключения</a></li><li><a href="#диагностика-неисправностей-по-схеме">Диагностика неисправностей по схеме</a></li><li><a href="#особенности-работы-инверторных-компрессоров">Особенности работы инверторных компрессоров</a></li><li><a href="#таблица-параметров-обмоток-компрессора">Таблица параметров обмоток компрессора</a></li><li><a href="#безопасность-при-работе-с-электричеством">Безопасность при работе с электричеством</a></li><li><a href="#частые-вопросы-и-ответы">Частые вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Принципиальная электрическая схема холодильника представляет собой сложную систему взаимосвязанных узлов, обеспечивающих поддержание заданного температурного режима. Понимание того, как ток поступает на <strong>компрессор</strong> и <strong>термостат</strong>, является ключевым для успешной диагностики и ремонта бытового оборудования. Без знаний о расположении и назначении каждого элемента на схеме невозможно эффективно устранить поломку.</p>
+
+<p>Многие владельцы <em>холодильников Bosch</em> или <em>LG</em> сталкиваются с тем, что устройство перестает охлаждать, но не знают, с чего начать проверку. Электрическая цепь — это как кровеносная система, где перекрывание тока в одном месте останавливает работу всей системы. Разобравшись в структуре <strong>пускового реле</strong> и <strong>контактора</strong>, вы сможете самостоятельно определить причину сбоя.</p>
+
+<h2 id="основные-компоненты-электрической-цепи">Основные компоненты электрической цепи</h2>
+<p>В основе любой холодильной установки лежит <strong>компрессор</strong>, который является двигателем и насосом одновременно. Он сжимает хладагент и заставляет его циркулировать по системе испарителей и конденсаторов. Питание на этот узел подается через сложную цепь защиты и управления, включающую несколько критически важных элементов.</p>
+<p>Следующим важным звеном является <strong>термостат</strong> (или температурный датчик в современных моделях). Именно этот элемент размыкает или замыкает цепь в зависимости от температуры внутри камеры. Если термостат неисправен, компрессор может работать непрерывно или вообще не включаться, что приведет к порче продуктов.</p>
+<p>Кроме того, в схеме присутствуют <strong>пусковое реле</strong> и <strong>тепловое реле</strong>. Пусковое реле необходимо для создания начального крутящего момента на валу электродвигателя, а тепловое защищает его от перегрева при перегрузке. Эти два элемента часто выходят из строя из-за скачков напряжения или старения контактов.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда начинайте диагностику с визуального осмотра контактов. Окисление или подгорание на клеммах пускового реле — самая частая причина отказа запуска компрессора, которую легко устранить очисткой.</p></aside>
+
+<h2 id="принцип-работы-пускозащитного-реле">Принцип работы пускозащитного реле</h2>
+<p>Пускозащитное реле — это устройство, которое в момент запуска подает дополнительный ток на пусковую обмотку двигателя, а затем отключает ее. Без этого компонента электродвигатель просто не сможет преодолеть инерцию покоя и начнет гудеть, перегреваться и в итоге сгорит. В современных <em>холодильниках Indesit</em> часто используются полупроводниковые реле, в то время как в старых моделях применяются электромагнитные.</p>
+<p>Электромагнитное реле работает за счет катушки, которая притягивает сердечник при прохождении тока. Этот сердечник замыкает контакты, подавая напряжение на пусковую обмотку. Как только двигатель разгонится, сила тока падает, и сердечник под действием собственной тяжести или пружины возвращается в исходное положение, размыкая цепь.</p>
+<p>Тепловая защита, встроенная в реле или выполняемая отдельным узлом, реагирует на нагрев корпуса компрессора или обмоток. Если температура превышает допустимый предел, биметаллическая пластина изгибается и разрывает цепь питания. Это критически важный элемент безопасности, предотвращающий возгорание.</p>
+<blockquote>⚠️ Внимание: Пусковое реле не подлежит ремонту. Если внутри рассыпались металлические шарики или сгорела катушка, необходима полная замена на аналогичную модель по каталожному номеру.</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Пускозащитное реле — это сердце запуска мотора, и его неисправность чаще всего проявляется в виде характерного щелчка и последующего гудения компрессора без запуска.</p></aside>
+
+<h2 id="анализ-типовых-схем-подключения">Анализ типовых схем подключения</h2>
+<p>Схемы подключения могут варьироваться в зависимости от производителя и года выпуска модели. Однако базовая логика остается неизменной: фаза проходит через счетчик, пробки, сетевой фильтр, термостат, пусковое реле и только потом попадает на компрессор. Нейтральный провод обычно идет напрямую на одну из обмоток двигателя, минуя коммутационные элементы управления.</p>
+<p>В холодильниках с системой <em>No Frost</em> схема усложняется наличием таймера оттайки и нагревателя испарителя. Таймер периодически отключает компрессор и включает нагреватель, растапливая лед на испарителе. После завершения цикла оттайки нагреватель отключается, и через некоторое время таймер снова запускает компрессор.</p>
+<p>Для точной диагностики необходимо иметь под рукой схему именно вашей модели, так как расположение контактов на реле может отличаться. Ошибки при подключении могут привести к короткому замыканию или выходу из строя электроники управления. Будьте предельно внимательны при чтении цветовой маркировки проводов.</p>
+<div class="pb-poll" id="poll-d165e015"><div class="pb-poll-question">📊 Какая схема подключения вашего холодильника?</div><div class="pb-poll-option" data-poll="d165e015" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Однокамерная с прямым охлаждением</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d165e015" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Двухкамерная с No Frost</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d165e015" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Инверторная схема</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d165e015" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не смотрел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-неисправностей-по-схеме">Диагностика неисправностей по схеме</h2>
+<p>Если холодильник не включается, первым делом проверьте наличие напряжения в розетке и целостность сетевого шнура. Затем необходимо прозвонить термостат, замкнув его контакты перемычкой. Если компрессор заработает, значит, проблема именно в термостате, и его необходимо заменить. Это самый простой способ исключить управление температурой из уравнения.</p>
+<p>При наличии щелчков, но отсутствии запуска мотора, подозрение падает на пусковое реле. Снимите реле, вытряхните содержимое и проверьте подвижность контактов или шариков. Если реле электронное, его нельзя проверить мультиметром по простому принципу, лучше сразу заменить на заведомо исправное. Также проверьте обмотки компрессора на наличие межвиткового замыкания.</p>
+<p>В случае, когда холодильник работает, но не охлаждает нормально, возможно, проблема не в электрике, а в утечке фреона. Однако сначала убедитесь, что термостат не отключает компрессор слишком рано. Проверьте сопротивление термодатчика при разной температуре, сравнив с таблицей производителя.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка электрической цепи</h4><label class="check-item"><input type="checkbox"><span>Проверить напряжение в сети</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть целостность шнура</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить термостат</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу пускового реле</span></label><label class="check-item"><input type="checkbox"><span>Измерить сопротивление обмоток</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="особенности-работы-инверторных-компрессоров">Особенности работы инверторных компрессоров</h2>
+<p>Инверторные холодильники используют принципиально иную электрическую схему, где управление скоростью вращения компрессора осуществляется через преобразователь частоты. Вместо простого включения и выключения, блок управления плавно регулирует подаваемую мощность. Это позволяет экономить электроэнергию и снижает уровень шума работы.</p>
+<p>Электрическая цепь инверторной модели содержит сложный электронный модуль управления (инвертор), который преобразует переменный ток в постоянный, а затем снова в переменный, но с нужной частотой. При поломке такого холодильника часто требуется замена всего блока управления, так как ремонт отдельных транзисторов сложен и дорог.</p>
+<p>Диагностика инверторных систем требует специальных знаний и оборудования. Обычный мультиметр может показать наличие напряжения, но не даст полной картины работы преобразователя. Ошибки часто записываются в память блока управления, и их считывание возможно через сервисный режим.</p>
+<blockquote>⚠️ Внимание: При работе с инверторными модулями необходимо соблюдать технику безопасности, так как на конденсаторах может сохраняться высокое напряжение даже после отключения от сети.</blockquote>
+<details class="pb-accordion"><summary>Что делать, если горит ошибка на дисплее инверторного холодильника?</summary><div class="pb-accordion-body"><p>Обычно это код ошибки, указывающий на конкретный узел (например, датчик или связь с инвертором). Расшифровку можно найти в сервисной инструкции на сайте производителя или в таблице кодов ошибок. Не игнорируйте предупреждения.</p></div></details>
+
+<h2 id="таблица-параметров-обмоток-компрессора">Таблица параметров обмоток компрессора</h2>
+<p>Для проверки компрессора необходимо измерить сопротивление между контактами. Обычно у него три вывода: рабочий, пусковой и общий. Зная сопротивление между ними, можно определить исправность обмоток. Ниже приведена примерная таблица для стандартных бытовых компрессоров.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип обмотки</th>
+<th>Сопротивление (Ом)</th>
+<th>Назначение</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рабочая обмотка</td>
+<td>10–20</td>
+<td>Поддержка вращения</td>
+<td>Низкое сопротивление (КЗ) или бесконечное (обрыв)</td>
+</tr>
+<tr>
+<td>Пусковая обмотка</td>
+<td>20–40</td>
+<td>Запуск двигателя</td>
+<td>Сопротивление выше рабочего, разрыв</td>
+</tr>
+<tr>
+<td>Общий вывод</td>
+<td>Сумма двух</td>
+<td>Соединение обмоток</td>
+<td>Не соответствует сумме рабочих и пусковых</td>
+</tr>
+<tr>
+<td>Корпус</td>
+<td>Бесконечность</td>
+<td>Заземление</td>
+<td>Любое конечное значение — пробой на корпус</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Помните, что значения сопротивления могут незначительно отличаться в зависимости от модели и температуры обмоток. Главное правило: сопротивление пусковой обмотки всегда должно быть выше, чем у рабочей. Если измерения показывают отклонения от нормы, компрессор подлежит замене.</p>
+<blockquote>⚠️ Внимание: При измерении сопротивления обязательно отключайте компрессор от сети и дайте ему остыть, так как нагрев значительно влияет на сопротивление проводников.</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный замер сопротивления обмоток — это 90% успеха в диагностике компрессора, позволяющий отличить простую электрическую неисправность от механического заклинивания.</p></aside>
+
+<h2 id="безопасность-при-работе-с-электричеством">Безопасность при работе с электричеством</h2>
+<p>Любые работы с электрической схемой холодильника должны проводиться только при полном отключении прибора от сети. Даже кратковременное касание оголенных проводов под напряжением может привести к серьезным травмам или летальному исходу. Всегда используйте диэлектрические инструменты и обувь с резиновой подошвой.</p>
+<p>Не пытайтесь демонтировать корпус компрессора самостоятельно. Внутри находится мотор-компрессор, залитый маслом и хладагентом. Повреждение герметичности корпуса приведет к невозможности его восстановления и необходимости полной замены узла. Кроме того, хладагент может быть вреден для здоровья.</p>
+<p>Если вы не уверены в своих силах или не можете найти причину поломки, лучше обратиться к квалифицированному мастеру. Неправильное подключение элементов схемы может привести к возгоранию проводки или выходу из строя электроники, что обойдется значительно дороже профессионального ремонта.</p>
+<details class="pb-accordion"><summary>Почему нельзя заземлять холодильник на газовую трубу?</summary><div class="pb-accordion-body"><p>Это смертельно опасно. При замыкании фазы на корпус ток пойдет по газопроводу, что может привести к взрыву газа или поражению током соседей. Используйте только штатное заземление.</p></div></details>
+
+<h2 id="частые-вопросы-и-ответы">Частые вопросы и ответы</h2>
+<details>
+<summary>Почему холодильник щелкает, но не включается?</summary>
+<p>Скорее всего, неисправно пусковое реле или сам компрессор заклинило. Щелчок — это срабатывание теплового реле, которое отключает питание из-за перегрузки. Попробуйте заменить реле, если это не поможет — проблема в моторе.</p>
+</details>
+<details>
+<summary>Как проверить термостат без мультиметра?</summary>
+<p>Временно замкните контакты термостата перемычкой. Если холодильник заработает и начнет охлаждать, значит, термостат неисправен. Не оставляйте перемычку надолго, так как холодильник не будет отключаться.</p>
+</details>
+<details>
+<summary>Можно ли использовать реле от другого холодильника?</summary>
+<p>Только если оно имеет идентичные характеристики (ток срабатывания, тип контактов, крепление). Неправильно подобранное реле может не запустить компрессор или сгореть. Всегда сверяйте маркировку.</p>
+</details>
+<details>
+<summary>Что делать, если сгорел инверторный блок управления?</summary>
+<p>Ремонт инверторных плат в домашних условиях практически невозможен из-за сложности компонентов. Рекомендуется заменить весь модуль на новый оригинальный или качественный аналог.</p>
+</details>
+<details>
+<summary>Почему компрессор работает постоянно?</summary>
+<p>Возможны причины: неисправность термостата (не отключает цепь), утечка фреона (компрессор пытается достичь температуры, но не может), плохая герметичность двери или засор капиллярной трубки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/me/mej-iz-top-gir.html" class="pb-related-card">
+                <span class="pb-related-title">Мэй из Top Gear: Миф, легенда и разбор радиотакси</span>
+                <span class="pb-related-desc">Кто такая Мэй из Top Gear? Разоблачаем мифы о радиотакси, историю персонажа и роль в шоу. Узнайте пр</span>
+            </a><a href="/articles/p/po/pochemu-lyudi-stali-menshe-pokupat.html" class="pb-related-card">
+                <span class="pb-related-title">Почему люди стали меньше покупать: экономика, психология и тренды 2026</span>
+                <span class="pb-related-desc">Анализ причин снижения потребительской активности. Инфляция, накопительный эффект и смена приоритето</span>
+            </a><a href="/articles/k/ka/kak-sdelat-divan-iz-dverej.html" class="pb-related-card">
+                <span class="pb-related-title">Диван из дверей: пошаговая инструкция, материалы и идеи дизайна</span>
+                <span class="pb-related-desc">Узнайте, как своими руками создать стильный диван из старых дверей. Пошаговая инструкция, список инс</span>
+            </a><a href="/articles/p/po/polvershka-eto-skolko-v-sm.html" class="pb-related-card">
+                <span class="pb-related-title">Полвершка это сколько в см: точный перевод и применение</span>
+                <span class="pb-related-desc">Узнайте, сколько сантиметров в полвершке. Подробный разбор старорусской меры длины, таблица перевода</span>
+            </a><a href="/articles/k/ka/kak-strelyat-rezinkoj-s-ruki.html" class="pb-related-card">
+                <span class="pb-related-title">Как стрелять резинкой с руки: техника, снаряды и безопасность</span>
+                <span class="pb-related-desc">Полное руководство по стрельбе из рогатки: выбор фурнитуры, настройка латекса, правильная техника пр</span>
+            </a><a href="/articles/k/ka/kakoj-samyj-vkusnyj-zernovoj-kofe-dlya-kofemashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Самый вкусный зерновой кофе для кофемашины: Рейтинг и секреты выбора</span>
+                <span class="pb-related-desc">Как выбрать самый вкусный зерновой кофе для вашей кофемашины? Разбор сортов, степени обжарки и совет</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

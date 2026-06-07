@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Как вычислить высоту колеса: формула и расчет по размеру шины — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как рассчитать полный диаметр колеса по маркировке шины. Пошаговая инструкция, таблица соответствия и важные нюансы подбора резины.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/k/ka/kak-vychislit-vysotu-kolesa-po-razmeru-shiny.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как вычислить высоту колеса: формула и расчет по размеру шины">
+    <meta property="og:description" content="Узнайте, как рассчитать полный диаметр колеса по маркировке шины. Пошаговая инструкция, таблица соответствия и важные нюансы подбора резины.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-nav-active">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/markirovka-i-razmery/">Маркировка и размеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как вычислить высоту колеса: формула и расчет по размеру шины</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-расчет-геометрии-колеса">Введение в расчет геометрии колеса</a></li><li><a href="#расшифровка-маркировки-и-ключевые-параметры">Расшифровка маркировки и ключевые параметры</a></li><li><a href="#математическая-формула-расчета-полного-диаметра">Математическая формула расчета полного диаметра</a></li><li><a href="#табличные-данные-и-готовые-решения">Табличные данные и готовые решения</a></li><li><a href="#влияние-размера-на-клиренс-и-спидометр">Влияние размера на клиренс и спидометр</a></li><li><a href="#ограничения-подбора-и-технические-нюансы">Ограничения подбора и технические нюансы</a></li><li><a href="#частые-ошибки-при-расчете-и-подборе">Частые ошибки при расчете и подборе</a></li><li><a href="#практические-рекомендации-для-автолюбителей">Практические рекомендации для автолюбителей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/1/18/18-5-dyujmov-v-santimetrakh.html">18,5 дюймов в сантиметрах: точный перевод и размер шин</a></li><li><a href="/articles/c/ch/chto-oznachaet-bukva-t-na-zimnej-rezine.html">Что означает буква Т на зимней резине: расшифровка индекса скорости</a></li><li><a href="/articles/u/us/usilennost-shiny-xl-chto-eto-takoe.html">Усилительная шина XL: что означает маркировка, плюсы и минусы</a></li><li><a href="/articles/k/ka/kakie-kolesa-mozhno-postavit-na-grantu-liftbek.html">Какие диски и шины поставить на Lada Granta Liftback: полный разбор размеров</a></li><li><a href="/articles/v/vy/vysota-reziny-v-chem-izmeryaetsya.html">Высота резины: как измеряется и расшифровывается в маркировке шин</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как вычислить высоту колеса по размеру шины: полный гид</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-расчет-геометрии-колеса">Введение в расчет геометрии колеса</a></li><li><a href="#расшифровка-маркировки-и-ключевые-параметры">Расшифровка маркировки и ключевые параметры</a></li><li><a href="#математическая-формула-расчета-полного-диаметра">Математическая формула расчета полного диаметра</a></li><li><a href="#табличные-данные-и-готовые-решения">Табличные данные и готовые решения</a></li><li><a href="#влияние-размера-на-клиренс-и-спидометр">Влияние размера на клиренс и спидометр</a></li><li><a href="#ограничения-подбора-и-технические-нюансы">Ограничения подбора и технические нюансы</a></li><li><a href="#частые-ошибки-при-расчете-и-подборе">Частые ошибки при расчете и подборе</a></li><li><a href="#практические-рекомендации-для-автолюбителей">Практические рекомендации для автолюбителей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-расчет-геометрии-колеса">Введение в расчет геометрии колеса</h2>
+<p>Многие автовладельцы сталкиваются с необходимостью замены резины, но часто ошибаются в ожиданиях, полагая, что цифра, указанная на боковине, является полным диаметром колеса. На самом деле, <strong>полный диаметр колеса</strong> складывается из нескольких параметров, и игнорирование этого факта может привести к серьезным проблемам с управляемостью и работой электронных систем автомобиля. </p>
+<p>Понимание того, как <strong>вычислить высоту колеса</strong>, необходимо не только для подбора <em>зимней</em> или <em>летней</em> резины, но и для исключения конфликтов с колесными арками при увеличении размера дисков. Ошибка всего в несколько миллиметров способна изменить <strong>клиренс</strong> автомобиля и исказить показания <strong>спидометра</strong>. </p>
+<p>В этой статье мы разберем математический алгоритм перевода маркировки в реальные физические размеры. Вы получите четкие инструменты для проверки совместимости шин с вашими колесными дисками и кузовом вашего <em>автомобиля</em>. </p>
+
+<h2 id="расшифровка-маркировки-и-ключевые-параметры">Расшифровка маркировки и ключевые параметры</h2>
+<p>Любая шина несет в себе зашифрованную информацию о своих геометрических параметрах. Стандартная маркировка выглядит как набор цифр и букв, например, <code>205/55 R16</code>. Чтобы понять, как найти <strong>высоту профиля</strong>, нужно разобрать каждый элемент этой записи. Первая цифра — это ширина профиля резины в миллиметрах. </p>
+<p>Вторая цифра, идущая после косой черты, обозначает <strong>высоту боковины</strong> в процентах от ширины профиля. Это критически важный момент: значение в 55 не означает 55 миллиметров, а указывает на соотношение сторон. Оставшаяся цифра после буквы R — это посадочный диаметр диска в дюймах. </p>
+<p>Часто автовладельцы путают <strong>посадочный диаметр</strong> с общим диаметром колеса. Посадочный размер — это только металлическая часть, на которую надевается резина. Без учета высоты боковины вы получите лишь половину от реальной геометрии колеса, что приведет к фатальной ошибке в расчетах. </p>
+<p>Буква <em>R</em> в маркировке указывает на конструкцию каркаса шины — радиальную. В редких случаях можно встретить <em>B</em> (диагонально-опоясанные) или <em>D</em> (диагональные), но в современном легковом транспорте стандартом является именно радиальная конструкция. </p>
+
+<h2 id="математическая-формула-расчета-полного-диаметра">Математическая формула расчета полного диаметра</h2>
+<p>Для того чтобы <strong>вычислить высоту колеса</strong>, необходимо произвести последовательные математические действия, объединяющие параметры резины и диска. Формула базируется на простой логике: к диаметру диска нужно добавить две высоты боковины (так как резина есть и сверху, и снизу). </p>
+<p>Шаг первый: переведите ширину профиля в абсолютную высоту в миллиметрах. Для этого умножьте ширину на процент высоты профиля и разделите на 100. Например, для ширины 205 мм и высоты 55% расчет будет выглядеть так: <code>205 * 0.55 = 112.75 мм</code>. Это <strong>высота профиля шины</strong> в миллиметрах. </p>
+<p>Шаг второй: переведите посадочный диаметр из дюймов в миллиметры, так как остальные параметры уже в метрической системе. Один дюйм равен ровно <code>25.4 мм</code>. Умножьте значение диаметра диска (например, 16) на <code>25.4</code>. В нашем примере получаем <code>406.4 мм</code>. </p>
+<p>Шаг третий: сложите все составляющие. Формула полного диаметра: <code>Диаметр диска + (2 <em> Высота профиля)</code>. Итоговый расчет: <code>406.4 + (2 </em> 112.75) = 631.9 мм</code>. Именно этот размер определяет, как колесо будет вести себя в арке и на дороге. </p>
+
+<p><div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм проверки</h4><label class="check-item"><input type="checkbox"><span>Определить ширину профиля</span></label><label class="check-item"><input type="checkbox"><span>Вычислить высоту боковины</span></label><label class="check-item"><input type="checkbox"><span>Перевести дюймы в мм</span></label><label class="check-item"><input type="checkbox"><span>Сложить параметры</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div></p>
+
+<p> В реальности <strong>высота колеса</strong> может незначительно отличаться из-за давления в шинах, износа протектора и допусков производителя. Однако для подбора шин этой точности более чем достаточно. </p>
+
+<div class="pb-poll" id="poll-3a88ef00"><div class="pb-poll-question">📊 Какая формула расчета вам известна?</div><div class="pb-poll-option" data-poll="3a88ef00" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">В уме без расчета</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3a88ef00" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Использую калькулятор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3a88ef00" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только по таблице</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3a88ef00" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю формулы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="табличные-данные-и-готовые-решения">Табличные данные и готовые решения</h2>
+<p>Если вы не любите производить расчеты вручную, всегда можно воспользоваться готовыми таблицами соответствия. Такие данные публикуются ведущими производителями шин и специализированными сайтами по подбору резины. Они позволяют мгновенно узнать <strong>полный диаметр</strong> для популярных размеров. </p>
+<p>Ниже приведена таблица с примерами расчетов для стандартных размеров, часто встречающихся на легковых автомобилях. Обратите внимание, как меняется диаметр при увеличении ширины или профиля. </p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Размер шины</th>
+<th>Ширина (мм)</th>
+<th>Высота профиля (%)</th>
+<th>Диск (дюймы)</th>
+<th>Итоговый диаметр (мм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>195/65 R15</td>
+<td>195</td>
+<td>65</td>
+<td>15</td>
+<td>602.4</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>205</td>
+<td>55</td>
+<td>16</td>
+<td>631.9</td>
+</tr>
+<tr>
+<td>225/45 R17</td>
+<td>225</td>
+<td>45</td>
+<td>17</td>
+<td>634.6</td>
+</tr>
+<tr>
+<td>245/40 R18</td>
+<td>245</td>
+<td>40</td>
+<td>18</td>
+<td>655.2</td>
+</tr>
+<tr>
+<td>185/60 R14</td>
+<td>185</td>
+<td>60</td>
+<td>14</td>
+<td>569.4</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Анализ таблицы показывает, что разные комбинации ширины и профиля могут давать практически одинаковый итоговый диаметр. Это явление используется при подборе <em>зимних комплектов</em> с меньшим диаметром диска, но более высоким профилем резины. </p>
+
+<blockquote>⚠️ Внимание: Табличные данные являются справочными. Реальный диаметр новой шины может отличаться от расчетного на 5-10 мм из-за технологических допусков и толщины резиновой смеси, используемой конкретным брендом.</blockquote>
+
+<p>Иногда производители указывают на упаковке не только метрические значения, но и дюймовые обозначения полного диаметра, например, формат <code>215/65R16C</code> или <code>LT235/75R15</code>. В таких случаях лучше ориентироваться на метрическую формулу, так как она универсальна. </p>
+
+<p><aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Сохраняйте таблицу расчетных размеров в телефоне — это сэкономит время при выборе шин в магазине, особенно если консультант не может ответить на ваш вопрос.</p></aside></p>
+
+<h2 id="влияние-размера-на-клиренс-и-спидометр">Влияние размера на клиренс и спидометр</h2>
+<p>Зная точную <strong>высоту колеса</strong>, вы можете предсказать, как изменится поведение автомобиля на дороге. Увеличение диаметра колеса напрямую влияет на дорожный просвет, или <strong>клиренс</strong>. Если вы ставите колеса большего размера, автомобиль поднимается выше над дорогой. </p>
+<p>Вместе с изменением диаметра меняется и передаточное число в трансмиссии. Спидометр, который калибруется под конкретный размер колеса, начнет показывать неверные данные. При увеличении диаметра колеса спидометр будет показывать скорость ниже реальной. </p>
+<p>Например, если вы установили колеса диаметром больше заводских на 3%, то при реальной скорости <code>100 км/ч</code> спидометр покажет около <code>97 км/ч</code>. Это может привести к штрафам за превышение скорости, если вы будете ориентироваться только на приборную панель. </p>
+
+<p><aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Изменение диаметра колеса более чем на 3% от заводского значения может привести к некорректной работе электронных систем стабилизации и ABS.</p></aside></p>
+
+<p>Снижение диаметра, наоборот, уменьшает клиренс и заставляет спидометр завышать реальные показатели. Это часто делают владельцы <em>спортивных версий</em> автомобилей для улучшения динамики разгона, но цена такой модификации — потеря комфорта и просвет. </p>
+
+<h2 id="ограничения-подбора-и-технические-нюансы">Ограничения подбора и технические нюансы</h2>
+<p>Не всегда расчетная высота колеса совпадает с техническими возможностями автомобиля. Даже если математически <strong>полный диаметр</strong> подходит, шина может задевать элементы подвески или кузовные детали при повороте руля или сжатии амортизаторов. </p>
+<p>Ключевым фактором является ширина дисков. Для каждой ширины шины существует рекомендуемый диапазон ширины диска. Установка слишком узкого или широкого диска на шину может привести к деформации профиля и нестабильному поведению на дороге. </p>
+
+<blockquote>⚠️ Внимание: При покупке шин с нестандартным размером обязательно проверьте, не задевают ли они арки или элементы подвески при максимальном вывороте руля и полной загрузке автомобиля.</blockquote>
+
+<p>Важно учитывать и <strong>вылет диска</strong> (ET параметр). Изменение вылета может сместить колесо относительно арки, даже если диаметр остается прежним. Это критично для автомобилей с жесткими подвесками или спортивным характером. </p>
+
+<blockquote>⚠️ Внимание: Производительность шин и их ресурс могут снизиться, если вы используете параметры, сильно отклоняющиеся от рекомендаций автопроизводителя, даже если они физически влезают в арку.</blockquote>
+
+<p><details class="pb-accordion"><summary>Что такое допустимая погрешность?</summary><div class="pb-accordion-body"><p>Обычно допустимое отклонение внешнего диаметра колеса составляет от -2% до +1.5% от заводского значения. Превышение этих норм может быть расценено как внесение изменений в конструкцию ТС.</p></div></details></p>
+
+<h2 id="частые-ошибки-при-расчете-и-подборе">Частые ошибки при расчете и подборе</h2>
+<p>Самая распространенная ошибка — игнорирование <strong>посадочного диаметра</strong> в пользу только ширины. Многие водители думают, что если ширина 205 мм, то и высота будет такой же, или просто берут ближайший по ширине размер, не считая профиль. </p>
+<p>Другая ошибка — смешивание единиц измерения. Смешивание дюймов и миллиметров в расчетах без правильного коэффициента перевода <code>25.4</code> приводит к грубым ошибкам. Результат может отличаться на десятки миллиметров, что сделает колесо непригодным для установки. </p>
+<p>Также часто забывают про сезонность. Зимние шины часто имеют больший профиль для лучшей амортизации на неровностях, что может изменить итоговый диаметр по сравнению с летними моделями того же бренда. </p>
+
+<p>Перед покупкой всегда сверяйте маркировку с данными в <em>технической документации</em> вашего автомобиля. В руководстве по эксплуатации часто указаны допустимые размеры шин, включая их предельные отклонения. </p>
+
+<h2 id="практические-рекомендации-для-автолюбителей">Практические рекомендации для автолюбителей</h2>
+<p>Для безошибочного подбора используйте специальные онлайн-калькуляторы, которые уже имеют встроенные формулы расчета. Введите свои данные, и система покажет не только <strong>высоту колеса</strong>, но и отклонение спидометра. </p>
+<p>Если вы планируете установку <em>дисков с литым центром</em> или кованых дисков, учтите их вес. Более тяжелые диски могут влиять на ходовые качества, даже если геометрические параметры идеальны. </p>
+<p>При покупке б/у шин обязательно замеряйте их штангенциркулем, так как протектор мог износиться, изменив фактический диаметр. Старая шина может стать меньше на 10-15 мм в диаметре по сравнению с новой. </p>
+
+<p><aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный расчет высоты колеса — это залог безопасности, точности измерений приборной панели и долговечности подвески вашего автомобиля.</p></aside></p>
+
+<p>Помните, что идеальная геометрия — это не просто цифры, а баланс между комфортом, управляемостью и безопасностью. Не экономьте время на расчете, так как это напрямую влияет на ваш бюджет и жизнь на дороге. </p>
+
+<details>
+<summary>Как рассчитать высоту профиля в миллиметрах?</summary>
+<p>Для расчета высоты профиля в миллиметрах умножьте ширину шины (первая цифра) на процент высоты профиля (вторая цифра) и разделите на 100. Например, для размера 205/55 R16: <code>205 * 0.55 = 112.75 мм</code>.</p>
+</details>
+
+<details>
+<summary>Что будет, если поставить колеса большего диаметра?</summary>
+<p>Увеличение диаметра колеса повысит клиренс, но снизит точность спидометра (он будет занижать скорость) и может ухудшить динамику разгона. Также возможно задевание колесных арок при сжатии подвески.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать калькуляторы шин для расчета?</summary>
+<p>Да, онлайн-калькуляторы шин являются самым удобным и точным инструментом. Они учитывают все параметры, включая возможные отклонения, и показывают разницу в диаметре в миллиметрах и процентах.</p>
+</details>
+
+<details>
+<summary>Какую погрешность в диаметре можно считать допустимой?</summary>
+<p>Большинство автопроизводителей допускают отклонение внешнего диаметра колеса в пределах -2% до +1.5% от заводского значения. Превышение этого диапазона может привести к проблемам с электроникой и юридическими вопросами.</p>
+</details>
+
+<details>
+<summary>Почему важно учитывать ширину диска при расчете?</summary>
+<p>Ширина диска влияет на то, как шина "сидит" на нем. Слишком узкий или широкий диск может деформировать профиль шины, что изменит ее фактическую высоту и ширину, а также ухудшит сцепление с дорогой.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/1/18/18-5-dyujmov-v-santimetrakh.html" class="pb-related-card">
+                <span class="pb-related-title">18,5 дюймов в сантиметрах: точный перевод и размер шин</span>
+                <span class="pb-related-desc">Узнайте, сколько сантиметров в 18,5 дюйма при переводе диаметра диска или покрышки. Таблица соответс</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-bukva-t-na-zimnej-rezine.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает буква Т на зимней резине: расшифровка индекса скорости</span>
+                <span class="pb-related-desc">Разбираем индекс скорости Т на зимних шинах. Чем ограничивает буква Т, подходит ли она для скоростно</span>
+            </a><a href="/articles/u/us/usilennost-shiny-xl-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Усилительная шина XL: что означает маркировка, плюсы и минусы</span>
+                <span class="pb-related-desc">Разбираем, что такое усиленная шина XL и Reinforced. Узнайте.load-индекс, отличия от стандартных пок</span>
+            </a><a href="/articles/k/ka/kakie-kolesa-mozhno-postavit-na-grantu-liftbek.html" class="pb-related-card">
+                <span class="pb-related-title">Какие диски и шины поставить на Lada Granta Liftback: полный разбор размеров</span>
+                <span class="pb-related-desc">Узнайте, какие размеры дисков и шин подходят на Гранту Лифтбек. Перечень штатных параметров, допусти</span>
+            </a><a href="/articles/v/vy/vysota-reziny-v-chem-izmeryaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Высота резины: как измеряется и расшифровывается в маркировке шин</span>
+                <span class="pb-related-desc">Узнайте, в чем измеряется высота профиля шины, как правильно читать маркировку и почему этот парамет</span>
+            </a><a href="/articles/k/ka/kak-opredelit-vsesezonnuyu-rezinu-po-markirovke.html" class="pb-related-card">
+                <span class="pb-related-title">Как определить всесезонную резину по маркировке: полный гайд</span>
+                <span class="pb-related-desc">Узнайте, как отличить всесезонные шины по символам All Season, M+S и значку горы с солнцем. Расшифро</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Визуальный калькулятор вылета дисков: расчет ET и пилотирования онлайн — Мастер Шин</title>
+    <meta name="description" content="Узнайте, как использовать визуальный калькулятор вылета дисков. Подробный разбор формул ET, влияние на подвеску и подбор колес для идеальной геометрии авто.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/v/vy/vylet-diskov-kalkulyator-vizualnyj-onlajn.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Визуальный калькулятор вылета дисков: расчет ET и пилотирования онлайн">
+    <meta property="og:description" content="Узнайте, как использовать визуальный калькулятор вылета дисков. Подробный разбор формул ET, влияние на подвеску и подбор колес для идеальной геометрии авто.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diski-i-kolpaki/">Диски и колпаки</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Визуальный калькулятор вылета дисков: расчет ET и пилотирования онлайн</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-геометрию-колесного-диска">Введение в геометрию колесного диска</a></li><li><a href="#физика-вылета-и-его-обозначение-et">Физика вылета и его обозначение ET</a></li><li><a href="#как-работает-визуальный-симулятор-установки">Как работает визуальный симулятор установки</a></li><li><a href="#таблица-влияния-параметров-на-управляемость">Таблица влияния параметров на управляемость</a></li><li><a href="#критические-ошибки-при-самостоятельном-расчете">Критические ошибки при самостоятельном расчете</a></li><li><a href="#практическое-руководство-по-использованию-калькулятора">Практическое руководство по использованию калькулятора</a></li><li><a href="#специфика-тюнинга-и-законодательные-ограничения">Специфика тюнинга и законодательные ограничения</a></li><li><a href="#faq-частые-вопросы-о-вылете-дисков">FAQ: Частые вопросы о вылете дисков</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/d/di/diski-vsmpo-r14-4x98.html">Диски ВСПМО R14 4x98: Полный обзор, выбор и установка</a></li><li><a href="/articles/p/po/podbor-diskov-po-vyletu-kalkulyator.html">Калькулятор вылета дисков: точный подбор и формулы расчета</a></li><li><a href="/articles/c/ch/chto-daet-zanizhenie-mashiny.html">Что дает занижение автомобиля: плюсы, минусы и последствия</a></li><li><a href="/articles/r/ra/razboltovka-koles-golf-6.html">Разболтовка колес Гольф 6: PCD, центр, болты и совместимость дисков</a></li><li><a href="/articles/k/ka/kak-ustanovit-vajtvolly-na-kolesa.html">Как установить вайтволлы на колеса: пошаговая инструкция по монтажу</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Визуальный калькулятор вылета дисков: точный расчет и онлайн-подбор</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-геометрию-колесного-диска">Введение в геометрию колесного диска</a></li><li><a href="#физика-вылета-и-его-обозначение-et">Физика вылета и его обозначение ET</a></li><li><a href="#как-работает-визуальный-симулятор-установки">Как работает визуальный симулятор установки</a></li><li><a href="#таблица-влияния-параметров-на-управляемость">Таблица влияния параметров на управляемость</a></li><li><a href="#критические-ошибки-при-самостоятельном-расчете">Критические ошибки при самостоятельном расчете</a></li><li><a href="#практическое-руководство-по-использованию-калькулятора">Практическое руководство по использованию калькулятора</a></li><li><a href="#специфика-тюнинга-и-законодательные-ограничения">Специфика тюнинга и законодательные ограничения</a></li><li><a href="#faq-частые-вопросы-о-вылете-дисков">FAQ: Частые вопросы о вылете дисков</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-геометрию-колесного-диска">Введение в геометрию колесного диска</h2>
+<p>Подбор колесных дисков — это не просто вопрос эстетики или соответствия диаметра, это сложная инженерная задача, где каждый миллиметр влияет на безопасность. Многие автовладельцы сталкиваются с необходимостью замены штатных дисков на более широкие или с измененным дизайном, но пренебрегают параметром <strong>вылета</strong>. Ошибки в этом значении могут привести к быстрому износу подшипников, нарушению углов установки колес и даже разрушению элементов подвески при экстренном торможении.</p>
+<p>Современные технологии позволяют избежать "метода тыка" благодаря специализированным инструментам. <strong>Визуальный калькулятор вылета</strong> становится незаменимым помощником, создавая точную цифровую модель взаимодействия диска и арки вашего автомобиля. Такие сервисы учитывают не только базовые параметры, но и визуализируют, как именно изменится положение колеса относительно кузова после установки.</p>
+<p>Использование онлайн-инструментов позволяет симулировать установку дисков с нестандартными характеристиками без риска повредить автомобиль. Вы можете проверить совместимость <em>ET (Offset)</em>, ширины обода и диаметра центрального отверстия перед тем, как совершить покупку. Это особенно актуально при тюнинге, когда хочется выйти за пределы заводских допусков, но сохранить техническую исправность машины.</p>
+
+<h2 id="физика-вылета-и-его-обозначение-et">Физика вылета и его обозначение ET</h2>
+<p>Чтобы грамотно использовать любой калькулятор, необходимо понимать суть параметра, который он рассчитывает. Вылет диска, обозначаемый как <strong>ET</strong> (от нем. Einpresstiefe), — это расстояние в миллиметрах от привалочной плоскости диска до его центральной оси симметрии. Это критическая величина, определяющая, насколько глубоко или далеко от кузова будет стоять колесо.</p>
+<p>Если вылет слишком большой (число ET высокое), диск уходит глубоко в арку. Это может привести к задеванию суппортов или элементов рычагов подвески при повороте руля. Напротив, малый вылет (низкое число ET) выдвигает колесо наружу, увеличивая <strong>плечо обката</strong>. Это создает повышенную нагрузку на ступичные подшипники и рулевые наконечники, делая управление более тяжелым и нестабильным.</p>
+<p>Заводские параметры вылета всегда рассчитываются инженерами с запасом прочности для всех режимов эксплуатации. Любое отклонение от них меняет плечо обката, что напрямую влияет на управляемость. Например, спортивный стиль езды часто требует уменьшения вылета для расширения колеи, но это должно делаться с обязательным использованием проставок или специализированных дисков.</p>
+<blockquote>⚠️ Внимание: Неправильно подобранное плечо обката может сделать автомобиль неуправляемым на неровностях или при резком торможении. Не игнорируйте рекомендации производителя, указанные в руководстве по эксплуатации.</blockquote>
+
+<h2 id="как-работает-визуальный-симулятор-установки">Как работает визуальный симулятор установки</h2>
+<p>Визуальный калькулятор работает на основе баз данных геометрии конкретных моделей автомобилей. Пользователю достаточно ввести марку, модель и год выпуска, чтобы система загрузила 3D-модель подвески и колесной арки. Далее вводятся параметры диска: ширина (J), вылет (ET) и диаметр. Алгоритм накладывает виртуальный диск на модель вала и показывает возможные конфликты.</p>
+<p>Главное преимущество таких сервисов — возможность увидеть "мертвые зоны". Симулятор покажет, будет ли диск тереться о <strong>суппорт</strong> при полной поворотной амплитуде или о внутренний борт арки при сжатии подвески (ход отбоя). Это позволяет избежать дорогостоящих переделок кузова или покупки несовместимых дисков.</p>
+<p>Некоторые продвинутые калькуляторы также позволяют вводить параметры шины. Это дает полную картину того, как сядет покрышка на диск и не будет ли она выступать за пределы крыла. <strong>Визуализация</strong> помогает понять, нужно ли устанавливать расширители арок или делать отбортовку (rolling fenders) для корректной установки широких дисков.</p>
+<details class="pb-accordion"><summary>Что именно визуализирует калькулятор?</summary><div class="pb-accordion-body"><p>Калькулятор показывает положение привалочной плоскости диска относительно центральной оси, расположение тормозного суппорта, высоту рычагов подвески и границы колесной арки, позволяя увидеть зазоры до 1 мм.</p></div></details>
+
+<h2 id="таблица-влияния-параметров-на-управляемость">Таблица влияния параметров на управляемость</h2>
+<p>Чтобы наглядно продемонстрировать последствия изменения вылета, рассмотрим таблицу, где сравниваются штатные и измененные параметры. Понимание этих зависимостей поможет вам скорректировать выбор дисков под ваши задачи, будь то комфортная езда или трековые заезды.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Штатное значение</th>
+<th>Изменение</th>
+<th>Последствия для автомобиля</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вылет (ET)</td>
+<td>45 мм</td>
+<td>Увеличено до 55 мм</td>
+<td>Диск уходит внутрь, риск задевания амортизатора, уменьшение колеи.</td>
+</tr>
+<tr>
+<td>Вылет (ET)</td>
+<td>45 мм</td>
+<td>Уменьшено до 30 мм</td>
+<td>Диск выступает наружу, рост нагрузки на подшипники, увеличение колеи.</td>
+</tr>
+<tr>
+<td>Ширина обода</td>
+<td>7.5J</td>
+<td>Увеличена до 9.0J</td>
+<td>Требует уменьшения ET для сохранения колеи, риск трения о крыло.</td>
+</tr>
+<tr>
+<td>Диаметр центр. отверстия</td>
+<td>64.1 мм</td>
+<td>Меньше штатного (65.1 мм)</td>
+<td><strong>Невозможна установка</strong> (диск не налезет на ступицу).</td>
+</tr>
+</tbody>
+</table></div>
+<p>Обратите внимание, что изменение ширины диска почти всегда требует пересчета вылета. Если вы ставите более широкий диск, но оставляете старый вылет, колесо неизбежно будет выступать за пределы кузова. Чтобы сохранить заводскую ширину колеи, при увеличении ширины обода на 1 дюйм (примерно 25 мм), вылет нужно уменьшить примерно на 12-13 мм.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Изменение ширины диска без корректировки вылета приводит к нарушению геометрии подвески и проблемам с арками. Всегда рассчитывайте новый ET при смене ширины обода.</p></aside>
+
+<h2 id="критические-ошибки-при-самостоятельном-расчете">Критические ошибки при самостоятельном расчете</h2>
+<p>Многие автовладельцы пытаются рассчитать вылет вручную, используя простые формулы, и получают неточные результаты. Самая распространенная ошибка — игнорирование формы тормозного суппорта. На современных автомобилях используются мощные суппорты, которые имеют сложную геометрию. Калькулятор, не учитывающий модель <strong>тормозной системы</strong>, может показать свободный прокрут, хотя в реальности диск будет упираться в поршень суппорта.</p>
+<p>Еще одна частая проблема — неправильный учет размера резины. Даже если диск подходит идеально, широкая низкопрофильная шина может задевать за подкрылок или штатный брызговик при проезде неровностей. Визуальный инструмент должен учитывать профиль шины, а не только размеры обода. Учтите, что резина при езде "расплющивается" и расширяется, создавая динамические зазоры.</p>
+<p>Также важно помнить о центральном отверстии (DIA). Если диаметр ступичного отверстия диска меньше, чем на ступице авто, <strong>установить колесо</strong> физически не получится без расточки, что недопустимо для литых дисков. Если же оно больше, то диск центрируется только болтами, что недопустимо на высоких скоростях из-за биения колеса.</p>
+<blockquote>⚠️ Внимание: Использование проставок между диском и ступицей без изменения вылета диска — это способ скрыть проблему, но он значительно увеличивает нагрузку на ступичный подшипник и может привести к его разрушению.</blockquote>
+<div class="pb-poll" id="poll-66e6e280"><div class="pb-poll-question">📊 Часто ли вы меняете параметры вылета дисков?</div><div class="pb-poll-option" data-poll="66e6e280" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда, только штатные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="66e6e280" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Редко, ±5 мм</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="66e6e280" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Часто, для стиля</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="66e6e280" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянно, для трека</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="практическое-руководство-по-использованию-калькулятора">Практическое руководство по использованию калькулятора</h2>
+<p>Процесс подбора дисков через онлайн-инструменты состоит из нескольких четких шагов. Сначала найдите актуальную базу данных, специализирующуюся на вашем регионе или марке автомобиля. Введите данные вашего авто: <code>Марка → Модель → Год выпуска</code>. Система автоматически предложит список рекомендуемых параметров, но вы можете ввести свои собственные значения для проверки.</p>
+<p>Введите параметры диска: вылет (ET), ширину (J) и диаметр (R). Если вы планируете использовать проставки, большинство калькуляторов имеют поле для ввода их толщины. Введите значение толщины проставки (например, 10 мм), и система автоматически пересчитает эффективный вылет диска. Это позволит увидеть, как изменится положение колеса без покупки новых дисков.</p>
+<p>Проанализируйте результаты симуляции. Обратите внимание на цветовую индикацию: обычно зеленый цвет означает безопасные зазоры, желтый — пограничные значения, а красный — гарантированное трение. Если вы видите красный цвет, попробуйте изменить параметры диска или рассмотреть возможность установки проставок, чтобы выдвинуть диск наружу и освободить место для суппорта.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка совместимости диска</h4><label class="check-item"><input type="checkbox"><span>Проверить вылет ET на калькуляторе</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в диаметре ступицы (DIA)</span></label><label class="check-item"><input type="checkbox"><span>Проверить совместимость с суппортами</span></label><label class="check-item"><input type="checkbox"><span>Оценить зазоры в арке при сжатии</span></label><label class="check-item"><input type="checkbox"><span>Сверить параметры болтов (PCD)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="специфика-тюнинга-и-законодательные-ограничения">Специфика тюнинга и законодательные ограничения</h2>
+<p>Важно понимать, что визуальный успех установки не всегда гарантирует ее законность. В большинстве стран, включая РФ, существуют строгие регламенты по изменению конструкции транспортного средства. Установка дисков с вылетом, отличным от допустимого диапазона производителя, может быть расценена как внесение изменений в конструкцию, требующее <strong>специальной регистрации</strong>.</p>
+<p>ДПС и техосмотр могут отказать в прохождении проверки, если визуально или технически подтверждено, что параметры колес нарушают эксплуатационные требования. Это касается не только ширины, но и вылета. Даже если вы не видите трения в статике, при динамической нагрузке колесо может выходить за габариты кузова, что запрещено ПДД.</p>
+<p>Тем не менее, существуют легальные способы визуально расширить колею или установить более широкие диски. Использование сертифицированных проставок, которые жестко фиксируются и имеют соответствующие сертификаты, часто является более безопасным и законным вариантом. Но помните, что проставки увеличивают нагрузку на подвеску, поэтому необходимо убедиться, что ваши рычаги и амортизаторы выдержат этот дополнительный вес.</p>
+<blockquote>⚠️ Внимание: Законодательство может меняться, и требования к регистрации изменений конструкции автомобиля часто ужесточаются. Сверяйте свои действия с актуальными нормами ПДД и правилами регистрации ТС в ГИБДД перед установкой нестандартных дисков.</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При выборе проставок всегда выбирайте изделия с маркировкой и паспортом качества. Избегайте дешевых проставок без сертификатов, так как они могут расколоться при нагрузке.</p></aside>
+
+<h2 id="faq-частые-вопросы-о-вылете-дисков">FAQ: Частые вопросы о вылете дисков</h2>
+<details>
+<summary>Что будет, если поставить диск с вылетом меньше штатного?</summary>
+<p>Если вылет (ET) будет меньше штатного, диск сместится наружу. Это увеличит плечо обката, что приведет к утяжелению рулевого управления и повышению нагрузки на ступичные подшипники. Также возрастает риск задевания крыла или подкрылка при сжатии подвески.</p>
+</details>
+<details>
+<summary>Можно ли использовать проставки для исправления вылета?</summary>
+<p>Да, проставки позволяют изменить эффективный вылет диска, выдвинув его наружу. Это часто делают, чтобы освободить место для большого тормозного суппорта или более широкой резины. Однако проставки должны быть качественными, с центрирующими выступами и правильным расположением болтов.</p>
+</details>
+<details>
+<summary>Как вылет влияет на износ шин?</summary>
+<p>Неправильный вылет меняет угол кастера и развал-схождение, особенно если эти параметры уже на пределе регулировки. Это может привести к неравномерному износу протектора (например, "пилообразный" износ) и сокращению ресурса шин.</p>
+</details>
+<details>
+<summary>Какой вылет считается оптимальным для широкой резины?</summary>
+<p>Для широкой резины обычно требуется уменьшить вылет (сделать число ET меньше), чтобы колесо не уходило слишком глубоко в арку. Однако точное значение зависит от ширины крыла и геометрии подвески конкретного автомобиля. Используйте визуальный калькулятор для подбора идеального баланса.</p>
+</details>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Безопасность превыше эстетики. Даже самый красивый диск с неправильным вылетом может стать причиной аварии или поломки подвески. Всегда проверяйте совместимость перед покупкой.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/d/di/diski-vsmpo-r14-4x98.html" class="pb-related-card">
+                <span class="pb-related-title">Диски ВСПМО R14 4x98: Полный обзор, выбор и установка</span>
+                <span class="pb-related-desc">Подробный разбор дисков ВСПМО размера R14 с разболтовкой 4x98. Технические характеристики, плюсы и м</span>
+            </a><a href="/articles/p/po/podbor-diskov-po-vyletu-kalkulyator.html" class="pb-related-card">
+                <span class="pb-related-title">Калькулятор вылета дисков: точный подбор и формулы расчета</span>
+                <span class="pb-related-desc">Узнайте, как правильно подобрать диски по вылету. Интерактивный калькулятор, влияние на подвеску и с</span>
+            </a><a href="/articles/c/ch/chto-daet-zanizhenie-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Что дает занижение автомобиля: плюсы, минусы и последствия</span>
+                <span class="pb-related-desc">Разбираем, что дает занижение машины: улучшение аэродинамики, внешний вид и управляемость против рис</span>
+            </a><a href="/articles/r/ra/razboltovka-koles-golf-6.html" class="pb-related-card">
+                <span class="pb-related-title">Разболтовка колес Гольф 6: PCD, центр, болты и совместимость дисков</span>
+                <span class="pb-related-desc">Полный гид по разболтовке VW Golf 6: PCD 5x112, размер центрального отверстия, выбор резьбы болтов и</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-vajtvolly-na-kolesa.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить вайтволлы на колеса: пошаговая инструкция по монтажу</span>
+                <span class="pb-related-desc">Узнайте, как правильно установить вайтволлы (широкие белые полосы) на автомобильные шины. Методы нан</span>
+            </a><a href="/articles/s/sh/shiny-s-zashchitoj-diska.html" class="pb-related-card">
+                <span class="pb-related-title">Шины с защитой диска: как работают, типы и выбор для авто</span>
+                <span class="pb-related-desc">Подробный разбор шин с защитой обода. Узнайте, что такое RunFlat и Rim Protector, как они спасают ди</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

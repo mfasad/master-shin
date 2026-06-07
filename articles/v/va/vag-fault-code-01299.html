@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Ошибка VAG 01299: Диагностика и ремонт TCM трансмиссии — Мастер Шин</title>
+    <meta name="description" content="Разбор кода ошибки 01299 в автомобилях VAG. Причины, симптомы, методы диагностики и ремонта контроллера АКПП. Полное руководство для автовладельцев.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/v/va/vag-fault-code-01299.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ошибка VAG 01299: Диагностика и ремонт TCM трансмиссии">
+    <meta property="og:description" content="Разбор кода ошибки 01299 в автомобилях VAG. Причины, симптомы, методы диагностики и ремонта контроллера АКПП. Полное руководство для автовладельцев.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-i-vulkanizatsiya/">Ремонт и вулканизация</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ошибка VAG 01299: Диагностика и ремонт TCM трансмиссии</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проблему-коммуникации-с-блоком-управления">Введение в проблему коммуникации с блоком управления</a></li><li><a href="#основные-причины-возникновения-сбоя-связи">Основные причины возникновения сбоя связи</a></li><li><a href="#симптомы-и-поведение-автомобиля-при-ошибке">Симптомы и поведение автомобиля при ошибке</a></li><li><a href="#пошаговая-инструкция-по-диагностике-и-ремонту">Пошаговая инструкция по диагностике и ремонту</a></li><li><a href="#сравнение-проблем-с-различными-типами-трансмиссий-vag">Сравнение проблем с различными типами трансмиссий VAG</a></li><li><a href="#программные-решения-и-адаптация">Программные решения и адаптация</a></li><li><a href="#профилактика-и-обслуживание">Профилактика и обслуживание</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/na/narezka-protektora-legkovykh-shin.html">Нарезка протектора легковых шин: мифы, риски и реальные выгоды</a></li><li><a href="/articles/m/mo/mozhno-li-ekhat-so-spushchennym-kolesom-na-mashine.html">Можно ли ехать на спущенном колесе: риски, последствия и советы</a></li><li><a href="/articles/k/ka/kak-zamenit-uplotnitelnuyu-rezinku-na-kholodilnike-indezit.html">Замена уплотнителя двери холодильника Indesit: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-ispolzovat-syruyu-rezinu.html">Как использовать сырую резину: ремонт шин и вулканизация в домашних условиях</a></li><li><a href="/articles/k/ka/kak-razobrat-aegis-2.html">Как разобрать Aegis 2: Пошаговая инструкция по разборке пистолета</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Код ошибки VAG 01299: Полная диагностика и ремонт контроллера АКПП</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проблему-коммуникации-с-блоком-управления">Введение в проблему коммуникации с блоком управления</a></li><li><a href="#основные-причины-возникновения-сбоя-связи">Основные причины возникновения сбоя связи</a></li><li><a href="#симптомы-и-поведение-автомобиля-при-ошибке">Симптомы и поведение автомобиля при ошибке</a></li><li><a href="#пошаговая-инструкция-по-диагностике-и-ремонту">Пошаговая инструкция по диагностике и ремонту</a></li><li><a href="#сравнение-проблем-с-различными-типами-трансмиссий-vag">Сравнение проблем с различными типами трансмиссий VAG</a></li><li><a href="#программные-решения-и-адаптация">Программные решения и адаптация</a></li><li><a href="#профилактика-и-обслуживание">Профилактика и обслуживание</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проблему-коммуникации-с-блоком-управления">Введение в проблему коммуникации с блоком управления</h2>
+
+<p>Ошибка <strong>01299</strong> в автомобилях концерна <em>Volkswagen Audi Group</em> является одной из самых распространенных и пугающих проблем, с которой сталкиваются владельцы машин на автоматических коробках передач. Диагностический сканер выдает сообщение <code>01299 - Transmission Control Module (TCM): No Communication</code>, что переводится как отсутствие связи с блоком управления трансмиссией. Этот сбой не просто добавляет ошибку в память, он фактически парализует работу автоматической коробки, переводя её в аварийный режим.</p>
+
+<p>Когда блок <em>TCM</em> (Transmission Control Module) перестает отвечать на запросы двигателя или ABS, автомобиль теряет возможность переключать передачи. Двигатель продолжает работать, но коробка блокируется на одной передаче, обычно на второй или третьей, независимо от того, насколько сильно вы нажимаете педаль газа. Это состояние называют <strong>Limp Mode</strong>, и оно требует немедленного внимания специалиста для предотвращения полного выхода из строя гидроблока или соленоидов.</p>
+
+<h2 id="основные-причины-возникновения-сбоя-связи">Основные причины возникновения сбоя связи</h2>
+
+<p>Причин появления кода <strong>01299</strong> может быть несколько, и они варьируются от банальных проблем с проводкой до серьезного выхода из строя электроники. Чаще всего проблема кроется в физическом обрыве или коротком замыкании в жгутах проводов, соединяющих ЭБУ двигателя и блок коробки передач. Контакты могут окислиться из-за попадания влаги или перегореть из-за вибрации и перегрева под капотом.</p>
+
+<p>Не менее частой причиной является неисправность самого контроллера <em>TCM</em>. Внутри модуля могут перегореть цепи питания, выйти из строя процессор или микросхемы памяти. В автомобилях с коробкой <em>DQ200</em> (DSG) также встречается проблема с износом щеток в контактной группе мехатроника, что приводит к прерыванию связи. Важно проверить и надежность заземления, так как плохой контакт "массы" может имитировать потерю связи с блоком управления.</p>
+
+<blockquote>⚠️ Внимание: Если вы обнаружите, что ошибка пропадает при прогреве двигателя, это верный признак того, что проблема кроется в микротрещинах печатной платы контроллера, которые расширяются от теплового расширения.</blockquote>
+
+<p>Иногда причина оказывается банальной: перегорание предохранителя, отвечающего за питание трансмиссии. В некоторых моделях <em>Skoda</em> или <em>Seat</em> это предохранитель в монтажном блоке салона, в старых <em>Passat B5</em> — под капотом. Проверка плавких вставок должна быть первым шагом любой диагностики.</p>
+
+<div class="pb-poll" id="poll-1ac408e5"><div class="pb-poll-question">📊 Какая коробка передач установлена на вашем автомобиле?</div><div class="pb-poll-option" data-poll="1ac408e5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">DSG (AMT)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1ac408e5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Автомат (Tiptronic)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1ac408e5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой тип</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1ac408e5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="симптомы-и-поведение-автомобиля-при-ошибке">Симптомы и поведение автомобиля при ошибке</h2>
+
+<p>Проявление ошибки <strong>01299</strong> практически всегда одинаково и не оставляет сомнений в наличии технической неисправности. На приборной панели загорается значок <em>ESP</em> или <strong>Engine Check</strong>, а в некоторых случаях загорается индикатор <strong>Transmission</strong> желтым или красным цветом. Машина теряет динамику разгона, так как электроника принудительно ограничивает крутящий момент и переключение передач.</p>
+
+<p>Поведение автомобиля в движении становится нестабильным. Вы можете почувствовать резкие рывки при попытке переключения, либо полный отказ от реакции на нажатие педали акселератора. В некоторых случаях коробка может пытаться включиться в режим заднего хода, но с большой задержкой или не включиться вовсе. Это происходит из-за того, что блок управления не получает корректные данные с датчиков скорости вращения валов.</p>
+
+<p>Особенность этой ошибки заключается в том, что она может быть как постоянной, так и периодической. Иногда после выключения и повторного запуска двигателя связь восстанавливается на короткое время, но вскоре пропадает снова. Такие "плавающие" симптомы часто вводят в заблуждение водителей, которые думают, что проблема решена сама собой, но на самом деле это лишь предвестник полного отказа.</p>
+
+<h2 id="пошаговая-инструкция-по-диагностике-и-ремонту">Пошаговая инструкция по диагностике и ремонту</h2>
+
+<p>Первым шагом при появлении ошибки <strong>01299</strong> является визуальный осмотр проводки. Вам необходимо найти разъемы, соединяющие блок управления двигателем и блок управления коробкой передач. Осмотрите их на предмет окисления, механических повреждений или следов перегрева. Часто провода перетираются о кузов или другие узлы двигателя из-за вибрации.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика проводки</h4><label class="check-item"><input type="checkbox"><span>Проверить целостность жгута проводов</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть разъемы на окисление</span></label><label class="check-item"><input type="checkbox"><span>Проверить предохранители питания TCM</span></label><label class="check-item"><input type="checkbox"><span>Проверить заземление модуля</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Если визуально все в порядке, необходимо использовать мультиметр для проверки наличия напряжения на разъеме блока управления. Зажигание должно быть включено. Отсоедините разъем от TCM и измерьте напряжение между контактом питания и массой. Если напряжения нет, проблема в цепи питания. Если напряжение есть, но связи нет, проблема может быть в самом модуле или в шине данных CAN-Bus.</p>
+
+<p>Для более глубокой диагностики потребуется профессиональное оборудование, такое как <em>VCDS</em> или <em>ODIS</em>. Подключив сканер, нужно проверить статус шины CAN-данных. Если другие блоки (например, ABS или приборная панель) видят TCM, а двигатель нет — проблема в проводке между ними. Если ни один блок не видит TCM, скорее всего, модуль полностью вышел из строя или нет общего заземления.</p>
+
+<blockquote>⚠️ Внимание: При снятии разъема с блока управления трансмиссией всегда строго соблюдайте полярность контактов и не допускайте короткого замыкания на массу, так как это может привести к выходу из строя процессора.</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если замена блока не помогает?</summary><div class="pb-accordion-body"><p>Если после установки заведомо исправного блока ошибка 01299 возвращается, проблема может быть в шине CAN-данных или в программной несовместимости (кодировании) нового модуля с вашим автомобилем. В этом случае требуется перепрошивка или проверка проводки на предмет скрытых обрывов внутри изоляции.</p></div></details>
+
+<h2 id="сравнение-проблем-с-различными-типами-трансмиссий-vag">Сравнение проблем с различными типами трансмиссий VAG</h2>
+
+<p>Хотя код <strong>01299</strong> универсален, причины его появления могут отличаться в зависимости от типа трансмиссии. В классических гидромеханических АКПП (01M, 09G) проблема чаще связана с проводкой или перегревом самого блока. В роботизированных коробках DSG (DQ200, DQ250, DQ500) ситуация сложнее и часто требует замены мехатронного блока целиком.</p>
+
+<p>В таблице ниже приведены основные различия в диагностике для популярных моделей:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип коробки</th>
+<th>Частая причина</th>
+<th>Сложность ремонта</th>
+<th>Особенность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DSG DQ200 (0AM)</td>
+<td>Износ контактов мехатроника</td>
+<td>Средняя</td>
+<td>Частое появление при пробеге >60 тыс. км</td>
+</tr>
+<tr>
+<td>DSG DQ250 (02E)</td>
+<td>Повреждение жгута TCM</td>
+<td>Низкая</td>
+<td>Нужно проверять герметичность разъема</td>
+</tr>
+<tr>
+<td>Классический АКПП</td>
+<td>Перегорание предохранителя</td>
+<td>Низкая</td>
+<td>Часто связано с коротким замыканием</td>
+</tr>
+<tr>
+<td>DSG DQ500</td>
+<td>Отказ датчиков скорости</td>
+<td>Высокая</td>
+<td>Требует замены всего мехатроника</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Владельцам автомобилей с коробкой <em>DQ200</em> стоит уделить особое внимание состоянию контактов внутри мехатронного блока. Со временем пайка контактов может отходить, что приводит к потере сигнала. В таких случаях помогает перепайка контактов или замена контактной группы, что значительно дешевле полной замены блока.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если у вас автомобиль с коробкой DSG, регулярно проверяйте состояние сальников приводов. Проникновение масла в блок управления (мехатроник) — частая причина гибели электроники и появления ошибок связи.</p></aside>
+
+<h2 id="программные-решения-и-адаптация">Программные решения и адаптация</h2>
+
+<p>Иногда проблема не в "железе", а в программном сбое. После замены аккумулятора или сброса ошибок в памяти, блок управления может потребовать процедуры адаптации. В некоторых случаях помогает перепрошивка программного обеспечения TCM. Это особенно актуально для автомобилей, которые периодически попадали в ремонт по другим причинам и могли получить некорректную прошивку.</p>
+
+<p>Для выполнения перепрошивки требуется доступ к официальным базам данных <em>VAG</em> и лицензионное программное обеспечение. Самостоятельные попытки перепрошить блок через непроверенные источники могут привести к его полному выходу из строя ("окирпичиванию"). Если вы не обладаете опытом работы с диагностическими инструментами, лучше доверить эту операцию специалистам.</p>
+
+<p>После устранения физической причины ошибки (ремонта проводки или замены блока) необходимо выполнить сброс адаптаций. Это позволит блоку управления заново выучить параметры работы коробки передач. Без этой процедуры машина может работать некорректно, даже если ошибка больше не появляется.</p>
+
+<blockquote>⚠️ Внимание: Перед началом любых манипуляций с электроникой обязательно отключите минусовую клему аккумулятора, чтобы избежать случайных коротких замыканий, которые могут повредить другие узлы автомобиля.</blockquote>
+
+<h2 id="профилактика-и-обслуживание">Профилактика и обслуживание</h2>
+
+<p>Чтобы избежать появления ошибки <strong>01299</strong> в будущем, необходимо регулярно проводить техническое обслуживание трансмиссии. Это включает в себя замену масла в коробке передач, проверку состояния разъемов и жгутов проводки. Особое внимание стоит уделять автомобилям с пробегом более 100 000 км, так как именно в этот период часто проявляются проблемы с износом электроники.</p>
+
+<p>Рекомендуется периодически проводить компьютерную диагностику даже при отсутствии внешних признаков неисправности. Это позволит выявить начинающиеся проблемы, такие как повышение сопротивления в цепях или нестабильное напряжение, до того, как они приведут к полному отказу связи. Раннее обнаружение проблемы может сэкономить значительные средства на ремонте.</p>
+
+<p>Также важно следить за состоянием аккумуляторной батареи. Падение напряжения при запуске двигателя может привести к сбоям в работе электроники и появлению ложных ошибок. Используйте качественные аккумуляторы и проверяйте их состояние не реже одного раза в год.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная компьютерная диагностика и своевременная замена масла в трансмиссии — лучшие способы предотвратить появление ошибки 01299 и продлить срок службы автоматической коробки передач.</p></aside>
+
+<details>
+<summary>Что означает ошибка 01299 на автомобиле VAG?</summary>
+<p>Это код ошибки, указывающий на отсутствие связи с блоком управления трансмиссией (TCM). Автомобиль переходит в аварийный режим.</p>
+</details>
+
+<details>
+<summary>Можно ли ехать с ошибкой 01299?</summary>
+<p>Технически можно, но машина будет ехать на одной передаче с низкой скоростью. Это аварийный режим. Ехать можно только до ближайшей СТО или гаража, чтобы не повредить коробку.</p>
+</details>
+
+<details>
+<summary>Сколько стоит ремонт блока TCM?</summary>
+<p>Стоимость зависит от типа коробки. Ремонт проводки стоит дешево, замена мехатроника или блока TCM может стоить от 15 000 до 50 000 рублей в зависимости от модели.</p>
+</details>
+
+<details>
+<summary>Помогает ли сброс ошибки?</summary>
+<p>Сброс ошибки помогает только временно, если проблема в контактах или проводке. Если сбой в самом блоке, ошибка вернется сразу после перезагрузки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/na/narezka-protektora-legkovykh-shin.html" class="pb-related-card">
+                <span class="pb-related-title">Нарезка протектора легковых шин: мифы, риски и реальные выгоды</span>
+                <span class="pb-related-desc">Разбираем технологию нарезки протектора легковых шин. Риски безопасности, влияние на управляемость и</span>
+            </a><a href="/articles/m/mo/mozhno-li-ekhat-so-spushchennym-kolesom-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Можно ли ехать на спущенном колесе: риски, последствия и советы</span>
+                <span class="pb-related-desc">Разбираем, можно ли ехать со спущенным колесом. Узнайте реальные риски для диска и резины, безопасны</span>
+            </a><a href="/articles/k/ka/kak-zamenit-uplotnitelnuyu-rezinku-na-kholodilnike-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Замена уплотнителя двери холодильника Indesit: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно заменить уплотнительную резинку на холодильнике Indesit. Пошаговая инстр</span>
+            </a><a href="/articles/k/ka/kak-ispolzovat-syruyu-rezinu.html" class="pb-related-card">
+                <span class="pb-related-title">Как использовать сырую резину: ремонт шин и вулканизация в домашних условиях</span>
+                <span class="pb-related-desc">Пошаговая инструкция по работе с сырой резиной для ремонта проколов и трещин. Методы холодной и горя</span>
+            </a><a href="/articles/k/ka/kak-razobrat-aegis-2.html" class="pb-related-card">
+                <span class="pb-related-title">Как разобрать Aegis 2: Пошаговая инструкция по разборке пистолета</span>
+                <span class="pb-related-desc">Подробное руководство по разборке и сборке пистолета Aegis 2. Разборка на группы, инструменты, чистк</span>
+            </a><a href="/articles/k/ka/kak-pomenyat-rezinku-na-vkhodnoj-dveri.html" class="pb-related-card">
+                <span class="pb-related-title">Как поменять резинку на входной двери: пошаговая инструкция по замене уплотнителя</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно заменить резиновый уплотнитель на входной металлической двери. Инструкци</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

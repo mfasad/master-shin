@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🚗</text></svg>">
+    <title>Need for Speed 2015 Project Unity: Обзор, отличия и особенности сборки — Мастер Шин</title>
+    <meta name="description" content="Глубокий разбор проекта Unity для NFS 2015. Узнайте отличия от оригинала, список авто, тонкости настройки графики и совместимость с современными ПК.">
+    <link rel="canonical" href="https://master-shin.vercel.app/articles/n/ne/need-for-speed-2015-project-unity.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Need for Speed 2015 Project Unity: Обзор, отличия и особенности сборки">
+    <meta property="og:description" content="Глубокий разбор проекта Unity для NFS 2015. Узнайте отличия от оригинала, список авто, тонкости настройки графики и совместимость с современными ПК.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780866310">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🚗</span>
+                <span class="pb-logo-text">Мастер Шин</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/podbor-shin/">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/podbor-shin/" class="pb-dropdown-item">🔍 Подбор шин</a>
+<a href="/category/markirovka-i-razmery/" class="pb-dropdown-item">📏 Маркировка и размеры</a>
+<a href="/category/sezonnaya-smena/" class="pb-dropdown-item">❄️ Сезонная смена</a>
+<a href="/category/davlenie-i-balansirovka/" class="pb-dropdown-item">🎈 Давление и балансировка</a>
+<a href="/category/remont-i-vulkanizatsiya/" class="pb-dropdown-item">🔧 Ремонт и вулканизация</a>
+<a href="/category/khranenie-koles/" class="pb-dropdown-item">📦 Хранение колес</a>
+<a href="/category/obzory-brendov/" class="pb-dropdown-item">🏷️ Обзоры брендов</a>
+<a href="/category/diski-i-kolpaki/" class="pb-dropdown-item">🛞 Диски и колпаки</a>
+<a href="/category/shinomontazh-biznes/" class="pb-dropdown-item">💼 Шиномонтаж бизнес</a>
+<a href="/category/velosipednye-shiny/" class="pb-dropdown-item">🚲 Велосипедные шины</a>
+<a href="/category/spetstekhnika-i-gruzoviki/" class="pb-dropdown-item">🚜 Спецтехника и грузовики</a>
+<a href="/category/ukhod-za-rezinoj/" class="pb-dropdown-item">✨ Уход за резиной</a>
+<a href="/category/yuridicheskie-voprosy/" class="pb-dropdown-item">⚖️ Юридические вопросы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Need for Speed 2015 Project Unity: Обзор, отличия и особенности сборки</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#философия-проекта-и-отличия-от-оригинала">Философия проекта и отличия от оригинала</a></li><li><a href="#ключевые-механики-и-игровые-системы">Ключевые механики и игровые системы</a></li><li><a href="#техническая-реализация-и-производительность">Техническая реализация и производительность</a></li><li><a href="#список-автомобилей-и-уникальные-модификации">Список автомобилей и уникальные модификации</a></li><li><a href="#рекомендации-по-настройке-графики-и-управления">Рекомендации по настройке графики и управления</a></li><li><a href="#проблемы-совместимости-и-решение-ошибок">Проблемы совместимости и решение ошибок</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/na/nakolka-kupola-na-ruke.html">Наколка купол на руке: значение, боль, заживление и мифы</a></li><li><a href="/articles/m/ma/material-podoshvy-eva-chto-eto-takoe-otzyvy.html">Материал подошвы ЭВА: что это, плюсы, минусы и отзывы</a></li><li><a href="/articles/s/sk/skolko-eto-6-verst.html">Сколько это 6 верст: точный перевод в километры и метры</a></li><li><a href="/articles/m/mo/morozilnaya-kamera-indezit-gorit-vosklitsatelnyj-znak.html">Морозильная камера Индезит горит восклицательный знак: причины и ремонт</a></li><li><a href="/articles/5/5-/5-verst-v-km.html">5 верст в километры: точный расчет и история измерения</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Need for Speed 2015 Project Unity: Полный гид по модификации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#философия-проекта-и-отличия-от-оригинала">Философия проекта и отличия от оригинала</a></li><li><a href="#ключевые-механики-и-игровые-системы">Ключевые механики и игровые системы</a></li><li><a href="#техническая-реализация-и-производительность">Техническая реализация и производительность</a></li><li><a href="#список-автомобилей-и-уникальные-модификации">Список автомобилей и уникальные модификации</a></li><li><a href="#рекомендации-по-настройке-графики-и-управления">Рекомендации по настройке графики и управления</a></li><li><a href="#проблемы-совместимости-и-решение-ошибок">Проблемы совместимости и решение ошибок</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Мир гонки <em>Need for Speed</em> 2015 года претерпел значительные изменения, когда сообщество моддеров принялось за переосмысление движка Frostbite. Проект <strong>Unity</strong> стал одним из самых амбициозных и обсуждаемых экспериментов, направленных на возращение духа классических гонок в современную сетку. Эта работа не просто меняет текстуры или добавляет машины, она затрагивает фундаментальные аспекты физического поведения автомобиля и логики игровой экономики.</p>
+
+<p>Многие игроки, разочарованные линейностью оригинального релиза, нашли в этом проекте спасение. <strong>Project Unity</strong> предлагает уникальный подход к кастомизации, позволяя собирать уникальные конфигурации, которые невозможны в ванильной версии игры. Здесь каждый элемент машины, от подвески до аэродинамического обвеса, может быть настроен под конкретный стиль вождения.</p>
+
+<p>В этой статье мы подробно разберем ключевые особенности сборки, технические требования и подводные камни, с которыми вы столкнетесь при установке. Если вы ищете способ обновить свой игровой опыт, то понимание специфики этого мода станет для вас критически важным. <mark>Проект Unity фактически пересобирает логику прокачки, делая её зависимой от реальных характеристик тюнинга, а не от абстрактных очков престижа.</mark></p>
+
+<h2 id="философия-проекта-и-отличия-от-оригинала">Философия проекта и отличия от оригинала</h2>
+
+<p>Главной целью разработчиков <strong>Project Unity</strong> было устранение дисбаланса, присущего оригинальной игре. В стандартной версии <em>Need for Speed 2015</em> прогресс часто казался искусственным, где новые детали просто повышали числовое значение характеристик без реального влияния на динамику. Модификация же внедряет более сложную модель, где вес, центр тяжести и распределение мощности играют решающую роль.</p>
+
+<p>Вам нужно привыкнуть к новому ощущению от вождения. Автомобили стали тяжелее и инертнее, что требует более точного входа в повороты. <strong>Физика заносов</strong> была переработана с нуля, чтобы имитировать поведение реальных уличных болидов, а не спортивных прототипов с идеальным сцеплением.</p>
+
+<p>Особое внимание уделено визуальной составляющей. Освещение и тени стали более реалистичными, что особенно заметно в ночных гонках по городу. Это не просто косметическое улучшение, а изменение того, как вы воспринимаете трассу и оцениваете дистанцию до препятствий.</p>
+
+<blockquote>⚠️ Внимание: Установка модов может привести к несовместимости с официальными обновлениями игры. Перед началом работы обязательно создайте резервную копию файлов сохранения, чтобы избежать потери прогресса.</blockquote>
+
+<h2 id="ключевые-механики-и-игровые-системы">Ключевые механики и игровые системы</h2>
+
+<p>Система кастомизации в проекте <strong>Unity</strong> требует от игрока глубокого понимания технических нюансов. Нельзя просто надеть спойлер и ожидать роста скорости. Каждый элемент <em>аэродинамического обвеса</em> имеет свой коэффициент сопротивления, который напрямую влияет на максимальную скорость и ускорение. Это делает процесс сборки машины сложным инженерным вызовом.</p>
+
+<p>Экономика игры также претерпела изменения. Теперь деньги не просто накапливаются, а требуются для закупки конкретных запчастей, которые могут быть недоступны в открытом доступе. Вам придется выбирать стратегию: инвестировать в текущий автомобиль или копить на более мощную платформу. <strong>Тюнинг двигателя</strong> стал более детальным, позволяя менять степень сжатия и фазы газораспределения.</p>
+
+<p>Взаимодействие с окружением стало динамичнее. Погодные условия теперь влияют не только на видимость, но и на сцепление шин с покрытием. Грязь и дождь могут полностью изменить поведение машины, требуя смены настроек подвески и выбора правильной резины.</p>
+
+<div class="pb-poll" id="poll-94287d90"><div class="pb-poll-question">📊 Какую механику вы цените больше всего в гонках?</div><div class="pb-poll-option" data-poll="94287d90" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Физика дрифта</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="94287d90" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Реалистичная кастомизация</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="94287d90" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Открытый мир</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="94287d90" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Динамическая погода</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="техническая-реализация-и-производительность">Техническая реализация и производительность</h2>
+
+<p>Работа с модификациями на движке Frostbite всегда сопряжена с определенными рисками и требованиями к железу. Проект <strong>Unity</strong> не исключение, так как он активно использует ресурсы системы для рендеринга сложных эффектов и моделей. <strong>Оптимизация шейдеров</strong> в этой сборке требует мощной видеокарты для стабильного фреймрейта.</p>
+
+<p>При запуске игры в высоком разрешении вы можете столкнуться с просадками производительности в плотной городской застройке. Это связано с тем, что модификация добавляет больше деталей в окружение и увеличивает количество объектов физики. Рекомендуется снизить настройки теней и дальности прорисовки, если ваш ПК не относится к флагманским моделям.</p>
+
+<p>Стабильность игры также зависит от правильности установки файлов. Неполная загрузка ассетов может привести к исчезновению текстур или вылетам при загрузке сохранений. Всегда проверяйте целостность папки с модами перед запуском.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском</h4><label class="check-item"><input type="checkbox"><span>Проверить версию игры</span></label><label class="check-item"><input type="checkbox"><span>Установить Visual C++ Redistributable</span></label><label class="check-item"><input type="checkbox"><span>Отключить антивирус</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность файлов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="список-автомобилей-и-уникальные-модификации">Список автомобилей и уникальные модификации</h2>
+
+<p>Одной из самых привлекательных сторон проекта является расширенный парковой автомобилей. Сюда добавлены машины, которые отсутствовали в оригинальной версии <em>Need for Speed 2015</em>, а также эксклюзивные версии известных моделей. <strong>Специальные edition</strong> часто имеют уникальные характеристики, недоступные для стандартных версий.</p>
+
+<p>Ниже приведена таблица с примерами популярных добавленных моделей и их особенностей:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Модель автомобиля</th>
+<th>Тип кузова</th>
+<th>Особенность тюнинга</th>
+<th>Уровень сложности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nissan Skyline GT-R (R34)</td>
+<td>Спорткар</td>
+<td>Улучшенная система полного привода</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>BMW M3 CSL</td>
+<td>Купе</td>
+<td>Уникальная аэродинамика</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Toyota Supra MK4</td>
+<td>Купе</td>
+<td>Модульная система наддува</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Ford Mustang GT</td>
+<td>Кабриолет</td>
+<td>Оптимизация задней подвески</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Porsche 911 GT3 RS</td>
+<td>Купе</td>
+<td>Карбоновый обвес</td>
+<td>Экстремальный</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Каждая машина требует индивидуального подхода к настройке. Не существует универсального решения для всех трасс. Вам придется экспериментировать с жесткостью амортизаторов и углом развала колес, чтобы найти идеальный баланс для конкретной трассы.</p>
+
+<blockquote>⚠️ Внимание: Некоторые добавленные модели могут иметь некорректные коллизии с физическими объектами карты. Избегайте резких врезаний в стены на высокой скорости, чтобы не повредить модель.</blockquote>
+
+<details class="pb-accordion"><summary>Секреты скрытых машин</summary><div class="pb-accordion-body"><p>В игре есть несколько скрытых автомобилей, которые открываются только при выполнении специфических условий. Например, сборка всех частей легендарного болида без единой аварии.</p></div></details>
+
+<h2 id="рекомендации-по-настройке-графики-и-управления">Рекомендации по настройке графики и управления</h2>
+
+<p>Для достижения наилучшего визуального эффекта необходимо правильно настроить параметры рендеринга. <strong>Тени высокого качества</strong> и включенная технология <em>SSAO</em> значительно улучшают восприятие глубины сцены, но требуют значительных ресурсов. Если игра работает не плавно, попробуйте отключить динамическое размытие в движении.</p>
+
+<p>Управление в <strong>Project Unity</strong> также заслуживает отдельного внимания. Многие игроки предпочитают использовать джойстики с обратной связью, так как клавиатурное управление может быть недостаточно точным для новых настроек физики. Кривая отклика педали газа и тормоза должна быть настроена в соответствии с вашим стилем вождения.</p>
+
+<p>Не забывайте о важности калибровки. Без правильной настройки руля или педалей вы не сможете полностью контролировать автомобиль, особенно в заносах. Потратьте время на калибровку в меню настроек, чтобы получить максимальный контроль.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом заездов зайдите в меню настроек управления и установите кривую педали газа в режим "Линейная" для более предсказуемого разгона на скользком покрытии.</p></aside>
+
+<h2 id="проблемы-совместимости-и-решение-ошибок">Проблемы совместимости и решение ошибок</h2>
+
+<p>Несмотря на тщательную проработку, проект может столкнуться с проблемами при взаимодействии с другими модами или системными обновлениями. Ошибка "Invalid Game Version" часто возникает, если версия игры <em>Need for Speed 2015</em> отличается от той, на которую ориентирован мод. <strong>Синхронизация версий</strong> является критически важным этапом.</p>
+
+<p>Иногда возникают конфликты с файлами конфигурации. Если игра вылетает сразу после запуска, попробуйте удалить файл <code>config.ini</code> и запустить игру заново, чтобы сгенерировать новый. Также проверьте, не блокирует ли антивирус доступ к файлам игры.</p>
+
+<p>В редких случаях может потребоваться ручное редактирование файлов скриптов. Будьте предельно осторожны при этом, так как одна ошибка в синтаксисе может сделать игру нерабочей. Всегда сохраняйте оригинальные файлы перед внесением изменений.</p>
+
+<blockquote>⚠️ Внимание: Изменение системных файлов может привести к потере гарантии на программное обеспечение игры. Действуйте на свой страх и риск и обязательно делайте бэкап.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная сложность установки заключается в строгом соблюдении версии игры и порядке распаковки архивов, иначе возможна нестабильность работы.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Нужно ли скачивать дополнительные файлы для работы мода?</summary>
+<p>Да, для полноценной работы <strong>Project Unity</strong> часто требуется установка дополнительных библиотек DirectX и Visual C++, которые обычно идут в комплекте с архивом или доступны в разделе зависимостей.</p>
+</details>
+
+<details>
+<summary>Можно ли играть в мультиплеер с установленным модом?</summary>
+<p>Нет, использование модификаций в онлайн-режиме строго запрещено и приведет к блокировке аккаунта. Играйте только в одиночном режиме или на выделенных серверах сообщества.</p>
+</details>
+
+<details>
+<summary>Как откатить изменения и вернуть оригинальную игру?</summary>
+<p>Самый надежный способ — удалить папку с модом и восстановить файлы из резервной копии. Если вы не делали бэкап, попробуйте выполнить проверку целостности файлов через Steam или EA App.</p>
+</details>
+
+<details>
+<summary>Поддерживает ли проект контроллеры Xbox и PlayStation?</summary>
+<p>Да, модификация полностью поддерживает геймпады обоих типов, однако для корректного отображения кнопок может потребоваться установка драйверов XInput.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/na/nakolka-kupola-na-ruke.html" class="pb-related-card">
+                <span class="pb-related-title">Наколка купол на руке: значение, боль, заживление и мифы</span>
+                <span class="pb-related-desc">Всё о татуировке купола на руке: символика православного креста, уровень боли, этапы заживления и пр</span>
+            </a><a href="/articles/m/ma/material-podoshvy-eva-chto-eto-takoe-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Материал подошвы ЭВА: что это, плюсы, минусы и отзывы</span>
+                <span class="pb-related-desc">Подробный разбор материала ЭВА для подошв обуви. Отзывы владельцев, сравнение с резиной, плюсы и мин</span>
+            </a><a href="/articles/s/sk/skolko-eto-6-verst.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько это 6 верст: точный перевод в километры и метры</span>
+                <span class="pb-related-desc">Полный разбор расстояния в 6 верст в современной системе мер. Перевод в километры, метры, сравнение </span>
+            </a><a href="/articles/m/mo/morozilnaya-kamera-indezit-gorit-vosklitsatelnyj-znak.html" class="pb-related-card">
+                <span class="pb-related-title">Морозильная камера Индезит горит восклицательный знак: причины и ремонт</span>
+                <span class="pb-related-desc">Поиск причины, почему на морозильной камере Indesit загорелся восклицательный знак. Разбор кодов оши</span>
+            </a><a href="/articles/5/5-/5-verst-v-km.html" class="pb-related-card">
+                <span class="pb-related-title">5 верст в километры: точный расчет и история измерения</span>
+                <span class="pb-related-desc">Узнайте, сколько километров в 5 верстах. Подробный перевод единиц измерения, историческая справка и </span>
+            </a><a href="/articles/f/fi/fidernaya-snast-s-fidergamom.html" class="pb-related-card">
+                <span class="pb-related-title">Фидерная снасть с фидергамом: выбор, монтаж и техника рыбалки</span>
+                <span class="pb-related-desc">Полное руководство по использованию фидергама в фидерной ловле. Разбор монтажей, подбор диаметра, за</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🚗 Мастер Шин</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/podbor-shin/">🔍 Подбор шин</a> · <a href="/category/markirovka-i-razmery/">📏 Маркировка и размеры</a> · <a href="/category/sezonnaya-smena/">❄️ Сезонная смена</a> · <a href="/category/davlenie-i-balansirovka/">🎈 Давление и балансировка</a> · <a href="/category/remont-i-vulkanizatsiya/">🔧 Ремонт и вулканизация</a> · <a href="/category/khranenie-koles/">📦 Хранение колес</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Шин. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
